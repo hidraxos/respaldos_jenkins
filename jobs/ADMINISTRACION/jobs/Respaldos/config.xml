@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@1182.v60a_e6279b_579">
+  <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -15,7 +16,7 @@ node(&apos;ubuntu&apos;){
     stage(&apos;respaldos&apos;){
         printm(&quot;Se respaldaran las carpetas JOBS NODES PLUGINS USER&quot;,blue)
         dir(&apos;/home/jenkins/respaldos&apos;){
-            sh&quot;rm -rf&quot;
+            sh&quot;rm -rf *&quot;
             for(folder in folders){
                 sh&quot;&quot;&quot;
                     docker cp hidraxos:/var/jenkins_home/${folder}/ ./${folder}/
@@ -23,8 +24,8 @@ node(&apos;ubuntu&apos;){
             }
             sh&quot;&quot;&quot;
                 git add .
-                git commit -am &quot;respaldo ${date}&quot;
-                git push -u origin master&quot;
+                git commit -am &apos;respaldo ${date}&apos;
+                git push -u origin master
             &quot;&quot;&quot;
         }
     }
