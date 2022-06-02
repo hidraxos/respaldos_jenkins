@@ -1,0 +1,9 @@
+commit ed361d0a6aea8c12e9cdaacb5624b671394cbf83
+tree 799e797895e8b60da2ece909cd83de269b075d0d
+parent 335a2649901e79d7a9d4c03b25a7733287f67a2f
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-03-04 10:20:00 -0500
+committer GitHub <noreply@github.com> 2022-03-04 10:20:00 -0500
+
+    prueba para eliminar jobs
+
+:100644 100644 c7370b3fd486b0e7988886bbd7ec59648aefc86d 3604ce27abbb98cfcef083976adedadc4731ab8c M	jobs.txt

@@ -1,0 +1,360 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.BooleanParameterValue>
+          <name>ELIMINAR_JOBS</name>
+          <description>Seleccione si desea ELIMINAR LOS JOBS DESPUES DEL RESPALDO</description>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Refresh_Param</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Archivo</name>
+          <description>Nombre del archivo en GitHub SIN EL .txt</description>
+          <value>jobs</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Version</name>
+          <description>Version del .tar para cargar a Nexus</description>
+          <value>1.0</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>ELIMINAR_JOBS</string>
+        <string>Refresh_Param</string>
+        <string>Archivo</string>
+        <string>Version</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@564.ve62a_4eb_b_e039">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>b9e223f5-feb2-43a5-b551-94c8ea9d88d3</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>3bb30e84-3029-4366-a0fd-73b77d5fe897</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.10.3">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.11.0">
+              <sha1>f02e85793c8b50320dfa37e420f1404f78ed3eb2</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>223</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/hidraxos/jobs_vencidos</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.13">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/hidraxos/jobs_vencidos</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>16576f9f-2ea5-4447-9881-f1ecca03554e</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+  </actions>
+  <queueId>1223</queueId>
+  <timestamp>1647273056457</timestamp>
+  <startTime>1647273056959</startTime>
+  <result>FAILURE</result>
+  <duration>17418</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>import groovy.transform.Field
+import groovy.json.JsonSlurper
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.io.*;
+import org.w3c.dom.*;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.ParserConfigurationException;
+import groovy.json.JsonSlurper
+import java.text.SimpleDateFormat;
+    
+@Field def ruta = &quot;&quot;
+@Field def existe
+@Field def rango
+@Field def credentials = &apos;nexusAdmin&apos;
+@Field def pathBackup = &apos;/home/jobs_respaldo/&apos;      //Ruta donde se generaran las carpetas para el respaldo
+@Field def pathJenkins = &apos;/var/jenkins_home/jobs/&apos;  //Ruta donde se guardan los archivos de configuracion de jenkins
+@Field def url_github = &apos;https://github.com/hidraxos/jobs_vencidos&apos;
+@Field def url_nexus = &apos;http://192.168.1.110:8081&apos;
+@Field def repoNexus = &quot;Jobs_vencidos&quot;
+@Field def date
+
+node{
+    cleanWs()
+    properties([parameters([
+        booleanParam(defaultValue: false, description: &apos;Seleccione si desea ELIMINAR LOS JOBS DESPUES DEL RESPALDO&apos;,name: &quot;ELIMINAR_JOBS&quot;),
+        booleanParam(defaultValue: false, description: &apos;&apos;,name: &quot;Refresh_Param&quot;),
+        stringParam(defaultValue: &quot;&quot;, description: &apos;Nombre del archivo en GitHub SIN EL .txt&apos;,name: &quot;Archivo&quot;),
+        stringParam(defaultValue: &quot;&quot;, description: &apos;Version del .tar para cargar a Nexus&apos;,name: &quot;Version&quot;)
+    ])])
+    stage(&apos;check-folder-respaldos&apos;){
+        if(!params.&quot;Refresh_Param&quot;){
+            validate(&quot;&quot;)
+            if(existe == false){
+                sh&quot;&quot;&quot;
+                    mkdir ${pathBackup}${params.&quot;Archivo&quot;}
+                &quot;&quot;&quot;
+            }else{
+                println &quot;El directorio ${pathBackup}${params.&quot;Archivo&quot;} ya existe&quot;
+            }
+        }
+    }
+    stage(&apos;Back_up_jobs&apos;){
+        if(!params.&quot;Refresh_Param&quot;){
+            ansiColor(&apos;xterm&apos;){
+                checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[url: url_github]]])
+                def archivoJobs = (params.&quot;Archivo&quot;)+&quot;.txt&quot;
+                def jobs = readFile(archivoJobs).readLines();
+                if(!jobs.isEmpty()){
+                    println &quot;\033[43m############ Comenzando Respaldo de Jobs ############\033[0m&quot;
+                    respaldos(jobs)
+                    println &quot;\033[42m############ Respaldo de Jobs EXITOSO ############\033[0m&quot;
+                    println &quot;\033[43m############ Comenzando comprimido .tar.gz ############\033[0m&quot;
+                    comprimido()
+                    println &quot;\033[42m############ Comprimido EXITOSO ############\033[0m&quot;
+                    uploadNexus()
+                }
+            }
+        }
+    }
+    stage(&apos;Eliminar Jobs&apos;){
+        if(!params.&quot;Refresh_Param&quot;){
+            ansiColor(&apos;xterm&apos;){
+                if(params.&quot;ELIMINAR_JOBS&quot;){
+                    println &quot;\033[43m############ Comienzo de Borrado de Jobs ############\033[0m&quot;
+                    def jobs = (params.&quot;Archivo&quot;)+&quot;.txt&quot;
+                    def eliminateJobs = readFile(jobs).readLines()
+                    eliminate(eliminateJobs)
+                    println &quot;\033[42m############  Borrado de Jobs EXITOSO ############\033[0m&quot;
+                    println &quot;\033[42m############  El Borrado se completara al reiniciar Jenkins ############\033[0m&quot;
+                }
+            }
+        }
+    }
+}
+def respaldos(def jobs){
+    for(i in jobs){
+        //println i
+        assert (!i.contains(&quot; &quot;))
+        if(i.contains(&apos;/&apos;)){
+            def arreglo = i.tokenize(&apos;/&apos;)
+            //println arreglo
+
+
+            rango = []
+            for(h in 0..(arreglo.size()-1)){
+                rango.add(h)
+            }
+
+
+            for(e in rango){
+                ruta = ruta + &quot;/&quot; +arreglo[e]
+                //println ruta
+                    validate(ruta)
+                    if(existe == false){
+                        sh&quot;&quot;&quot;
+                            mkdir ${pathBackup}${params.&quot;Archivo&quot;}${ruta}
+                        &quot;&quot;&quot;
+                    }
+                    validate(ruta+&quot;/config.xml&quot;)
+                    if(existe == false){
+                        sh &quot;&quot;&quot;
+                          cp  ${pathJenkins}${ruta}/config.xml ${pathBackup}${params.&quot;Archivo&quot;}${ruta}
+                        &quot;&quot;&quot;
+                    }
+                    if(e != (arreglo.size()-1)){
+                        ruta = ruta + &quot;/jobs&quot;
+                        validate(ruta)
+                        if(existe == false){
+                            sh&quot;&quot;&quot;
+                                mkdir ${pathBackup}${params.&quot;Archivo&quot;}${ruta}
+                            &quot;&quot;&quot;
+                        }
+                    }
+            }
+            ruta = &quot;&quot;
+        }else{
+            validate(&quot;/&quot;+i)
+            if(existe == false){
+                sh&quot;&quot;&quot;
+                    mkdir ${pathBackup}${params.&quot;Archivo&quot;}&quot;/&quot;${i}
+                &quot;&quot;&quot;
+            }
+            validate(&quot;/&quot;+i+&quot;/config.xml&quot;)
+            if(existe == false){
+                sh &quot;&quot;&quot;
+                  cp  ${pathJenkins}/${i}/config.xml ${pathBackup}${params.&quot;Archivo&quot;}&quot;/&quot;${i}
+                &quot;&quot;&quot;
+            }
+        }
+    }
+}
+
+def validate(def ruta){
+    File file = new File(&quot;${pathBackup}${params.&quot;Archivo&quot;}&quot;+ruta)
+    if(file.exists()){
+        println &quot;${ruta} existe&quot;
+        existe = true
+    }else{
+        println &quot;${ruta} NO existe&quot;
+        existe = false
+    }
+}
+
+def comprimido(){
+    sh&quot;&quot;&quot;
+        tar -czvf job_vencidos.tar.gz ${pathBackup}${params.&quot;Archivo&quot;}
+    &quot;&quot;&quot;
+}
+
+def uploadNexus(){
+    println &quot;\033[43m############  Carga de .tar.gz a Nexus ############\033[0m&quot;
+    def date = new Date()
+    def sdf = new SimpleDateFormat(&quot;dd-MM-yyyy&quot;)
+    date = sdf.format(date)
+    withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+        sh&quot;curl -v -u $USERNAME:$PASS -X POST ${url_nexus}/service/rest/v1/components?repository=${repoNexus} -F maven2.groupId=BackUp_Jobs_Vencidos -F maven2.artifactId=${date} -F maven2.version=${params.&quot;Version&quot;} -F &apos;maven2.asset1=@${WORKSPACE}/job_vencidos.tar.gz;type=application/x-tgz&apos; -F maven2.asset1.extension=tar.gz&quot;
+    }   
+    println &quot;\033[42m############  Carga a Nexus EXITOSA ############\033[0m&quot;
+}
+
+def eliminate(def eliminateJobs){
+    for(i in eliminateJobs){
+        if(i.contains(&apos;/&apos;)){
+            def arreglo = i.tokenize(&apos;/&apos;)
+            def path = &quot;&quot;
+            for(e in 0..(arreglo.size()-2)){
+                path = path + arreglo[e]+&quot;/jobs/&quot;
+            }
+            def ruta = path
+            path = path + &quot;/&quot;+arreglo[(arreglo.size()-1)]
+            sh&quot;rm -rf ${pathJenkins}${path}&quot;
+            eliminateIfEmpty(ruta)
+            path = &quot;&quot;
+        }else{
+            sh &quot;rm -rf ${pathJenkins}${i}&quot;
+        }
+    }
+}
+
+def eliminateIfEmpty(path){
+    path = pathJenkins + path                     
+    def arreglo = path.tokenize(&quot;/&quot;)              
+    arreglo.remove(arreglo.size()-1)              
+    def ruta_sin_jobs = &quot;&quot;
+    for(i in arreglo){
+        ruta_sin_jobs = ruta_sin_jobs + &quot;/&quot; + i  
+    }
+    def  File carpeta = new File(path)             
+    def files = carpeta.list();
+    if(files.length == 0){
+        sh&quot;rm -rf ${ruta_sin_jobs}&quot;
+    }else{
+        println &quot;La carpeta aun tiene Jobs en uso&quot;
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>8417504598</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>79319468</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>13149952777</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>66445101</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>3200764334</long>
+      </entry>
+    </timings>
+    <sandbox>false</sandbox>
+    <iota>56</iota>
+    <head>1:56</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.10.3">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/hidraxos/jobs_vencidos</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/jobs_vencidos/backup_jobs_vencidos</workspace>
+      <changelogFile>/var/jenkins_home/jobs/jobs_vencidos/jobs/backup_jobs_vencidos/builds/223/changelog17475779056934881398.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

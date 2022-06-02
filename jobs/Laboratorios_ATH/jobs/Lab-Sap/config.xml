@@ -1,0 +1,121 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction plugin="workflow-multibranch@711.vdfef37cda_816">
+      <jobPropertyDescriptors>
+        <string>hudson.model.ParametersDefinitionProperty</string>
+      </jobPropertyDescriptors>
+    </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@3.0.0">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
+    <com.synopsys.arc.jenkinsci.plugins.jobrestrictions.jobs.JobRestrictionProperty plugin="job-restrictions@0.8"/>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Refresh_Param</name>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Archivo</name>
+          <description>nombre del archivo .json con la info</description>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>File</name>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <org.biouno.unochoice.ChoiceParameter plugin="uno-choice@2.6.1">
+          <name>versiones</name>
+          <randomName>choice-parameter-3912475139935</randomName>
+          <visibleItemCount>1</visibleItemCount>
+          <script class="org.biouno.unochoice.model.GroovyScript">
+            <secureScript plugin="script-security@1140.vf967fb_efa_55a_">
+              <script>import java.io.File;
+    
+    def fprList = []
+    def file = new File(&apos;/var/jenkins_home/workspace/Laboratorios_ATH/Lab-Sap&apos;)
+    
+    file.eachFile{archivo -&gt;
+      fprList &lt;&lt; archivo.name
+    }
+    println fprList
+    return fprList</script>
+              <sandbox>false</sandbox>
+              <classpath/>
+            </secureScript>
+            <secureFallbackScript plugin="script-security@1140.vf967fb_efa_55a_">
+              <script></script>
+              <sandbox>false</sandbox>
+              <classpath/>
+            </secureFallbackScript>
+          </script>
+          <choiceType>PT_SINGLE_SELECT</choiceType>
+          <filterable>false</filterable>
+          <filterLength>1</filterLength>
+        </org.biouno.unochoice.ChoiceParameter>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2659.v52d3de6044d0">
+    <script>import groovy.transform.Field
+import groovy.json.JsonSlurper
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.io.File; 
+
+@Field def fprList = []
+@Field def credentials = &quot;hidraxos_credentials&quot;
+@Field def ip = &quot;192.168.1.110&quot;
+
+node(&apos;principal&apos;){
+    String scriptVersion = getVersion()
+    println scriptVersion
+    properties([parameters([
+            booleanParam(name:&apos;Refresh_Param&apos;,description: &apos;&apos;, defaultValue: false),
+            stringParam(name:&apos;Archivo&apos;,description: &quot;nombre del archivo .json con la info&quot;),
+            stringParam(name:&apos;File&apos;,description:&apos;&apos;),
+            [$class: &apos;ChoiceParameter&apos;, choiceType: &apos;PT_SINGLE_SELECT&apos;, filterLength: 1, filterable: false, name: &apos;versiones&apos;, randomName: &apos;choice-parameter-3912475139935&apos;, script: [$class: &apos;GroovyScript&apos;, fallbackScript: [classpath: [], sandbox: false, script: &apos;&apos;], script: [classpath: [], sandbox: false, script: scriptVersion]]]
+    ])])
+
+    stage(&apos;println&apos;){
+        println fprList
+    }
+}
+def getFPRS(){
+    withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable: &apos;USER&apos;)]){
+        sh&quot;&quot;&quot;
+            sshpass -p ${PASS} ssh ${USER}@${ip} ls /home/hidraxos/Escritorio/Ejercicios/Groovy &gt; versiones.txt
+        &quot;&quot;&quot;
+    }
+    fprList = readFile(&quot;versiones.txt&quot;).readLines()
+}
+
+String getVersion(){
+    String script = &apos;&apos;&apos;import java.io.File;
+    
+    def fprList = []
+    def file = new File(&apos;/var/jenkins_home/workspace/Laboratorios_ATH/Lab-Sap&apos;)
+    
+    file.eachFile{archivo -&gt;
+      fprList &lt;&lt; archivo.name
+    }
+    println fprList
+    return fprList&apos;&apos;&apos;
+    return script
+}
+
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

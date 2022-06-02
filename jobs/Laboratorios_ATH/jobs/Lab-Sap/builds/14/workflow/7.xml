@@ -1,0 +1,31 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@813.vb_d7c3d2984a_0">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2659.v52d3de6044d0">
+    <parentIds>
+      <string>6</string>
+    </parentIds>
+    <id>7</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2659.v52d3de6044d0">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>
+            sshpass -p ${PASS} ssh ${USER}@192.168.1.110 ls /home/${USER}/Escritorio/Ejercicios/Groovy &gt; versiones.txt
+        </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PASS</string>
+        <string>USER</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1138.v619fd5201b_2f">
+      <startTime>1648783298160</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

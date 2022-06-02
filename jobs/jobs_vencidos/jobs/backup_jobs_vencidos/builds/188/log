@@ -1,0 +1,127 @@
+Started by user [8mha:////4FOzSrmG3raY6HDDP9y9wpDOWKxndPOUq1Qi4lYApdk4AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgY+/dLi1CL9jMyUosSK/GIAIjQUGMMAAAA=[0mHerman Galvis
+[8mha:////4NmVkf/7q72P5logU7HJn/trbTnmxOEyR11YdFzAA3uOAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4OClzq+PLmygSFsLEDI5jeP9+CLZwEoU3wblDunI3P1JAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4O32J6xTas4X5cVSMH94JNzFnmramOEb5/taB0u3jVH5AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/jobs_vencidos/backup_jobs_vencidos
+[8mha:////4O/j9ATs/gHvgb7PlqNLDc7wNd4p02e98blNmvV4H6VtAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4JzEPPSA+TU6V27VpE1OgOl5xuyzqvUatpgS2F7skpo9AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaGWsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gdpL1fxvAAAAA==[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[8mha:////4LN6NG6RbK8ghT9xei8F58seAKTJLkGt7w3Zd8NTHZDOAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGBtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED+qfHravAAAAA==[0m[Pipeline] properties
+[8mha:////4Cs2m6RcNF1cSw64J/fiANMcGu1rcMIgCbphZz72dqrcAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0QWJATKxRFk4QkhDSRv+3SUo7cSKuxh0IVGLCkiXbkvWeL6hThCNFx1uLncekPe/D6EriE8XuGmjiLV24JkwULJd2kmTsaamSsoVFrIKVgLVFHSh5dBk2olV31QSFrjnnWLaDgMqbAR7ARCFnFfO3zBG2t9Ekwh/nLwDmPgPbFe8/v/oNP1aWNcAAAAA=[0m[Pipeline] stage
+[8mha:////4GTfwzAMzvTL4YbnGs5JfGTk2RusDQ/Wx+iwPSQhlpu3AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] { (check-folder-respaldos)
+[8mha:////4DaKU80+jRGYOY86t+bB2cMmXIAWkgm0C08OLmxwgNdmAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaoyVLaHxBMgiwpL/WWDdrTyRV/MOEjexcpJJ5k3zXm9Y5wQnSpZ7g73DrB2PYbR18YlSfws0cU9XrgkzBcOlmSR15rygpGJgCWtgJWBjUAfKDm2BrfDqodqg0LaXkup3FNC4boAnMFHNRaXyhTnB7j52mfDn+SuAORZg+9pD/AAeoCAqvAAAAA==[0m[Pipeline] echo
+ existe
+[8mha:////4Ke0QVrKzJo9b1QYJzbi24WZ+t2nE6G9tZv2j2A9DsIbAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBDglR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYO0G2F+S7bfcBITL9lL0AAAA=[0m[Pipeline] echo
+El directorio /home/jobs_respaldo/jobs ya existe
+[8mha:////4MlqxuZI0gwt3MAlcAH7+VxrekIrxZEn7YABj9fScl3WAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KEzcQ4uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8AHk6T5r0AAAA=[0m[Pipeline] }
+[8mha:////4J4Cp3SG+C6uUQKhHsHmZP5J6ykWzhKEYEb3MXNi1fPqAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRNBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPXymMMb0AAAA=[0m[Pipeline] // stage
+[8mha:////4Jtr75WYUQndZ0T64HP2bjmkBYNQKL9nSkPeuASLJ+aZAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjBB2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2Gw/x/INGJa+18EAAAA=[0m[Pipeline] stage
+[8mha:////4I+wzdMZwy+Q12DVnlRR/yOFbEHnZe8Vd/NdG0EzZSHcAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] { (Back_up_jobs)
+[8mha:////4L+zEaa1RykruiNmEAszsIBWSYlTFRdCaLPfOVgDn/DMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN8W7Eii+AAAA[0m[Pipeline] checkout
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/hidraxos/jobs_vencidos
+ > git init /var/jenkins_home/workspace/jobs_vencidos/backup_jobs_vencidos # timeout=10
+Fetching upstream changes from https://github.com/hidraxos/jobs_vencidos
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/hidraxos/jobs_vencidos +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/hidraxos/jobs_vencidos # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 07569c7401af8d53bb38da2e0c57282865c8d6cc (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 07569c7401af8d53bb38da2e0c57282865c8d6cc # timeout=10
+Commit message: "Update jobs.txt"
+ > git rev-list --no-walk 07569c7401af8d53bb38da2e0c57282865c8d6cc # timeout=10
+[8mha:////4Kz9nWCS9qLkE6H0cnSe/1UpPux/kr9i5c6us+DHdWO6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEG6D8DvgAAAA==[0m[Pipeline] readFile
+[8mha:////4Nr0CJVWa7Q4LkCVgx3KXAV6XDvg3gKA4IudqEcJbrGvAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCQKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q1H2SQavgAAAA==[0m[Pipeline] echo
+[43m############ Comenzando Respaldo de Jobs ############[0m
+[8mha:////4Hlp7QkAoHTpq1lUU+7UrEw5sYJynoGsDqy3tQm3DsXAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJAokRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q2IxbydvgAAAA==[0m[Pipeline] echo
+/sshpass-withCredentials existe
+[8mha:////4J0t7RJrk8+bJr9sClc7gK/zOZjETDHXPykNNyA/gbRhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJBqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHJ9KeEvgAAAA==[0m[Pipeline] echo
+/sshpass-withCredentials/config.xml existe
+[8mha:////4IgOkTxt8s5pV6KyKes4mglRPJF++8GJfSSQLkvIyN37AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICiA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPtnxI1e+AAAA[0m[Pipeline] echo
+/Script_parameters existe
+[8mha:////4O7/iO3gnFBNfdUlzJNn1duHMljCiYyio5LGGery4RA+AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiIDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP5jAOE6+AAAA[0m[Pipeline] echo
+/Script_parameters/config.xml existe
+[8mha:////4CgAeocORz64uTIeDSvux2e4K3iAOVTd8ASNygN6YZ+kAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRER2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNknKPeHXHXtP1uTFWW+AAAA[0m[Pipeline] echo
+/jobs_vencidos existe
+[8mha:////4CGk7rkJkWNYRsmFM3RtXhtRhUUm98h/Nxg9liwisnSoAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIjPh1KRWu54QQmMcaJtRtsB6fiRFyNO2ARiYopRvOmea83LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKLeHXLv98AEaog58vgAAAA==[0m[Pipeline] echo
+/jobs_vencidos/config.xml existe
+[8mha:////4Gle34s6p7nFYeBY/2b7MvnHXgnYQ1L4YbOrlyQzoGQLAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKPd1rkPtP900TzO+AAAA[0m[Pipeline] echo
+/jobs_vencidos/jobs existe
+[8mha:////4FD0ySulAXcILAgcMd13xRRnluOlVfLjnCt3dCW1fb1bAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKLf7XLvD8AGcBVQqvgAAAA==[0m[Pipeline] echo
+/jobs_vencidos/jobs/backup_jobs_vencidos existe
+[8mha:////4Aq2TVDw81tlV6fEgkiFlaKSCNtrnF9RbuG2JgF4bWOHAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrnd59odhg9fVnkBvgAAAA==[0m[Pipeline] echo
+/jobs_vencidos/jobs/backup_jobs_vencidos/config.xml existe
+[8mha:////4Lz9hAZ1nD1xBcS5Iw2xMp0za328safPCmaPxs4y8B00AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrtPtfuMHwAHmdiGL4AAAA=[0m[Pipeline] echo
+[42m############ Respaldo de Jobs EXITOSO ############[0m
+[8mha:////4Fycv1xBnSzhhNlBsSERAHbQAzIxgZ8FCDFRxSsz7RcaAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrtPtfuMHwA0Xv6n74AAAA=[0m[Pipeline] echo
+[43m############ Comenzando comprimido .tar.gz ############[0m
+[8mha:////4C6BarH8F6h2pAaRF6d7ZyD51WyF7zUz4gtGSbn5xItLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEA1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrnd59odhg+QSuGGvgAAAA==[0m[Pipeline] sh
++ tar -czvf job_vencidos.tar.gz /home/jobs_respaldo/jobs
+tar: Removing leading `/' from member names
+/home/jobs_respaldo/jobs/
+/home/jobs_respaldo/jobs/Script_parameters/
+/home/jobs_respaldo/jobs/Script_parameters/config.xml
+/home/jobs_respaldo/jobs/sshpass-withCredentials/
+/home/jobs_respaldo/jobs/sshpass-withCredentials/config.xml
+/home/jobs_respaldo/jobs/jobs_vencidos/
+/home/jobs_respaldo/jobs/jobs_vencidos/config.xml
+/home/jobs_respaldo/jobs/jobs_vencidos/jobs/
+/home/jobs_respaldo/jobs/jobs_vencidos/jobs/backup_jobs_vencidos/
+/home/jobs_respaldo/jobs/jobs_vencidos/jobs/backup_jobs_vencidos/config.xml
+[8mha:////4AhAcghvS7bgfEMpD9PBfvAEuvRB7NbjSkPI0VakXA0uAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICgg6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPu6b4Va+AAAA[0m[Pipeline] echo
+[42m############ Comprimido EXITOSO ############[0m
+[8mha:////4HDGQTvuuoPcKiMB5Ra4BiNsBanTo5p7EAeBOJdobL1FAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP6+q+k++AAAA[0m[Pipeline] echo
+[43m############  Carga de .tar.gz a Nexus ############[0m
+[8mha:////4HF0rhlzoO4wnOtDqVXTguL0JW0B7muA5Abkiu+4BStqAAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU/GyoE2vUhROEJoSk0XslSUknTsTVuAOBSkx4sGxL1vd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2y77edZvQEEsWJ9wgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4Aup6+Kodhn9NrCwZ0lAHwMsCpaoF5iKzITUECHP+ylXAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] {
+[8mha:////4AiYvw6qGpeq5akJBByqgKdY7JvInZKVQtW9OjCIzkbvAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxM6xsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NGWcPtb4AAAA=[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ curl -v -u admin:**** -X POST http://192.168.1.110:8081/service/rest/v1/components?repository=Jobs_vencidos -F maven2.groupId=oisvoisnrvrd -F maven2.artifactId=vrnvisudbv -F maven2.version=fefefll -F maven2.asset1=@/var/jenkins_home/workspace/jobs_vencidos/backup_jobs_vencidos/job_vencidos.tar.gz;type=application/x-tgz -F maven2.asset1.extension=tar.gz
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 192.168.1.110:8081...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to 192.168.1.110 (192.168.1.110) port 8081 (#0)
+* Server auth using Basic with user 'admin'
+> POST /service/rest/v1/components?repository=Jobs_vencidos HTTP/1.1
+> Host: 192.168.1.110:8081
+> Authorization: Basic YWRtaW46Z2FsdmlzMDMyMA==
+> User-Agent: curl/7.74.0
+> Accept: */*
+> Content-Length: 4615
+> Content-Type: multipart/form-data; boundary=------------------------021e3b83cbc79d69
+> 
+} [4615 bytes data]
+* We are completely uploaded and fine
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 204 No Content
+< Date: Tue, 08 Mar 2022 14:05:22 GMT
+< Server: Nexus/3.32.0-03 (OSS)
+< X-Content-Type-Options: nosniff
+< 
+100  4615    0     0  100  4615      0   7407 --:--:-- --:--:-- --:--:--  7407100  4615    0     0  100  4615      0   7407 --:--:-- --:--:-- --:--:--  7395
+* Connection #0 to host 192.168.1.110 left intact
+[8mha:////4FuZGJGD1SAOfao8wD7k+bg6J7vHvUg0y42XcTd3t5C/AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZKwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfGxSHer4AAAA=[0m[Pipeline] }
+[8mha:////4KqNrge1xeGWPvBi4h2XWPsU8DxiSz0FP4VuhyQKsUFUAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgEjVhSLvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4JHI/Cevf5nu8GQGaNemVcrkLP7Hooam2C3XsMVSii9JAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrtPtfuMHwAKQ2gGb4AAAA=[0m[Pipeline] echo
+[42m############  Carga a Nexus EXITOSA ############[0m
+[8mha:////4KtM4QFEMgj88ecp2UQ/h3fc5yBJvgzKOfjeYieLJaYbAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8A5PBLar4AAAA=[0m[Pipeline] }
+[8mha:////4OsBaUw9gsG431TVheaY7Ea80jAq9FGJKbV3YFRjaGQHAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRSoUQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrQ659/QHitnM/vgAAAA==[0m[Pipeline] // stage
+[8mha:////4OybUjVqd5jZhXNFZ46EHn5R+v2RAW1pJSjBUYhbECZQAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRDkQ5R0VpueIFJjHFi3QX7QlLxIr7GHzBEomKrnZVW83xBmSIcKDrZWew9psbLIYwuNzlR7C+BJtnRWTaEiYKV2k6aWntcUBNbWCIKWClYW2wCJY+OYaM6czdVMOiqE8e87RUUvr3BA4TKZjaRvzBH2F7HNhH+PH8FMA8MomYo6t3nWL4BEcsSA8EAAAA=[0m[Pipeline] stage
+[8mha:////4KLIofLtrT/epsg8qr0leqlR0gwLACmwYnhLn8sTWpwGAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUJDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAbb5KxbCAAAA[0m[Pipeline] { (Eliminar Jobs)
+[8mha:////4EKaoG+Lmuta2W/yCp1KKtw846BtRdLyGp/cUHFybTq5AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BsbtagO+AAAA[0m[Pipeline] }
+[8mha:////4IWdu9zwxe4gVR6eq70H2v+HB7R1F5t+gZJ6+QWeH81pAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BvUOMb++AAAA[0m[Pipeline] // stage
+[8mha:////4DX5yyhVebmDsQeZ+e4xK/DDMwhHBqF9EzETjTdQAAUSAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0dI6VbYbGE0SIMZDZhWQRKk/k1byDjMxY+av/XvNeb2xTxImjU62lzlOqverD6JanJo7dLfCkWr6qmilxsKqyU8WNPa9YsVisy3JsNHaW6sDJkxPsdWsepgiGXHGRuLijRu6bAU9keimLifKFOeJwH5vE9Ov8DWDue0FeloKs/AD2HAh3vQAAAA==[0m[Pipeline] }
+[8mha:////4FuDC8m37xgbjNShJk3dwdCyWaVBp6zDScWsa4D/faXvAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId3tBtv0A5aAM1L0AAAA=[0m[Pipeline] // node
+[8mha:////4Bd6UNOeTgW+he6gwKxylGG+KdWF7BtX/iWXKAHOYbAKAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+AKPqq+S9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

@@ -1,0 +1,40 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@3.0.0">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
+    <com.synopsys.arc.jenkinsci.plugins.jobrestrictions.jobs.JobRestrictionProperty plugin="job-restrictions@0.8"/>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2659.v52d3de6044d0">
+    <script>@Library(&apos;SSHConnect@master&apos;)
+import java.io.*;
+import com.aestasit.infrastructure.ssh.DefaultSsh.*
+
+node(&apos;master&apos;){
+    stage(&apos;ssh&apos;){
+trustUnknownHosts = true
+remoteSession(&apos;hidraxos:galvis0425@192.168.1.110&apos;) {
+  exec &apos;cd /home/hidraxos/Escritorio/Ejercicios/Groovy &amp;&amp; ls &gt; pruebaMamalona.txt&apos;
+  scp {
+  	from { localFile &quot;/home/hidraxos/Escritorio/Ejercicios/Groovy/pruebaMamalona.txt&quot; }
+  	into { remoteFile &quot;/home/hidraxos/Escritorio/Ejercicios/pruebaMamalona.txt&quot;}
+  }
+}
+
+def file = new File(&apos;/home/hidraxos/Escritorio/Ejercicios/pruebaMamalona.txt&apos;)
+def fprList = []
+    file.eachLine{line -&gt;
+      fprList &lt;&lt; line
+    }
+println fprList
+}
+}</script>
+    <sandbox>false</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

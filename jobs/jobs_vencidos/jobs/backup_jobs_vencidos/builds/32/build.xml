@@ -1,0 +1,195 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction plugin="workflow-cps@2648.va9433432b33c">
+      <replacementLoadedScripts/>
+    </org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.workflow.cps.replay.ReplayCause plugin="workflow-cps@2648.va9433432b33c">
+            <originalNumber>31</originalNumber>
+          </org.jenkinsci.plugins.workflow.cps.replay.ReplayCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@552.vd9cc05b8a2e1">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.10.3">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.11.0">
+              <sha1>10280404a349a5f1119f3a65d75112a0a61dabb6</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>32</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/hidraxos/jobs_vencidos</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.13">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/hidraxos/jobs_vencidos</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>629</queueId>
+  <timestamp>1646173186014</timestamp>
+  <startTime>1646173186591</startTime>
+  <result>SUCCESS</result>
+  <duration>18042</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>import groovy.transform.Field
+import groovy.json.JsonSlurper
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.io.*;
+import org.w3c.dom.*;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.ParserConfigurationException;
+import groovy.json.JsonSlurper
+import java.text.SimpleDateFormat;
+    
+    
+node{
+    stage(&apos;Back_up_jobs&apos;){
+        checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[url: &apos;https://github.com/hidraxos/jobs_vencidos&apos;]]])
+        def jobs = readFile(&apos;jobs.txt&apos;).readLines();
+        if(!jobs.isEmpty()){
+            println &quot;yes&quot;
+            respaldos(jobs)
+        }
+    }
+}
+def respaldos(def jobs){
+    for(i in jobs){
+        println i
+        if(i.contains(&apos;/&apos;)){
+            def nameFolder = i.tokenize(&apos;/&apos;) 
+            println nameFolder
+            try{
+                sh&quot;&quot;&quot;
+                    mkdir /var/jenkins_home/jobs_respaldo/${nameFolder[0]}
+                &quot;&quot;&quot;
+            }catch(Exception erroTotal){
+                println &quot;El directorio ${nameFolder[0]} ya existe&quot;
+            }
+            sh&quot;&quot;&quot;
+                cp /var/jenkins_home/jobs/${nameFolder[0]}/config.xml /var/jenkins_home/jobs_respaldo/${nameFolder[0]}
+            &quot;&quot;&quot;
+            try{
+                sh&quot;&quot;&quot;
+                    mkdir /var/jenkins_home/jobs_respaldo/${nameFolder[0]}/jobs
+                &quot;&quot;&quot;
+            }catch(Exception errorTotal){
+            }
+            if(nameFolder.size()==4){
+                println &quot;La ruta tiene 3 carpetas&quot;
+            try{
+                sh&quot;&quot;&quot;
+                    mkdir /var/jenkins_home/jobs_respaldo/${nameFolder[0]}/jobs/${nameFolder[1]}/jobs/${nameFolder[2]}/jobs
+                &quot;&quot;&quot;
+            }catch(Exception erroTotal){
+                println &quot;El directorio ${nameFolder[2]} ya existe&quot;
+            }
+            sh&quot;&quot;&quot;
+                cp /var/jenkins_home/jobs/${nameFolder[0]}/config.xml /var/jenkins_home/jobs_respaldo/${nameFolder[0]}
+            &quot;&quot;&quot;
+            try{
+                sh&quot;&quot;&quot;
+                    mkdir /var/jenkins_home/jobs_respaldo/${nameFolder[0]}/${nameFolder[1]}/${nameFolder[2]}
+                &quot;&quot;&quot;
+            }catch(Exception erroTotal){
+                println &quot;El directorio ${nameFolder[2]} ya existe&quot;
+            }
+            }
+        }
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>8662835269</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>16748944</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>13490677604</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>38716517</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>3228118372</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>56</iota>
+    <head>1:56</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.10.3">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/hidraxos/jobs_vencidos</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/jobs_vencidos/Jobs_Vencidos</workspace>
+      <changelogFile>/var/jenkins_home/jobs/jobs_vencidos/jobs/Jobs_Vencidos/builds/32/changelog4675904073934961612.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

@@ -1,0 +1,9 @@
+commit 335a2649901e79d7a9d4c03b25a7733287f67a2f
+tree 60c0105bb196f95ed4fd65abba435fa3b3db7cd6
+parent f83e9f893b7c78fc6d555c52ddf67ac6a9bb6857
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-03-01 22:12:42 -0500
+committer GitHub <noreply@github.com> 2022-03-01 22:12:42 -0500
+
+    nuevos jobs
+
+:100644 100644 ae5cba263af6eedcd6e351fab3e79cc5b0da9cf7 c7370b3fd486b0e7988886bbd7ec59648aefc86d M	jobs.txt
