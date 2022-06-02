@@ -1,31 +1,19 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <Tag plugin="workflow-support@820.vd1a_6cc65ef33">
-  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+  <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@1153.vb_912c0e47fb_a_">
     <parentIds>
-      <string>14</string>
+      <string>21</string>
     </parentIds>
-    <id>15</id>
-    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+    <id>22</id>
+    <startId>2</startId>
+    <result>
+      <name>FAILURE</name>
+      <ordinal>2</ordinal>
+      <color>RED</color>
+      <completeBuild>true</completeBuild>
+    </result>
   </node>
   <actions>
-    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
-      <arguments>
-        <entry>
-          <string>script</string>
-          <string>
-                git add .
-                git commit -am &apos;respaldo Thu Jun 02 19:20:49 UTC 2022&apos;
-                git push -u origin master&quot;
-            </string>
-        </entry>
-      </arguments>
-      <sensitiveVariables/>
-      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
-    </cps.a.ArgumentsActionImpl>
-    <wf.a.TimingAction plugin="workflow-api@1153.vb_912c0e47fb_a_">
-      <startTime>1654197655304</startTime>
-    </wf.a.TimingAction>
-    <s.a.LogStorageAction/>
     <wf.a.ErrorAction plugin="workflow-api@1153.vb_912c0e47fb_a_">
       <error class="hudson.AbortException">
         <detailMessage>script returned exit code 2</detailMessage>
@@ -43,5 +31,8 @@
         <suppressedExceptions class="empty-list"/>
       </error>
     </wf.a.ErrorAction>
+    <wf.a.TimingAction plugin="workflow-api@1153.vb_912c0e47fb_a_">
+      <startTime>1654197657700</startTime>
+    </wf.a.TimingAction>
   </actions>
 </Tag>

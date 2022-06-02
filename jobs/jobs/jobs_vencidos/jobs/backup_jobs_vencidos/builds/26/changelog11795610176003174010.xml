@@ -1,9 +1,0 @@
-commit 18069adf23314ffc08c2e63497636b3c2cbbad45
-tree 0461ed6b98c82173303b11c01de4d9ce0e1608b6
-parent 7496cf4657f8f2c40633e0291ab2c62fe19c4292
-author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-02-28 15:51:16 -0500
-committer GitHub <noreply@github.com> 2022-02-28 15:51:16 -0500
-
-    prueba carpetas
-
-:100644 100644 e744cba0fdf84ef2c4fc70f85056097e74727a8f 6f666add5251d4594d803ee07afb15ca3df60dc3 M	jobs.txt

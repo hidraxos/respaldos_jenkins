@@ -1,9 +1,0 @@
-commit f02e85793c8b50320dfa37e420f1404f78ed3eb2
-tree 7c3522b3e0504aa81ea3158f3612f1900cb235c7
-parent da60ab295eae10947dbb8b73b2316ce31460ed76
-author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-03-14 10:50:28 -0500
-committer GitHub <noreply@github.com> 2022-03-14 10:50:28 -0500
-
-    Update jobs.txt
-
-:100644 100644 9ac8d974eff602f4b7ce512bbe3328b408d2b5ac 10088f1fb2bfb677fda46f37a8f74ca68d93e514 M	jobs.txt

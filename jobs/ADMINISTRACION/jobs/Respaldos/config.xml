@@ -1,6 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@1182.v60a_e6279b_579">
-  <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -10,6 +9,7 @@ import java.text.SimpleDateFormat;
 
 @Field def folders=[&quot;jobs&quot;,&quot;nodes&quot;,&quot;plugins&quot;,&quot;users&quot;]
 @Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+@Field def date = new Date()
 
 node(&apos;ubuntu&apos;){
     stage(&apos;respaldos&apos;){
@@ -21,14 +21,18 @@ node(&apos;ubuntu&apos;){
                     docker cp hidraxos:/var/jenkins_home/${folder}/ ./${folder}/
                 &quot;&quot;&quot;
             }
-            sh&quot;git push -u origin master&quot;
+            sh&quot;&quot;&quot;
+                git add .
+                git commit -am &quot;respaldo ${date}&quot;
+                git push -u origin master&quot;
+            &quot;&quot;&quot;
         }
     }
 }
 
 
 def printm(message, color){
-    def date = new Date()
+    
 	def	sdf = new SimpleDateFormat(&quot;M/d/yyyy HH:mm:ss&quot;)
     println &quot;\033[${color}m************ ${message} ************ ${sdf.format(date)}\033[0m&quot;
 }</script>

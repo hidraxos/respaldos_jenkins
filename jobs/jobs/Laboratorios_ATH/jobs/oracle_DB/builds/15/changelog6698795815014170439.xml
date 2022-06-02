@@ -1,9 +1,0 @@
-commit e507b63ef783b9d556f7569863ff3c746bdefbe6
-tree ed2d84bd9cedf6c4edf9fa2c4b897f27570a3d70
-parent 725a6ffca77684ecaaec13e26bc59ad8737f8f00
-author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-04-11 17:40:05 -0500
-committer GitHub <noreply@github.com> 2022-04-11 17:40:05 -0500
-
-    Update sql_prueba.txt
-
-:100644 100644 d3827e75a5cadb9fe4a27e1cb9b6d192e7323120 cd5ac039d67e0bdadb17976e4ac39f0ffe6bb6e4 M	sql_prueba.txt

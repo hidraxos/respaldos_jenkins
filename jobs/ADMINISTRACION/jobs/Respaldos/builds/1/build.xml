@@ -15,11 +15,11 @@
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
   </actions>
-  <queueId>1</queueId>
-  <timestamp>1654195418393</timestamp>
-  <startTime>1654195418398</startTime>
+  <queueId>21</queueId>
+  <timestamp>1654197583494</timestamp>
+  <startTime>1654197583507</startTime>
   <result>FAILURE</result>
-  <duration>911</duration>
+  <duration>7965</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -28,25 +28,31 @@
 import java.text.SimpleDateFormat;
 
 @Field def folders=[&quot;jobs&quot;,&quot;nodes&quot;,&quot;plugins&quot;,&quot;users&quot;]
+@Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+@Field def date = new Date()
+
 node(&apos;ubuntu&apos;){
     stage(&apos;respaldos&apos;){
-        printm(&quot;Se respaldaran las carpetas JOBS NODES PLUGINS USER&quot;)
+        printm(&quot;Se respaldaran las carpetas JOBS NODES PLUGINS USER&quot;,blue)
         dir(&apos;/home/jenkins/respaldos&apos;){
             sh&quot;rm -rf&quot;
             for(folder in folders){
                 sh&quot;&quot;&quot;
-                    rm -rf *
                     docker cp hidraxos:/var/jenkins_home/${folder}/ ./${folder}/
                 &quot;&quot;&quot;
             }
-            sh&quot;git push -u origin master&quot;
+            sh&quot;&quot;&quot;
+                git add .
+                git commit -am &quot;respaldo ${date}&quot;
+                git push -u origin master&quot;
+            &quot;&quot;&quot;
         }
     }
 }
 
 
 def printm(message, color){
-    def date = new Date()
+    
 	def	sdf = new SimpleDateFormat(&quot;M/d/yyyy HH:mm:ss&quot;)
     println &quot;\033[${color}m************ ${message} ************ ${sdf.format(date)}\033[0m&quot;
 }</script>
@@ -55,28 +61,28 @@ def printm(message, color){
     <timings class="concurrent-hash-map">
       <entry>
         <string>flowNode</string>
-        <long>107049579</long>
+        <long>245693469</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>89444082</long>
+        <long>14509194</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>592078691</long>
+        <long>886381922</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>208303084</long>
+        <long>31310815</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>230435411</long>
+        <long>187600126</long>
       </entry>
     </timings>
     <sandbox>true</sandbox>
-    <iota>11</iota>
-    <head>1:11</head>
+    <iota>22</iota>
+    <head>1:22</head>
     <done>true</done>
     <resumeBlocked>false</resumeBlocked>
   </execution>

@@ -12,14 +12,14 @@
       <arguments>
         <entry>
           <string>script</string>
-          <string>rm -rf</string>
+          <string>rm -rf *</string>
         </entry>
       </arguments>
       <sensitiveVariables/>
       <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
     </cps.a.ArgumentsActionImpl>
     <wf.a.TimingAction plugin="workflow-api@1153.vb_912c0e47fb_a_">
-      <startTime>1654195567902</startTime>
+      <startTime>1654197682759</startTime>
     </wf.a.TimingAction>
     <s.a.LogStorageAction/>
   </actions>

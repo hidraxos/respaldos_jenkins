@@ -12,14 +12,14 @@
       <arguments>
         <entry>
           <string>message</string>
-          <string>&#x1b;[46m************ Se respaldaran las carpetas JOBS NODES PLUGINS USER ************ 6/2/2022 18:44:57&#x1b;[0m</string>
+          <string>&#x1b;[46m************ Se respaldaran las carpetas JOBS NODES PLUGINS USER ************ 6/2/2022 19:20:49&#x1b;[0m</string>
         </entry>
       </arguments>
       <sensitiveVariables/>
       <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
     </cps.a.ArgumentsActionImpl>
     <wf.a.TimingAction plugin="workflow-api@1153.vb_912c0e47fb_a_">
-      <startTime>1654195497624</startTime>
+      <startTime>1654197649861</startTime>
     </wf.a.TimingAction>
     <s.a.LogStorageAction/>
   </actions>

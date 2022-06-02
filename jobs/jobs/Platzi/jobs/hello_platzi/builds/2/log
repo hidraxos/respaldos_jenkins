@@ -1,9 +1,0 @@
-Started by user [8mha:////4FOzSrmG3raY6HDDP9y9wpDOWKxndPOUq1Qi4lYApdk4AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgY+/dLi1CL9jMyUosSK/GIAIjQUGMMAAAA=[0mHerman Galvis
-Running as SYSTEM
-Building on the built-in node in workspace /var/jenkins_home/workspace/Platzi/hello_platzi
-Triggering projects: [8mha:////4NSZwgueRFbMSH+vTrwuAp539E9IwkyAC8qW4paNs4a8AAAAmx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQK2GQ08/KT9IPyEksqcoEMwsSixJzU0tSizKrUlP0AWYTRg+jAAAA[0mPlatzi » parameterized
-[hello_platzi] $ /bin/sh -xe /tmp/jenkins10066328161156203839.sh
-+ echo Hello Platzi
-Hello Platzi
-Triggering a new build of [8mha:////4BlKP0sfCnZhad4F1vFDdRQ2680Zl0gmR6BQAcuS06lWAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZJ/az8JP2AnMSSqkwwszyxJDkjtahYHwC/OWAtzgAAAA==[0mPlatzi » watchers
-Finished: SUCCESS
