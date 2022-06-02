@@ -12,3 +12,62 @@ Running in /home/jenkins/respaldos
 [8mha:////4II5eGifUbz0O+sOQAjr64xxp4V2abw4G/JGjKx5+Sq/AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] {
 [8mha:////4PTq+1aoFfCiXisn74Y8WOs3o74wPPsD3Z2jwjcujz5bAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBEiEqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBjJ8j2gny37T6VOYoyvQAAAA==[0m[Pipeline] sh
 + rm -rf jobs nodes plugins users
+[8mha:////4IlYg93IIe290K6TxdFFchO+ZNob2/8kUIc77dwslBUuAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KE0Rgn14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmXpDtBXlZ9h/UCJErvQAAAA==[0m[Pipeline] sh
++ docker cp hidraxos:/var/jenkins_home/jobs/ ./jobs/
+[8mha:////4Bv73ebD28FN3Equ5KvLgAtzIfSvH2ZYpAQRd0yv9292AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRdAhR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYO0G2F+TbXfcBF1u8AL0AAAA=[0m[Pipeline] sh
++ docker cp hidraxos:/var/jenkins_home/nodes/ ./nodes/
+[8mha:////4O/4xOZuNz9GF4k4g2W5ViNq69RAHZ7v7SgSGWp3KgTtAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRokKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2AmyvSDf7roPVmqnGb0AAAA=[0m[Pipeline] sh
++ docker cp hidraxos:/var/jenkins_home/plugins/ ./plugins/
+[8mha:////4KxcBFilh+ZjmEFU4Vvvyom+VL3UL6U34jX4NP7FYE+FAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREg1CVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axk6Q7QX5dtd9AJH85la9AAAA[0m[Pipeline] sh
++ docker cp hidraxos:/var/jenkins_home/users/ ./users/
+[8mha:////4B71JJ25+l1DX5OCughtfuJB0Z14lfwJjXc9EY1lK3H/AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBQVCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axk6Q7QX5dtd9ANDN/U+9AAAA[0m[Pipeline] sh
++ git add .
++ git commit -am respaldo Thu Jun 02 19:24:05 UTC 2022
+Auto empaquetado del repositorio en segundo plano para un rendimiento óptimo.
+Mira "git help gc" para limpieza manual.
+warning: El último gc reportó lo siguiente. Por favor corrige la causa
+y elimine .git/gc.log.
+Limpieza automática no se realizará hasta que el archivo sea eliminado.
+
+error: pack-objects died of signal 15
+fatal: failed to run repack
+
+[master 04386d6] respaldo Thu Jun 02 19:24:05 UTC 2022
+ 31 files changed, 656 insertions(+), 16 deletions(-)
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/12.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/13.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/14.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/15.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/16.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/17.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/18.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/19.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/20.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/21.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/5/workflow/22.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/build.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/log
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/log-index
+ rename jobs/ADMINISTRACION/jobs/Respaldos/builds/{5 => 6}/program.dat (96%)
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/10.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/11.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/2.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/3.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/4.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/5.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/6.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/7.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/8.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/9.xml
++ git push -u origin master
+To github.com:hidraxos/respaldos_jenkins.git
+   07d52bd..04386d6  master -> master
+Rama 'master' configurada para hacer seguimiento a la rama remota 'master' de 'origin'.
+[8mha:////4JAHRVGEhlOGV41N12HVRmvEO1HN/lEB7Kjs4lo9qiULAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDRJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AJiitCO9AAAA[0m[Pipeline] }
+[8mha:////4LTy1iimu6sNl8hH97yAFeoeveedYi+nemZMxc5NqOqzAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFUiIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPvrvTab0AAAA=[0m[Pipeline] // dir
+[8mha:////4Eyan/5pvX9SxlGT9Pe8wrFzXeJM3yXERjiZOOiX4OVqAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDUJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AGgBOwy9AAAA[0m[Pipeline] }
+[8mha:////4AW4CEHF8JDGVfbri2jupf/GtNzdDp/xYSEsqpyqj20gAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBQVCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AGJ5Uqi9AAAA[0m[Pipeline] // stage
+[8mha:////4DzfUT1BYKdKkSXO1jCAW2tqHwjXBMGhZn1DJGq3YyeBAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBiA5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8BK1nRVL0AAAA=[0m[Pipeline] }
+[8mha:////4K5ItaQcGnJhOF+GQNNw8lTZT0+6Z9pIle35cVliujScAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRUCIqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny3VaQ7T845dX3vQAAAA==[0m[Pipeline] // node
+[8mha:////4KlL9YDa8NJwc49WlVMIlvFg3O+A/QKh+bLb6fVMCS+oAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkrMbJtWHxCyrUWmjeg/YhTH6Rv+Y/SCRx8k73nOW83timiBNHp1pLnadUe9WH0S1PTRy7W+BJtXxVNVPiYFVlp4obe16xYrFYl+XYaOws1YGTJyfY69Y8TBEMueIicXFHjdw3A57I9FIWE+ULc8ThPjaJ6df5G8Dc94K8LAVZ+QF+r3LHvQAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

@@ -18,7 +18,8 @@
   <queueId>31</queueId>
   <timestamp>1654197845429</timestamp>
   <startTime>1654197845441</startTime>
-  <duration>0</duration>
+  <result>SUCCESS</result>
+  <duration>10933</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -60,7 +61,7 @@ def printm(message, color){
     <timings class="concurrent-hash-map">
       <entry>
         <string>flowNode</string>
-        <long>102848984</long>
+        <long>217985291</long>
       </entry>
       <entry>
         <string>classLoad</string>
@@ -68,7 +69,7 @@ def printm(message, color){
       </entry>
       <entry>
         <string>run</string>
-        <long>254657366</long>
+        <long>871128897</long>
       </entry>
       <entry>
         <string>parse</string>
@@ -76,16 +77,15 @@ def printm(message, color){
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>44326144</long>
+        <long>202820195</long>
       </entry>
     </timings>
     <sandbox>true</sandbox>
-    <iota>11</iota>
-    <head>1:11</head>
-    <start>2</start>
-    <done>false</done>
+    <iota>22</iota>
+    <head>1:22</head>
+    <done>true</done>
     <resumeBlocked>false</resumeBlocked>
   </execution>
-  <completed>false</completed>
+  <completed>true</completed>
   <checkouts class="hudson.util.PersistedList"/>
 </flow-build>
