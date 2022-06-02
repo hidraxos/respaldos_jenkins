@@ -1,0 +1,37 @@
+Started by user [8mha:////4FOzSrmG3raY6HDDP9y9wpDOWKxndPOUq1Qi4lYApdk4AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgY+/dLi1CL9jMyUosSK/GIAIjQUGMMAAAA=[0mHerman Galvis
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+WorkflowScript: 28: Undefined section "optioms" @ line 28, column 5.
+       optioms{
+       ^
+
+WorkflowScript: 32: The ‘properties’ section has been renamed as of version 0.8. Use ‘options’ instead. @ line 32, column 9.
+           properties([parameters([
+           ^
+
+WorkflowScript: 36: Undefined section "stage" @ line 36, column 5.
+       stage('Preparation') { 
+       ^
+
+WorkflowScript: 26: Missing required section "stages" @ line 26, column 1.
+   pipeline{
+   ^
+
+4 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToPrimaryClassNodes(CompilationUnit.java:1107)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:624)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:602)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:579)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:323)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:293)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:677)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:689)
+	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.doParse(CpsGroovyShell.java:142)
+	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.reparse(CpsGroovyShell.java:127)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.parseScript(CpsFlowExecution.java:571)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.start(CpsFlowExecution.java:523)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:335)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+Finished: FAILURE

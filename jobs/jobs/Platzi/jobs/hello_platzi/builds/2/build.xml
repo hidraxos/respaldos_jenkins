@@ -1,0 +1,39 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.parameterizedtrigger.BuildInfoExporterAction plugin="parameterized-trigger@2.43">
+      <builds>
+        <hudson.plugins.parameterizedtrigger.BuildInfoExporterAction_-BuildReference>
+          <projectName>Platzi/parameterized</projectName>
+          <buildNumber>0</buildNumber>
+          <buildResult>NOT_BUILT</buildResult>
+        </hudson.plugins.parameterizedtrigger.BuildInfoExporterAction_-BuildReference>
+      </builds>
+      <lastReference reference="../builds/hudson.plugins.parameterizedtrigger.BuildInfoExporterAction_-BuildReference"/>
+    </hudson.plugins.parameterizedtrigger.BuildInfoExporterAction>
+  </actions>
+  <queueId>164</queueId>
+  <timestamp>1644529139264</timestamp>
+  <startTime>1644529139318</startTime>
+  <result>SUCCESS</result>
+  <duration>8</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/Platzi/hello_platzi</workspace>
+  <hudsonVersion>2.333</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

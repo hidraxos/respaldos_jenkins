@@ -1,0 +1,116 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2064.v5eef7d0982b_e"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2064.v5eef7d0982b_e">
+      <jobProperties/>
+      <triggers/>
+      <parameters>
+        <string>Refresh_Param</string>
+        <string>SQL</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>5</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@3.0.0">
+      <leastLoadDisabled>false</leastLoadDisabled>
+    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
+    <com.synopsys.arc.jenkinsci.plugins.jobrestrictions.jobs.JobRestrictionProperty plugin="job-restrictions@0.8"/>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Refresh_Param</name>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>SQL</name>
+          <description>Enter SQL code</description>
+          <trim>false</trim>
+        </hudson.model.TextParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2659.v52d3de6044d0">
+    <script>import groovy.transform.Field
+import java.io.*;
+
+@Field def hostDB = &apos;192.168.1.110&apos;
+@Field def portDB = &apos;51521&apos;
+@Field def sidDB = &apos;XE&apos;
+@Field def credentials = &apos;oracleDB&apos;
+@Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+
+pipeline{
+    agent any
+    parameters{
+        booleanParam(name: &apos;Refresh_Param&apos;, defaultValue: false, description: &apos;&apos;)
+        text(name: &apos;SQL&apos;, defaultValue: &apos;&apos;, description: &apos;Enter SQL code&apos;)
+    }
+    stages{
+        stage(&apos;Create .sql&apos;){
+            steps{
+              script{
+                cleanWs()
+                if(!params.&apos;Refresh_Param&apos;){
+                  println params.&quot;SQL&quot;
+                  sh &quot;&quot;&quot;
+                    echo &quot;${params.&apos;SQL&apos;}&quot; &gt; script.sql
+                  &quot;&quot;&quot;
+                }
+              }
+            }
+        }
+        stage(&apos;Execute script&apos;){
+          steps{
+            script{
+              if(!params.&apos;Refresh_Param&apos;){
+                SQL()
+                analisisLog()
+              }
+            }
+          }
+        }
+    }
+}
+
+def SQL(){
+    withCredentials([usernamePassword(credentialsId: credentials, usernameVariable: &apos;USERNAME&apos;, passwordVariable: &apos;PASSWORD&apos;)]) {
+		sh &quot;&quot;&quot;
+      sqlplus64 &apos;${USERNAME}/${PASSWORD}@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=${hostDB})(Port=${portDB}))(CONNECT_DATA=(SID=${sidDB})))&apos; @script.sql |tee -a script.log
+
+		&quot;&quot;&quot;
+	}	
+}
+def analisisLog(){
+  def listLog = readFile(&apos;script.log&apos;).readLines()
+  def dic = [&apos;ORA-&apos;,&apos;SP2-&apos;]
+  for(i in listLog){
+    for(e in dic){
+      if(i.contains(e)){
+        printm(&quot;[ERROR] ${i}&quot;,red)
+        error(&quot;[ERROR]&quot;)
+      }
+    }
+  }
+}
+def printm(message,color){
+  ansiColor{
+    println(&quot;\033[${color}m############ ${message} ############\033[0m&quot;)
+  }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

@@ -1,0 +1,172 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction plugin="workflow-cps@2659.v52d3de6044d0">
+      <replacementLoadedScripts/>
+    </org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.workflow.cps.replay.ReplayCause plugin="workflow-cps@2659.v52d3de6044d0">
+            <originalNumber>9</originalNumber>
+          </org.jenkinsci.plugins.workflow.cps.replay.ReplayCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@564.ve62a_4eb_b_e039">
+      <libraries>
+        <org.jenkinsci.plugins.workflow.libs.LibraryRecord>
+          <name>SSHConnect</name>
+          <version>master</version>
+          <variables class="sorted-set"/>
+          <trusted>true</trusted>
+          <changelog>true</changelog>
+          <directoryName>9de081b2cbf1011693db923fbca55fbdab73b7d9670a9c2f2c72592252f94ba9</directoryName>
+        </org.jenkinsci.plugins.workflow.libs.LibraryRecord>
+      </libraries>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.10.3">
+      <buildsByBranchName>
+        <entry>
+          <string>master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.11.0">
+              <sha1>57e66a1843da2dcaceeec64be8adbcefbfcfecf4</sha1>
+              <branches class="singleton-set">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>10</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/hidraxos/SSHlibrary.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.13">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/hidraxos/SSHlibrary.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2659.v52d3de6044d0">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>99</queueId>
+  <timestamp>1649116340443</timestamp>
+  <startTime>1649116340852</startTime>
+  <result>FAILURE</result>
+  <duration>3963</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>@Library(&apos;SSHConnect@master&apos;)
+import java.io.*;
+import com.aestasit.infrastructure.ssh.DefaultSsh.*
+
+node(&apos;master&apos;){
+    stage(&apos;ssh&apos;){
+//trustUnknownHosts = true
+com.aestasit.infrastructure.ssh.DefaultSsh.remoteSession(&apos;hidraxos:galvis0425@192.168.1.110&apos;) {
+  exec &apos;cd /home/hidraxos/Escritorio/Ejercicios/Groovy &amp;&amp; ls &gt; pruebaMamalona.txt&apos;
+  scp {
+  	from { localFile &quot;/home/hidraxos/Escritorio/Ejercicios/Groovy/pruebaMamalona.txt&quot; }
+  	into { remoteFile &quot;/home/hidraxos/Escritorio/Ejercicios/pruebaMamalona.txt&quot;}
+  }
+}
+
+def file = new File(&apos;/home/hidraxos/Escritorio/Ejercicios/pruebaMamalona.txt&apos;)
+def fprList = []
+    file.eachLine{line -&gt;
+      fprList &lt;&lt; line
+    }
+println fprList
+}
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1291551394</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>76127140</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2026212523</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>1656452965</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>434781809</long>
+      </entry>
+    </timings>
+    <sandbox>false</sandbox>
+    <iota>11</iota>
+    <head>1:11</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.10.3">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <name>origin</name>
+            <refspec>+refs/heads/master:refs/remotes/origin/master</refspec>
+            <url>https://github.com/hidraxos/SSHlibrary.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <browser class="hudson.plugins.git.browser.GithubWeb">
+          <url>https://github.com/hidraxos/SSHlibrary</url>
+        </browser>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <jenkins.plugins.git.GitSCMSourceDefaults>
+            <includeTags>false</includeTags>
+          </jenkins.plugins.git.GitSCMSourceDefaults>
+          <hudson.plugins.git.extensions.impl.BuildChooserSetting>
+            <buildChooser class="jenkins.plugins.git.AbstractGitSCMSource$SpecificRevisionBuildChooser">
+              <revision reference="../../../../../../../actions/hudson.plugins.git.util.BuildData/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked"/>
+            </buildChooser>
+          </hudson.plugins.git.extensions.impl.BuildChooserSetting>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/Laboratorios_ATH/ScriptVersionesSAP@libs/031a8013b97942368ee6a911d5175ad024ced130f051592c546d747f2b233860</workspace>
+      <changelogFile>/var/jenkins_home/jobs/Laboratorios_ATH/jobs/ScriptVersionesSAP/builds/10/changelog15292332420795317300.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

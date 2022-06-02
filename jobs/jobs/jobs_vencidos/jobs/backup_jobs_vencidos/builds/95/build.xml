@@ -1,0 +1,199 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction plugin="workflow-cps@2659.v52d3de6044d0">
+      <replacementLoadedScripts/>
+    </org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.workflow.cps.replay.ReplayCause plugin="workflow-cps@2659.v52d3de6044d0">
+            <originalNumber>94</originalNumber>
+          </org.jenkinsci.plugins.workflow.cps.replay.ReplayCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>Archivo</name>
+          <description>Nombre del Archivo sin el .txt</description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Archivo</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@564.ve62a_4eb_b_e039">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>769</queueId>
+  <timestamp>1646318568807</timestamp>
+  <startTime>1646318569320</startTime>
+  <result>FAILURE</result>
+  <duration>2088</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>import groovy.transform.Field
+import groovy.json.JsonSlurper
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.io.*;
+import org.w3c.dom.*;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.ParserConfigurationException;
+import groovy.json.JsonSlurper
+import java.text.SimpleDateFormat;
+    
+@Field def ruta = &quot;&quot;
+@Field def existe
+    
+node{
+    stage(&apos;check-folder-respaldos&apos;){
+        validate(&quot;&quot;)
+        if(existe == false){
+            sh&quot;&quot;&quot;
+                mkdir /var/jenkins_home/jobs_respaldo
+            &quot;&quot;&quot;
+        }else{
+            println &quot;El directorio /var/jenkins_home/jobs_respaldos ya existe&quot;
+        }
+    }
+    stage(&apos;Back_up_jobs&apos;){
+        checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[url: &apos;https://github.com/hidraxos/jobs_vencidos&apos;]]])
+        def jobs = readFile(&apos;jobs.txt&apos;).readLines();
+        if(!jobs.isEmpty()){
+            println &quot;yes&quot;
+            respaldos(jobs)
+            comprimido()
+        }
+    }
+}
+def respaldos(def jobs){
+    for(i in jobs){
+        println i
+        if(i.contains(&apos;/&apos;)){
+            def arreglo = i.tokenize(&apos;/&apos;)
+            println arreglo
+            for(e in 0..(arreglo.size()-1)){
+                ruta = ruta + &quot;/&quot; +arreglo[e]
+                println ruta
+                if(e != (arreglo.size()-1)){
+                    validate(ruta)
+                    if(existe == false){
+                        sh&quot;&quot;&quot;
+                            mkdir /var/jenkins_home/jobs_respaldo${ruta}
+                        &quot;&quot;&quot;
+                    }
+                    validate(ruta+&quot;/config.xml&quot;)
+                    if(existe == false){
+                        sh &quot;&quot;&quot;
+                          cp  /var/jenkins_home/jobs${ruta}/config.xml /var/jenkins_home/jobs_respaldo${ruta}
+                        &quot;&quot;&quot;
+                    }
+                    ruta = ruta + &quot;/jobs&quot;
+                    validate(ruta)
+                    if(existe == false){
+                        sh&quot;&quot;&quot;
+                            mkdir /var/jenkins_home/jobs_respaldo${ruta}
+                        &quot;&quot;&quot;
+                    }
+                }else{
+                    validate(ruta)
+                    if(existe == false){
+                        sh&quot;&quot;&quot;
+                            mkdir /var/jenkins_home/jobs_respaldo${ruta}
+                        &quot;&quot;&quot;
+                    }
+                    validate(ruta+&quot;/config.xml&quot;)
+                    if(existe == false){
+                        sh &quot;&quot;&quot;
+                          cp  /var/jenkins_home/jobs${ruta}/config.xml /var/jenkins_home/jobs_respaldo${ruta}
+                        &quot;&quot;&quot;
+                    }
+                }
+            }
+            ruta = &quot;&quot;
+        }else{
+            validate(ruta)
+            if(existe == false){
+                sh&quot;&quot;&quot;
+                    mkdir /var/jenkins_home/jobs_respaldo/${i}
+                &quot;&quot;&quot;
+            }
+            validate(ruta+&quot;/config.xml&quot;)
+            if(existe == false){
+                sh &quot;&quot;&quot;
+                  cp  /var/jenkins_home/jobs/${i}/config.xml /var/jenkins_home/jobs_respaldo/${i}
+                &quot;&quot;&quot;
+            }
+        }
+    }
+}
+
+def validate(def ruta){
+    File file = new File(&quot;/var/jenkins_home/jobs_respaldo/&quot;+ruta)
+    if(file.exists()){
+        println &quot;${ruta} existe&quot;
+        existe = true
+    }else{
+        println &quot;${ruta} NO existe&quot;
+        existe = false
+    }
+}
+
+def comprimido(){
+    sh&quot;&quot;&quot;
+        tar -czvf job_vencidos.tar.gz //var/jenkins_home/jobs_respaldo
+    &quot;&quot;&quot;
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1161231064</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>8738872</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1781220608</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>29206550</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>410402943</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>11</iota>
+    <head>1:11</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

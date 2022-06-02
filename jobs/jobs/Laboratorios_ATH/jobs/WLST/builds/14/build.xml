@@ -1,0 +1,248 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.BooleanParameterValue>
+          <name>Refresh_Parameters</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>SHUTDOWN_SERVERS</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Undeploy_Components</name>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Deploy_Components</name>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>START_SERVERS</name>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>DELETE_TMPS</name>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>war</name>
+          <value>app1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ear</name>
+          <value>exampleEAR</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Refresh_Parameters</string>
+        <string>SHUTDOWN_SERVERS</string>
+        <string>Undeploy_Components</string>
+        <string>Deploy_Components</string>
+        <string>START_SERVERS</string>
+        <string>DELETE_TMPS</string>
+        <string>war</string>
+        <string>ear</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@564.ve62a_4eb_b_e039">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2659.v52d3de6044d0">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>256</queueId>
+  <timestamp>1651018889072</timestamp>
+  <startTime>1651018889128</startTime>
+  <result>FAILURE</result>
+  <duration>4146</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>import groovy.transform.Field
+import java.io.*;
+
+@Field def ipNexus = &apos;http://192.168.1.110:8081&apos;
+@Field def credentialsNexus = &apos;nexusAdmin&apos;
+@Field def groupId = &apos;weblogic&apos;
+@Field def artifactId
+@Field def repository = &apos;jenkins-releases&apos;
+@Field def host = &apos;192.168.1.110&apos;
+@Field def ext
+
+@Field def components = [
+                            &apos;war&apos;:[&apos;server1&apos;,&apos;war&apos;],
+                            &apos;ear&apos;:[&apos;server2&apos;,&apos;ear&apos;]
+                        ]
+
+@Field def labelParameters = []
+
+@Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+
+node(&apos;master&apos;){
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false, description: &apos;&apos;, name: &apos;Refresh_Parameters&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false, description: &apos;&apos;, name: &apos;SHUTDOWN_SERVERS&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: true, description: &apos;&apos;, name: &apos;Undeploy_Components&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: true, description: &apos;&apos;, name: &apos;Deploy_Components&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: true, description: &apos;&apos;, name: &apos;START_SERVERS&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: true, description: &apos;&apos;, name: &apos;DELETE_TMPS&apos;])
+
+    for(String component in components.keySet()){
+            getNexusVersion(component, repository, groupId, component)
+    }
+
+    properties(
+        [parameters(
+            labelParameters
+        )]
+    )
+    stage(&apos;Download Artifacts Nexus&apos;) {
+        cleanWs()
+        if(params.&apos;Refresh_Parameters&apos; == &quot;false&quot;){
+		    withCredentials([usernamePassword(credentialsId: credentialsNexus, passwordVariable: &apos;PASS&apos;, usernameVariable: &apos;USER&apos;)]) {
+		    	for(component in infoComponents.keySet()){
+		    		if(params.&quot;$component&quot; != &apos;ZERO_00&apos;){
+                        artifactId = component
+                        ext = components.get(component)[1]
+		    			downloadsComponents(artifactId, params.&quot;$component&quot;, ext)
+		    		}
+		    	}
+            }
+        }else{
+            println &quot;Refrescando parametros!!&quot;
+        }
+    }
+    stage(&apos;create Script&apos;){
+        sh&quot;&quot;&quot;
+            touch script.py &amp;&amp; echo &quot;connect(&apos;weblogic&apos;,&apos;galvis0425&apos;,&apos;localhost:7001&apos;)&quot; &gt;&gt; script.py &amp;&amp; echo &quot;edit()&quot; &gt;&gt; script.py &amp;&amp; echo &quot;startEdit()&quot; &gt;&gt; script.py
+        &quot;&quot;&quot;
+        if(params.&apos;Deploy_Components&apos;){
+            for(component in components.keySet()){
+                artifactId = component
+                sh&quot;&quot;&quot;
+                    echo &quot;deploy(&apos;${app}&apos;,&apos;${artifactId}-${app}&apos;,targets=&apos;${servers}&apos;) &gt;&gt; script.py
+                &quot;&quot;&quot;
+            }
+        }
+    }
+
+
+}
+
+def getNexusVersion(name, repository,groupId,artifactId){
+	String scriptVersion = scriptGetVersionsNexus(repository,groupId,artifactId)
+	labelParameters.add([$class: &apos;ChoiceParameter&apos;, choiceType: &apos;PT_SINGLE_SELECT&apos;, description: &apos;&apos; , filterLength: 1, filterable: true, name: name, randomName: name, script: [$class: &apos;GroovyScript&apos;, fallbackScript: [classpath: [], sandbox: false, script: &apos;&apos;], script: [classpath: [], sandbox: false, script: scriptVersion]]])	
+}
+
+def downloadsComponents(artifacId, version, ext){
+	sh &quot;&quot;&quot;
+        curl -X GET -u ${USER}:${PASS} ${ipNexus}/repository/${repository}/${groupId}/${artifactId}/${version}/${artifactId}-${version}.${ext} -O
+    &quot;&quot;&quot;
+}
+
+String scriptGetVersionsNexus(String repository,String groupId,String artifactId){
+
+String script =&quot;&quot;&quot;
+import groovy.json.JsonSlurper
+import groovy.transform.Field
+import jenkins.model.*
+@Field def token=&quot;&quot;
+@Field def nexusResponse = [:]
+def responseList = []
+responseList.add(&apos;ZERO_00&apos;)
+while(token!=null){
+    request()
+  for(int i=0; i &lt; nexusResponse.items.size();i++){
+        if(nexusResponse.items[i].group.toString().equals(&apos;${groupId}&apos;)){
+              responseList.add(nexusResponse.items[i].version.toString())  
+             
+        }
+     }
+        
+}
+    return responseList.sort()
+def request(){
+    if(token==&quot;&quot;){
+        urlNexusArtifactory = &quot;${ipNexus}/service/rest/v1/search?sort=&amp;repository=${repository}&amp;name=${artifactId}&quot;
+    }else{
+        urlNexusArtifactory = &quot;${ipNexus}/service/rest/v1/search?continuationToken=&quot;+token+&quot;&amp;sort=&amp;repository=${repository}&amp;name=${artifactId}&quot;
+    }
+    try {
+		 credentialsId = &apos;${credentialsNexus}&apos;
+        def creds = com.cloudbees.plugins.credentials.CredentialsProvider.lookupCredentials(
+        com.cloudbees.plugins.credentials.common.StandardUsernameCredentials.class, Jenkins.instance, null, null ).find{
+        it.id == credentialsId}
+        String userpass = creds.username.toString() + &apos;:&apos; + creds.password.toString();
+        String basicAuth = &quot;Basic &quot; + new String(Base64.getEncoder().encode(userpass.getBytes()));
+        def http_client = new URL(urlNexusArtifactory).openConnection() as HttpURLConnection
+        http_client.setRequestProperty(&quot;Authorization&quot;, basicAuth);
+        http_client.setRequestMethod(&quot;GET&quot;);
+        http_client.connect();
+	  
+        if (http_client.responseCode == 200) {
+            nexusResponse = new JsonSlurper().parseText(http_client.inputStream.getText(\&apos;UTF-8\&apos;))
+        } else {
+            println(&quot;HTTP response error&quot;)
+            System.exit(0)
+        }
+        if(nexusResponse.continuationToken==&quot;null&quot;){
+            token=&quot;null&quot;
+           
+        }else{
+            token=nexusResponse.continuationToken
+        }
+    }catch (Exception e) {
+        println(e)
+    }
+}&quot;&quot;&quot;
+return script
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>2329013716</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>14728502</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3696925574</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>41747646</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>918092605</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>19</iota>
+    <head>1:19</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

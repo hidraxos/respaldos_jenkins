@@ -1,0 +1,48 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@813.vb_d7c3d2984a_0">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2659.v52d3de6044d0">
+    <parentIds>
+      <string>67</string>
+    </parentIds>
+    <id>68</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2659.v52d3de6044d0">
+      <arguments>
+        <entry>
+          <string>job</string>
+          <string>ELIMINAR_jobs_vencidos</string>
+        </entry>
+        <entry>
+          <string>parameters</string>
+          <list>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>stringParam</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>Archivo</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>jobs.txt</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings/>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1138.v619fd5201b_2f">
+      <startTime>1646413354027</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+    <wf.a.LabelAction plugin="workflow-api@1138.v619fd5201b_2f">
+      <displayName>Building jobs_vencidos » ELIMINAR_jobs_vencidos</displayName>
+    </wf.a.LabelAction>
+  </actions>
+</Tag>

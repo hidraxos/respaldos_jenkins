@@ -1,0 +1,142 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.BooleanParameterValue>
+          <name>Refresh_Parameters</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterValue plugin="extended-choice-parameter@346.vd87693c5a_86c">
+          <name>NAMES</name>
+          <value></value>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Herman</name>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Carlos</name>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Beatriz</name>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Gladys</name>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Refresh_Parameters</string>
+        <string>NAMES</string>
+        <string>Herman</string>
+        <string>Carlos</string>
+        <string>Beatriz</string>
+        <string>Gladys</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@564.ve62a_4eb_b_e039">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2659.v52d3de6044d0">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>1493</queueId>
+  <timestamp>1648784095903</timestamp>
+  <startTime>1648784095962</startTime>
+  <result>SUCCESS</result>
+  <duration>3358</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>import groovy.transform.Field
+import groovy.json.JsonSlurper
+import java.util.*;
+import java.io.*;
+import org.w3c.dom.*;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.ParserConfigurationException;
+import java.text.SimpleDateFormat;
+
+@Field def names = [
+    [name: &apos;Herman&apos;, Ciudad: &apos;Bogota&apos;, Carrera: &apos;Ingeniero Software&apos;,Genero:&apos;Masculino&apos;],
+    [name: &apos;Carlos&apos;, Ciudad: &apos;La paz&apos;, Carrera: &apos;Ingeniero Civil&apos;,Genero:&apos;Masculino&apos;],
+    [name: &apos;Beatriz&apos;, Ciudad: &apos;Melborn&apos;, Carrera: &apos;Psicologa&apos;,Genero:&apos;Femenino&apos;],
+    [name: &apos;Gladys&apos;, Ciudad: &apos;Miami&apos;, Carrera: &apos;Ingeniera Industrial&apos;,Genero:&apos;Femenino&apos;]
+    ]
+def labelParameters = []
+node(&apos;ubuntu&apos;) {
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: true, description: &apos;&apos;, name: &apos;Refresh_Parameters&apos;])
+    labelParameters.add(extendedChoice(defaultValue: &apos;&apos;, description: &apos;&apos;, descriptionPropertyValue: &apos;&apos;, multiSelectDelimiter: &apos;,&apos;, name: &apos;NAMES&apos;, quoteValue: false, saveJSONParameterToFile: false, type: &apos;PT_CHECKBOX&apos;, value: &apos;&apos;, visibleItemCount: 4))
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false,description: &apos;&apos;,name:&apos;Herman&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false,description: &apos;&apos;,name:&apos;Carlos&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false,description: &apos;&apos;,name:&apos;Beatriz&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false,description: &apos;&apos;,name:&apos;Gladys&apos;])    
+        properties(
+			[parameters(
+				labelParameters
+			)]
+		)
+    stage(&apos;Preparation&apos;) { 
+        println names.size()
+        if(Refresh_Parameters == &quot;false&quot;){
+            for(i in names){
+                def var = i.values()[0]
+                if(params.&quot;$var&quot; == true){
+                    println i.keySet()[0] + &quot;: &quot;+i.values()[0]+&quot;  &quot; +i.keySet()[1] + &quot;: &quot;+i.values()[1]+&quot;  &quot; +i.keySet()[2] + &quot;: &quot;+i.values()[2]
+               // println i[0].get(name)
+                }
+            }
+        }
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1955797671</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>43487627</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3045184723</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>23624156</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>393237265</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>17</iota>
+    <head>1:17</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

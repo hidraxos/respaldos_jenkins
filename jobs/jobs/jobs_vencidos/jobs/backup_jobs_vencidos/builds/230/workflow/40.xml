@@ -1,0 +1,28 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@813.vb_d7c3d2984a_0">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2659.v52d3de6044d0">
+    <parentIds>
+      <string>39</string>
+    </parentIds>
+    <id>40</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2659.v52d3de6044d0">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>curl -v -u admin:${PASS} -X POST http://192.168.1.110:8081/service/rest/v1/components?repository=Jobs_vencidos -F maven2.groupId=BackUp_Jobs_Vencidos -F maven2.artifactId=17-03-2022 -F maven2.version=3.0 -F &apos;maven2.asset1=@/var/jenkins_home/workspace/jobs_vencidos/backup_jobs_vencidos/job_vencidos.tar.gz;type=application/x-tgz&apos; -F maven2.asset1.extension=tar.gz</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PASS</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1138.v619fd5201b_2f">
+      <startTime>1647533092713</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

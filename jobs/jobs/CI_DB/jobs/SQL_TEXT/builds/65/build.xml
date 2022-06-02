@@ -1,0 +1,356 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.BooleanParameterValue>
+          <name>Refresh_Param</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.TextParameterValue>
+          <name>SQL</name>
+          <description>Enter SQL code</description>
+          <value>drop table clientes;
+drop table paises;
+
+ create table paises(
+  codigo number(2),
+  nombre_pais varchar2(20),
+  primary key (codigo)
+ );
+
+ create table clientes (
+  codigo number(4),
+  nombre varchar2(50),
+  domicilio varchar2(100),
+  codigopais number(2) not null,
+  primary key(codigo),
+  constraint FK_clientes_paises
+   foreign key (codigopais)
+   references paises(codigo)
+   on delete cascade
+ );
+ 
+ insert into paises values(1,&apos;Argentina&apos;);
+ insert into paises values(2,&apos;Brasil&apos;);
+ insert into paises values(3,&apos;Bolivia&apos;);
+ insert into paises values(4,&apos;Colombia&apos;);
+ insert into paises values(5,&apos;Venezuela&apos;);
+ insert into paises values(6,&apos;Chile&apos;);
+ insert into paises values(7,&apos;Uruguay&apos;);
+ insert into paises values(8,&apos;Costa Rica&apos;);
+ insert into paises values(9,&apos;Rep. Dominicana&apos;);
+
+ insert into clientes values (101,&apos;Jorge Perez&apos;,&apos;Calle 1ra No 001&apos;,1);
+ insert into clientes values (102,&apos;Manuel Gonzales&apos;,&apos;Calle 2da No.33&apos;,2);
+ insert into clientes values (103,&apos;Perez Ana&apos;,&apos;San Martin 333&apos;,2);
+ insert into clientes values (104,&apos;Garcia Juan&apos;,&apos;Principal 444&apos;,3);
+ insert into clientes values (105,&apos;Perez Luis&apos;,&apos;Sarmiento 555&apos;,3);
+ insert into clientes values (106,&apos;Gomez Ines&apos;,&apos;Altos del Llano 899&apos;,4);
+ insert into clientes values (107,&apos;Torres Fabiola&apos;,&apos;La Encenada 256&apos;,5);
+ insert into clientes values (108,&apos;Garcia Luis&apos;,&apos;Principal 155&apos;,6);
+ insert into clientes values (109,&apos;Federico Suarez&apos;,&apos;La Hondonada 344&apos;,7);
+ insert into clientes values (110,&apos;Mauricio Sarmiento&apos;,&apos;El Retiro 152&apos;,9);
+ insert into clientes values (111,&apos;Ana Jimenez&apos;,&apos;Reparto las Flores&apos;,8);
+ insert into clientes values (112,&apos;Humberto Velez&apos;,&apos;Ensache Las Praderas&apos;,8);
+ insert into clientes values (113,&apos;Heridania Sanchez&apos;,&apos;Urbanización Constelación&apos;,6);</value>
+        </hudson.model.TextParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Refresh_Param</string>
+        <string>SQL</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@564.ve62a_4eb_b_e039">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2064.v5eef7d0982b_e">
+      <stagesUUID>d95173a4-67f3-43a8-9323-24f7cc256d61</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2064.v5eef7d0982b_e">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Create .sql</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">cleanWs()
+                if(!params.&apos;Refresh_Param&apos;){
+                  println params.&quot;SQL&quot;
+                  sh &quot;&quot;&quot;
+                    echo &quot;${params.&apos;SQL&apos;}&quot; &gt; script.sql
+                  &quot;&quot;&quot;
+                }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Execute script</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">if(!params.&apos;Refresh_Param&apos;){
+                SQL()
+                analisisLog()
+              }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>d95173a4-67f3-43a8-9323-24f7cc256d61</uuid>
+          </stages>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+          <parameters>
+            <parameters>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>booleanParam</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Refresh_Param</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="boolean">false</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string"></value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>text</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">SQL</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string"></value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Enter SQL code</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+            </parameters>
+          </parameters>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1074.v60e6c29b_b_44b_">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2659.v52d3de6044d0">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction plugin="workflow-cps@2659.v52d3de6044d0">
+      <interpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASSWORD</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+      </interpolatedWarnings>
+    </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>1544d6a1-cd5c-43a8-b9a8-fbb963cfc7a8</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>84dc1eab-7392-4e69-9f91-6b7875eb7b66</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>c349b91f-2471-4ec4-92fa-e0ee4f81380e</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+  </actions>
+  <queueId>208</queueId>
+  <timestamp>1650384165546</timestamp>
+  <startTime>1650384165609</startTime>
+  <result>FAILURE</result>
+  <duration>16160</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>import groovy.transform.Field
+import java.io.*;
+
+@Field def hostDB = &apos;192.168.1.110&apos;
+@Field def portDB = &apos;51521&apos;
+@Field def sidDB = &apos;XE&apos;
+@Field def credentials = &apos;oracleDB&apos;
+@Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+
+pipeline{
+    agent any
+    parameters{
+        booleanParam(name: &apos;Refresh_Param&apos;, defaultValue: false, description: &apos;&apos;)
+        text(name: &apos;SQL&apos;, defaultValue: &apos;&apos;, description: &apos;Enter SQL code&apos;)
+    }
+    stages{
+        stage(&apos;Create .sql&apos;){
+            steps{
+              script{
+                cleanWs()
+                if(!params.&apos;Refresh_Param&apos;){
+                  println params.&quot;SQL&quot;
+                  sh &quot;&quot;&quot;
+                    echo &quot;${params.&apos;SQL&apos;}&quot; &gt; script.sql
+                  &quot;&quot;&quot;
+                }
+              }
+            }
+        }
+        stage(&apos;Execute script&apos;){
+          steps{
+            script{
+              if(!params.&apos;Refresh_Param&apos;){
+                SQL()
+                analisisLog()
+              }
+            }
+          }
+        }
+    }
+}
+
+def SQL(){
+    withCredentials([usernamePassword(credentialsId: credentials, usernameVariable: &apos;USERNAME&apos;, passwordVariable: &apos;PASSWORD&apos;)]) {
+		sh &quot;&quot;&quot;
+      sqlplus64 &apos;${USERNAME}/${PASSWORD}@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=${hostDB})(Port=${portDB}))(CONNECT_DATA=(SID=${sidDB})))&apos; @script.sql |tee -a script.log
+
+		&quot;&quot;&quot;
+	}	
+}
+def analisisLog(){
+  def listLog = readFile(&apos;script.log&apos;).readLines()
+  def dic = [&apos;ORA-&apos;,&apos;SP2-&apos;]
+  for(i in listLog){
+    for(e in dic){
+      if(i.contains(e)){
+        printm(&quot;[ERROR] ${i}&quot;,red)
+        error(&quot;[ERROR]&quot;)
+      }
+    }
+  }
+}
+def printm(message,color){
+  ansiColor{
+    println(&quot;\033[${color}m############ ${message} ############\033[0m&quot;)
+  }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>4621525125</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>5388564698</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>11428528596</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>2864246168</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>2421864835</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>38</iota>
+    <head>1:38</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

@@ -1,0 +1,18 @@
+commit 81a46fdc9bb184d98036ba12999e02a81257b101
+tree 5dbe1ed5559074d2be8226b93f10332607a4430b
+parent 17e687dc2e90ecd6e9c46a63c3f1a6e490173d69
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-04-19 14:31:55 -0500
+committer GitHub <noreply@github.com> 2022-04-19 14:31:55 -0500
+
+    Update sql_prueba.txt
+
+:100644 100644 d3827e75a5cadb9fe4a27e1cb9b6d192e7323120 a1aa8985a236a25736ea176d058fd9263d3e4d9a M	sql_prueba.txt
+commit 17e687dc2e90ecd6e9c46a63c3f1a6e490173d69
+tree eab3d1806265dedd126131ea790cadce8ccf1f90
+parent 8df12d4cb7f18cd479da38daa585109f584d33a2
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-04-13 23:23:59 -0500
+committer GitHub <noreply@github.com> 2022-04-13 23:23:59 -0500
+
+    No permite rastrear workspace
+
+:100644 000000 63d4c8a004e361268be60ea1cc9f8f20c402b8a2 0000000000000000000000000000000000000000 D	README.md

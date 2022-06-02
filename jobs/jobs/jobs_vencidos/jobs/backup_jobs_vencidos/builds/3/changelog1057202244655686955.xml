@@ -1,0 +1,18 @@
+commit 7496cf4657f8f2c40633e0291ab2c62fe19c4292
+tree 6ab0e3c311bc4655c6e26da4a9f611a3696b0d02
+parent 853cecdd2a4630e5dfa6dc1bb85f0f006954138b
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-02-28 12:50:59 -0500
+committer GitHub <noreply@github.com> 2022-02-28 12:50:59 -0500
+
+    Rename jobs.json to jobs.txt
+
+:100644 100644 e744cba0fdf84ef2c4fc70f85056097e74727a8f e744cba0fdf84ef2c4fc70f85056097e74727a8f R100	jobs.json	jobs.txt
+commit 853cecdd2a4630e5dfa6dc1bb85f0f006954138b
+tree eb5644d4df4dd014412e8c1d49807c946ad5cc36
+parent a3e8d381087a85cc878c7c19b1b454558f6183e7
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-02-28 12:48:18 -0500
+committer GitHub <noreply@github.com> 2022-02-28 12:48:18 -0500
+
+    Archivos texto con 5 jobs prueba
+
+:100644 100644 954fc7ddaedac545f700e59805d5d04f25165c4f e744cba0fdf84ef2c4fc70f85056097e74727a8f M	jobs.json

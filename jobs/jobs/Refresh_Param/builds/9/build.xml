@@ -1,0 +1,109 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction plugin="workflow-cps@2648.va9433432b33c">
+      <replacementLoadedScripts/>
+    </org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.workflow.cps.replay.ReplayCause plugin="workflow-cps@2648.va9433432b33c">
+            <originalNumber>8</originalNumber>
+          </org.jenkinsci.plugins.workflow.cps.replay.ReplayCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@552.vd9cc05b8a2e1">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>335</queueId>
+  <timestamp>1645645642581</timestamp>
+  <startTime>1645645643069</startTime>
+  <result>SUCCESS</result>
+  <duration>3048</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>import groovy.transform.Field
+import groovy.json.JsonSlurper
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.io.*;
+import org.w3c.dom.*;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.ParserConfigurationException;
+import groovy.json.JsonSlurper
+import java.text.SimpleDateFormat;
+
+@Field def names = [
+    &apos;Herman&apos;:[22,&apos;Colombia&apos;,&apos;Masculino&apos;,&apos;Ingeniero Software&apos;,&apos;bogota&apos;],
+    &apos;Carlos&apos;:[25,&apos;Bolivia&apos;,&apos;Masculino&apos;,&apos;Ingeniero civil&apos;,&apos;La paz&apos;],
+    &apos;Beatriz&apos;:[31,&apos;Colombia&apos;,&apos;Masculino&apos;,&apos;Ingeniero Software&apos;,&apos;bogota&apos;],
+    &apos;Gladys&apos;:[54,&apos;Colombia&apos;,&apos;Masculino&apos;,&apos;Ingeniero Software&apos;,&apos;bogota&apos;]
+    ]
+def labelParameters = []
+node(&apos;ubuntu&apos;) {
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: true, description: &apos;&apos;, name: &apos;Refresh_Parameters&apos;])
+        properties(
+			[parameters(
+				labelParameters
+			)]
+		)
+    stage(&apos;Preparation&apos;) { 
+         for(componente in names.keySet()){
+            println componente
+            if(params.&quot;$componente&quot; == true){
+                println &quot;Nombre: &quot;+componente
+                //validateAge()
+            }
+        }
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1757166246</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>40432768</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2737114020</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>49277590</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>558464034</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>16</iota>
+    <head>1:16</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

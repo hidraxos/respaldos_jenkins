@@ -1,0 +1,111 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1167.v8fe861b_09ef9">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@564.ve62a_4eb_b_e039">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1074.v60e6c29b_b_44b_">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2659.v52d3de6044d0">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction plugin="workflow-cps@2659.v52d3de6044d0">
+      <interpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+            <string>USER</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+      </interpolatedWarnings>
+    </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction>
+  </actions>
+  <queueId>1466</queueId>
+  <timestamp>1648782172355</timestamp>
+  <startTime>1648782172412</startTime>
+  <result>FAILURE</result>
+  <duration>3333</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>import groovy.transform.Field
+import groovy.json.JsonSlurper
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.io.File; 
+
+@Field def fprList = []
+@Field def credentials = &quot;hidraxos_credentials&quot;
+@Field def ip = &quot;192.168.1.110&quot;
+@Field def labelParameters = []
+
+node(&apos;master&apos;){
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false, description: &apos;&apos;, name: &apos;Refresh_Parameters&apos;])
+
+    getFPRS()
+
+    properties([parameters(labelParameters)])
+
+    stage(&apos;println&apos;){
+        println fprList
+    }
+}
+def getFPRS(){
+    withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable: &apos;USER&apos;)]) {
+        sh&quot;&quot;&quot;
+            sshpass -p ${PASS} ssh ${USER}@${ip} ls /home/hidraxos/Escritorio/Ejercicios/Groovy &gt; versiones.txt
+        &quot;&quot;&quot;
+    }
+    fprList = readFile(&quot;versiones.txt&quot;).readLines()
+    labelParameters.add([$class: &apos;ChoiceParameterValue&apos;, choiceType: &apos;PT_SINGLE_SELECT&apos;, description:&apos;&apos;,value:fprList])
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1789568499</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>9522731</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2886532004</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>20636136</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>678428892</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>14</iota>
+    <head>1:14</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>
