@@ -16,3 +16,112 @@ Running in /home/jenkins/respaldos
 + rm -rf jobs nodes plugins users
 [8mha:////4Ew12fZciuUCTpHZ+ING8b2uvFgpEkcnPCEKBcrg37twAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs35DNwLL4AAAA=[0m[Pipeline] sh
 + docker cp hidraxos:/var/jenkins_home/jobs/ ./jobs/
+[8mha:////4JWSVW88TSGmGTc8hNLr4jM2tEXNjRKIgvMCqrkns4ZaAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaJm7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPYJ6rb91N6/ASOlMWO+AAAA[0m[Pipeline] sh
++ docker cp hidraxos:/var/jenkins_home/nodes/ ./nodes/
+[8mha:////4Evd+PXtaUCdqBjtyLSlbpNkZLDhsimAiF0HB8aNaiyJAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyKawcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMPsEddt+au/fYpQqer4AAAA=[0m[Pipeline] sh
++ docker cp hidraxos:/var/jenkins_home/plugins/ ./plugins/
+[8mha:////4KepN4f2XwzRRzmHVZpSRz9W+27BcOR3WXhgZKDKZSthAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyaWwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMPsEddt+au/foccHUb4AAAA=[0m[Pipeline] sh
++ docker cp hidraxos:/var/jenkins_home/users/ ./users/
+[8mha:////4HPAn6RtRpwa7jOmB18vkXRwhrOunHfPKRRc7nFQaT57AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyqSwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMPsEddt+au/f4PYcSL4AAAA=[0m[Pipeline] sh
++ git add .
++ git commit -am respaldo Thu Jun 02 19:32:26 UTC 2022
+Auto empaquetado del repositorio en segundo plano para un rendimiento óptimo.
+Mira "git help gc" para limpieza manual.
+warning: El último gc reportó lo siguiente. Por favor corrige la causa
+y elimine .git/gc.log.
+Limpieza automática no se realizará hasta que el archivo sea eliminado.
+
+error: pack-objects died of signal 15
+fatal: failed to run repack
+
+[master 8847cfe] respaldo Thu Jun 02 19:32:26 UTC 2022
+ 80 files changed, 17544 insertions(+), 29 deletions(-)
+ delete mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/program.dat
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/12.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/13.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/14.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/15.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/16.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/17.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/18.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/19.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/20.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/21.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/6/workflow/22.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/atomic7849496987692959002.tmp
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/build.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/log
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/log-index
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/program.dat
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/10.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/11.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/12.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/13.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/2.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/3.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/4.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/5.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/6.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/7.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/8.xml
+ create mode 100644 jobs/ADMINISTRACION/jobs/Respaldos/builds/7/workflow/9.xml
+ create mode 100644 plugins/extended-choice-parameter.jpi
+ create mode 100644 plugins/extended-choice-parameter/.timestamp2
+ create mode 100644 plugins/extended-choice-parameter/META-INF/MANIFEST.MF
+ create mode 100644 plugins/extended-choice-parameter/META-INF/maven/org.jenkins-ci.plugins/extended-choice-parameter/pom.properties
+ create mode 100644 plugins/extended-choice-parameter/META-INF/maven/org.jenkins-ci.plugins/extended-choice-parameter/pom.xml
+ create mode 100644 plugins/extended-choice-parameter/WEB-INF/lib/commons-beanutils-1.9.3.jar
+ create mode 100644 plugins/extended-choice-parameter/WEB-INF/lib/commons-collections4-4.2.jar
+ create mode 100644 plugins/extended-choice-parameter/WEB-INF/lib/commons-lang3-3.8.1.jar
+ create mode 100644 plugins/extended-choice-parameter/WEB-INF/lib/commons-text-1.3.jar
+ create mode 100644 plugins/extended-choice-parameter/WEB-INF/lib/extended-choice-parameter.jar
+ create mode 100644 plugins/extended-choice-parameter/WEB-INF/lib/opencsv-4.6.jar
+ create mode 100644 plugins/extended-choice-parameter/WEB-INF/licenses.xml
+ create mode 100644 plugins/extended-choice-parameter/css/bootstrap.min.css
+ create mode 100644 plugins/extended-choice-parameter/css/font-awesome3.css
+ create mode 100644 plugins/extended-choice-parameter/css/font-awesome4.css
+ create mode 100644 plugins/extended-choice-parameter/css/foundation-icons.css
+ create mode 100644 plugins/extended-choice-parameter/css/foundation3.css
+ create mode 100644 plugins/extended-choice-parameter/css/foundation4.css
+ create mode 100644 plugins/extended-choice-parameter/css/foundation5.css
+ create mode 100644 plugins/extended-choice-parameter/css/general_foundicons.css
+ create mode 100644 plugins/extended-choice-parameter/css/jquery-ui.css
+ create mode 100644 plugins/extended-choice-parameter/css/jquery.jsonview.css
+ create mode 100644 plugins/extended-choice-parameter/css/selectize.bootstrap2.css
+ create mode 100644 plugins/extended-choice-parameter/css/selectize.css
+ create mode 100644 plugins/extended-choice-parameter/fonts/foundation-icons.eot
+ create mode 100644 plugins/extended-choice-parameter/fonts/foundation-icons.svg
+ create mode 100644 plugins/extended-choice-parameter/fonts/foundation-icons.ttf
+ create mode 100644 plugins/extended-choice-parameter/fonts/foundation-icons.woff
+ create mode 100644 plugins/extended-choice-parameter/fonts/glyphicons-halflings-regular.eot
+ create mode 100644 plugins/extended-choice-parameter/fonts/glyphicons-halflings-regular.svg
+ create mode 100644 plugins/extended-choice-parameter/fonts/glyphicons-halflings-regular.ttf
+ create mode 100644 plugins/extended-choice-parameter/fonts/glyphicons-halflings-regular.woff
+ create mode 100644 plugins/extended-choice-parameter/help-globalConfig.html
+ create mode 100644 plugins/extended-choice-parameter/js/jquery.jsonview.min.js
+ create mode 100644 plugins/extended-choice-parameter/js/jsoneditor.js
+ create mode 100644 plugins/extended-choice-parameter/js/jsoneditor.min.js
+ create mode 100644 plugins/extended-choice-parameter/js/selectize.min.js
+ create mode 100644 plugins/jquery.jpi
+ create mode 100644 plugins/jquery/.timestamp2
+ create mode 100644 plugins/jquery/META-INF/MANIFEST.MF
+ create mode 100644 plugins/jquery/META-INF/maven/org.jenkins-ci.plugins/jquery/pom.properties
+ create mode 100644 plugins/jquery/META-INF/maven/org.jenkins-ci.plugins/jquery/pom.xml
+ create mode 100644 plugins/jquery/WEB-INF/lib/jquery.jar
+ create mode 100644 plugins/jquery/WEB-INF/lib/stapler-adjunct-jquery-1.12.4-0.jar
+ create mode 100644 plugins/jquery/WEB-INF/licenses.xml
++ git push -u origin master
+Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to the list of known hosts.
+To github.com:hidraxos/respaldos_jenkins.git
+   04386d6..8847cfe  master -> master
+Rama 'master' configurada para hacer seguimiento a la rama remota 'master' de 'origin'.
+[8mha:////4MAiaXGY7zZUBRA6NZQDpFP5XI7RxVcKbtIH9JmWsVEjAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiabibGyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+AUIVvo2+AAAA[0m[Pipeline] }
+[8mha:////4ILF+E+ydxWiX4xp6AEl5XIFsGUiitKPOpjMgMlEb8v+AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICJUJUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKHf7T23fcfblMb4AAAA=[0m[Pipeline] // dir
+[8mha:////4A4RMzi+Uwq/Md8tOmIsvQ0+GYr4ThNChw3mzB4voxs9AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBVEiIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPABVnXb0AAAA=[0m[Pipeline] }
+[8mha:////4OyiUUAH6p9H1NQ9QBmjaZPC2yVY2cReLzTbUcDsOjhcAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRNBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPISG48L0AAAA=[0m[Pipeline] // script
+[8mha:////4ObzJgLtqv0qAinVhfjzlGb/gJlPPG6G7bavnQaJlnaTAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FeVkKsv0HZ2sfwL0AAAA=[0m[Pipeline] }
+[8mha:////4K1/hYegv6CXfoeJ5Iw2Hz1UIBu0i28eIba7aBH0K+BLAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPbRN2ZL0AAAA=[0m[Pipeline] // stage
+[8mha:////4BYvvSAnkvNagVJwjKO51Ghh78s1cUu0hePA9wZAR+gtAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6Ikhs04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwA6/9Rob0AAAA=[0m[Pipeline] }
+[8mha:////4GIeSDNrCOg4/fQ3Ocdds2tHWQgrNaTMZVAMrd7xdqY8AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsP+ENVAr0AAAA=[0m[Pipeline] // node
+[8mha:////4MSqPIrPlRxOYg5OG28EhmtLzNDX6PFsXebWTlxqqPwJAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHvgnyMr0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS
