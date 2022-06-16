@@ -1,0 +1,18 @@
+commit 57ddfdc3d23dc5ea9b29df1ec763ca59d21b119f
+tree c9b9dff5efa589afa7ac67949f740bda62d17020
+parent 68ba92d5eb22fbc5a8660a0f7ab2a9017eda37f8
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-06-06 11:31:13 -0500
+committer GitHub <noreply@github.com> 2022-06-06 11:31:13 -0500
+
+    6 de junio
+
+:100644 100644 171f1fd9b6783540ad04763240ca9a07a3e3a314 2f395269f75aa5f6f212cf55a0349ec02f337357 M	sql_prueba.txt
+commit 68ba92d5eb22fbc5a8660a0f7ab2a9017eda37f8
+tree 54eb96ef2677e9e5a1ce139e67dc4cbf5c144123
+parent ff9f0b1c9eba55354a53d2db83b02a60d8277e33
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-06-03 10:44:30 -0500
+committer GitHub <noreply@github.com> 2022-06-03 10:44:30 -0500
+
+    File dockerfile
+
+:000000 100644 0000000000000000000000000000000000000000 ec5f839c71c40243475b252a0093fcc36eb7a9ff A	dockerfile_default

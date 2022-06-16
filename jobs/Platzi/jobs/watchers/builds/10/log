@@ -1,0 +1,9 @@
+Started by upstream project "[8mha:////4PwOrPV8pYAAuu0VRqzIO7XID45faoWTm9cYn9ScuT0CAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZZ/az8JP2AnMSSqkwwMyM1Jyc/vgAiAACBoYHW0gAAAA==[0mPlatzi/hello_platzi" build number [8mha:////4N3ppdJer7eiWclxEDE2E6a3zGHTLEPVNTmU2ieZDtPDAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZ5/az8JP2AnMSSqkwwMyM1Jyc/vgAiYGgAAIKXtZrUAAAA[0m10
+originally caused by:
+ Started by user [8mha:////4BjuBJB0DWb+dcviZK88ke2JM4rHotx67vKAaN8m+JPtAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgY+/dLi1CL9jMyUosSK/GIAQOmS8sMAAAA=[0mHermann Galvis
+Running as SYSTEM
+Building on the built-in node in workspace /var/jenkins_home/workspace/Platzi/watchers
+[watchers] $ /bin/sh -xe /tmp/jenkins5724886359969643877.sh
++ echo hello_Platzi Success
+hello_Platzi Success
+Finished: SUCCESS

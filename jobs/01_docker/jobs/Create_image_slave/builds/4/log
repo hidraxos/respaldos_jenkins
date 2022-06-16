@@ -1,0 +1,266 @@
+Started by user [8mha:////4BjuBJB0DWb+dcviZK88ke2JM4rHotx67vKAaN8m+JPtAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgY+/dLi1CL9jMyUosSK/GIAQOmS8sMAAAA=[0mHermann Galvis
+[8mha:////4Ct3zHu4lW73PLb+c5KZ1fEonkF783NgPzCKbavSdDhgAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4GsTH4leKCuuPk9b6LxDQH4j4+HfCe3RbIJBrXaLbATtAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4BJSW84WLYfC1dHFy9ARFme0K8mCrbWyfif3n4ESlkHeAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/01_docker/Create_image_slave
+[8mha:////4GpfEC3U7wAjzsEYnTJc8LhmkMxIKY4FTFxSRfJ+cDLPAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4OsJs9AciM1zlOzIGyrhIYx/LGHinAI99xuq+EV0Oh1LAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4L0mBIcGCCRY97b/MAwmXbi2DOQQRwfOoA2aC7cp5UgTAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (git)
+[8mha:////4E2i1GI/qOXZ+Bhv1L6YOzL4AMlhn7aBJfp8TsYZVaynAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4CeiKrGIpzvlbWsfd9bMqPqmfPLUgagPHDxjyslzD5i9AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/dKk0rySUn0AY+WXbsYAAAA=[0mubuntu in /home/jenkins/workspace/01_docker/Create_image_slave
+[8mha:////4GHIhEbdrmN9qyxc0DhCXY1B7Nb/G/n55+SKVi7Hl/ANAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4BoscgkQmiG2G4+q3d6lypD6R+Z75e6lS2vVT5nS44YEAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaoyVLaHxBMgiwpL/WWDdrTyRV/MOEjexcpJJ5k3zXm9Y5wQnSpZ7g73DrB2PYbR18YlSfws0cU9XrgkzBcOlmSR15rygpGJgCWtgJWBjUAfKDm2BrfDqodqg0LaXkup3FNC4boAnMFHNRaXyhTnB7j52mfDn+SuAORZg+9pD/AAeoCAqvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: NONE
+using credential ugithub
+Fetching changes from the remote Git repository
+ > git rev-parse --resolve-git-dir /home/jenkins/workspace/01_docker/Create_image_slave/.git # timeout=10
+ > git config remote.origin.url https://github.com/hidraxos/jenkins_check.git # timeout=10
+Fetching upstream changes from https://github.com/hidraxos/jenkins_check.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+using GIT_ASKPASS to set credentials credenciales github
+ > git fetch --tags --force --progress -- https://github.com/hidraxos/jenkins_check.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 68ba92d5eb22fbc5a8660a0f7ab2a9017eda37f8 (refs/remotes/origin/master)
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 68ba92d5eb22fbc5a8660a0f7ab2a9017eda37f8 # timeout=10
+Commit message: "File dockerfile"
+ > git rev-list --no-walk 68ba92d5eb22fbc5a8660a0f7ab2a9017eda37f8 # timeout=10
+[8mha:////4BeP3gV828T818rEYVWbSrhl7ntSaU6Xz1araGmzsQ/BAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBDglR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYO0G2F+S7bfcBITL9lL0AAAA=[0m[Pipeline] stash
+Stashed 3 file(s)
+[8mha:////4B/LF53qLMMm52L9oM7IDVhsi19S/zEnB3AlF1HPVfIiAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KEzcQ4uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8AHk6T5r0AAAA=[0m[Pipeline] }
+[8mha:////4HP/i4UBBc497kC59I0veGHm2a8M2D1IxJHj5OjyVsHOAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRNBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPXymMMb0AAAA=[0m[Pipeline] // node
+[8mha:////4DxTHhj1xdSjs8SSApj2EdSU7T+TQ+4Q+6LBrsFvgV1CAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AHkw63u9AAAA[0m[Pipeline] }
+[8mha:////4HrGOs1I2CEdmQXOAKbgBQWTLIFCasqX1T5X5m9erUGLAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRElSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsP073CUL0AAAA=[0m[Pipeline] // stage
+[8mha:////4FyrVbn6k7FC7DF0Ifrgt5Vd44uZx/UTSMpeijybvHBAAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvBXXnAcEAAAA=[0m[Pipeline] stage
+[8mha:////4KPUzk/m+E6Z0vgsCpmS265SPHajChO+Tt0760CfCRSIAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (buildImage)
+[8mha:////4JXQz/PUIFx1nK1yEDfSkjYlRn3+6umNfesij/k7UbHsAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] node
+Running on [8mha:////4FdCIBYof4v7MI8mlhkAcevDconkb+op18tmjLBXamRTAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYx/eT83ILSktQifWcf/1AXVVM3x/BgfQBUFNFeywAAAA==[0mCLOUD_AWS in /home/jenkins/workspace/01_docker/Create_image_slave
+[8mha:////4OMoLyGLPC/4avxBE8zlZlzkX5+mAOWkeYppCUadG3jxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4Gsd0tMe2yE57rF850Kmf1XEOiNPGGAHEQR9ZCGmXB/XAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] script
+[8mha:////4ILSIFEZjpmrvNB7OoGub5BhmA8rqFlUd7bNMAuVfzpvAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] {
+[8mha:////4G0U/IQbmp/M++9V5fjocuuxwGNmPcwFohC8VKSNMsHXAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQo99tP7cIbaOP4NL4AAAA=[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[8mha:////4PTAmhVVo5bd5iwpZ6+r5IbAfMB74GGlLW+CSgwWpuJGAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKC0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJp+grPefqv0bq7DVH74AAAA=[0m[Pipeline] unstash
+[8mha:////4FXUN6DQOVCuWRm65Yz81ZIIYbxMn03sI5n/Nw1zLJDRAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDudt+ah/e6oHOBr4AAAA=[0m[Pipeline] sh
++ docker build -t 172.25.0.3:5000/slave_default:1.0 -f dockerfile_default .
+Sending build context to Docker daemon  4.096kB
+Step 1/3 : FROM openjdk:8-slim
+8-slim: Pulling from library/openjdk
+42c077c10790: Already exists
+44b062e78fd7: Already exists
+3dee8efac34e: Already exists
+38cb291159d7: Pulling fs layer
+38cb291159d7: Verifying Checksum
+38cb291159d7: Download complete
+38cb291159d7: Pull complete
+Digest: sha256:19d0b804de51be8adf6d0816df0488df9962370e9072855e9e49cdd4a34daab9
+Status: Downloaded newer image for openjdk:8-slim
+ ---> 347573b5a729
+Step 2/3 : RUN apt update -y
+ ---> Running in c10e7a400614
+[91m
+[0m[91mWARNING: [0m[91mapt[0m[91m [0m[91mdoes not have a stable CLI interface. [0m[91mUse with caution in scripts.[0m[91m
+[0m[91m
+[0mGet:1 http://security.debian.org/debian-security bullseye-security InRelease [44.1 kB]
+Get:2 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [39.4 kB]
+Get:4 http://security.debian.org/debian-security bullseye-security/main amd64 Packages [153 kB]
+Get:5 http://deb.debian.org/debian bullseye/main amd64 Packages [8182 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [2592 B]
+Fetched 8537 kB in 2s (5192 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Removing intermediate container c10e7a400614
+ ---> 53b706a08aff
+Step 3/3 : RUN apt install curl -y
+ ---> Running in 6f16006bd484
+[91m
+[0m[91mWARNING: [0m[91mapt[0m[91m [0m[91mdoes not have a stable CLI interface. [0m[91mUse with caution in scripts.[0m[91m
+[0m[91m
+[0mReading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libbrotli1 libcurl4 libldap-2.4-2 libldap-common libnghttp2-14 libpsl5
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh2-1
+  publicsuffix
+Suggested packages:
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
+  libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql
+The following NEW packages will be installed:
+  curl libbrotli1 libcurl4 libldap-2.4-2 libldap-common libnghttp2-14 libpsl5
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh2-1
+  publicsuffix
+0 upgraded, 13 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1969 kB of archives.
+After this operation, 4345 kB of additional disk space will be used.
+Get:1 http://security.debian.org/debian-security bullseye-security/main amd64 libldap-2.4-2 amd64 2.4.57+dfsg-3+deb11u1 [232 kB]
+Get:2 http://security.debian.org/debian-security bullseye-security/main amd64 libldap-common all 2.4.57+dfsg-3+deb11u1 [95.8 kB]
+Get:3 http://deb.debian.org/debian bullseye/main amd64 libbrotli1 amd64 1.0.9-2+b2 [279 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-2.1+deb11u1 [69.1 kB]
+Get:5 http://deb.debian.org/debian bullseye/main amd64 libsasl2-2 amd64 2.1.27+dfsg-2.1+deb11u1 [106 kB]
+Get:6 http://deb.debian.org/debian bullseye/main amd64 libnghttp2-14 amd64 1.43.0-1 [77.1 kB]
+Get:7 http://deb.debian.org/debian bullseye/main amd64 libpsl5 amd64 0.21.0-1.2 [57.3 kB]
+Get:8 http://deb.debian.org/debian bullseye/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+Get:9 http://deb.debian.org/debian bullseye/main amd64 libssh2-1 amd64 1.9.0-2 [156 kB]
+Get:10 http://deb.debian.org/debian bullseye/main amd64 libcurl4 amd64 7.74.0-1.3+deb11u1 [341 kB]
+Get:11 http://deb.debian.org/debian bullseye/main amd64 curl amd64 7.74.0-1.3+deb11u1 [267 kB]
+Get:12 http://deb.debian.org/debian bullseye/main amd64 libsasl2-modules amd64 2.1.27+dfsg-2.1+deb11u1 [104 kB]
+Get:13 http://deb.debian.org/debian bullseye/main amd64 publicsuffix all 20211207.1025-0+deb11u1 [125 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 1969 kB in 0s (41.5 MB/s)
+Selecting previously unselected package libbrotli1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7072 files and directories currently installed.)
+Preparing to unpack .../00-libbrotli1_1.0.9-2+b2_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2+b2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../01-libsasl2-modules-db_2.1.27+dfsg-2.1+deb11u1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../02-libsasl2-2_2.1.27+dfsg-2.1+deb11u1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../03-libldap-2.4-2_2.4.57+dfsg-3+deb11u1_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.57+dfsg-3+deb11u1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../04-libnghttp2-14_1.43.0-1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.43.0-1) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../05-libpsl5_0.21.0-1.2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.0-1.2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../06-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../07-libssh2-1_1.9.0-2_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.9.0-2) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../08-libcurl4_7.74.0-1.3+deb11u1_amd64.deb ...
+Unpacking libcurl4:amd64 (7.74.0-1.3+deb11u1) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../09-curl_7.74.0-1.3+deb11u1_amd64.deb ...
+Unpacking curl (7.74.0-1.3+deb11u1) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../10-libldap-common_2.4.57+dfsg-3+deb11u1_all.deb ...
+Unpacking libldap-common (2.4.57+dfsg-3+deb11u1) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../11-libsasl2-modules_2.1.27+dfsg-2.1+deb11u1_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../12-publicsuffix_20211207.1025-0+deb11u1_all.deb ...
+Unpacking publicsuffix (20211207.1025-0+deb11u1) ...
+Setting up libpsl5:amd64 (0.21.0-1.2) ...
+Setting up libbrotli1:amd64 (1.0.9-2+b2) ...
+Setting up libsasl2-modules:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Setting up libnghttp2-14:amd64 (1.43.0-1) ...
+Setting up libldap-common (2.4.57+dfsg-3+deb11u1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Setting up libsasl2-2:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Setting up libssh2-1:amd64 (1.9.0-2) ...
+Setting up publicsuffix (20211207.1025-0+deb11u1) ...
+Setting up libldap-2.4-2:amd64 (2.4.57+dfsg-3+deb11u1) ...
+Setting up libcurl4:amd64 (7.74.0-1.3+deb11u1) ...
+Setting up curl (7.74.0-1.3+deb11u1) ...
+Processing triggers for libc-bin (2.31-13+deb11u3) ...
+Removing intermediate container 6f16006bd484
+ ---> e6b921d0d84b
+Successfully built e6b921d0d84b
+Successfully tagged 172.25.0.3:5000/slave_default:1.0
++ docker images
+REPOSITORY                      TAG          IMAGE ID       CREATED                  SIZE
+172.25.0.3:5000/slave_default   1.0          e6b921d0d84b   Less than a second ago   318MB
+openjdk                         8-jre-slim   1211f482e707   6 days ago               194MB
+openjdk                         8-slim       347573b5a729   6 days ago               296MB
++ docker save -o slave_default.tar 172.25.0.3:5000/slave_default:1.0
+[8mha:////4JB/HBU1dAVAzwCG9ZLmNoth/6m3iwcPMi6wDfd8gkX5AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyt32U/vwBi0Xj0m+AAAA[0m[Pipeline] stash
+Stashed 4 file(s)
+[8mha:////4LHgzPdxqU7K10XqPqzRnACFvY9+eKJDg9Wr9PNWNuJSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCkKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO62n9qHN2wmlFC+AAAA[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[8mha:////4HP6GM6YplpbZjJUGbPYTq7ixyo8CdfT6ZXQ1kDMv2VXAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN/oNdtq+AAAA[0m[Pipeline] }
+[8mha:////4JiUUnTSkbkdbpR++o5UPFdYpmcUUyV0w8WQLC0Hh6Q0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaBBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw84NdtDvgAAAA==[0m[Pipeline] // script
+[8mha:////4I1ZnfQri96uOkY4+EEuLU8eTqsR3j+qdVkeQsdwjy/hAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiqCIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QF7t4rFvgAAAA==[0m[Pipeline] }
+[8mha:////4OXC6vZ2+9IkXtkNzXEVc8mWa4eu0S+dM0V42thiSq9rAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaBBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w9PeWmevgAAAA==[0m[Pipeline] // node
+[8mha:////4AWH+lqU/qDMpsvMbBJOZzlC/TMwNaF9LUlOGlJK9i5IAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICQqJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw+lExZovgAAAA==[0m[Pipeline] }
+[8mha:////4DVrHo1N8ifWGnFX1vqfI91ogCkyEEHSLwzg8FKmvNNUAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCFEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AG6kUM6vgAAAA==[0m[Pipeline] // stage
+[8mha:////4LehJ6uVdoLyhRpWACN5VrZvgXZwlBfnuo28UYhd68mNAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjAR2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INlFR9i8EAAAA=[0m[Pipeline] stage
+[8mha:////4HJ9lVJODXCPKu2wveHagyZD5bV6Mb4kZp7Kqp7OuVTPAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] { (registry_image)
+[8mha:////4IrBWxbEA2W0IEdPJmKi73oZjC8yUcQrpiUTyWXggsf3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KBtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPBdk7bsIAAAA=[0m[Pipeline] node
+Running on [8mha:////4CeiKrGIpzvlbWsfd9bMqPqmfPLUgagPHDxjyslzD5i9AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/dKk0rySUn0AY+WXbsYAAAA=[0mubuntu in /home/jenkins/workspace/01_docker/Create_image_slave
+[8mha:////4BCyB6wg/o4489bhtB8N9oH//JEzB4aNbW8s9cENRY1qAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASMfXIzCAAAA[0m[Pipeline] {
+[8mha:////4Mt++ChumckKSRA6/XjX7LWAoeYdW7fYo4Jirg5uFXCIAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD02yRsvCAAAA[0m[Pipeline] script
+[8mha:////4KMuVvhbv05IFUHF9NVXpWOR+WgaWYV2EyUUmMbtnGsMAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] {
+[8mha:////4OKzYKZJFZ/igtS1uIQg0BcDLwSxhwKodyvIyxvhj70dAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEGDPXtvgAAAA==[0m[Pipeline] unstash
+[8mha:////4N8PTuVYSAFiCueICRx2rJNtRAg2cqQw4A/fuy01el8GAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YEAIMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfABZuXxiwgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASSWORD
+[8mha:////4JlAZIkbBaGl48QusuAvj2ZaALuFL4gB38Ymnb5yL9n4AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] {
+[8mha:////4LJ9Z1qpNS92vfvzTP2v6KEZLNHczcpBb88o9FbhrYT8AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBl2WGva+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASSWORD]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ docker load -i slave_default.tar
+The image 172.25.0.3:5000/slave_default:1.0 already exists, renaming the old one with ID sha256:2cf53c2786ee9b7daf3a35ae41e4c72a0b4b903fcaaaa14598034d04a4bcdfb9 to empty string
+Loaded image: 172.25.0.3:5000/slave_default:1.0
++ docker images
+REPOSITORY                      TAG                  IMAGE ID       CREATED              SIZE
+172.25.0.3:5000/slave_default   1.0                  e6b921d0d84b   About a minute ago   318MB
+<none>                          <none>               8644f2056431   12 hours ago         220MB
+labs_jenkins                    latest               0e0500e1f287   22 hours ago         522MB
+172.25.0.3:5000/slave_default   <none>               2cf53c2786ee   2 days ago           252MB
+jenkins/jenkins                 latest               ceea1a18418a   2 days ago           460MB
+openjdk                         8-jre-slim           1211f482e707   6 days ago           194MB
+openjdk                         11-jre-slim          9b0a3304f961   6 days ago           227MB
+labs_nexus                      latest               efb229d8ecb4   3 weeks ago          1.41GB
+ubuntu                          latest               d2e4e1f51132   4 weeks ago          77.8MB
+ubuntu                          20.04                53df61775e88   4 weeks ago          72.8MB
+ubuntu                          18.04                c6ad7e71ba7d   4 weeks ago          63.2MB
+oracle/weblogic                 14.1.1.0-developer   a437957fa0fa   5 weeks ago          1.17GB
+oracle/jdk                      11                   96ecf810b79b   5 weeks ago          449MB
+oracle/database                 18.4.0-xe            7ac4060276bb   8 weeks ago          5.89GB
+sonarqube                       latest               4ca41017fd9b   8 weeks ago          532MB
+oraclelinux                     7-slim               9ec0d85eaed0   2 months ago         133MB
+gcr.io/k8s-minikube/kicbase     v0.0.30              1312ccd2422d   3 months ago         1.14GB
+centos                          centos7              eeb6ee3f44bd   8 months ago         204MB
++ docker login -u admin -p **** 172.25.0.3:5000
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /home/jenkins/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
++ docker push 172.25.0.3:5000/slave_default:1.0
+The push refers to repository [172.25.0.3:5000/slave_default]
+fecf16ff0944: Preparing
+72e599fb307c: Preparing
+118f8b027f4a: Preparing
+def36eca601e: Preparing
+0ebab6089672: Preparing
+ad6562704f37: Preparing
+ad6562704f37: Waiting
+0ebab6089672: Layer already exists
+def36eca601e: Layer already exists
+ad6562704f37: Layer already exists
+fecf16ff0944: Pushed
+72e599fb307c: Pushed
+118f8b027f4a: Pushed
+1.0: digest: sha256:2e20504d2c4d697ae8d6a85b70be858fae477c5abf04ea9ccd023242de387898 size: 1583
++ docker logout 172.25.0.3:5000
+Removing login credentials for 172.25.0.3:5000
+[8mha:////4BBPsHBZYOzrm3W61PDk56KTSIAAz1OWYhdEVONc/0+PAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BlDdbXS+AAAA[0m[Pipeline] }
+[8mha:////4I6osuJ7XvTwuYk7lnJIsBMIyYmuNhTPqNlZ7xgwCQ+aAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJShAYhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AGWIKyJvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4HsOD5XoMZhbatutX+Q1S4n9RTcUnW35Rr4D5NKZXTu7AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpiESBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw8pPRFzvgAAAA==[0m[Pipeline] }
+[8mha:////4McRShd0BKvro4HX3vjnEMPhlL9trXBkOpxtUzl+6uDkAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGJT8GlQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw8a3krPvgAAAA==[0m[Pipeline] // script
+[8mha:////4Du5TFKjd1fVFowgQFmrErCEPR1OFKqBCpfs86bcoetlAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGJT8GlQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w8O/dfQvgAAAA==[0m[Pipeline] }
+[8mha:////4Dm5hbCSdbjVLAtELK4hNYzhNT16Llnsqv23O3YbKMntAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpiESBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZH3Lt6w89HoxsvgAAAA==[0m[Pipeline] // node
+[8mha:////4PZH0OAs/tuULX7wKsq3s5ZT8sbrbrKhp95ywZ30HjeqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJShAIJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5P+Sq6w9LOb4DvgAAAA==[0m[Pipeline] }
+[8mha:////4C7guBgNEXh+sCHTFRyNcZptZmywUwaajsIk6D9dzaWKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAQ1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w942uW/vgAAAA==[0m[Pipeline] // stage
+[8mha:////4O68dLKqFhzGHF+Ybu90U13uQ1NPseLsP7/uPqgSGp9xAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJYaOVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfI91tBtvsAk2nUSb0AAAA=[0m[Pipeline] }
+[8mha:////4P85Ck3o8L0sa0b0SX1oh6nhNtHH1yrM4feYQ0FbRCwAAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQlSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPgNXQ6r0AAAA=[0m[Pipeline] // node
+[8mha:////4K1JtmOvl8MOOCBuzlOZQQZwz3MdmdeGOss2hGhljI8CAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkJE7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8F+b4UZOUHxp932r0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

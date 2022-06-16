@@ -1,0 +1,27 @@
+commit c7871ad96bc2800fb52f2cd167169c75021afc48
+tree c9a79b963ed293d2dd919b2c81f7fee38fe07064
+parent 0144ee9573c05b1ab7c9ee1521a0e3a65ed41bcb
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-06-06 13:31:55 -0500
+committer GitHub <noreply@github.com> 2022-06-06 13:31:55 -0500
+
+    sudo
+
+:100644 100644 097aeba2469b7fb4867b5b366b1de56137ee42b5 c7c5dcc0abd254a036257ac84c4e8f7a21d0d37c M	dockerfile_default
+commit 0144ee9573c05b1ab7c9ee1521a0e3a65ed41bcb
+tree ca37dc02a4b3cc3c2d7e1406e45fca0ab7c248cf
+parent 57ddfdc3d23dc5ea9b29df1ec763ca59d21b119f
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-06-06 13:31:10 -0500
+committer GitHub <noreply@github.com> 2022-06-06 13:31:10 -0500
+
+    Update dockerfile_default
+
+:100644 100644 ec5f839c71c40243475b252a0093fcc36eb7a9ff 097aeba2469b7fb4867b5b366b1de56137ee42b5 M	dockerfile_default
+commit 57ddfdc3d23dc5ea9b29df1ec763ca59d21b119f
+tree c9b9dff5efa589afa7ac67949f740bda62d17020
+parent 68ba92d5eb22fbc5a8660a0f7ab2a9017eda37f8
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-06-06 11:31:13 -0500
+committer GitHub <noreply@github.com> 2022-06-06 11:31:13 -0500
+
+    6 de junio
+
+:100644 100644 171f1fd9b6783540ad04763240ca9a07a3e3a314 2f395269f75aa5f6f212cf55a0349ec02f337357 M	sql_prueba.txt

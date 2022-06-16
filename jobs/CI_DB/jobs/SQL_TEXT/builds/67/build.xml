@@ -1,0 +1,54 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1182.v60a_e6279b_579">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.BooleanParameterValue>
+          <name>Refresh_Param</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.TextParameterValue>
+          <name>SQL</name>
+          <description>Enter SQL code</description>
+          <value>create table clientes(
+codigo number(2) primary key not null,
+nombre varchar2(20));
+
+create table deportes(
+codigo number(5),
+nombre varchar2(30),
+domicilio varchar2(30),
+ciudad varchar2(20),
+codigoprovincia number(2));</value>
+        </hudson.model.TextParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Refresh_Param</string>
+        <string>SQL</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@591.v3a_7f422b_d058">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>99</queueId>
+  <timestamp>1654544667630</timestamp>
+  <startTime>1654544667638</startTime>
+  <result>FAILURE</result>
+  <duration>60</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

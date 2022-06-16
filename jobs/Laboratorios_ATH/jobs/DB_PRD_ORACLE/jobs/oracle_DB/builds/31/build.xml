@@ -1,0 +1,720 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1182.v60a_e6279b_579">
+  <actions>
+    <org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+      <replacementLoadedScripts/>
+    </org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.workflow.cps.replay.ReplayCause plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+            <originalNumber>30</originalNumber>
+          </org.jenkinsci.plugins.workflow.cps.replay.ReplayCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.BooleanParameterValue>
+          <name>Refresh_Parameters</name>
+          <description>Opcional</description>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>BACKUP</name>
+          <description>Script de backup</description>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>EXECUTE</name>
+          <description>Script de Ejecucion</description>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>REVERSE</name>
+          <description>Script de Reverso</description>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>validarLogsPostEjecuciones</name>
+          <description>¿Validar logs despues de todas las ejecuciones?</description>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>COMMIT</name>
+          <description>COMMIT GIT ${urlRepo}</description>
+          <value>57ddfdc3d23dc5ea9b29df1ec763ca59d21b119f</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>INDEX</name>
+          <description>	¿script especifico o inicio de secuencia?</description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>SECUENCIAL</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Refresh_Parameters</string>
+        <string>BACKUP</string>
+        <string>EXECUTE</string>
+        <string>REVERSE</string>
+        <string>validarLogsPostEjecuciones</string>
+        <string>COMMIT</string>
+        <string>INDEX</string>
+        <string>SECUENCIAL</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@591.v3a_7f422b_d058">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1129.vef26f5df883c">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.plugins.git.util.BuildData plugin="git@4.11.3">
+      <buildsByBranchName>
+        <entry>
+          <string>detached</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.11.0">
+              <sha1>57ddfdc3d23dc5ea9b29df1ec763ca59d21b119f</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>detached</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>31</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/hidraxos/jenkins_check.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@400.v6b_89a_1317c9a_">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/hidraxos/jenkins_check.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>e265754c-3b40-426e-85cf-7922a71cb768</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>453782c1-f882-44b1-8ccc-dc8961fcc7fe</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>16bb08bb-bf4d-4947-b2b8-3166c68cd6d6</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+      <interpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASSWORD</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASSWORD</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASSWORD</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+      </interpolatedWarnings>
+    </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>4af9785c-481b-49c6-819b-63b90ead36dc</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>df6ab194-df30-4a14-b5d5-fcbf07c6531a</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>4488db6d-c12b-45c1-ae08-e1d7644f1627</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>dc3aea1b-c017-4a3e-9b5f-b877e79ce978</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>2060d182-643f-4fb1-af1e-8627d318a5b2</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>57c913bd-30db-4c3e-acfb-d79364561232</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>8b9bdadc-d157-4cd2-83ea-f997a42e7b5f</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>434d5c63-1262-4485-9efa-4c4caf0453e7</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>866d16b3-afab-4fd3-ab9a-1041d80045d8</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>a9fc5ba8-2dc5-46f3-a9c1-fb2d398b7914</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>edc01434-6e7e-42a1-b8f7-e68196cb6e12</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>52267852-db2d-49d2-a823-21948a3548ee</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>9f143f76-6e80-41e3-991c-64c5c9f25e97</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>d792561a-419c-4571-9980-3eff2bfbce11</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>4e02c450-d5a3-4dc0-8c14-426e672b50a2</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>13da080d-61db-4229-9e11-0b3e5e997eba</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>13fefc08-f5a2-4f00-adff-aa14c1f77577</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>4b06120d-9472-4fb5-b014-ba033b67946b</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>21936c73-8d06-49cc-b327-5f2a6b8a2d3a</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>1b711311-738c-4236-ba9e-b4f752901fef</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>94fb25d1-fcf5-4a4a-a40c-0b987e1f2bbc</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>9a851819-a2f9-46d5-866a-35a554ba97a7</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>2957109a-6f8e-43ab-bd1d-50fe1cca2964</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>d06d7a32-3a37-48ae-8586-7687fac93d81</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>185ae501-3dfe-4700-907a-b17e0fb012aa</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>303be9d4-928d-46d2-beb6-0b91ed6d85bf</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>4aeec46b-9307-4c7b-887a-6f0cba993c14</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>d50915f0-df6f-41e2-8140-89e2aea3dfbf</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>db2fb855-c97e-4d03-9e4a-ff96c9d7e542</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>9c837a06-847f-4662-8280-910bb58aefd7</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>29ed383d-e898-4ad0-96a8-5ebaafec2904</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>ab92e422-b621-4170-93b4-a34237e64109</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>3c5265ee-1d10-47a0-8b27-48e30599ed96</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>d63ee77b-adc3-4ed3-9e53-b3bf8b0f3b57</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>86c1f127-45e5-4f57-9931-ee1579516645</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>6d03da46-4570-482e-8551-6c774e1b6b79</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>d9db4037-2f41-4a56-a7eb-5e2bdca90c25</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>6b7f1e89-328e-4a29-ba4d-007aac384618</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>32a819d6-c84a-49ce-aeef-4b9c6fa46191</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>36868ad2-ec39-48c6-acd9-01593de7f0c6</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>2b683292-da87-4e49-b9b0-bc9d7b24c610</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>f5b5bfc1-5832-43ed-8ae2-e52cf416b957</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+  </actions>
+  <queueId>110</queueId>
+  <timestamp>1654548242593</timestamp>
+  <startTime>1654548242624</startTime>
+  <result>SUCCESS</result>
+  <duration>468127</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>import groovy.transform.Field
+import java.io.*;
+import java.text.SimpleDateFormat;
+
+//Variables Nexus
+@Field defaultRepository = &apos;jenkins-releases&apos;
+@Field defaultExtension = &apos;zip&apos;
+@Field groupId = &apos;oracle-DB&apos;
+@Field credentialsNexus = &apos;nexusAdmin&apos;
+@Field ipNexus = &apos;http://192.168.1.110:8081&apos;
+//Variables git
+@Field creditialsGit = &apos;ugithub&apos;
+@Field urlRepo = &apos;https://github.com/hidraxos/jenkins_check.git&apos;
+//Variables logica
+@Field labelParameters = []
+@Field scriptName = &quot;&quot;
+@Field listaVersiones=[]
+@Field BANK = &apos;mine&apos;
+@Field listaLogs = []
+@Field credentialsOracle
+@Field def date = new Date()
+
+@Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+
+
+node(&apos;slave_sqlplus&apos;){
+
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false, description: &apos;Opcional&apos;, name: &apos;Refresh_Parameters&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false, description: &apos;Script de backup&apos;, name: &apos;BACKUP&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false, description: &apos;Script de Ejecucion&apos;, name: &apos;EXECUTE&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false, description: &apos;Script de Reverso&apos;, name: &apos;REVERSE&apos;])
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false, description: &apos;¿Validar logs despues de todas las ejecuciones?&apos;, name: &apos;validarLogsPostEjecuciones&apos;])
+	labelParameters.add(string(defaultValue: &apos;&apos;, description: &apos;COMMIT GIT ${urlRepo}&apos;, name: &apos;COMMIT&apos;, trim: false))		
+	labelParameters.add(string(defaultValue: &apos;&apos;, description: &apos;	¿script especifico o inicio de secuencia?&apos;, name: &apos;INDEX&apos;, trim: false))
+    labelParameters.add([$class: &apos;BooleanParameterDefinition&apos;, defaultValue: false, description: &apos;&apos;, name: &apos;SECUENCIAL&apos;])
+    properties(
+        [parameters(
+            labelParameters
+        )]
+    )
+    stage(&apos;Git&apos;){
+        if(params.&apos;Refresh_Parameters&apos;==false){
+            cleanWs()
+            if(params.&apos;BACKUP&apos; == false &amp;&amp; params.&apos;EXECUTE&apos; == false &amp;&amp; params.&apos;REVERSE&apos; == false){
+		    	error(&quot;[ERROR] No Se selecciono componente de ejecucion.&quot;)
+			}
+			if(params.&apos;COMMIT&apos; == &quot;&quot;){
+				error(&quot;[ERROR] No Se ingreso COMMIT de FILE GITHUB.&quot;)
+			}
+            checkout([$class: &apos;GitSCM&apos;, branches: [[name: params.&apos;COMMIT&apos; ]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: creditialsGit, url: urlRepo]]])
+			def lines = readFile(&apos;sql_prueba.txt&apos;).readLines()
+            if(params.&apos;INDEX&apos; == &quot;&quot;){
+                for(VERSIONES in lines){
+                    listaVersiones.add(VERSIONES)
+                }
+            }else if(params.&apos;INDEX&apos;!=&quot;&quot; &amp;&amp; params.&apos;SECUENCIAL&apos;==false){
+                for(version in lines){
+                    def (valor1, valor2, valor3) = VERSIONES.tokenize( &apos;#&apos; )
+                    if(valor1 == params.&apos;INDEX&apos;){
+                        listaVersiones.add(VERSIONES)
+                    }
+                }
+            }else if(params.&apos;INDEX&apos; != &quot;&quot; &amp;&amp; params.&apos;SECUENCIAL&apos; == true){
+				def contador = 1
+				for(String VERSIONES in lines){
+					def (valor1, valor2, valor3) = VERSIONES.tokenize( &apos;#&apos; )
+					if(params.&apos;INDEX&apos; == valor1){
+						contador = 2
+					}
+					if(contador == 2){
+						listaVersiones.add(VERSIONES)
+					}
+				}
+            }else{
+                printm(&quot;No se encontro archivo de versiones en GitHub&quot;,red)
+                error(&quot;File Not Found&quot;)
+            }
+        }else{
+            printm(&quot;Refresh Parameters....&quot;,blue)
+        }
+    }
+    stage(&apos;nexus&apos;){
+        if(params.&apos;Refresh_Parameters&apos;==false){
+            for(version in listaVersiones){
+                def (valor1, valor2, valor3) = version.tokenize( &apos;#&apos; )
+                repoFin(valor3)
+                descarga(valor1 ,artifactId)
+            }
+        }else{
+            printm(&quot;Refresh Parameters....&quot;,blue)
+        }
+    }
+    stage(&apos;Descomprimido&apos;){
+        if(params.&apos;Refresh_Parameters&apos;==false){
+            for(version in listaVersiones){
+                def (valor1, valor2, valor3) = version.tokenize( &apos;#&apos; )
+                repoFin(valor3)
+                descomprimido(valor1)
+            }
+        }else{
+            printm(&quot;Refresh Parameters....&quot;,blue)
+        }
+    }
+    stage(&apos;Validacione Scripts&apos;){
+        if(params.&apos;Refresh_Parameters&apos;==false){
+            for(def version in listaVersiones){
+                def (valor1, valor2, valor3) = version.tokenize( &apos;#&apos; )
+			    defineEntorno(valor2)
+                if(valor2 == &quot;TX&quot;){
+					scriptExecute = &apos;migrate.sql&apos;
+					scriptExecuteH = &apos;reverse.sql&apos;
+                    scriptExecuteB = &apos;backup.sql&apos;
+                }else if(valor2 == &quot;HIST&quot;){
+					scriptExecute = &apos;migrate.sql&apos;
+					scriptExecuteH = &apos;reverse.sql&apos;
+                    scriptExecuteB = &apos;backup.sql&apos;
+				}
+                if(BACKUP == &quot;true&quot;){
+					finallScript = &quot;${valor1}/migration/${valor1}/${scriptExecuteB}&quot;
+                    if(fileExists(finallScript)){
+					    CRITICAlANALYSYS(finallScript)
+                    }else{
+                        printm(&quot;No se encuentra script de backup&quot;,blue)
+                    }
+				}
+				if(EXECUTE == &quot;true&quot;){
+					finallScript = &quot;${valor1}/migration/${valor1}/${scriptExecute}&quot;
+					CRITICAlANALYSYS(finallScript)
+				}
+				if(REVERSE == &quot;true&quot;){
+					finallScript = &quot;${valor1}/migration/${scriptExecuteH}&quot;
+					CRITICAlANALYSYS(finallScript)
+				}
+            }
+        }else{
+            printm(&quot;Refresh Parameters....&quot;,blue)
+        }
+    }
+    stage(&apos;Ejecutar&apos;){
+        if(params.&apos;Refresh_Parameters&apos;==false){
+            def folder
+            def script
+            for(version in listaVersiones){
+                def (valor1, valor2, valor3) = version.tokenize( &apos;#&apos; )
+			    defineEntorno(valor2)
+                if(valor2 == &quot;TX&quot;){
+					scriptExecute = &apos;migrate.sql&apos;
+					scriptExecuteH = &apos;reverse.sql&apos;
+                    scriptExecuteB = &apos;backup.sql&apos;
+                }else if(valor2 == &quot;HIST&quot;){
+					scriptExecute = &apos;migrate.sql&apos;
+					scriptExecuteH = &apos;reverse.sql&apos;
+                    scriptExecuteB = &apos;backup.sql&apos;
+				}
+                if(params.&apos;BACKUP&apos;){
+                    folder = &quot;${valor1}/migration/${valor1}&quot;
+                    script = scriptExecuteB
+                    if(fileExists(folder+&apos;/&apos;+script)){
+                        SQL(folder,script)
+                        if(params.&apos;validarLogsPostEjecuciones&apos; == true){
+							listaLogs.add(folder+&apos;/&apos;+scriptName)
+						}
+                    }else{
+                        printm (&quot;No se encuentra script de backup&quot;,yellow)
+                    }
+                }
+                if(params.&apos;EXECUTE&apos;){
+                    folder = &quot;${valor1}/migration/${valor1}&quot;
+                    script = scriptExecute
+                    SQL(folder,script)
+                    if(params.&apos;validarLogsPostEjecuciones&apos; == true){
+						listaLogs.add(folder+&apos;/&apos;+scriptName)
+					}
+                }
+                if(params.&apos;REVERSE&apos;){
+                    folder = &quot;${valor1}/reverse&quot;
+                    script = scriptExecuteH
+                    SQL(folder,script)
+                    if(params.&apos;validarLogsPostEjecuciones&apos; == true){
+						listaLogs.add(folder+&apos;/&apos;+scriptName)
+					}
+                }
+            }
+            if(validarLogsPostEjecuciones == &quot;true&quot;){
+				for(log in listaLogs){
+					AnalisisLogs(log)
+				}
+			}
+			sleep 50
+        }else{
+            printm(&quot;Refresh Parameters....&quot;,blue)
+        }
+    }   
+}
+def descarga(version,artifactId){
+    printm (&quot;Descarga de .tar.gz Nexus&quot;,blue)
+    withCredentials([usernamePassword(credentialsId: credentialsNexus, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+        sh&quot;curl -X GET -u ${USERNAME}:${PASS} ${ipNexus}/repository/${defaultRepository}/${groupId}/${artifactId}/${version}/sql-releases-${version}.tar.gz -O&quot;
+    }   
+    printm (&quot;Descarga a Nexus EXITOSA&quot;,green)
+}
+def printm(message, color){
+    ansiColor(&apos;xterm&apos;){
+	    def	sdf = new SimpleDateFormat(&quot;M/d/yyyy HH:mm:ss&quot;)
+        println &quot;\033[${color}m************ ${message} ************ ${sdf.format(date)}\033[0m&quot;
+    }
+}
+def descomprimido(version){
+    sh &quot;tar -xzvf sql-releases-${version}.tar.gz&quot;
+}
+def SQL(folder, scriptName){
+	printm(&apos;[INFO] Realizando ejecucion de: &apos;+folder+&apos;/&apos;+scriptName+&apos;&apos;,&apos;46m&apos;)
+	withCredentials([usernamePassword(credentialsId: credentialsOracle, usernameVariable: &apos;USERNAME&apos;, passwordVariable: &apos;PASSWORD&apos;)]) {
+
+		sh &quot;&quot;&quot;cd ${folder} &amp;&amp; sqlplus64 &apos;${USERNAME}/${PASSWORD}@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=${hostDB})(Port=${portDB}))(CONNECT_DATA=(SID=${sidDB})))&apos; @${scriptName}
+		&quot;&quot;&quot;
+	}						
+}
+def defineEntorno(entorno){
+    if(entorno == &quot;TX&quot;){
+        hostDB = &apos;192.168.1.110&apos;
+        portDB = &apos;51521&apos;
+        sidDB = &apos;XE&apos;
+        credentialsOracle = &apos;oracleDB&apos;
+    }else{
+        printm(&quot;No selecciono entorno&quot;,red)
+        error(&quot;Enviroment Not Selected&quot;)
+    }
+
+}
+def CRITICAlANALYSYS(script){
+    printm(&quot;[INFO] Ejecutandose analisis script: ${script}&quot;,blue)
+    def DICC=[&quot;DROP&quot;]
+    def file = readFile(script)
+    for(palabra in DICC){
+        if(file.contains(palabra)){
+            printm(&quot;[ERROR] Se encontro la palabra ${palabra} en el script ${script}&quot;,red)
+            error(&quot;${palabra} action not allowed&quot;)
+        }else{
+            printm(&quot;No se enocontraron palabras reservadas&quot;,green)
+        }
+    }
+}
+def AnalisisLogs(scriptName){
+	printm(&apos;[INFO] Ejecutando analisis de log generado:&apos;+scriptName+&apos;&apos;,blue)
+	def (exp_version) = scriptName.substring(13).tokenize( &apos;/&apos; )
+	def ERRORES = [&quot;ORA-&quot;,&quot;SP2-&quot;]
+	fileResult = scriptName+&apos;.log&apos;
+	def readFileResult = readFile(fileResult).trim()
+	for(def palabra in ERRORES){
+		if(readFileResult.contains(palabra)){
+			sh &quot;tar -rvf error.log.tar ${scriptName}.log&quot;
+			NOTIFICATION(&quot;error.log.tar&quot;,&quot;FAILED&quot;, exp_version)
+			error(&quot;[ERROR] Genero error el script: ${scriptName}&quot;)
+		}	
+	}
+	sh &quot;tar -rvf LOGS-DB-B&quot;+BANK+&quot;-&quot;+exp_version+&quot;.tar ${scriptName}.log&quot;
+	NOTIFICATION(&quot;LOGS-DB-B&quot;+BANK+&quot;-&quot;+exp_version+&quot;.tar&quot;,&quot;SUCCESS&quot;, exp_version)
+}
+def NOTIFICATION(logName, resultado, VERSION){
+	def BODY
+	if(resultado == &quot;FAILED&quot;){
+		BODY = &apos;&apos;&apos;${SCRIPT, template=&quot;groovy-html.template&quot;}&apos;&apos;&apos;
+	}else{
+		
+		BODY = &apos;&apos;&apos;${SCRIPT, template=&quot;groovy-html.template&quot;} Logs de Ejecucion: https://devops-nexus.ath.net/service/rest/repository/browse/&apos;&apos;&apos;+defaultRepository+&apos;&apos;&apos;/LOGS-DB/B&apos;&apos;&apos;+BANK+&apos;&apos;&apos;-PRD/&apos;&apos;&apos;+VERSION+&apos;&apos;&apos;-${BUILD_NUMBER}/&apos;&apos;&apos;
+	}
+    emailext attachLog: true, attachmentsPattern: &quot;${logName}&quot;, body:BODY, subject: &quot;${JOB_NAME} # ${BUILD_NUMBER} # ${resultado} B&quot;+BANK+&quot;-PRD&quot;, to: &quot;hidraxosjenkins@gmail.com&quot;	
+}
+def repoFin(repo){
+    if(repo == &quot;SOLEM&quot;){
+        artifactId = &apos;sql-releases&apos;
+    }else{
+        printm(&quot;Solo se tiene el repo solem&quot;,blue)
+        artifactId = &apos;sql-releases&apos;
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>80747478091</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>838470023</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>235302202794</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>566983987</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>10378975888</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>141</iota>
+    <head>1:141</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.11.3">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/hidraxos/jenkins_check.git</url>
+            <credentialsId>ugithub</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>57ddfdc3d23dc5ea9b29df1ec763ca59d21b119f</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node>slave_sqlplus-00007wc0a3dxt</node>
+      <workspace>/home/jenkins/workspace/Laboratorios_ATH/DB_PRD_ORACLE/oracle_DB</workspace>
+      <changelogFile>/var/jenkins_home/jobs/Laboratorios_ATH/jobs/DB_PRD_ORACLE/jobs/oracle_DB/builds/31/changelog1255385046218407662.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

@@ -1,0 +1,9 @@
+commit 93d12e89b1ece13c6e8a5dfd2e6088b5f8a525fc
+tree afe42829b5908c81ff6a52933c5290ab5f6c7b92
+parent 01e0b0fa289c9228722fc3d4e54f951fdd5c45fa
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-06-06 14:05:50 -0500
+committer GitHub <noreply@github.com> 2022-06-06 14:05:50 -0500
+
+    wget
+
+:100644 100644 33e7f425f061e8efe92f002770bd376ca3323227 c28e86677d5cf044c91167d2f96c32d34d524408 M	dockerfile_sqlplus

@@ -1,0 +1,84 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1182.v60a_e6279b_579">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2086.v12b_420f036e5"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2086.v12b_420f036e5">
+      <jobProperties/>
+      <triggers/>
+      <parameters>
+        <string>Dockerfile</string>
+        <string>Version</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>Dockerfile</name>
+          <description>Archivo dockerfile de la imagen a crear</description>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Version</name>
+          <description>Versión de la imagen a crear</description>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+    <script>import groovy.transform.Field
+import java.io.*;
+
+@Field def urlGit = &apos;https://github.com/hidraxos/jenkins_check.git&apos;
+@Field def credentials = &apos;ugithub&apos;
+@Field def NexusCredentials = &apos;nexus_registry&apos;
+@Field def registry = &apos;172.25.0.3:5000&apos;
+
+
+pipeline {
+    agent any
+    parameters{
+        string(description: &apos;Archivo dockerfile de la imagen a crear&apos;, name: &apos;Dockerfile&apos;)
+        string(description: &apos;Versión de la imagen a crear&apos;, name: &apos;Version&apos;)
+    }
+
+    stages {
+        stage(&apos;git&apos;) {
+            agent {label &apos;ubuntu&apos;}
+            steps {
+                checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[credentialsId: credentials, url: urlGit]]])
+            }
+        }
+
+        stage(&apos;buildImage&apos;){
+            agent {label &apos;ubuntu&apos;}
+            steps{
+                script{
+                    cleanWs()
+                    println &quot;Primera etapa ${params.&apos;Dockerfile&apos;}&quot;
+                }
+            }
+        }
+
+        stage(&apos;registry_image&apos;){
+            agent {label &apos;ubuntu&apos;}
+            steps{
+                script{
+                    println &quot;hello prro ${params.&apos;Version&apos;}&quot;
+                }
+            }
+        }
+    }
+    
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

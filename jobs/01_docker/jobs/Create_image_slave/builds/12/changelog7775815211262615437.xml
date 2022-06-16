@@ -1,0 +1,9 @@
+commit 55478e4f9de2b0fb7abd12379f0b7c0dd723b1c9
+tree e3ce724fddf62b9d7d2afa4a4a1b38fe70c533b5
+parent 93d12e89b1ece13c6e8a5dfd2e6088b5f8a525fc
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-06-06 14:22:25 -0500
+committer GitHub <noreply@github.com> 2022-06-06 14:22:25 -0500
+
+    git
+
+:100644 100644 c7c5dcc0abd254a036257ac84c4e8f7a21d0d37c 036ae239e288397233cadc90fce82e5e80d7d04f M	dockerfile_default

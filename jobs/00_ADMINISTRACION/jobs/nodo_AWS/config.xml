@@ -1,0 +1,18 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1182.v60a_e6279b_579">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+    <script>node(&apos;CLOUD_AWS&apos;){
+    sh&quot;java -version&quot;
+    sh&quot;curl --version&quot;
+    echo &quot;Hello world&quot;
+    sh&quot;touch prueba&quot;
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

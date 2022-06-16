@@ -1,0 +1,35 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@820.vd1a_6cc65ef33">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EchoStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+      <arguments>
+        <entry>
+          <string>message</string>
+          <string>create table clientes(
+codigo number(2) primary key not null,
+nombre varchar2(20));
+
+create table deportes(
+codigo number(5),
+nombre varchar2(30),
+domicilio varchar2(30),
+ciudad varchar2(20),
+codigoprovincia number(2));</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1153.vb_912c0e47fb_a_">
+      <startTime>1654544703233</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>
