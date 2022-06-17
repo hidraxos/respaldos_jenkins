@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-06-17 14:20:06.558 UTC</timestamp>
+  <md5sum>c04d61b562e596c4e907cca98b500ba2</md5sum>
+  <fileName>Credential id=ubuntu_sshkey name=jenkins (ssh key from connection ubuntu node)</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1129.vef26f5df883c">
+      <timestamp>1655476450139</timestamp>
+      <nodeName>ubuntu</nodeName>
+      <timestamp0>1655475708758</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

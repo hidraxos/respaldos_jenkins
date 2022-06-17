@@ -1,0 +1,91 @@
+Started by timer
+[8mha:////4Ct3zHu4lW73PLb+c5KZ1fEonkF783NgPzCKbavSdDhgAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4GsTH4leKCuuPk9b6LxDQH4j4+HfCe3RbIJBrXaLbATtAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4CeiKrGIpzvlbWsfd9bMqPqmfPLUgagPHDxjyslzD5i9AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/dKk0rySUn0AY+WXbsYAAAA=[0mubuntu in /home/jenkins/workspace/00_ADMINISTRACION/Respaldos
+[8mha:////4GpfEC3U7wAjzsEYnTJc8LhmkMxIKY4FTFxSRfJ+cDLPAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4OsJs9AciM1zlOzIGyrhIYx/LGHinAI99xuq+EV0Oh1LAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4L0mBIcGCCRY97b/MAwmXbi2DOQQRwfOoA2aC7cp5UgTAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (respaldo)
+[8mha:////4E2i1GI/qOXZ+Bhv1L6YOzL4AMlhn7aBJfp8TsYZVaynAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] script
+[8mha:////4GHIhEbdrmN9qyxc0DhCXY1B7Nb/G/n55+SKVi7Hl/ANAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4II5eGifUbz0O+sOQAjr64xxp4V2abw4G/JGjKx5+Sq/AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] ansiColor
+[8mha:////4B3Ebw7dS7vfSKmwcI0a4ZuaXj4ZY5sUFylz0Uq9ziyJAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] {
+[8mha:////4HoDcPehu81mGvdrNKqc7On745dH3uLuPnnUO3ZvvLrIAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlTQLS1NzcyNTXQNLo2RdE8tUY90kA3MLXYsUE8s0IyMzUwOzJAB+d3a4rwAAAA==[0m
+[8mha:////4HojqZ7PVOewV0pZxoFcSsRQ46FGPKOJ6v5qJGQ/aOxPAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCakRFa6XhBSYxxo5159gOTsWL+Bp/IBCJii1WO9vM8wXrGODIQaNV1BuKrUHvRj0vzBz6q+OMli/YMkV2ChuVG+7UacGGk4IlRQkrARtFreNoSCfYCivvsnKSdHVOYf4OAkrTDfCAQszmJEP6whRgdxu7yPTz/BXA5BOU9f5TtX8D0loxuL4AAAA=[0m[Pipeline] echo
+[46m************ Se respaldaran las carpetas JOBS NODES PLUGINS USER ************ 6/16/2022 00:08:42[0m
+[8mha:////4HHPAH9Ni5I2HqTh6JnowzG3G2IIdnne8ahABf2W9V3iAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMYQM5W7/qe0bsgYiW74AAAA=[0m[Pipeline] }
+[8mha:////4G+lrnBB3dyyWFwvJ4XTrWvJtzl5Zf6/M4bdwujiTpXgAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFfMUC7PExDQzXTNDc1NdE1OTRN2kNIM0XfPkVANT01TTxCSTFABrcK+1rwAAAA==[0m
+[8mha:////4CqX69DTAA9jvbPY2d01skm+sOeYm42EoDd7LkkRnCeOAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRokKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsP6C1U670AAAA=[0m[Pipeline] // ansiColor
+[8mha:////4PiQYJ8KtNoh7fVjTvqHHPJPctGSxvzokcQsf/8bLPEQAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJAokREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgdQ7HZfo7lG2c0ocDBAAAA[0m[Pipeline] dir
+Running in /home/jenkins/respaldos
+[8mha:////4PFUw0TbxikfN4AXoWlO1JkWcg/8N/GtPjsRQ9QgAgaGAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4Ka3DKBfuLgYqds/aWEMz7X0HplZEZrcVGJ/zzKAc7XwAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LjSKW+AAAA[0m[Pipeline] sh
++ rm -rf jobs nodes plugins users
+[8mha:////4BpK/lyhuWaUsSeg4T02EYb5rxCUEIY+ouf2KdDtFqcyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHz0lO8vgAAAA==[0m[Pipeline] sh
+Resuming build at Fri Jun 17 14:07:34 UTC 2022 after Jenkins restart
+Waiting to resume part of 00_ADMINISTRACION » Respaldos #9: Finished waiting
+Waiting to resume part of 00_ADMINISTRACION » Respaldos #9: ‘[8mha:////4DF2bRxmTTS+VuQ483hZp/ZRQD1k1fz1pJrZXVaxoL27AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/dKk0rySUn0AY+WXbsYAAAA=[0mubuntu’ is offline
+Waiting to resume part of 00_ADMINISTRACION » Respaldos #9: ‘[8mha:////4DF2bRxmTTS+VuQ483hZp/ZRQD1k1fz1pJrZXVaxoL27AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/dKk0rySUn0AY+WXbsYAAAA=[0mubuntu’ is offline
+Waiting to resume part of 00_ADMINISTRACION » Respaldos #9: ‘[8mha:////4DF2bRxmTTS+VuQ483hZp/ZRQD1k1fz1pJrZXVaxoL27AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/dKk0rySUn0AY+WXbsYAAAA=[0mubuntu’ is offline
+Aborted by [8mha:////4INn0zpnMKbs+gflDagKeUxw81959v13cgPdsCZxdz7YAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgY+/dLi1CL9jMyUosSK/GIAQOmS8sMAAAA=[0mHermann Galvis
+[8mha:////4E+MKe38OlsdVwMQSR4r+RR5K/AM5pQj5GQBG1On0hHGAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRokFCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AOf1UXy9AAAA[0m[Pipeline] // node
+Ready to run at Fri Jun 17 14:07:47 UTC 2022
+[8mha:////4NS23Jwmwc4E3cHFcpVlYhoOMKyfiFd2WMzNkNLp4Ag0AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRdAhR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Qb/eCbPcBwew2Nr0AAAA=[0m[Pipeline] End of Pipeline
+java.util.concurrent.CancellationException: Task was cancelled.
+	at com.google.common.util.concurrent.AbstractFuture.cancellationExceptionWithCause(AbstractFuture.java:1543)
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:586)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:547)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ChainingListenableFuture.get(ChainingListenableFuture.java:82)
+	at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:240)
+	at org.jenkinsci.plugins.workflow.support.concurrent.Futures$1.run(Futures.java:146)
+	at org.jenkinsci.plugins.workflow.support.concurrent.DirectExecutor.execute(DirectExecutor.java:33)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1270)
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:1038)
+	at com.google.common.util.concurrent.AbstractFuture.cancel(AbstractFuture.java:665)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ChainingListenableFuture.cancel(ChainingListenableFuture.java:140)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ChainingListenableFuture.run(ChainingListenableFuture.java:168)
+	at org.jenkinsci.plugins.workflow.support.concurrent.DirectExecutor.execute(DirectExecutor.java:33)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1270)
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:1038)
+	at com.google.common.util.concurrent.AbstractFuture.cancel(AbstractFuture.java:665)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ChainingListenableFuture.cancel(ChainingListenableFuture.java:140)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ChainingListenableFuture.run(ChainingListenableFuture.java:168)
+	at org.jenkinsci.plugins.workflow.support.concurrent.DirectExecutor.execute(DirectExecutor.java:33)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1270)
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:1038)
+	at com.google.common.util.concurrent.AbstractFuture.cancel(AbstractFuture.java:665)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ListFuture.setOneValue(ListFuture.java:137)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ListFuture.access$000(ListFuture.java:40)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ListFuture$2.run(ListFuture.java:107)
+	at org.jenkinsci.plugins.workflow.support.concurrent.DirectExecutor.execute(DirectExecutor.java:33)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1270)
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:1038)
+	at com.google.common.util.concurrent.AbstractFuture.cancel(AbstractFuture.java:665)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ChainingListenableFuture.cancel(ChainingListenableFuture.java:140)
+	at org.jenkinsci.plugins.workflow.support.concurrent.ChainingListenableFuture.run(ChainingListenableFuture.java:168)
+	at org.jenkinsci.plugins.workflow.support.concurrent.DirectExecutor.execute(DirectExecutor.java:33)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1270)
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:1038)
+	at com.google.common.util.concurrent.AbstractFuture.cancel(AbstractFuture.java:665)
+	at org.jenkinsci.plugins.workflow.support.pickles.TryRepeatedly.cancel(TryRepeatedly.java:127)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.interrupt(CpsFlowExecution.java:1184)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun$2.lambda$interrupt$0(WorkflowRun.java:397)
+	at jenkins.security.ImpersonatingScheduledExecutorService$1.run(ImpersonatingScheduledExecutorService.java:69)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+Caused: java.io.IOException: Failed to load build state
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$3.onSuccess(CpsFlowExecution.java:846)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$3.onSuccess(CpsFlowExecution.java:844)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$5$1.run(CpsFlowExecution.java:920)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:38)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:139)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:30)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:70)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Finished: ABORTED

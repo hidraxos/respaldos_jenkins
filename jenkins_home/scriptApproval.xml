@@ -1,0 +1,248 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<scriptApproval plugin="script-security@1175.v4b_d517d6db_f0">
+  <approvedScriptHashes/>
+  <approvedSignatures/>
+  <aclApprovedSignatures/>
+  <approvedClasspathEntries/>
+  <pendingScripts>
+    <pendingScript>
+      <context/>
+      <script>import groovy.transform.Field
+import groovy.json.JsonSlurper
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.io.*;
+import org.w3c.dom.*;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.ParserConfigurationException;
+import groovy.json.JsonSlurper
+import java.text.SimpleDateFormat;
+    
+@Field def ruta = &quot;&quot;
+@Field def existe
+@Field def rango
+@Field def credentials = &apos;nexusAdmin&apos;
+@Field def pathBackup = &apos;/home/jenkins/&apos;      //Ruta donde se generaran las carpetas para el respaldo
+@Field def pathJenkins = &apos;/var/jenkins_home/jobs/&apos;  //Ruta donde se guardan los archivos de configuracion de jenkins
+@Field def url_github = &apos;https://github.com/hidraxos/jenkins_check&apos;
+@Field def url_nexus = &apos;http://192.168.1.110:8081&apos;
+@Field def repoNexus = &quot;Jobs_vencidos&quot;
+@Field def date
+@Field def yellow = &quot;43&quot;
+@Field def green = &quot;42&quot;
+
+node{
+    cleanWs()
+    properties([parameters([
+        booleanParam(defaultValue: false, description: &apos;Seleccione si desea ELIMINAR LOS JOBS DESPUES DEL RESPALDO&apos;,name: &quot;ELIMINAR_JOBS&quot;),
+        booleanParam(defaultValue: false, description: &apos;&apos;,name: &quot;Refresh_Param&quot;),
+        stringParam(defaultValue: &quot;&quot;, description: &apos;Nombre del archivo en GitHub SIN EL .txt&apos;,name: &quot;Archivo&quot;),
+        stringParam(defaultValue: &quot;&quot;, description: &apos;Version del .tar para cargar a Nexus&apos;,name: &quot;Version&quot;)
+    ])])
+    stage(&apos;check-folder-respaldos&apos;){
+        if(!params.&quot;Refresh_Param&quot;){
+            if(!validate(&quot;&quot;)){
+                sh&quot;&quot;&quot;
+                    mkdir ${pathBackup}${params.&quot;Archivo&quot;}
+                &quot;&quot;&quot;
+            }else{
+                println &quot;El directorio ${pathBackup}${params.&quot;Archivo&quot;} ya existe&quot;
+            }
+        }
+    }
+    stage(&apos;Back_up_jobs&apos;){
+        if(!params.&quot;Refresh_Param&quot;){
+            checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[url: url_github]]])
+            def archivoJobs = (params.&quot;Archivo&quot;)+&quot;.txt&quot;
+            def jobs = readFile(archivoJobs).readLines();
+            if(!jobs.isEmpty()){
+                printm(&quot;Comenzando Respaldo de Jobs&quot;,yellow)
+                respaldos(jobs)
+                printm(&quot;Respaldo de Jobs EXITOSO&quot;,green)
+                printm(&quot;Comenzando comprimido .tar.gz&quot;,yellow)
+                comprimido()
+                printm(&quot;Comprimido EXITOSO&quot;,green)
+                uploadNexus()
+            }
+        }
+    }
+    stage(&apos;Eliminar Jobs&apos;){
+        if(!params.&quot;Refresh_Param&quot;){
+            if(params.&quot;ELIMINAR_JOBS&quot;){
+                printm(&quot;Comienzo de Borrado de Jobs&quot;,yellow)
+                def jobs = (params.&quot;Archivo&quot;)+&quot;.txt&quot;
+                def eliminateJobs = readFile(jobs).readLines()
+                eliminate(eliminateJobs)
+                printm(&quot;Borrado de Jobs EXITOSO&quot;,green)
+                printm(&quot;El Borrado se completara al reiniciar Jenkins&quot;,yellow)
+            }
+        }
+    }
+}
+def respaldos(def jobs){
+    for(i in jobs){
+        //println i
+        assert (!i.contains(&quot; &quot;))
+        if(i.contains(&apos;/&apos;)){
+            def arreglo = i.tokenize(&apos;/&apos;)
+            //println arreglo
+
+
+            rango = []
+            for(h in 0..(arreglo.size()-1)){
+                rango.add(h)
+            }
+
+
+            for(e in rango){
+                ruta = ruta + &quot;/&quot; +arreglo[e]
+                //println ruta
+                    if(!validate(ruta)){
+                        sh&quot;&quot;&quot;
+                            mkdir ${pathBackup}${params.&quot;Archivo&quot;}${ruta}
+                        &quot;&quot;&quot;
+                    }
+                    if(!validate(ruta+&quot;/config.xml&quot;)){
+                        sh &quot;&quot;&quot;
+                          cp  ${pathJenkins}${ruta}/config.xml ${pathBackup}${params.&quot;Archivo&quot;}${ruta}
+                        &quot;&quot;&quot;
+                    }
+                    if(e != (arreglo.size()-1)){
+                        ruta = ruta + &quot;/jobs&quot;
+                        if(!validate(ruta)){
+                            sh&quot;&quot;&quot;
+                                mkdir ${pathBackup}${params.&quot;Archivo&quot;}${ruta}
+                            &quot;&quot;&quot;
+                        }
+                    }
+            }
+            ruta = &quot;&quot;
+        }else{
+            if(!validate(&quot;/&quot;+i)){
+                sh&quot;&quot;&quot;
+                    mkdir ${pathBackup}${params.&quot;Archivo&quot;}&quot;/&quot;${i}
+                &quot;&quot;&quot;
+            }
+            if(!validate(&quot;/&quot;+i+&quot;/config.xml&quot;)){
+                sh &quot;&quot;&quot;
+                  cp  ${pathJenkins}/${i}/config.xml ${pathBackup}${params.&quot;Archivo&quot;}&quot;/&quot;${i}
+                &quot;&quot;&quot;
+            }
+        }
+    }
+}
+
+def boolean validate(def ruta){
+    if(fileExists(&quot;${pathBackup}${params.&quot;Archivo&quot;}&quot;+ruta)){
+        println &quot;${ruta} existe&quot;
+        return true
+    }else{
+        println &quot;${ruta} NO existe&quot;
+        return false 
+    }
+}
+
+def comprimido(){
+    sh&quot;&quot;&quot;
+        tar -czvf job_vencidos.tar.gz ${pathBackup}${params.&quot;Archivo&quot;}
+    &quot;&quot;&quot;
+}
+
+def uploadNexus(){
+    println &quot;\033[43m############  Carga de .tar.gz a Nexus ############\033[0m&quot;
+    def date = new Date()
+    def sdf = new SimpleDateFormat(&quot;dd-MM-yyyy&quot;)
+    date = sdf.format(date)
+    withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+        sh&quot;curl -v -u $USERNAME:$PASS -X POST ${url_nexus}/service/rest/v1/components?repository=${repoNexus} -F maven2.groupId=BackUp_Jobs_Vencidos -F maven2.artifactId=${date} -F maven2.version=${params.&quot;Version&quot;} -F &apos;maven2.asset1=@${WORKSPACE}/job_vencidos.tar.gz;type=application/x-tgz&apos; -F maven2.asset1.extension=tar.gz&quot;
+    }   
+    println &quot;\033[42m############  Carga a Nexus EXITOSA ############\033[0m&quot;
+}
+
+def eliminate(def eliminateJobs){
+    for(i in eliminateJobs){
+        if(i.contains(&apos;/&apos;)){
+            def arreglo = i.tokenize(&apos;/&apos;)
+            def path = &quot;&quot;
+            for(e in 0..(arreglo.size()-2)){
+                path = path + arreglo[e]+&quot;/jobs/&quot;
+            }
+            def ruta = path
+            path = path + &quot;/&quot;+arreglo[(arreglo.size()-1)]
+            sh&quot;rm -rf ${pathJenkins}${path}&quot;
+            eliminateIfEmpty(ruta)
+            path = &quot;&quot;
+        }else{
+            sh &quot;rm -rf ${pathJenkins}${i}&quot;
+        }
+    }
+}
+
+def eliminateIfEmpty(path){
+    path = pathJenkins + path                     
+    def arreglo = path.tokenize(&quot;/&quot;)              
+    arreglo.remove(arreglo.size()-1)              
+    def ruta_sin_jobs = &quot;&quot;
+    for(i in arreglo){
+        ruta_sin_jobs = ruta_sin_jobs + &quot;/&quot; + i  
+    }
+    def  File carpeta = new File(path)             
+    def files = carpeta.list();
+    if(files.length == 0){
+        sh&quot;rm -rf ${ruta_sin_jobs}&quot;
+    }else{
+        println &quot;La carpeta aun tiene Jobs en uso&quot;
+    }
+}
+def printm(message,color){
+    ansiColor{
+        println(&quot;\033[${color}m############ ${message} ############\033[0m&quot;)
+    }
+}</script>
+      <language>groovy</language>
+    </pendingScript>
+    <pendingScript>
+      <context/>
+      <script>@Library(&apos;SSHConnect&apos;)
+import java.io.*;
+import static com.aestasit.infrastructure.ssh.DefaultSsh.*
+
+</script>
+      <language>groovy</language>
+    </pendingScript>
+    <pendingScript>
+      <context/>
+      <script>@Library(&apos;SSHConnect@master&apos;)
+import java.io.*;
+import com.aestasit.infrastructure.ssh.DefaultSsh.*
+
+node(&apos;master&apos;){
+    stage(&apos;ssh&apos;){
+trustUnknownHosts = true
+remoteSession(&apos;hidraxos:galvis0425@192.168.1.110&apos;) {
+  exec &apos;cd /home/hidraxos/Escritorio/Ejercicios/Groovy &amp;&amp; ls &gt; pruebaMamalona.txt&apos;
+  scp {
+  	from { localFile &quot;/home/hidraxos/Escritorio/Ejercicios/Groovy/pruebaMamalona.txt&quot; }
+  	into { remoteFile &quot;/home/hidraxos/Escritorio/Ejercicios/pruebaMamalona.txt&quot;}
+  }
+}
+
+def file = new File(&apos;/home/hidraxos/Escritorio/Ejercicios/pruebaMamalona.txt&apos;)
+def fprList = []
+    file.eachLine{line -&gt;
+      fprList &lt;&lt; line
+    }
+println fprList
+}
+}</script>
+      <language>groovy</language>
+    </pendingScript>
+  </pendingScripts>
+  <pendingSignatures/>
+  <pendingClasspathEntries/>
+</scriptApproval>
