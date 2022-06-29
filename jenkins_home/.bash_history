@@ -57,3 +57,10 @@ ls
 cd ..
 ls
 exit
+ls
+cat credentials.xml 
+cd .ssh/
+ls
+cat id_rsa.pub 
+cat id_rsa
+exit

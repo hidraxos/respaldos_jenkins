@@ -1,0 +1,65 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1186.v8def1a_5f3944">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@593.va_a_fc25d520e9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>17</queueId>
+  <timestamp>1655477672450</timestamp>
+  <startTime>1655477672457</startTime>
+  <result>SUCCESS</result>
+  <duration>10745</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node(&apos;CLOUD_AWS&apos;){
+    sh&quot;java -version&quot;
+    sh&quot;curl --version&quot;
+    echo &quot;Hello world&quot;
+    sh&quot;touch prueba&quot;
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>130028287</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>264436136</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>5896980042</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>152996853</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>119209612</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>11</iota>
+    <head>1:11</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>
