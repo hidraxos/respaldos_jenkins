@@ -1,14 +1,10 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@1167.v8fe861b_09ef9">
+<flow-definition plugin="workflow-job@1186.v8def1a_5f3944">
+  <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty plugin="leastload@3.0.0">
-      <leastLoadDisabled>false</leastLoadDisabled>
-    </org.bstick12.jenkinsci.plugins.leastload.LeastLoadDisabledProperty>
-    <com.synopsys.arc.jenkinsci.plugins.jobrestrictions.jobs.JobRestrictionProperty plugin="job-restrictions@0.8"/>
-  </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2659.v52d3de6044d0">
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2725.v7b_c717eb_12ce">
     <script>import groovy.transform.Field
 import java.text.SimpleDateFormat;
 import groovy.json.JsonSlurper
@@ -20,7 +16,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.io.File; 
 
-node(&apos;master&apos;){
+node(&apos;ubuntu&apos;){
     stage(&apos;Print AnsiColor&apos;){
         ansiColor(&apos;xterm&apos;){
             colorMessage(&quot;41&quot;, &quot;41&quot;)

@@ -7,7 +7,7 @@
   <mode>EXCLUSIVE</mode>
   <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
   <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.821.vd834f8a_c390e">
-    <host>192.168.1.110</host>
+    <host>192.168.1.115</host>
     <port>22</port>
     <credentialsId>ubuntu_sshkey</credentialsId>
     <launchTimeoutSeconds>60</launchTimeoutSeconds>
@@ -24,6 +24,17 @@
         <tree-map>
           <default>
             <comparator class="java.lang.String$CaseInsensitiveComparator"/>
+          </default>
+          <int>0</int>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="java.lang.String$CaseInsensitiveComparator" reference="../../../../../hudson.slaves.EnvironmentVariablesNodeProperty/envVars/tree-map/default/comparator"/>
           </default>
           <int>1</int>
           <string>MAVEN_OPTS</string>

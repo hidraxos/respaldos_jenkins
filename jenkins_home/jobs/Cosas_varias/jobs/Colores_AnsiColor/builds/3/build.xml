@@ -1,0 +1,105 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1186.v8def1a_5f3944">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@593.va_a_fc25d520e9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>03264b3c-a7ea-4fa3-b1e2-0a53fe1d3b86</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>45db2f94-363a-4964-80eb-391de2d8f904</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>82eb3d68-c086-4fc6-a5b6-e167a8c98592</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+  </actions>
+  <queueId>21</queueId>
+  <timestamp>1657028029896</timestamp>
+  <startTime>1657028029905</startTime>
+  <result>SUCCESS</result>
+  <duration>1153</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>import groovy.transform.Field
+import java.text.SimpleDateFormat;
+import groovy.json.JsonSlurper
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.io.File; 
+
+node(&apos;ubuntu&apos;){
+    stage(&apos;Print AnsiColor&apos;){
+        ansiColor(&apos;xterm&apos;){
+            colorMessage(&quot;41&quot;, &quot;41&quot;)
+            colorMessage(&quot;42&quot;, &quot;42&quot;)
+            colorMessage(&quot;43&quot;, &quot;43&quot;)
+            colorMessage(&quot;44&quot;, &quot;44&quot;)
+            colorMessage(&quot;45&quot;, &quot;45&quot;)
+            colorMessage(&quot;46&quot;, &quot;46&quot;)
+            colorMessage(&quot;47&quot;, &quot;47&quot;)
+        }
+
+    }
+}
+def colorMessage(message, color){
+    def date = new Date()
+	def	sdf = new SimpleDateFormat(&quot;M/d/yyyy HH:mm:ss&quot;)
+    
+        println &quot;\033[${color}m************ ${message} ************ ${sdf.format(date)}\033[0m&quot;
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>204903150</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>173684158</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>781258097</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>251348052</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>228718936</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>22</iota>
+    <head>1:22</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

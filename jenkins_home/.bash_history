@@ -64,3 +64,29 @@ ls
 cat id_rsa.pub 
 cat id_rsa
 exit
+sshpass -p galvis0425 ssh hidraxos@$192.168.1.115 cd /home/hidraxos/Documents && sed 's/Hello World/HELLO/' prueba.properties
+sshpass -p galvis0425 ssh hidraxos@$192.168.1.115 cdlhome/hidrdraxos
+sshpass -p galvis0425 ssh hidraxos@$192.168.1.115 ls home/hidrdraxos
+ ssh hidraxos@$192.168.1.115
+ssh 192.168.1.115
+sshpass -p galvis0425 ssh hidraxos@$192.168.1.115 ls home/hidraxos
+sssh hidraxos@$192.168.1.115
+ssh hidraxos@$192.168.1.115
+ssh hidraxos@192.168.1.115
+sshpass -p galvis0425 ssh hidraxos@192.168.1.115 ls home/hidrdraxos
+sshpass -p galvis0425 ssh hidraxos@192.168.1.115 ls home/hidraxos
+sshpass -p galvis0425 ssh hidraxos@192.168.1.115 ls /home/hidraxos
+sshpass -p galvis0425 ssh hidraxos@192.168.1.115 cd /home/hidraxos/Documents && sed 's/Hello World/New_line/' prueba.properties
+sshpass -p galvis0425 ssh hidraxos@192.168.1.115 sed 's/Hello World/New_line/' /home/hidraxos/Documents/prueba.properties
+sshpass -p galvis0425 ssh hidraxos@192.168.1.115 "sed 's/Hello World/New_line/' /home/hidraxos/Documents/prueba.properties"
+sshpass -p galvis0425 ssh hidraxos@192.168.1.115 "sed -i -e 's/Hello World/New_line/' /home/hidraxos/Documents/prueba.properties"
+exit
+cd /var/jenkins_home/workspace/Laboratorios_ATH/ICBS/
+ls
+cd properties
+ls
+sshpass -p galvis0425 scp new_properties.properties hidraxos@192.168.1.115/home/hidraxos/Documents
+sshpass -p galvis0425 scp new_properties.properties hidraxos@192.168.1.115:/home/hidraxos/Documents
+sshpass -p galvis0425 scp new_properties.properties hidraxos@192.168.1.115:/home/hidraxos/Documents
+sshpass -p galvis0425 scp new_properties.properties hidraxos@192.168.1.115:/home/hidraxos/Documentsexit
+exit

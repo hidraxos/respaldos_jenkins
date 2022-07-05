@@ -1,0 +1,211 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1186.v8def1a_5f3944">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2097.v33db_b_de764b_e"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2097.v33db_b_de764b_e">
+      <jobProperties/>
+      <triggers/>
+      <parameters>
+        <string>Eliminar</string>
+        <string>Agregar</string>
+        <string>Archivo_Nuevo</string>
+        <string>Modificar_text</string>
+        <string>Eliminar_text</string>
+        <string>Modificar</string>
+        <string>Refresh_Param</string>
+        <string>Archivo</string>
+        <string>Agregar_text</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Refresh_Param</name>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Modificar</name>
+          <description>Seleccione si desea modificar una linea</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>Modificar_text</name>
+          <description>Ingrese file##line##line</description>
+          <trim>false</trim>
+        </hudson.model.TextParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Eliminar</name>
+          <description>Seleccione si desea Eliminar una linea</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>Eliminar_text</name>
+          <description>Ingrese file##line</description>
+          <trim>false</trim>
+        </hudson.model.TextParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Agregar</name>
+          <description>Seleccione si desea agregar una linea</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>Agregar_text</name>
+          <description>Ingrese file##line</description>
+          <trim>false</trim>
+        </hudson.model.TextParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Archivo_Nuevo</name>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Archivo</name>
+          <description>nombre del archivo .properties nuevo</description>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2725.v7b_c717eb_12ce">
+    <script>import groovy.transform.Field
+import java.io.*;
+
+@Field def host = &apos;192.168.1.115&apos;
+@Field def credentials = &apos;hidraxos_credentials&apos;
+@Field def credentialsGit = &apos;ugithub&apos;
+@Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+@Field def folder = &apos;/home/hidraxos/Documents&apos;
+
+pipeline{
+    agent any
+    parameters{
+        booleanParam(name: &apos;Refresh_Param&apos;, defaultValue: false, description: &apos;&apos;)
+        booleanParam(name: &apos;Modificar&apos;, defaultValue: false, description: &apos;Seleccione si desea modificar una linea&apos;)
+        text(name: &apos;Modificar_text&apos;, defaultValue: &apos;&apos;, description: &apos;Ingrese file##line##line&apos;)
+        booleanParam(name: &apos;Eliminar&apos;, defaultValue: false, description: &apos;Seleccione si desea Eliminar una linea&apos;)
+        text(name: &apos;Eliminar_text&apos;, defaultValue: &apos;&apos;, description: &apos;Ingrese file##line&apos;)
+        booleanParam(name: &apos;Agregar&apos;, defaultValue: false, description: &apos;Seleccione si desea agregar una linea&apos;)
+        text(name: &apos;Agregar_text&apos;, defaultValue: &apos;&apos;, description: &apos;Ingrese file##line&apos;)
+        booleanParam(name: &apos;Archivo_Nuevo&apos;, defaultValue: false, description: &apos;&apos;)
+        string(name:&apos;Archivo&apos;,description: &quot;nombre del archivo .properties nuevo&quot;)
+    }
+    stages{
+        stage(&apos;Git properties&apos;){
+            steps{
+                script{
+                    cleanWs()
+                    if(!params.&apos;Refresh_Param&apos;){
+                        checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[credentialsId: &apos;ugithub&apos;, url: &apos;https://github.com/hidraxos/jenkins_check.git&apos;]]])
+                        printm(&quot;Descarga de Git exitosa&quot;,green)
+                        printm(&quot;Ejecutando cambios en propiedades&quot;,blue)
+                    }else{
+                        printm(&quot;Refrescando Parametros&quot;,blue)
+                    }
+                }
+            }
+        }
+        stage(&apos;Execute changes&apos;){
+            steps{
+                script{
+                    if(!params.&apos;Refresh_Param&apos;){
+                        if(params.&apos;Modificar&apos;){
+                            modify()
+                        }
+                        if(params.&apos;Eliminar&apos;){
+                            eliminate()
+                        }
+                        if(params.&apos;Agregar&apos;){
+                            agregate()
+                        }
+                        if(params.&apos;Archivo_Nuevo&apos;){
+                            if(fileExists(params.&apos;Archivo&apos;)){
+                                new_file()
+                            }else{
+                                printm(&quot;No existe el archivo ${params.&apos;Archivo&apos;}&quot;,red)
+                                error(&quot;file Doesn&apos;t exist&quot;)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+def printm(message,color){
+    ansiColor{
+        println(&quot;\033[${color}m############ ${message} ############\033[0m&quot;)
+    }
+}
+
+def modify(){
+    array_files = params.&apos;Modificar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; old = array[1] ; new_line = array[2]
+        printm(&quot;Modificando archivo ${file}&quot;,blue)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;s/${old}/${new_line}/&apos; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${file} modificado&quot;,green)
+            sh&quot;&quot;&quot;
+                sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def eliminate(){
+    array_files = params.&apos;Eliminar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; line = array[1] ;
+        printm(&quot;Eliminando linea de archivo ${file}&quot;,blue)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;/${line}/d&apos; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${file} modificado&quot;,green)
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def agregate(){
+    array_files = params.&apos;Agregar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; line = array[1]
+        printm(&quot;Agregando linea al archivo ${file}&quot;,blue)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;echo &apos;${line}&apos; &gt;&gt; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${file} modificado&quot;,green)
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def new_file(){
+    printm(&quot;Agregando archivo Nuevo ${params.&apos;Archivo&apos;}&quot;,blue)
+    withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+        sh&quot;&quot;&quot;
+             sshpass -p ${PASS} scp ${params.&apos;Archivo&apos;} ${USERNAME}@${host}:${folder}
+        &quot;&quot;&quot;
+        printm(&quot;Archivo ${params.&apos;Archivo&apos;} agregado&quot;,green)
+        sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;ls ${folder}&quot;
+        &quot;&quot;&quot;
+   }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

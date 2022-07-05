@@ -1,0 +1,684 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1186.v8def1a_5f3944">
+  <actions>
+    <org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <replacementLoadedScripts/>
+    </org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.workflow.cps.replay.ReplayCause plugin="workflow-cps@2725.v7b_c717eb_12ce">
+            <originalNumber>18</originalNumber>
+          </org.jenkinsci.plugins.workflow.cps.replay.ReplayCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.BooleanParameterValue>
+          <name>Refresh_Param</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Modificar</name>
+          <description>Seleccione si desea modificar una linea</description>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.TextParameterValue>
+          <name>Modificar_text</name>
+          <description>Ingrese file##line##line</description>
+          <value></value>
+        </hudson.model.TextParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Eliminar</name>
+          <description>Seleccione si desea Eliminar una linea</description>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.TextParameterValue>
+          <name>Eliminar_text</name>
+          <description>Ingrese file##line</description>
+          <value></value>
+        </hudson.model.TextParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Agregar</name>
+          <description>Seleccione si desea agregar una linea</description>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.TextParameterValue>
+          <name>Agregar_text</name>
+          <description>Ingrese file##line</description>
+          <value>otro.properties##borrar linea</value>
+        </hudson.model.TextParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>Archivo_Nuevo</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Archivo</name>
+          <description>nombre del archivo .properties nuevo</description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Refresh_Param</string>
+        <string>Modificar</string>
+        <string>Modificar_text</string>
+        <string>Eliminar</string>
+        <string>Eliminar_text</string>
+        <string>Agregar</string>
+        <string>Agregar_text</string>
+        <string>Archivo_Nuevo</string>
+        <string>Archivo</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@593.va_a_fc25d520e9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2097.v33db_b_de764b_e">
+      <stagesUUID>068dfd54-0df3-48a6-853c-d7441a60a20a</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2097.v33db_b_de764b_e">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Git properties</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">cleanWs()
+                    if(!params.&apos;Refresh_Param&apos;){
+                        checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[credentialsId: &apos;ugithub&apos;, url: &apos;https://github.com/hidraxos/jenkins_check.git&apos;]]])
+                        printm(&quot;Descarga de Git exitosa&quot;,green)
+                        printm(&quot;Ejecutando cambios en propiedades&quot;,blue)
+                    }else{
+                        printm(&quot;Refrescando Parametros&quot;,blue)
+                    }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Execute changes</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">if(!params.&apos;Refresh_Param&apos;){
+                        if(params.&apos;Modificar&apos;){
+                            modify()
+                        }
+                        if(params.&apos;Eliminar&apos;){
+                            eliminate()
+                        }
+                        if(params.&apos;Agregar&apos;){
+                            agregate()
+                        }
+                        if(params.&apos;Archivo_Nuevo&apos;){
+                            if(fileExists(params.&apos;Archivo&apos;)){
+                                new_file()
+                            }else{
+                                printm(&quot;No existe el archivo ${params.&apos;Archivo&apos;}&quot;,red)
+                                error(&quot;file Doesn&apos;t exist&quot;)
+                            }
+                        }
+                    }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>068dfd54-0df3-48a6-853c-d7441a60a20a</uuid>
+          </stages>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+          <parameters>
+            <parameters>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>booleanParam</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Refresh_Param</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="boolean">false</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string"></value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>booleanParam</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Modificar</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="boolean">false</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Seleccione si desea modificar una linea</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>text</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Modificar_text</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string"></value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Ingrese file##line##line</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>booleanParam</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Eliminar</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="boolean">false</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Seleccione si desea Eliminar una linea</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>text</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Eliminar_text</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string"></value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Ingrese file##line</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>booleanParam</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Agregar</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="boolean">false</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Seleccione si desea agregar una linea</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>text</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Agregar_text</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string"></value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Ingrese file##line</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>booleanParam</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Archivo_Nuevo</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="boolean">false</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string"></value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>string</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Archivo</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">nombre del archivo .properties nuevo</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+            </parameters>
+          </parameters>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1129.vef26f5df883c">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.plugins.git.util.BuildData plugin="git@4.11.3">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.11.0">
+              <sha1>040980f489f30c2aa48a0487966bde8aa9e37b20</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>19</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/hidraxos/jenkins_check.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@400.v6b_89a_1317c9a_">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/hidraxos/jenkins_check.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>06da576f-45ae-4d76-a5bd-a330d4a727ce</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>2f148dcf-15f1-4e6a-ae66-7c9d3e39d78f</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>3573c249-53a6-496a-a6cc-11752538a495</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>e6e7cf13-e900-4395-b4ce-a847f2c7cc73</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>10b2b249-c6e0-475b-bce9-5161ed043f19</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>06438b7b-2a03-4932-9282-55026f056f6b</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <interpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+      </interpolatedWarnings>
+    </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction>
+  </actions>
+  <queueId>59</queueId>
+  <timestamp>1657034537921</timestamp>
+  <startTime>1657034537936</startTime>
+  <result>SUCCESS</result>
+  <duration>2839</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>import groovy.transform.Field
+import java.io.*;
+
+@Field def host = &apos;192.168.1.115&apos;
+@Field def credentials = &apos;hidraxos_credentials&apos;
+@Field def credentialsGit = &apos;ugithub&apos;
+@Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+@Field def folder = &apos;/home/hidraxos/Documents&apos;
+
+pipeline{
+    agent any
+    parameters{
+        booleanParam(name: &apos;Refresh_Param&apos;, defaultValue: false, description: &apos;&apos;)
+        booleanParam(name: &apos;Modificar&apos;, defaultValue: false, description: &apos;Seleccione si desea modificar una linea&apos;)
+        text(name: &apos;Modificar_text&apos;, defaultValue: &apos;&apos;, description: &apos;Ingrese file##line##line&apos;)
+        booleanParam(name: &apos;Eliminar&apos;, defaultValue: false, description: &apos;Seleccione si desea Eliminar una linea&apos;)
+        text(name: &apos;Eliminar_text&apos;, defaultValue: &apos;&apos;, description: &apos;Ingrese file##line&apos;)
+        booleanParam(name: &apos;Agregar&apos;, defaultValue: false, description: &apos;Seleccione si desea agregar una linea&apos;)
+        text(name: &apos;Agregar_text&apos;, defaultValue: &apos;&apos;, description: &apos;Ingrese file##line&apos;)
+        booleanParam(name: &apos;Archivo_Nuevo&apos;, defaultValue: false, description: &apos;&apos;)
+        string(name:&apos;Archivo&apos;,description: &quot;nombre del archivo .properties nuevo&quot;)
+    }
+    stages{
+        stage(&apos;Git properties&apos;){
+            steps{
+                script{
+                    cleanWs()
+                    if(!params.&apos;Refresh_Param&apos;){
+                        checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[credentialsId: &apos;ugithub&apos;, url: &apos;https://github.com/hidraxos/jenkins_check.git&apos;]]])
+                        printm(&quot;Descarga de Git exitosa&quot;,green)
+                        printm(&quot;Ejecutando cambios en propiedades&quot;,blue)
+                    }else{
+                        printm(&quot;Refrescando Parametros&quot;,blue)
+                    }
+                }
+            }
+        }
+        stage(&apos;Execute changes&apos;){
+            steps{
+                script{
+                    if(!params.&apos;Refresh_Param&apos;){
+                        if(params.&apos;Modificar&apos;){
+                            modify()
+                        }
+                        if(params.&apos;Eliminar&apos;){
+                            eliminate()
+                        }
+                        if(params.&apos;Agregar&apos;){
+                            agregate()
+                        }
+                        if(params.&apos;Archivo_Nuevo&apos;){
+                            if(fileExists(params.&apos;Archivo&apos;)){
+                                new_file()
+                            }else{
+                                printm(&quot;No existe el archivo ${params.&apos;Archivo&apos;}&quot;,red)
+                                error(&quot;file Doesn&apos;t exist&quot;)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+def printm(message,color){
+    ansiColor{
+        println(&quot;\033[${color}m############ ${message} ############\033[0m&quot;)
+    }
+}
+
+def modify(){
+    array_files = params.&apos;Modificar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; old = array[1] ; new_line = array[2]
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;s/${old}/${new_line}/&apos; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def eliminate(){
+    array_files = params.&apos;Eliminar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; line = array[1] ;
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;/${line}/d&apos; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def agregate(){
+    array_files = params.&apos;Agregar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; line = array[1]
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;echo &apos;${line}&apos; &gt;&gt; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>285983330</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>184269549</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1150990288</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>133400234</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>395001848</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>40</iota>
+    <head>1:40</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.11.3">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/hidraxos/jenkins_check.git</url>
+            <credentialsId>ugithub</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/Laboratorios_ATH/ICBS/properties</workspace>
+      <changelogFile>/var/jenkins_home/jobs/Laboratorios_ATH/jobs/ICBS/jobs/properties/builds/19/changelog17054311026191810275.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>
