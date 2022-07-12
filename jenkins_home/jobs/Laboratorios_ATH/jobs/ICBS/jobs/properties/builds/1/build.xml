@@ -15,7 +15,7 @@
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2097.v33db_b_de764b_e">
-      <stagesUUID>c64e6b0d-e5f4-4858-850d-4c6e5e15fcf4</stagesUUID>
+      <stagesUUID>fcf475d5-4779-47a7-a1e4-1312e7d5bfeb</stagesUUID>
       <pipelineDefs>
         <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2097.v33db_b_de764b_e">
           <stages>
@@ -36,11 +36,13 @@
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
                               <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
                                 <value class="string">cleanWs()
-                if(!params.&apos;Refresh_Param&apos;){
-                  checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[credentialsId: &apos;ugithub&apos;, url: &apos;https://github.com/hidraxos/jenkins_check.git&apos;]]])
-                }else{
-                    printm(&quot;Refrescando Parametros&quot;,blue)
-                }</value>
+                    if(!params.&apos;Refresh_Param&apos;){
+                        checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[credentialsId: &apos;ugithub&apos;, url: &apos;https://github.com/hidraxos/jenkins_check.git&apos;]]])
+                        printm(&quot;Descarga de Git exitosa&quot;,green)
+                        printm(&quot;Ejecutando cambios en propiedades&quot;,blue)
+                    }else{
+                        printm(&quot;Refrescando Parametros&quot;,blue)
+                    }</value>
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
                             </entry>
                           </arguments>
@@ -51,7 +53,7 @@
                 </branches>
               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
               <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
-                <name>Execute script</name>
+                <name>Execute changes</name>
                 <branches>
                   <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
                     <name>default</name>
@@ -66,8 +68,24 @@
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
                               <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
                                 <value class="string">if(!params.&apos;Refresh_Param&apos;){
-
-              }</value>
+                        if(params.&apos;Modificar&apos;){
+                            modify()
+                        }
+                        if(params.&apos;Eliminar&apos;){
+                            eliminate()
+                        }
+                        if(params.&apos;Agregar&apos;){
+                            agregate()
+                        }
+                        if(params.&apos;Archivo_Nuevo&apos;){
+                            if(fileExists(params.&apos;Archivo&apos;)){
+                                new_file()
+                            }else{
+                                printm(&quot;No existe el archivo ${params.&apos;Archivo&apos;}&quot;,red)
+                                error(&quot;file Doesn&apos;t exist&quot;)
+                            }
+                        }
+                    }</value>
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
                             </entry>
                           </arguments>
@@ -78,7 +96,7 @@
                 </branches>
               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
             </stages>
-            <uuid>c64e6b0d-e5f4-4858-850d-4c6e5e15fcf4</uuid>
+            <uuid>fcf475d5-4779-47a7-a1e4-1312e7d5bfeb</uuid>
           </stages>
           <agent>
             <agentType>
@@ -140,7 +158,7 @@
                       <key>description</key>
                     </key>
                     <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
-                      <value class="string"></value>
+                      <value class="string">Seleccione si desea modificar una linea</value>
                     </value>
                   </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
                 </args>
@@ -198,7 +216,7 @@
                       <key>description</key>
                     </key>
                     <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
-                      <value class="string"></value>
+                      <value class="string">Seleccione si desea Eliminar una linea</value>
                     </value>
                   </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
                 </args>
@@ -256,7 +274,7 @@
                       <key>description</key>
                     </key>
                     <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
-                      <value class="string"></value>
+                      <value class="string">Seleccione si desea agregar una linea</value>
                     </value>
                   </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
                 </args>
@@ -298,7 +316,7 @@
                       <key>name</key>
                     </key>
                     <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
-                      <value class="string">Modificar</value>
+                      <value class="string">Archivo_Nuevo</value>
                     </value>
                   </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
                   <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
@@ -380,12 +398,42 @@
         </entry>
       </revisionStates>
     </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>c8c4d762-f1a5-4a44-922b-c0dd913f146d</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>7f9f2af1-0c60-4920-9a3a-7b70a15e2e55</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>7f349094-aa26-49cf-8d75-3a0f202865fc</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>15fbaec5-7d78-4b99-a0e0-486a46c95722</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>6a0b1021-5bed-4e7b-8ca9-3563435903e0</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>2695fe56-ed6f-419c-8d9f-c90e794eb8cd</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
   </actions>
-  <queueId>23</queueId>
-  <timestamp>1657028984348</timestamp>
-  <startTime>1657028984360</startTime>
+  <queueId>87</queueId>
+  <timestamp>1657131757790</timestamp>
+  <startTime>1657131757803</startTime>
   <result>SUCCESS</result>
-  <duration>7704</duration>
+  <duration>2590</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -393,80 +441,164 @@
     <script>import groovy.transform.Field
 import java.io.*;
 
-@Field def hostDB = &apos;192.168.1.115&apos;
+@Field def host = &apos;192.168.1.115&apos;
 @Field def credentials = &apos;hidraxos_credentials&apos;
 @Field def credentialsGit = &apos;ugithub&apos;
 @Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+@Field def folder = &apos;/home/hidraxos/Documents&apos;
 
 pipeline{
     agent any
     parameters{
         booleanParam(name: &apos;Refresh_Param&apos;, defaultValue: false, description: &apos;&apos;)
-        booleanParam(name: &apos;Modificar&apos;, defaultValue: false, description: &apos;&apos;)
+        booleanParam(name: &apos;Modificar&apos;, defaultValue: false, description: &apos;Seleccione si desea modificar una linea&apos;)
         text(name: &apos;Modificar_text&apos;, defaultValue: &apos;&apos;, description: &apos;Ingrese file##line##line&apos;)
-        booleanParam(name: &apos;Eliminar&apos;, defaultValue: false, description: &apos;&apos;)
+        booleanParam(name: &apos;Eliminar&apos;, defaultValue: false, description: &apos;Seleccione si desea Eliminar una linea&apos;)
         text(name: &apos;Eliminar_text&apos;, defaultValue: &apos;&apos;, description: &apos;Ingrese file##line&apos;)
-        booleanParam(name: &apos;Agregar&apos;, defaultValue: false, description: &apos;&apos;)
+        booleanParam(name: &apos;Agregar&apos;, defaultValue: false, description: &apos;Seleccione si desea agregar una linea&apos;)
         text(name: &apos;Agregar_text&apos;, defaultValue: &apos;&apos;, description: &apos;Ingrese file##line&apos;)
-        booleanParam(name: &apos;Modificar&apos;, defaultValue: false, description: &apos;&apos;)
+        booleanParam(name: &apos;Archivo_Nuevo&apos;, defaultValue: false, description: &apos;&apos;)
         string(name:&apos;Archivo&apos;,description: &quot;nombre del archivo .properties nuevo&quot;)
     }
     stages{
         stage(&apos;Git properties&apos;){
             steps{
-              script{
-                cleanWs()
-                if(!params.&apos;Refresh_Param&apos;){
-                  checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[credentialsId: &apos;ugithub&apos;, url: &apos;https://github.com/hidraxos/jenkins_check.git&apos;]]])
-                }else{
-                    printm(&quot;Refrescando Parametros&quot;,blue)
+                script{
+                    cleanWs()
+                    if(!params.&apos;Refresh_Param&apos;){
+                        checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], extensions: [], userRemoteConfigs: [[credentialsId: &apos;ugithub&apos;, url: &apos;https://github.com/hidraxos/jenkins_check.git&apos;]]])
+                        printm(&quot;Descarga de Git exitosa&quot;,green)
+                        printm(&quot;Ejecutando cambios en propiedades&quot;,blue)
+                    }else{
+                        printm(&quot;Refrescando Parametros&quot;,blue)
+                    }
                 }
-              }
             }
         }
-        stage(&apos;Execute script&apos;){
-          steps{
-            script{
-              if(!params.&apos;Refresh_Param&apos;){
-
-              }
+        stage(&apos;Execute changes&apos;){
+            steps{
+                script{
+                    if(!params.&apos;Refresh_Param&apos;){
+                        if(params.&apos;Modificar&apos;){
+                            modify()
+                        }
+                        if(params.&apos;Eliminar&apos;){
+                            eliminate()
+                        }
+                        if(params.&apos;Agregar&apos;){
+                            agregate()
+                        }
+                        if(params.&apos;Archivo_Nuevo&apos;){
+                            if(fileExists(params.&apos;Archivo&apos;)){
+                                new_file()
+                            }else{
+                                printm(&quot;No existe el archivo ${params.&apos;Archivo&apos;}&quot;,red)
+                                error(&quot;file Doesn&apos;t exist&quot;)
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
     }
 }
 def printm(message,color){
-  ansiColor{
-    println(&quot;\033[${color}m############ ${message} ############\033[0m&quot;)
-  }
+    ansiColor{
+        println(&quot;\033[${color}m############ ${message} ############\033[0m&quot;)
+    }
+}
+
+def modify(){
+    array_files = params.&apos;Modificar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; old = array[1] ; new_line = array[2]
+        printm(&quot;Modificando archivo ${file}&quot;,blue)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;s/${old}/${new_line}/&apos; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${file} modificado&quot;,green)
+            sh&quot;&quot;&quot;
+                sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def eliminate(){
+    array_files = params.&apos;Eliminar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; line = array[1] ;
+        printm(&quot;Eliminando linea de archivo ${file}&quot;,blue)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;/${line}/d&apos; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${file} modificado&quot;,green)
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def agregate(){
+    array_files = params.&apos;Agregar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; line = array[1]
+        printm(&quot;Agregando linea al archivo ${file}&quot;,blue)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;echo &apos;${line}&apos; &gt;&gt; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${file} modificado&quot;,green)
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def new_file(){
+    printm(&quot;Agregando archivo Nuevo ${params.&apos;Archivo&apos;}&quot;,blue)
+    withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+        file = params.&apos;Archivo&apos;.trim()
+        sh&quot;&quot;&quot;
+             sshpass -p ${PASS} scp ${file} ${USERNAME}@${host}:${folder}
+        &quot;&quot;&quot;
+        printm(&quot;Archivo ${params.&apos;Archivo&apos;} agregado&quot;,green)
+        sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;ls ${folder}&quot;
+        &quot;&quot;&quot;
+   }
 }</script>
     <loadedScripts class="map"/>
     <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
     <timings class="concurrent-hash-map">
       <entry>
         <string>flowNode</string>
-        <long>169168126</long>
+        <long>214880361</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>2704252284</long>
+        <long>186162024</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>2548500214</long>
+        <long>726915105</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>802541334</long>
+        <long>137664396</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>355241745</long>
+        <long>179853176</long>
       </entry>
     </timings>
     <sandbox>true</sandbox>
-    <iota>25</iota>
-    <head>1:25</head>
+    <iota>35</iota>
+    <head>1:35</head>
     <done>true</done>
     <resumeBlocked>false</resumeBlocked>
   </execution>
@@ -492,7 +624,7 @@ def printm(message,color){
       </scm>
       <node></node>
       <workspace>/var/jenkins_home/workspace/Laboratorios_ATH/ICBS/properties</workspace>
-      <changelogFile>/var/jenkins_home/jobs/Laboratorios_ATH/jobs/ICBS/jobs/properties/builds/1/changelog17968562679042429257.xml</changelogFile>
+      <changelogFile>/var/jenkins_home/jobs/Laboratorios_ATH/jobs/ICBS/jobs/properties/builds/1/changelog15883256784122432423.xml</changelogFile>
       <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
     </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
   </checkouts>

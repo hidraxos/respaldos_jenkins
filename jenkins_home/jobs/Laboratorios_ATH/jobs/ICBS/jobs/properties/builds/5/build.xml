@@ -11,32 +11,32 @@
         <hudson.model.BooleanParameterValue>
           <name>Modificar</name>
           <description>Seleccione si desea modificar una linea</description>
-          <value>false</value>
+          <value>true</value>
         </hudson.model.BooleanParameterValue>
         <hudson.model.TextParameterValue>
           <name>Modificar_text</name>
           <description>Ingrese file##line##line</description>
-          <value></value>
+          <value>prueba.properties##primera linea##linea modificada;;file.properties##segunda linea##linea modificada</value>
         </hudson.model.TextParameterValue>
         <hudson.model.BooleanParameterValue>
           <name>Eliminar</name>
           <description>Seleccione si desea Eliminar una linea</description>
-          <value>false</value>
+          <value>true</value>
         </hudson.model.BooleanParameterValue>
         <hudson.model.TextParameterValue>
           <name>Eliminar_text</name>
           <description>Ingrese file##line</description>
-          <value></value>
+          <value>otro.properties##primera linea;;file.properties##tercer linea</value>
         </hudson.model.TextParameterValue>
         <hudson.model.BooleanParameterValue>
           <name>Agregar</name>
           <description>Seleccione si desea agregar una linea</description>
-          <value>false</value>
+          <value>true</value>
         </hudson.model.BooleanParameterValue>
         <hudson.model.TextParameterValue>
           <name>Agregar_text</name>
           <description>Ingrese file##line</description>
-          <value></value>
+          <value>prueba.properties##linea agregada;;file.properties##linea agregada</value>
         </hudson.model.TextParameterValue>
         <hudson.model.BooleanParameterValue>
           <name>Archivo_Nuevo</name>
@@ -45,7 +45,7 @@
         <hudson.model.StringParameterValue>
           <name>Archivo</name>
           <description>nombre del archivo .properties nuevo</description>
-          <value>nex</value>
+          <value>new_properties.properties</value>
         </hudson.model.StringParameterValue>
       </parameters>
       <parameterDefinitionNames>
@@ -74,7 +74,7 @@
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2097.v33db_b_de764b_e">
-      <stagesUUID>8978dbe9-93a5-4fa5-b22f-3d7d65d23560</stagesUUID>
+      <stagesUUID>32164d58-53a8-4eee-a8e4-fff66fbb44b1</stagesUUID>
       <pipelineDefs>
         <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2097.v33db_b_de764b_e">
           <stages>
@@ -137,7 +137,7 @@
                             agregate()
                         }
                         if(params.&apos;Archivo_Nuevo&apos;){
-                            if(fileExists(params.&apos;Archivo&apos;)){
+                            if(fileExists(params.&apos;Archivo&apos;.trim())){
                                 new_file()
                             }else{
                                 printm(&quot;No existe el archivo ${params.&apos;Archivo&apos;}&quot;,red)
@@ -155,7 +155,7 @@
                 </branches>
               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
             </stages>
-            <uuid>8978dbe9-93a5-4fa5-b22f-3d7d65d23560</uuid>
+            <uuid>32164d58-53a8-4eee-a8e4-fff66fbb44b1</uuid>
           </stages>
           <agent>
             <agentType>
@@ -458,67 +458,354 @@
       </revisionStates>
     </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
     <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
-      <id>b3cefeca-66c0-46e4-9505-7c6ab26fc3e5</id>
+      <id>32abbd42-94eb-4f1b-8395-442920e6b513</id>
       <colorMapName>xterm</colorMapName>
       <command>START</command>
     </hudson.plugins.ansicolor.action.ColorizedAction>
     <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
-      <id>25431d0f-b990-4a0a-8503-a2b94e14f482</id>
+      <id>5ad91612-3542-42fc-80e6-2c7b07a89410</id>
       <colorMapName>xterm</colorMapName>
       <command>CURRENT</command>
     </hudson.plugins.ansicolor.action.ColorizedAction>
     <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
-      <id>c67f0aa6-a87c-4430-bf09-151b810800eb</id>
+      <id>524ab4c3-ce3d-41bb-b7e0-bdc5e2efc830</id>
       <colorMapName>xterm</colorMapName>
       <command>STOP</command>
     </hudson.plugins.ansicolor.action.ColorizedAction>
     <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
-      <id>106a5535-4f5f-41e2-a60f-b0005663ccaa</id>
+      <id>5e4761a3-94bc-4f81-8fdb-6603717601a4</id>
       <colorMapName>xterm</colorMapName>
       <command>START</command>
     </hudson.plugins.ansicolor.action.ColorizedAction>
     <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
-      <id>c8c33481-b2f0-431c-bcf8-5c7c0aab5f06</id>
+      <id>61a86098-e03d-4bbb-a2d5-90ad13a55e74</id>
       <colorMapName>xterm</colorMapName>
       <command>CURRENT</command>
     </hudson.plugins.ansicolor.action.ColorizedAction>
     <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
-      <id>54d56049-9fad-48a9-b3a8-01e0c35a43c2</id>
+      <id>f7caa094-bfb9-4150-8d20-b31f9046a09e</id>
       <colorMapName>xterm</colorMapName>
       <command>STOP</command>
     </hudson.plugins.ansicolor.action.ColorizedAction>
     <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
-      <id>3a52d2a3-571f-4631-bc53-6024203019cb</id>
+      <id>2b5556ad-8c12-4996-8ec2-30c5c5f80d5c</id>
       <colorMapName>xterm</colorMapName>
       <command>START</command>
     </hudson.plugins.ansicolor.action.ColorizedAction>
     <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
-      <id>5f3864b5-3131-4938-84d5-59478e4c533e</id>
+      <id>e3c6ef2d-f7c2-42d3-97e3-a67c3d95e26a</id>
       <colorMapName>xterm</colorMapName>
       <command>CURRENT</command>
     </hudson.plugins.ansicolor.action.ColorizedAction>
     <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
-      <id>205b5aa6-b432-4ed0-b457-da500de07781</id>
+      <id>306d84d6-67c2-4b33-b912-92f68f8d52f4</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <interpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+      </interpolatedWarnings>
+    </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>bd4114af-5218-4222-92d3-d0b99c231171</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>6413d868-0213-421a-8663-827b72e53ca0</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>e8d60704-1fd8-4260-aac2-29ad6d1a3df6</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>3557d0c6-e081-431e-9f31-ad71159ff207</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>204239c4-6ddb-4efc-b27b-15b00fcdceb8</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>7ee17e9d-67ba-4534-a51c-3d64fcb47fd2</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>02bfccbc-b084-421b-ba6d-e468b3370b4f</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>3a611e9c-7c95-4191-abeb-fbc1f48ec765</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>042c9fab-dffb-48ea-81b7-70307ae3d842</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>07c5f6d9-a846-42d3-afa4-1d20b217be35</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>04c0d6c4-0598-41b8-95cb-4a449f8ff0ef</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>9e850ad8-a145-426c-843f-122f18976d62</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>54661ae9-a2aa-4911-821d-7fca73d3d57a</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>94e8b8e5-6537-4030-a926-3251277378f9</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>11cb27c6-73c0-470c-8438-766cc748dac6</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>982e5285-3e7d-41c9-a344-81fb2b157881</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>eacc5c07-54a8-4e61-a46b-b826cf32cefc</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>710ec654-ae09-48ea-b3e9-1f439d49eba1</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>f59c6878-1489-46f1-ac6e-3ad16ef342b6</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>845a2145-e140-4472-8b50-071dcc4698fc</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>237524c3-3ca5-4b51-8379-30c64356ab3b</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>c6e30f6f-fa30-47dc-bba3-fd108cee6dca</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>51e213c8-bc18-4e41-80c1-b0ebaaed4015</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>d62a1bf7-70e7-4c7f-ba35-95f155d4be63</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>6d56834b-22ef-49e1-bfb7-64ecb0d5eade</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>361662f4-8ea3-44af-bf2f-805092da5fe0</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>e9dfe590-f76e-4790-a20d-37a9e1a0167a</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>5a4a8635-8dca-46ed-8864-97494e63c85e</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>fe72c921-73e7-40cb-b395-470bccc77dd4</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>1f008300-bb5e-44ee-9ca3-acf63b59894f</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>4628ade7-c8f0-4c6b-898d-f5ee4434dfcc</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>b268f13a-e6f4-4ea1-90b0-5edbbff23e75</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>23388c24-a98a-4b77-b75b-dda722e161f1</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>5bf94536-8a87-410f-8738-68778c9c9c47</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>060e04da-6c59-4164-a60b-92a5ffb8e000</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>2e32a48a-9b75-48a2-9c11-fa8cd0f747b0</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>e0e7caf3-9bc4-4987-97e1-228e2f6c2817</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>a0b49553-5695-418f-b3fd-7b6515f53749</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>f1392cbe-0972-4f8a-b63c-845d6d389135</id>
       <colorMapName>xterm</colorMapName>
       <command>STOP</command>
     </hudson.plugins.ansicolor.action.ColorizedAction>
   </actions>
-  <queueId>31</queueId>
-  <timestamp>1657030024256</timestamp>
-  <startTime>1657030024267</startTime>
-  <result>FAILURE</result>
-  <duration>3179</duration>
+  <queueId>95</queueId>
+  <timestamp>1657133039972</timestamp>
+  <startTime>1657133039982</startTime>
+  <result>SUCCESS</result>
+  <duration>9065</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
-    <result>FAILURE</result>
+    <result>SUCCESS</result>
     <script>import groovy.transform.Field
 import java.io.*;
 
-@Field def hostDB = &apos;192.168.1.115&apos;
+@Field def host = &apos;192.168.1.115&apos;
 @Field def credentials = &apos;hidraxos_credentials&apos;
 @Field def credentialsGit = &apos;ugithub&apos;
 @Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos;
+@Field def folder = &apos;/home/hidraxos/Documents&apos;
 
 pipeline{
     agent any
@@ -562,7 +849,7 @@ pipeline{
                             agregate()
                         }
                         if(params.&apos;Archivo_Nuevo&apos;){
-                            if(fileExists(params.&apos;Archivo&apos;)){
+                            if(fileExists(params.&apos;Archivo&apos;.trim())){
                                 new_file()
                             }else{
                                 printm(&quot;No existe el archivo ${params.&apos;Archivo&apos;}&quot;,red)
@@ -579,34 +866,99 @@ def printm(message,color){
     ansiColor{
         println(&quot;\033[${color}m############ ${message} ############\033[0m&quot;)
     }
+}
+
+def modify(){
+    array_files = params.&apos;Modificar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; old = array[1] ; new_line = array[2]
+        printm(&quot;Modificando archivo ${file}&quot;,blue)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;s/${old}/${new_line}/&apos; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${file} modificado&quot;,green)
+            sh&quot;&quot;&quot;
+                sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def eliminate(){
+    array_files = params.&apos;Eliminar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; line = array[1] ;
+        printm(&quot;Eliminando linea de archivo ${file}&quot;,blue)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;/${line}/d&apos; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${file} modificado&quot;,green)
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def agregate(){
+    array_files = params.&apos;Agregar_text&apos;.tokenize(&apos;;;&apos;)
+    for(i in array_files){
+        array = i.tokenize(&apos;##&apos;)
+        file = array[0] ; line = array[1]
+        printm(&quot;Agregando linea al archivo ${file}&quot;,blue)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;echo &apos;${line}&apos; &gt;&gt; ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${file} modificado&quot;,green)
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${file}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def new_file(){
+    printm(&quot;Agregando archivo Nuevo ${params.&apos;Archivo&apos;}&quot;,blue)
+    withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+        file = params.&apos;Archivo&apos;.trim()
+        sh&quot;&quot;&quot;
+             sshpass -p ${PASS} scp ${file} ${USERNAME}@${host}:${folder}
+        &quot;&quot;&quot;
+        printm(&quot;Archivo ${params.&apos;Archivo&apos;} agregado&quot;,green)
+        sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;ls ${folder}&quot;
+        &quot;&quot;&quot;
+   }
 }</script>
     <loadedScripts class="map"/>
     <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
     <timings class="concurrent-hash-map">
       <entry>
         <string>flowNode</string>
-        <long>371692046</long>
+        <long>1061125162</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>382200708</long>
+        <long>160874493</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>1336086593</long>
+        <long>3456671772</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>68208352</long>
+        <long>77607656</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>317973891</long>
+        <long>1260662735</long>
       </entry>
     </timings>
     <sandbox>true</sandbox>
-    <iota>42</iota>
-    <head>1:42</head>
+    <iota>148</iota>
+    <head>1:148</head>
     <done>true</done>
     <resumeBlocked>false</resumeBlocked>
   </execution>
@@ -632,7 +984,7 @@ def printm(message,color){
       </scm>
       <node></node>
       <workspace>/var/jenkins_home/workspace/Laboratorios_ATH/ICBS/properties</workspace>
-      <changelogFile>/var/jenkins_home/jobs/Laboratorios_ATH/jobs/ICBS/jobs/properties/builds/5/changelog16622992687732122168.xml</changelogFile>
+      <changelogFile>/var/jenkins_home/jobs/Laboratorios_ATH/jobs/ICBS/jobs/properties/builds/5/changelog8229484934615835339.xml</changelogFile>
       <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
     </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
   </checkouts>

@@ -1,0 +1,9 @@
+commit cfaa6280b43b2064a1fac2cf7434615e0bc7aebe
+tree cfb66a25e80d513cc92255f27c930eefbc682fa1
+parent 97b2593f199eedc6e3884fa4cd5667b91a61b86c
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:43:21 -0500
+committer GitHub <noreply@github.com> 2022-07-07 10:43:21 -0500
+
+    Segunda prueba commit
+
+:100644 100644 d6fff83a93e19b69c908071db96238b208bddd36 30d02177aa012ef8bb9dcb621316e7352afbd0f5 M	properties.yaml

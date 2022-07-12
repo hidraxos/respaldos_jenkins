@@ -90,3 +90,5 @@ sshpass -p galvis0425 scp new_properties.properties hidraxos@192.168.1.115:/home
 sshpass -p galvis0425 scp new_properties.properties hidraxos@192.168.1.115:/home/hidraxos/Documents
 sshpass -p galvis0425 scp new_properties.properties hidraxos@192.168.1.115:/home/hidraxos/Documentsexit
 exit
+cat /etc/oc-release
+exit

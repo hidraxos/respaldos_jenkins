@@ -6,7 +6,11 @@
   <usages>
     <entry>
       <string>Laboratorios_ATH/ICBS/properties</string>
-      <ranges>6-11,13-14,16,18-20,24-27,29</ranges>
+      <ranges>2,4-11,13-14,16,18-20,24-27,29-31</ranges>
+    </entry>
+    <entry>
+      <string>Laboratorios_ATH/ICBS/test</string>
+      <ranges>21-24,26-35</ranges>
     </entry>
   </usages>
   <facets/>

@@ -8,10 +8,9 @@
     <descriptorId>hudson.plugins.ansicolor.AnsiColorStep</descriptorId>
   </node>
   <actions>
-    <wf.a.BodyInvocationAction plugin="workflow-api@1164.v760c223ddb_32"/>
-    <wf.a.TimingAction plugin="workflow-api@1164.v760c223ddb_32">
-      <startTime>1657029111568</startTime>
-    </wf.a.TimingAction>
     <s.a.LogStorageAction/>
+    <wf.a.TimingAction plugin="workflow-api@1164.v760c223ddb_32">
+      <startTime>1657131910112</startTime>
+    </wf.a.TimingAction>
   </actions>
 </Tag>
