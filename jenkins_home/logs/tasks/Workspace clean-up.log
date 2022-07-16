@@ -1,0 +1,30 @@
+Started at Thu Jul 14 15:50:37 UTC 2022
+Checking Refresh_Param
+Checking Script_parameters
+Checking Todo_en_uno
+Checking Platzi » groovy_declarative
+Checking Platzi » hello_platzi
+Checking Platzi » parameterized
+Checking Platzi » watchers
+Checking Laboratorios_ATH » Api_Sonar
+Checking Laboratorios_ATH » Git_push
+Checking Laboratorios_ATH » Lab-Sap
+Checking Laboratorios_ATH » Lab-nodo-ubuntu
+Checking Laboratorios_ATH » ScriptVersionesSAP
+Checking Laboratorios_ATH » WLST
+Checking Laboratorios_ATH » WebLogic
+Checking Laboratorios_ATH » oracle_DB
+Checking Laboratorios_ATH » ICBS » propertiesJSON
+Checking Laboratorios_ATH » ICBS » propertiesYAML
+Checking Laboratorios_ATH » ICBS » test
+Checking Laboratorios_ATH » DB_PRD_ORACLE » oracle_DB
+Checking jobs_vencidos » backup_jobs_vencidos
+Checking Cosas_varias » Colores_AnsiColor
+Checking Cosas_varias » Email_ext
+Checking Cosas_varias » test_API
+Checking CI_DB » SQL_TEXT
+Checking 01_docker » Create_image_slave
+Checking 01_docker » docker_test
+Checking 00_ADMINISTRACION » Respaldos
+Checking 00_ADMINISTRACION » nodo_AWS
+Finished at Thu Jul 14 15:50:37 UTC 2022. 123ms

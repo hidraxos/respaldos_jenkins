@@ -5,12 +5,20 @@
   <fileName>Credential id=hidraxos_credentials name=hidraxos/****** (Cresentials ubuntu server hidraxos)</fileName>
   <usages>
     <entry>
-      <string>Laboratorios_ATH/ICBS/properties</string>
-      <ranges>2,4-11,13-14,16,18-20,24-27,29-31</ranges>
+      <string>Laboratorios_ATH/ICBS/propertiesJSON</string>
+      <ranges>21-25,27-30</ranges>
+    </entry>
+    <entry>
+      <string>Todo_en_uno</string>
+      <ranges>54</ranges>
     </entry>
     <entry>
       <string>Laboratorios_ATH/ICBS/test</string>
       <ranges>21-24,26-35</ranges>
+    </entry>
+    <entry>
+      <string>Laboratorios_ATH/ICBS/properties</string>
+      <ranges>2,4-11,13-14,16,18-20,24-27,29-31</ranges>
     </entry>
   </usages>
   <facets/>

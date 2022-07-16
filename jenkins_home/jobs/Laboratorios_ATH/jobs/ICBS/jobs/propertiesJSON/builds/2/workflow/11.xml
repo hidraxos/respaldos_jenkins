@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@820.vd1a_6cc65ef33">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2725.v7b_c717eb_12ce">
+    <parentIds>
+      <string>10</string>
+    </parentIds>
+    <id>11</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EchoStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <arguments>
+        <entry>
+          <string>message</string>
+          <string>[{&quot;modificacion&quot;:[{&quot;propiedad&quot;:&quot;timeout.GA_PQRSCustomerAuthentication.AuthInqRequest&quot;,&quot;valor&quot;:&quot;50000&quot;,&quot;accion_linea&quot;:&quot;New&quot;},{&quot;propiedad&quot;:&quot;timeout.GA_PQRSCustomerAuthentication&quot;,&quot;valor&quot;:&quot;50000&quot;,&quot;accion_linea&quot;:&quot;New&quot;}],&quot;accion_archivo&quot;:&quot;Mod&quot;,&quot;bancos&quot;:[&quot;BAVV&quot;,&quot;BOCC&quot;],&quot;nombre_archivo&quot;:&quot;ws-timeout-settings.properties&quot;,&quot;url&quot;:&quot;https://git.solem.cl/icbs/icbs-properties/-/tree/develop&quot;,&quot;tag&quot;:&quot;11.30.0&quot;},{&quot;modificacion&quot;:[{&quot;propiedad&quot;:&quot;timeout.AuthInqRequest&quot;,&quot;valor&quot;:&quot;50000&quot;,&quot;accion_linea&quot;:&quot;New&quot;},{&quot;propiedad&quot;:&quot;GA_PQRSCustomerAuthentication.AuthInqRequest&quot;,&quot;valor&quot;:&quot;50000&quot;,&quot;accion_linea&quot;:&quot;New&quot;}],&quot;accion_archivo&quot;:&quot;Mod&quot;,&quot;bancos&quot;:[&quot;BBTA&quot;,&quot;BPOP&quot;],&quot;nombre_archivo&quot;:&quot;timeout.properties&quot;,&quot;url&quot;:&quot;https://git.solem.cl/icbs/icbs-properties/-/tree/develop&quot;,&quot;tag&quot;:&quot;11.30.0&quot;}]</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1164.v760c223ddb_32">
+      <startTime>1657670853238</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

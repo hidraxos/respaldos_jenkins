@@ -5,6 +5,10 @@
   <fileName>Credential id=ugithub name=hidraxos/****** (credenciales github hidraxos)</fileName>
   <usages>
     <entry>
+      <string>Laboratorios_ATH/ICBS/propertiesJSON</string>
+      <ranges>2-30</ranges>
+    </entry>
+    <entry>
       <string>Laboratorios_ATH/ICBS/test</string>
       <ranges>1-10,12-15,17,19-24,26-35</ranges>
     </entry>
