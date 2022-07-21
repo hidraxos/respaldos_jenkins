@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@820.vd1a_6cc65ef33">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2725.v7b_c717eb_12ce">
+    <parentIds>
+      <string>20</string>
+    </parentIds>
+    <id>21</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>
+            curl -v -u admin:${PASS} -X POST http://192.168.1.115:8081/service/rest/v1/components?repository=maven-icbs-releases -F maven2.groupId=com/ath/icbs -F maven2.artifactId=icbs-properties-devops -F maven2.version=R108 -F &apos;maven2.asset1=@/home/jenkins/workspace/Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus/icbs-properties-devops-11.35.0.zip;type=application/json&apos; -F maven2.asset1.extension=zip
+        </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PASS</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1164.v760c223ddb_32">
+      <startTime>1658275778774</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

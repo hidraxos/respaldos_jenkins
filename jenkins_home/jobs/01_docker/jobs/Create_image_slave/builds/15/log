@@ -1,0 +1,414 @@
+Started by user [8mha:////4INn0zpnMKbs+gflDagKeUxw81959v13cgPdsCZxdz7YAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgY+/dLi1CL9jMyUosSK/GIAQOmS8sMAAAA=[0mHermann Galvis
+Replayed [8mha:////4F26S5FvAciTzjXtG+yBHJCrAWxAhQEI9idRh5bFP+gxAAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZN/az8JH0Dw/iU/OTs1CIwz7koNbEkNT4zNzE9Nb44J7EsVd/QRB8AKqhQ2N4AAAA=[0m#14
+[8mha:////4FbC7Qjs7Of/IqepSisUCtDvBwgVJSZSUfR7/6QM3bp+AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4AY9TNeRD+b4nZR/Sk/AD+3lsE6GYle0X1+tOvTlV7GOAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4BlAJFv9cPlFdv+//ZuJDL0RKAllszVAqSE2Vjz+sn8XAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/01_docker/Create_image_slave
+[8mha:////4IdhfZFXnjIlSKfEgX2HzPjV7C++3BHuNlID5psiE4zlAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4JxZl0o3LiDOSXD/baaGCpqPmqmBOuUsPafbGhEtE1lIAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4KdVlevpfx82Uef8PbnGgUebxwYQr4fRpFszmrEQCKdcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (git)
+[8mha:////4MpgvK9LkKjKM54hH7WKtS+LClGbgJ8ulyh4UQ84QME0AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4DF2bRxmTTS+VuQ483hZp/ZRQD1k1fz1pJrZXVaxoL27AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/dKk0rySUn0AY+WXbsYAAAA=[0mubuntu in /home/jenkins/workspace/01_docker/Create_image_slave
+[8mha:////4EExaN4gLdbM+L9Ki5CsN/gb0lHb5s2HEZq1c6adAeI5AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4BtA+AwXux0ccGKd2DVmU2yTmLPuvoY/yuRVAExFqr6UAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaoyVLaHxBMgiwpL/WWDdrTyRV/MOEjexcpJJ5k3zXm9Y5wQnSpZ7g73DrB2PYbR18YlSfws0cU9XrgkzBcOlmSR15rygpGJgCWtgJWBjUAfKDm2BrfDqodqg0LaXkup3FNC4boAnMFHNRaXyhTnB7j52mfDn+SuAORZg+9pD/AAeoCAqvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: NONE
+using credential ugithub
+Fetching changes from the remote Git repository
+ > git rev-parse --resolve-git-dir /home/jenkins/workspace/01_docker/Create_image_slave/.git # timeout=10
+ > git config remote.origin.url https://github.com/hidraxos/jenkins_check.git # timeout=10
+Fetching upstream changes from https://github.com/hidraxos/jenkins_check.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+using GIT_ASKPASS to set credentials credenciales github hidraxos
+ > git fetch --tags --force --progress -- https://github.com/hidraxos/jenkins_check.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision b9b9083639324d3f5aba626859d6904a81717dbb (refs/remotes/origin/master)
+Commit message: "Create properties.json"
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b9b9083639324d3f5aba626859d6904a81717dbb # timeout=10
+ > git rev-list --no-walk b9b9083639324d3f5aba626859d6904a81717dbb # timeout=10
+[8mha:////4Osh4ZMRyULcebA/U5vAmwzux47UoU9ZEM+xqhHtYHZmAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBDglR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8Brmfz270AAAA=[0m[Pipeline] }
+[8mha:////4IXxbsmcgV5YH1t8fBuy5t5gd4e5Ol5OXcVoLo0kXK9hAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIMlYVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8Aj1Msdr0AAAA=[0m[Pipeline] // node
+[8mha:////4Kb/ahFEBWgdeExLnqJTNJ0CrMMEj5scY1vd3RD86GwDAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPyRmLRr0AAAA=[0m[Pipeline] }
+[8mha:////4D1aqY3bLjTwjIfWVjLM2GEaBNh7R2iRVfvqPckAdOypAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQlSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPw2Hi4r0AAAA=[0m[Pipeline] // stage
+[8mha:////4KMpOyYBZ41Tly6KEmPhpCKhTPueCLrooWDp7RntCUDkAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjpHSIitZywwtMYowT6y7YF5KKF/E1/oAhEhVb7ay0mucLyhThQNHJzmLvMTVeDmF0ucmJYn8JNMmOzrIhTBSs1HbS1NrjgprYwhJRwErB2mITKHl0DBvVmbupgkFXnTjmba+g8O0NHiBUNrOJ/IU5wvY6tonw5/krgHlgEDVDsas/x/INoKa7ysEAAAA=[0m[Pipeline] stage
+[8mha:////4PXQcw+5WXv6D48cxRE2yvKujw9xsgxwibj0HibrrOXrAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (buildImage)
+[8mha:////4LyS8PYA+ZprucNKKF0tpTNMS86FD9lJ8IPbYSgBQ/3PAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] node
+Running on [8mha:////4DF2bRxmTTS+VuQ483hZp/ZRQD1k1fz1pJrZXVaxoL27AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/dKk0rySUn0AY+WXbsYAAAA=[0mubuntu in /home/jenkins/workspace/01_docker/Create_image_slave
+[8mha:////4EWd56F7YUFN83x7bamHjYgsRguWwCoa1Cb2eRhvg1E5AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] {
+[8mha:////4NgK3fVCfPmb3iJKeVhEahiDVljwVNxvk8w4CyssRmGNAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] script
+[8mha:////4Fboga21HfftqzghPJPEytwJ537MtkCi+jNQ197FOCepAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] {
+[8mha:////4Fhmg5SIoj7/c31/x1fFrXweMZhomZSKGn+hRLGyiUz0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] sh
++ docker build -t 172.25.0.3:5000/slave_default:1.0 -f dockerfile_default .
+Sending build context to Docker daemon    106kB
+Step 1/5 : FROM openjdk:8-slim
+8-slim: Pulling from library/openjdk
+461246efe0a7: Pulling fs layer
+e693ef00b582: Pulling fs layer
+55ccc3e1b751: Pulling fs layer
+e5bb6d406ee5: Pulling fs layer
+e5bb6d406ee5: Waiting
+55ccc3e1b751: Verifying Checksum
+55ccc3e1b751: Download complete
+e693ef00b582: Verifying Checksum
+e693ef00b582: Download complete
+461246efe0a7: Download complete
+461246efe0a7: Pull complete
+e693ef00b582: Pull complete
+55ccc3e1b751: Pull complete
+e5bb6d406ee5: Verifying Checksum
+e5bb6d406ee5: Download complete
+e5bb6d406ee5: Pull complete
+Digest: sha256:15a4be34f6259bca0f645abc224102526b73f2ca711d6c459d527e59f76697a3
+Status: Downloaded newer image for openjdk:8-slim
+ ---> 1dcc728e3a75
+Step 2/5 : RUN apt update -y && apt install git -y
+ ---> Running in 28db99bc7ef5
+[91m
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+[0mGet:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [44.1 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8182 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [166 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [2592 B]
+Fetched 8555 kB in 4s (1923 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+[91m
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+[0mReading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  git-man less libbrotli1 libbsd0 libcbor0 libcurl3-gnutls libedit2
+  liberror-perl libexpat1 libfido2-1 libgdbm-compat4 libgdbm6 libldap-2.4-2
+  libldap-common libmd0 libnghttp2-14 libperl5.32 libpsl5 librtmp1 libsasl2-2
+  libsasl2-modules libsasl2-modules-db libssh2-1 libx11-6 libx11-data libxau6
+  libxcb1 libxdmcp6 libxext6 libxmuu1 netbase openssh-client patch perl
+  perl-modules-5.32 publicsuffix xauth
+Suggested packages:
+  gettext-base git-daemon-run | git-daemon-sysvinit git-doc git-el git-email
+  git-gui gitk gitweb git-cvs git-mediawiki git-svn gdbm-l10n sensible-utils
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
+  libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql keychain
+  libpam-ssh monkeysphere ssh-askpass ed diffutils-doc perl-doc
+  libterm-readline-gnu-perl | libterm-readline-perl-perl make
+  libtap-harness-archive-perl
+The following NEW packages will be installed:
+  git git-man less libbrotli1 libbsd0 libcbor0 libcurl3-gnutls libedit2
+  liberror-perl libexpat1 libfido2-1 libgdbm-compat4 libgdbm6 libldap-2.4-2
+  libldap-common libmd0 libnghttp2-14 libperl5.32 libpsl5 librtmp1 libsasl2-2
+  libsasl2-modules libsasl2-modules-db libssh2-1 libx11-6 libx11-data libxau6
+  libxcb1 libxdmcp6 libxext6 libxmuu1 netbase openssh-client patch perl
+  perl-modules-5.32 publicsuffix xauth
+0 upgraded, 38 newly installed, 0 to remove and 0 not upgraded.
+Need to get 19.4 MB of archives.
+After this operation, 99.3 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 perl-modules-5.32 all 5.32.1-4+deb11u2 [2823 kB]
+Get:2 http://deb.debian.org/debian bullseye/main amd64 libgdbm6 amd64 1.19-2 [64.9 kB]
+Get:3 http://deb.debian.org/debian bullseye/main amd64 libgdbm-compat4 amd64 1.19-2 [44.7 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 libperl5.32 amd64 5.32.1-4+deb11u2 [4106 kB]
+Get:5 http://deb.debian.org/debian bullseye/main amd64 perl amd64 5.32.1-4+deb11u2 [293 kB]
+Get:6 http://deb.debian.org/debian bullseye/main amd64 less amd64 551-2 [133 kB]
+Get:7 http://deb.debian.org/debian bullseye/main amd64 netbase all 6.3 [19.9 kB]
+Get:8 http://deb.debian.org/debian bullseye/main amd64 libmd0 amd64 1.0.3-3 [28.0 kB]
+Get:9 http://deb.debian.org/debian bullseye/main amd64 libbsd0 amd64 0.11.3-1 [108 kB]
+Get:10 http://deb.debian.org/debian bullseye/main amd64 libedit2 amd64 3.1-20191231-2+b1 [96.7 kB]
+Get:11 http://deb.debian.org/debian bullseye/main amd64 libcbor0 amd64 0.5.0+dfsg-2 [24.0 kB]
+Get:12 http://deb.debian.org/debian bullseye/main amd64 libfido2-1 amd64 1.6.0-2 [53.3 kB]
+Get:13 http://deb.debian.org/debian bullseye/main amd64 openssh-client amd64 1:8.4p1-5+deb11u1 [929 kB]
+Get:14 http://deb.debian.org/debian bullseye/main amd64 libbrotli1 amd64 1.0.9-2+b2 [279 kB]
+Get:15 http://deb.debian.org/debian bullseye/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-2.1+deb11u1 [69.1 kB]
+Get:16 http://deb.debian.org/debian bullseye/main amd64 libsasl2-2 amd64 2.1.27+dfsg-2.1+deb11u1 [106 kB]
+Get:17 http://deb.debian.org/debian bullseye/main amd64 libldap-2.4-2 amd64 2.4.57+dfsg-3+deb11u1 [232 kB]
+Get:18 http://deb.debian.org/debian bullseye/main amd64 libnghttp2-14 amd64 1.43.0-1 [77.1 kB]
+Get:19 http://deb.debian.org/debian bullseye/main amd64 libpsl5 amd64 0.21.0-1.2 [57.3 kB]
+Get:20 http://deb.debian.org/debian bullseye/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+Get:21 http://deb.debian.org/debian bullseye/main amd64 libssh2-1 amd64 1.9.0-2 [156 kB]
+Get:22 http://deb.debian.org/debian bullseye/main amd64 libcurl3-gnutls amd64 7.74.0-1.3+deb11u1 [338 kB]
+Get:23 http://deb.debian.org/debian bullseye/main amd64 libexpat1 amd64 2.2.10-2+deb11u3 [98.5 kB]
+Get:24 http://deb.debian.org/debian bullseye/main amd64 liberror-perl all 0.17029-1 [31.0 kB]
+Get:25 http://deb.debian.org/debian bullseye/main amd64 git-man all 1:2.30.2-1 [1827 kB]
+Get:26 http://deb.debian.org/debian bullseye/main amd64 git amd64 1:2.30.2-1 [5527 kB]
+Get:27 http://deb.debian.org/debian bullseye/main amd64 libldap-common all 2.4.57+dfsg-3+deb11u1 [95.8 kB]
+Get:28 http://deb.debian.org/debian bullseye/main amd64 libsasl2-modules amd64 2.1.27+dfsg-2.1+deb11u1 [104 kB]
+Get:29 http://deb.debian.org/debian bullseye/main amd64 libxau6 amd64 1:1.0.9-1 [19.7 kB]
+Get:30 http://deb.debian.org/debian bullseye/main amd64 libxdmcp6 amd64 1:1.1.2-3 [26.3 kB]
+Get:31 http://deb.debian.org/debian bullseye/main amd64 libxcb1 amd64 1.14-3 [140 kB]
+Get:32 http://deb.debian.org/debian bullseye/main amd64 libx11-data all 2:1.7.2-1 [311 kB]
+Get:33 http://deb.debian.org/debian bullseye/main amd64 libx11-6 amd64 2:1.7.2-1 [772 kB]
+Get:34 http://deb.debian.org/debian bullseye/main amd64 libxext6 amd64 2:1.3.3-1.1 [52.7 kB]
+Get:35 http://deb.debian.org/debian bullseye/main amd64 libxmuu1 amd64 2:1.1.2-2+b3 [23.9 kB]
+Get:36 http://deb.debian.org/debian bullseye/main amd64 patch amd64 2.7.6-7 [128 kB]
+Get:37 http://deb.debian.org/debian bullseye/main amd64 publicsuffix all 20211207.1025-0+deb11u1 [125 kB]
+Get:38 http://deb.debian.org/debian bullseye/main amd64 xauth amd64 1:1.1-1 [40.5 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 19.4 MB in 3s (5950 kB/s)
+Selecting previously unselected package perl-modules-5.32.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7071 files and directories currently installed.)
+Preparing to unpack .../00-perl-modules-5.32_5.32.1-4+deb11u2_all.deb ...
+Unpacking perl-modules-5.32 (5.32.1-4+deb11u2) ...
+Selecting previously unselected package libgdbm6:amd64.
+Preparing to unpack .../01-libgdbm6_1.19-2_amd64.deb ...
+Unpacking libgdbm6:amd64 (1.19-2) ...
+Selecting previously unselected package libgdbm-compat4:amd64.
+Preparing to unpack .../02-libgdbm-compat4_1.19-2_amd64.deb ...
+Unpacking libgdbm-compat4:amd64 (1.19-2) ...
+Selecting previously unselected package libperl5.32:amd64.
+Preparing to unpack .../03-libperl5.32_5.32.1-4+deb11u2_amd64.deb ...
+Unpacking libperl5.32:amd64 (5.32.1-4+deb11u2) ...
+Selecting previously unselected package perl.
+Preparing to unpack .../04-perl_5.32.1-4+deb11u2_amd64.deb ...
+Unpacking perl (5.32.1-4+deb11u2) ...
+Selecting previously unselected package less.
+Preparing to unpack .../05-less_551-2_amd64.deb ...
+Unpacking less (551-2) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../06-netbase_6.3_all.deb ...
+Unpacking netbase (6.3) ...
+Selecting previously unselected package libmd0:amd64.
+Preparing to unpack .../07-libmd0_1.0.3-3_amd64.deb ...
+Unpacking libmd0:amd64 (1.0.3-3) ...
+Selecting previously unselected package libbsd0:amd64.
+Preparing to unpack .../08-libbsd0_0.11.3-1_amd64.deb ...
+Unpacking libbsd0:amd64 (0.11.3-1) ...
+Selecting previously unselected package libedit2:amd64.
+Preparing to unpack .../09-libedit2_3.1-20191231-2+b1_amd64.deb ...
+Unpacking libedit2:amd64 (3.1-20191231-2+b1) ...
+Selecting previously unselected package libcbor0:amd64.
+Preparing to unpack .../10-libcbor0_0.5.0+dfsg-2_amd64.deb ...
+Unpacking libcbor0:amd64 (0.5.0+dfsg-2) ...
+Selecting previously unselected package libfido2-1:amd64.
+Preparing to unpack .../11-libfido2-1_1.6.0-2_amd64.deb ...
+Unpacking libfido2-1:amd64 (1.6.0-2) ...
+Selecting previously unselected package openssh-client.
+Preparing to unpack .../12-openssh-client_1%3a8.4p1-5+deb11u1_amd64.deb ...
+Unpacking openssh-client (1:8.4p1-5+deb11u1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../13-libbrotli1_1.0.9-2+b2_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2+b2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../14-libsasl2-modules-db_2.1.27+dfsg-2.1+deb11u1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../15-libsasl2-2_2.1.27+dfsg-2.1+deb11u1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../16-libldap-2.4-2_2.4.57+dfsg-3+deb11u1_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.57+dfsg-3+deb11u1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../17-libnghttp2-14_1.43.0-1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.43.0-1) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../18-libpsl5_0.21.0-1.2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.0-1.2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../19-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../20-libssh2-1_1.9.0-2_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.9.0-2) ...
+Selecting previously unselected package libcurl3-gnutls:amd64.
+Preparing to unpack .../21-libcurl3-gnutls_7.74.0-1.3+deb11u1_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.74.0-1.3+deb11u1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../22-libexpat1_2.2.10-2+deb11u3_amd64.deb ...
+Unpacking libexpat1:amd64 (2.2.10-2+deb11u3) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../23-liberror-perl_0.17029-1_all.deb ...
+Unpacking liberror-perl (0.17029-1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../24-git-man_1%3a2.30.2-1_all.deb ...
+Unpacking git-man (1:2.30.2-1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../25-git_1%3a2.30.2-1_amd64.deb ...
+Unpacking git (1:2.30.2-1) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../26-libldap-common_2.4.57+dfsg-3+deb11u1_all.deb ...
+Unpacking libldap-common (2.4.57+dfsg-3+deb11u1) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../27-libsasl2-modules_2.1.27+dfsg-2.1+deb11u1_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../28-libxau6_1%3a1.0.9-1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.9-1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../29-libxdmcp6_1%3a1.1.2-3_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.2-3) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../30-libxcb1_1.14-3_amd64.deb ...
+Unpacking libxcb1:amd64 (1.14-3) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../31-libx11-data_2%3a1.7.2-1_all.deb ...
+Unpacking libx11-data (2:1.7.2-1) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../32-libx11-6_2%3a1.7.2-1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.7.2-1) ...
+Selecting previously unselected package libxext6:amd64.
+Preparing to unpack .../33-libxext6_2%3a1.3.3-1.1_amd64.deb ...
+Unpacking libxext6:amd64 (2:1.3.3-1.1) ...
+Selecting previously unselected package libxmuu1:amd64.
+Preparing to unpack .../34-libxmuu1_2%3a1.1.2-2+b3_amd64.deb ...
+Unpacking libxmuu1:amd64 (2:1.1.2-2+b3) ...
+Selecting previously unselected package patch.
+Preparing to unpack .../35-patch_2.7.6-7_amd64.deb ...
+Unpacking patch (2.7.6-7) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../36-publicsuffix_20211207.1025-0+deb11u1_all.deb ...
+Unpacking publicsuffix (20211207.1025-0+deb11u1) ...
+Selecting previously unselected package xauth.
+Preparing to unpack .../37-xauth_1%3a1.1-1_amd64.deb ...
+Unpacking xauth (1:1.1-1) ...
+Setting up libexpat1:amd64 (2.2.10-2+deb11u3) ...
+Setting up libxau6:amd64 (1:1.0.9-1) ...
+Setting up libpsl5:amd64 (0.21.0-1.2) ...
+Setting up perl-modules-5.32 (5.32.1-4+deb11u2) ...
+Setting up libbrotli1:amd64 (1.0.9-2+b2) ...
+Setting up libcbor0:amd64 (0.5.0+dfsg-2) ...
+Setting up libsasl2-modules:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Setting up libnghttp2-14:amd64 (1.43.0-1) ...
+Setting up less (551-2) ...
+Setting up libldap-common (2.4.57+dfsg-3+deb11u1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Setting up libx11-data (2:1.7.2-1) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Setting up patch (2.7.6-7) ...
+Setting up libsasl2-2:amd64 (2.1.27+dfsg-2.1+deb11u1) ...
+Setting up libmd0:amd64 (1.0.3-3) ...
+Setting up git-man (1:2.30.2-1) ...
+Setting up libssh2-1:amd64 (1.9.0-2) ...
+Setting up netbase (6.3) ...
+Setting up libfido2-1:amd64 (1.6.0-2) ...
+Setting up libbsd0:amd64 (0.11.3-1) ...
+Setting up publicsuffix (20211207.1025-0+deb11u1) ...
+Setting up libgdbm6:amd64 (1.19-2) ...
+Setting up libxdmcp6:amd64 (1:1.1.2-3) ...
+Setting up libxcb1:amd64 (1.14-3) ...
+Setting up libedit2:amd64 (3.1-20191231-2+b1) ...
+Setting up libldap-2.4-2:amd64 (2.4.57+dfsg-3+deb11u1) ...
+Setting up libcurl3-gnutls:amd64 (7.74.0-1.3+deb11u1) ...
+Setting up libgdbm-compat4:amd64 (1.19-2) ...
+Setting up libperl5.32:amd64 (5.32.1-4+deb11u2) ...
+Setting up libx11-6:amd64 (2:1.7.2-1) ...
+Setting up libxmuu1:amd64 (2:1.1.2-2+b3) ...
+Setting up openssh-client (1:8.4p1-5+deb11u1) ...
+Setting up libxext6:amd64 (2:1.3.3-1.1) ...
+Setting up perl (5.32.1-4+deb11u2) ...
+Setting up xauth (1:1.1-1) ...
+Setting up liberror-perl (0.17029-1) ...
+Setting up git (1:2.30.2-1) ...
+Processing triggers for libc-bin (2.31-13+deb11u3) ...
+Removing intermediate container 28db99bc7ef5
+ ---> 41d0256c481d
+Step 3/5 : RUN apt install curl -y && apt install sudo -y
+ ---> Running in 51db091fb705
+[91m
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+[0mReading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libcurl4
+The following NEW packages will be installed:
+  curl libcurl4
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 608 kB of archives.
+After this operation, 1186 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 libcurl4 amd64 7.74.0-1.3+deb11u1 [341 kB]
+Get:2 http://deb.debian.org/debian bullseye/main amd64 curl amd64 7.74.0-1.3+deb11u1 [267 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 608 kB in 0s (1231 kB/s)
+Selecting previously unselected package libcurl4:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10597 files and directories currently installed.)
+Preparing to unpack .../libcurl4_7.74.0-1.3+deb11u1_amd64.deb ...
+Unpacking libcurl4:amd64 (7.74.0-1.3+deb11u1) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../curl_7.74.0-1.3+deb11u1_amd64.deb ...
+Unpacking curl (7.74.0-1.3+deb11u1) ...
+Setting up libcurl4:amd64 (7.74.0-1.3+deb11u1) ...
+Setting up curl (7.74.0-1.3+deb11u1) ...
+Processing triggers for libc-bin (2.31-13+deb11u3) ...
+[91m
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+[0mReading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sudo
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1059 kB of archives.
+After this operation, 4699 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 sudo amd64 1.9.5p2-3 [1059 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 1059 kB in 1s (2025 kB/s)
+Selecting previously unselected package sudo.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10614 files and directories currently installed.)
+Preparing to unpack .../sudo_1.9.5p2-3_amd64.deb ...
+Unpacking sudo (1.9.5p2-3) ...
+Setting up sudo (1.9.5p2-3) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Removing intermediate container 51db091fb705
+ ---> 7ea5c09c3947
+Step 4/5 : RUN useradd -m jenkins && adduser jenkins sudo && passwd -d jenkins
+ ---> Running in 5c88f88d02ab
+Adding user `jenkins' to group `sudo' ...
+Adding user jenkins to group sudo
+Done.
+passwd: password expiry information changed.
+Removing intermediate container 5c88f88d02ab
+ ---> 66a446c134ac
+Step 5/5 : USER jenkins
+ ---> Running in 46e404c2d755
+Removing intermediate container 46e404c2d755
+ ---> bcb94adc4b33
+Successfully built bcb94adc4b33
+Successfully tagged 172.25.0.3:5000/slave_default:1.0
++ docker images
+REPOSITORY                      TAG       IMAGE ID       CREATED                  SIZE
+172.25.0.3:5000/slave_default   1.0       bcb94adc4b33   Less than a second ago   401MB
+openjdk                         8-slim    1dcc728e3a75   7 days ago               295MB
+atlassian/jira-software         latest    6a76addc4255   10 days ago              1.07GB
+labs_nexus                      latest    72689e6772e6   4 weeks ago              1.41GB
+labs_jenkins                    latest    acf6bebb6255   4 weeks ago              522MB
+jenkins/jenkins                 latest    487c02871276   5 weeks ago              460MB
+ubuntu                          20.04     20fffa419e3a   6 weeks ago              72.8MB
+gcr.io/k8s-minikube/kicbase     v0.0.30   1312ccd2422d   5 months ago             1.14GB
+centos                          centos7   eeb6ee3f44bd   10 months ago            204MB
++ docker save -o slave_default.tar 172.25.0.3:5000/slave_default:1.0
+[8mha:////4AwrAUOlBhRnc9NUqvGc09pXyKCV+4vN+qHyVlvlEpkeAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP1ih7y++AAAA[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[8mha:////4C59Kb/zHCkJ33WXMI0l+PLfQq9F01zC0+mp7SAxy288AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIR6RCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPoukFhO+AAAA[0m[Pipeline] }
+[8mha:////4PjX6cVH4ictO52FSDUwrafZXTi5hwtGyyCLbJ16GEsiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+4R02vvgAAAA==[0m[Pipeline] // script
+[8mha:////4PRGbGIgUbxvseOsZ99KrMH+T4ZXVP6Xg/e0Yk7b11UyAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAkWr3Ir4AAAA=[0m[Pipeline] }
+[8mha:////4N/bSUakUohgTwc6ojU8OUix+H8nT6y41esuaVyde/FoAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+iiayevgAAAA==[0m[Pipeline] // node
+[8mha:////4LozE8ZyFq3Q5NggvJuzKMIDqp2fQUDYOYbj7UJUU0twAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w+2qjGBvgAAAA==[0m[Pipeline] }
+[8mha:////4B2rdGuq3c0QhS1aceXYFXaBcsA/zngbLncgLw7m+YomAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8AhUlqPb4AAAA=[0m[Pipeline] // stage
+[8mha:////4MqnD02E2iyB2W9UAxT/jHOgTzRiqUeJRE80uxJeCldrAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjIQokREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgtQ7HZfY7lG0Z8kYzBAAAA[0m[Pipeline] stage
+[8mha:////4Af+l2ChwA+cvba+3co+Ac/6VuHdrUjLQLG0YHxwEW+SAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] { (registry_image)
+[8mha:////4Bimd11IbWtWQbB5ZgfZswR9GY9SmGFzkTVuxmA1zXZrAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQH4j6CMwgAAAA==[0m[Pipeline] node
+Running on [8mha:////4DF2bRxmTTS+VuQ483hZp/ZRQD1k1fz1pJrZXVaxoL27AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/dKk0rySUn0AY+WXbsYAAAA=[0mubuntu in /home/jenkins/workspace/01_docker/Create_image_slave
+[8mha:////4JG18KcmprEZRDsP4Elsv6YJGcjOd3wieChq0vE3o6JmAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] {
+[8mha:////4H1KnRqTJ1MmTddCu3VmVUMnVTeNm+0r0svpVCvQcweVAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] script
+[8mha:////4OrGFGCdEGgt+bp7NvfAv1n409JDBIEalmRFYvf55dXyAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] {
+[8mha:////4DggSwr7rFp9veWn0v4Yn2otz7KS3Meicj/LmcCNSL3/AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KBtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPBdk7bsIAAAA=[0m[Pipeline] withCredentials
+[8mha:////4DqgtK5GzSXjBUBKYTn9Uo5RzjnboL0yifDdVTMKM1JJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BriB4+S+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4HHtCNiLjE2rT2Tm+KX4G/fEp/HuAasSiS5XlR/ocfMuAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZMbGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DbVmE/y+AAAA[0m[Pipeline] }
+[8mha:////4OezHqRcT8VvpN2OzlcWcU3yunTO96CPTI0kEqimcoLuAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQUGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGGhUhAvgAAAA==[0m[Pipeline] // script
+[8mha:////4HzR6cCGegAnC2ntmW8z9MJJDAYZpcRDVdIvocnqXwg1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRIOEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgHpZhcovgAAAA==[0m[Pipeline] }
+[8mha:////4KmxTr3slm30KwEHoiRo6DnnXF6i3tYM/hZa64qAOtgFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCRIUQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN9qFTJS+AAAA[0m[Pipeline] // node
+[8mha:////4Mjvks/GJRfBYLGBzuLS4tQAw/lRopn5QQbpPKoZ8MFNAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEA1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw95YyMWvgAAAA==[0m[Pipeline] }
+[8mha:////4K3yQghhwNyzb6yDKfpLBc11ltoUvp01h0H82qYCEqLTAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wASoB4qr4AAAA=[0m[Pipeline] // stage
+[8mha:////4HQj45KAEpxAU+7zC71Djnxkd0ImINJp5vtGWq7/Ir+zAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6Ikhs04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwAVulI+L0AAAA=[0m[Pipeline] }
+[8mha:////4M+wDC2ph2eP5bNYu1at5PUkwrygGhKZ4tzzWjBdk5NUAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIU2DlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyfSnIyg9FVUxbvQAAAA==[0m[Pipeline] // node
+[8mha:////4Ma/iswX/RzLtkXbIm8Iyz4L1qbC5ea5994EvTrw0I/+AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6Ikhs04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8Aw7lrnr0AAAA=[0m[Pipeline] End of Pipeline
+ERROR: Could not find credentials entry with ID 'nexus_registry'
+Finished: FAILURE

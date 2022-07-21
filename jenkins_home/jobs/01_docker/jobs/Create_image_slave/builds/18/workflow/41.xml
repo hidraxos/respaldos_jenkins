@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@820.vd1a_6cc65ef33">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2725.v7b_c717eb_12ce">
+    <parentIds>
+      <string>40</string>
+    </parentIds>
+    <id>41</id>
+    <startId>28</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@1164.v760c223ddb_32">
+      <startTime>1658272104215</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@1164.v760c223ddb_32">
+      <error class="org.jenkinsci.plugins.credentialsbinding.impl.CredentialNotFoundException" plugin="credentials-binding@523.vd859a_4b_122e6">
+        <detailMessage>Could not find credentials entry with ID &apos;nexus_registry&apos;</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.credentialsbinding.MultiBinding.getCredentials(MultiBinding.java:197)</trace>
+          <trace>org.jenkinsci.plugins.credentialsbinding.impl.UsernamePasswordMultiBinding.bind(UsernamePasswordMultiBinding.java:73)</trace>
+          <trace>org.jenkinsci.plugins.credentialsbinding.impl.BindingStep$Execution2.doStart(BindingStep.java:132)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.GeneralNonBlockingStepExecution.lambda$run$0(GeneralNonBlockingStepExecution.java:77)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:829)</trace>
+        </stackTrace>
+        <suppressedExceptions class="empty-list"/>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

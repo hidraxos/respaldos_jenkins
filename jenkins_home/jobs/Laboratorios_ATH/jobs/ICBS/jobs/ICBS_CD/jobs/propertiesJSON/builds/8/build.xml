@@ -1,0 +1,471 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1186.v8def1a_5f3944">
+  <actions>
+    <org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <replacementLoadedScripts/>
+    </org.jenkinsci.plugins.workflow.cps.replay.ReplayFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.workflow.cps.replay.ReplayCause plugin="workflow-cps@2725.v7b_c717eb_12ce">
+            <originalNumber>7</originalNumber>
+          </org.jenkinsci.plugins.workflow.cps.replay.ReplayCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.BooleanParameterValue>
+          <name>Refresh_Param</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Release</name>
+          <description>Release que trae el properties.json</description>
+          <value>R105</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Refresh_Param</string>
+        <string>Release</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@593.va_a_fc25d520e9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2097.v33db_b_de764b_e">
+      <stagesUUID>821663c6-c0e1-4304-9713-cdd69f92633c</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2097.v33db_b_de764b_e">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Download json</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">if(!params.&quot;Refresh_Param&quot;){
+                        downloadNexus(artifactIdProperties)
+                        data = readJSON file: &quot;${artifactIdProperties}-${params.&apos;Release&apos;}.json&quot;
+                    }else{
+                        printm(&apos;Refrescando parametros&apos;,blue)
+                    }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Mod Properties</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">if(!params.&quot;Refresh_Param&quot;){
+                        for (properties in data.Properties){
+                            println properties
+                            if(properties.bancos.contains(&quot;BAVV&quot;)){
+                                if(properties.accion_archivo == &quot;Mod&quot;){
+                                    actionLine(properties)
+                                }else if(bancos.accion_archivo == &quot;ADD&quot;){
+                                    actionFile(properties)
+                                }
+                            }
+                        }
+                    }else{
+                        printm(&quot;Refrescando parametros&quot;,blue)
+                    }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>821663c6-c0e1-4304-9713-cdd69f92633c</uuid>
+          </stages>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+          <parameters>
+            <parameters>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>booleanParam</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Refresh_Param</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="boolean">false</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string"></value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>string</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Release</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string"></value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Release que trae el properties.json</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+            </parameters>
+          </parameters>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1129.vef26f5df883c">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction plugin="workflow-cps@2725.v7b_c717eb_12ce">
+      <interpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PASS</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+      </interpolatedWarnings>
+    </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>5c76b4c9-0674-434d-9566-96fec1d2abdb</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>0556d862-37b0-461f-89fd-70f605d3a8f1</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>b04208ae-4e76-4512-8b95-bb99711b063d</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>19e4944d-b929-443d-ada5-d88da2e6c084</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>5bfbf76a-937e-4522-974d-fcccd292b0bb</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>f7d46c4f-a063-4e39-b828-ca69fe73c0e1</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>e604b500-6fc1-46db-a8bd-15b483278c5d</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>93db6c48-2944-4649-b5e9-07b63f89d05d</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>537714b9-b5ae-461b-ba99-a7975d04438d</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>2599dc85-12b9-42f1-afe1-93ecbdfcf4d3</id>
+      <colorMapName>xterm</colorMapName>
+      <command>START</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>d8d507b4-5f97-4528-8b58-4a66fbc18f77</id>
+      <colorMapName>xterm</colorMapName>
+      <command>CURRENT</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+    <hudson.plugins.ansicolor.action.ColorizedAction plugin="ansicolor@1.0.1">
+      <id>af93e6c5-4501-4ff7-a33e-64213252acd1</id>
+      <colorMapName>xterm</colorMapName>
+      <command>STOP</command>
+    </hudson.plugins.ansicolor.action.ColorizedAction>
+  </actions>
+  <queueId>106</queueId>
+  <timestamp>1658411890172</timestamp>
+  <startTime>1658411890176</startTime>
+  <result>SUCCESS</result>
+  <duration>4109</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>import groovy.transform.Field
+
+//------Variables GitHub ----
+@Field def credentialsGit = &apos;ugithub&apos;
+@Field def urlRepo = &quot;https://github.com/hidraxos/jenkins_check.git&quot;
+
+//------Variables server properties----
+@Field def host = &apos;192.168.1.115&apos;
+@Field def credentials = &apos;hidraxos_credentials&apos;
+@Field def folder = &apos;/home/hidraxos/Documents/properties&apos;
+
+//------Variables Nexus---------
+@Field def url_nexus = &apos;http://192.168.1.115:8081&apos;
+@Field def repoNexus = &apos;maven-icbs-releases&apos;
+@Field def credentialsNexus = &apos;nexus_credentials&apos;
+@Field def artifactIdProperties = &quot;icbs-release-json&quot;
+@Field def groupId = &quot;com/ath/icbs&quot;
+
+//------Variables logicas
+@Field def yellow = &quot;43&quot;; @Field def green = &quot;42&quot;; @Field def red = &apos;41&apos;; @Field def blue = &apos;46&apos; ; @Field def white = &quot;47&quot;
+@Field def data
+
+pipeline{
+    agent any
+
+    parameters { 
+        booleanParam(name: &apos;Refresh_Param&apos;, defaultValue: false, description: &apos;&apos;)
+        string(name: &apos;Release&apos;, defaultValue: &apos;&apos;, description: &apos;Release que trae el properties.json&apos;) 
+    }
+
+    stages{
+        stage(&apos;Download json&apos;) {
+            steps {
+                script{
+                    if(!params.&quot;Refresh_Param&quot;){
+                        downloadNexus(artifactIdProperties)
+                        data = readJSON file: &quot;${artifactIdProperties}-${params.&apos;Release&apos;}.json&quot;
+                    }else{
+                        printm(&apos;Refrescando parametros&apos;,blue)
+                    }
+                }
+            }
+        }
+        stage(&apos;Mod Properties&apos;){
+            steps {
+                script{
+                    if(!params.&quot;Refresh_Param&quot;){
+                        for (properties in data.Properties){
+                            println properties
+                            if(properties.bancos.contains(&quot;BAVV&quot;)){
+                                if(properties.accion_archivo == &quot;Mod&quot;){
+                                    actionLine(properties)
+                                }else if(bancos.accion_archivo == &quot;ADD&quot;){
+                                    actionFile(properties)
+                                }
+                            }
+                        }
+                    }else{
+                        printm(&quot;Refrescando parametros&quot;,blue)
+                    }
+                }
+            }
+        }
+    }
+}
+def printm(message,color){
+    ansiColor{
+        println(&quot;\033[${color}m*************** ${message} ***************\033[0m&quot;)
+    }
+}
+def actionFile(info){
+    if(info.accion_archivo == &quot;Add&quot;){
+        printm(&quot;Se anadira el archivo ${info.nombre_archivo}&quot;,white)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} scp ${info.nombre_archivo} ${USERNAME}@${host}:${folder}
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${info.nombre_archivo} agregado&quot;,blue)
+            sh&quot;&quot;&quot;
+                     sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;ls ${folder}&quot;
+            &quot;&quot;&quot;
+        }
+    }else if(info.accion_archivo == &quot;Elim&quot;){
+        printm(&quot;Se Eliminara el archivo ${info.nombre_archivo}&quot;,white)
+        withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+            sh&quot;&quot;&quot;
+                 sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;rm -rf ${info.nombre_archivo}&quot;
+            &quot;&quot;&quot;
+            printm(&quot;Archivo ${info.nombre_archivo} agregado&quot;,blue)
+            sh&quot;&quot;&quot;
+                     sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;ls ${folder}&quot;
+            &quot;&quot;&quot;
+        }
+    }
+}
+def actionLine(info){
+    for(modificacion in info.modificacion){
+        if(modificacion.accion_linea == &quot;New&quot;){
+            printm(&quot;Se anadira linea archivo ${info.nombre_archivo}&quot;,white)
+            withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+                sh&quot;&quot;&quot;
+                     sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;echo &apos;${modificacion.propiedad}=${modificacion.valor}&apos; &gt;&gt; ${folder}/${info.nombre_archivo}&quot;
+                &quot;&quot;&quot;
+                printm(&quot;Archivo ${info.nombre_archivo} modificado&quot;,blue)
+                sh&quot;&quot;&quot;
+                     sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${info.nombre_archivo}&quot;
+                &quot;&quot;&quot;
+            }
+        }else if(modificacion.accion_linea == &quot;Elim&quot;){
+            printm(&quot;Se eliminara una linea ${info.nombre_archivo}&quot;,white)
+            withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+                sh&quot;&quot;&quot;
+                     sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;/${info.Line}/d&apos; ${folder}/${info.nombre_archivo}&quot;
+                &quot;&quot;&quot;
+                printm(&quot;Archivo ${info.nombre_archivo} modificado&quot;,blue)
+                sh&quot;&quot;&quot;
+                     sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${info.nombre_archivo}&quot;
+                &quot;&quot;&quot;
+            }
+        }else if(modificacion.accion_linea == &quot;Mod&quot;){
+            printm(&quot;Se modificara una linea ${info.nombre_archivo}&quot;,white)
+            withCredentials([usernamePassword(credentialsId: credentials, passwordVariable: &apos;PASS&apos;, usernameVariable:&apos;USERNAME&apos;)]){
+                sh&quot;&quot;&quot;
+                     sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;sed -i -e &apos;s/${info.OldLine}/${info.NewLine}/&apos; ${folder}/${info.nombre_archivo}&quot;
+                &quot;&quot;&quot;
+                printm(&quot;Archivo ${info.nombre_archivo} modificado&quot;,blue)
+                sh&quot;&quot;&quot;
+                    sshpass -p ${PASS} ssh ${USERNAME}@${host} &quot;cat ${folder}/${info.nombre_archivo}&quot;
+                &quot;&quot;&quot;
+            }
+        }
+    }
+}
+def downloadNexus(def artifact){
+    withCredentials([usernamePassword(credentialsId: credentialsNexus, passwordVariable: &apos;PASS&apos;, usernameVariable: &apos;USER&apos;)]) {
+        sh&quot;curl -u $USER:$PASS -X GET ${url_nexus}/repository/${repoNexus}/${groupId}/${artifact}/${params.&apos;Release&apos;}/${artifact}-${params.&apos;Release&apos;}.json -O&quot;
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>510938772</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>243807091</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2082153547</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>105593048</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>917684196</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>63</iota>
+    <head>1:63</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

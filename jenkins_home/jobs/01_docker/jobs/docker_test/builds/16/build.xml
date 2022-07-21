@@ -1,0 +1,66 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1186.v8def1a_5f3944">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hidraxos</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@593.va_a_fc25d520e9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>75</queueId>
+  <timestamp>1658274310955</timestamp>
+  <startTime>1658274310961</startTime>
+  <result>SUCCESS</result>
+  <duration>26428</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node(&apos;slave_default&apos;){
+    sh&quot;echo hello world&quot;
+    sh&quot;git --version&quot;
+    sh&quot;java -version&quot;
+    sh&quot;sshpass -p galvis0425 ssh -o StrictHostKeyChecking=no hidraxos@192.168.1.115 ls&quot;
+    sleep 20
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>130886646</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>15893341</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>909293583</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>28047940</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>117210700</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>12</iota>
+    <head>1:12</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

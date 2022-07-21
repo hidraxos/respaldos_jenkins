@@ -1,0 +1,384 @@
+{
+	"Artifacts": [
+		{
+			"nombre": "icbs-web",
+			"bancos": [
+				"BPOP",
+				"BAVV",
+				"BOCC",
+				"BBTA"
+			],
+			"version": "11.36.0"
+		},
+		{
+			"nombre": "icbs-backoffice-web",
+			"bancos": [
+				"BPOP",
+				"BAVV",
+				"BOCC",
+				"BBTA"
+			],
+			"version": "11.28.0"
+		},
+		{
+			"nombre": "icbs-fm-async",
+			"bancos": [
+				"BPOP",
+				"BAVV",
+				"BOCC",
+				"BBTA"
+			],
+			"version": "11.15.0"
+		},
+		{
+			"nombre": "icbs-scheduled-task-web",
+			"bancos": [
+				"BPOP",
+				"BAVV",
+				"BOCC",
+				"BBTA"
+			],
+			"version": "11.29.0"
+		}
+	],
+	"Database": {
+		"backup": [
+			"backup.sql",
+			"backup_his.sql"
+		],
+		"reverse": [
+			"reverse.sql",
+			"reverse_his.sql"
+		],
+		"migrate": [
+			"migrate.sql",
+			"migrate_hist.sql"
+		]
+	},
+	"Queues": [
+		{
+			"nombre": "MiColaOffice",
+			"bancos": [
+				"BBTA",
+				"BPOP",
+				"BOCC",
+				"BAVV"
+			],
+			"aplicacion": "FO",
+			"jndi": "jms/MiColaOffice",
+			"subdeployment": "MiColaOffice"
+		},
+		{
+			"nombre": "LoggerOffice",
+			"bancos": [
+				"BOCC",
+				"BAVV"
+			],
+			"aplicacion": "OP",
+			"jndi": "jms/LoggerOffice",
+			"subdeployment": "LoggerOffice"
+		}
+	],
+	"Properties": [
+		{
+			"nombre_archivo": "ws-timeout-settings.properties",
+			"bancos": [
+				"BAVV",
+				"BOCC"
+			],
+			"accion_archivo": "Mod",
+			"modificacion": [
+				{
+					"propiedad": "timeout.GA_PQRSCustomerAuthentication.AuthInqRequest",
+					"valor": "50000",
+					"accion_linea": "New"
+				},
+				{
+					"propiedad": "propiedad.para.borrar",
+					"accion_linea": "Eli"
+				},
+				{
+					"propiedad": "linea.para.modificar",
+					"valor": "nuevoValor",
+					"accion_linea": "Mod"
+				},
+				{
+					"propiedad": "timeout.GA_PQRSCustomerAuthentication",
+					"valor": "50000",
+					"accion_linea": "New"
+				}
+			],
+			"url": "https://git.solem.cl/icbs/icbs-properties/-/tree/develop",
+			"tag": "11.33.0"
+		},
+		{
+			"modificacion": [
+				{
+					"propiedad": "timeout.AuthInqRequest",
+					"valor": "50000",
+					"accion_linea": "New"
+				},
+				{
+					"propiedad": "GA_PQRSCustomerAuthentication.AuthInqRequest",
+					"valor": "50000",
+					"accion_linea": "New"
+				}
+			],
+			"accion_archivo": "Mod",
+			"bancos": [
+				"BBTA",
+				"BPOP"
+			],
+			"nombre_archivo": "timeout.properties",
+			"url": "https://git.solem.cl/icbs/icbs-properties/-/tree/develop",
+			"tag": "11.30.0"
+		},
+		{
+			"nombre_archivo": "ws-settings.properties",
+			"bancos": [
+				"BAVV",
+				"BOCC",
+				"BBOG",
+				"BPOP"
+			],
+			"accion_archivo": "New",
+			"url": "https://git.solem.cl/icbs/icbs-properties/-/tree/develop",
+			"tag": "11.35.0"
+		},
+		{
+			"nombre_archivo": "borrar.properties",
+			"bancos": [
+				"BAVV"
+			],
+			"accion_archivo": "Eli",
+			"url": "https://git.solem.cl/icbs/icbs-properties/-/tree/develop",
+			"tag": "11.35.0"
+		},
+		{
+			"nombre_archivo": "timeout.properties",
+			"bancos": [
+				"BAVV",
+				"BOCC",
+				"BBTA"
+			],
+			"accion_archivo": "Mod",
+			"modificacion": [
+				{
+					"propiedad": "timeout.GA_PQRSCustomerAuthentication.AuthInqRequest",
+					"valor": "50000",
+					"accion_linea": "Mod"
+				},
+				{
+					"propiedad": "timeout.GA_PQRSCustomerAuthentication",
+					"valor": "50000",
+					"accion_linea": "Mod"
+				}
+			],
+			"url": "https://git.solem.cl/icbs/icbs-properties/-/tree/develop",
+			"tag": "11.33.0"
+		}
+	],
+	"ConnectionFactory": [
+		{
+			"nombre": "MiColaOfficeConnectionFactory_One",
+			"bancos": [
+				"BBTA",
+				"BPOP"
+			],
+			"aplicacion": "FO",
+			"jndi": "jms/MiColaOfficeConnectionFactory_One"
+		},
+		{
+			"nombre": "MiColaOfficeConnectionFactory_Two",
+			"bancos": [
+				"BAVV",
+				"BOCC"
+			],
+			"aplicacion": "FM",
+			"jndi": "jms/MiColaOfficeConnectionFactory_Two"
+		}
+	],
+	"Filestore": [
+		{
+			"type": "filestoreOne",
+			"name": "FS_BAVV_FO",
+			"dir_path": "/u01/app/oracle/middleware/user_projects/domains/icbs_wls12",
+			"target": [
+				"BAVV_FO_SERVER"
+			]
+		},
+		{
+			"type": "filestoreTwo",
+			"name": "FS_BAVV_FM",
+			"dir_path": "/u01/app/oracle/middleware/user_projects/domains/icbs_wls12",
+			"target": [
+				"BPOP_FM_SERVER"
+			]
+		}
+	],
+	"Datasources": [
+		{
+			"nombre": "miDataSource0",
+			"jndi": "jdbc/miDataSource0",
+			"banco": "BBTA",
+			"target": [
+				"BBTA_FO_SERVER",
+				"BBTA_BO_SERVER",
+				"BBTA_FM_SERVER",
+				"BBTA_OP_SERVER"
+			]
+		},
+		{
+			"nombre": "miDataSource1",
+			"jndi": "jdbc/miDataSource1",
+			"banco": "BPOP",
+			"target": [
+				"BPOP_FO_SERVER",
+				"BPOP_BO_SERVER",
+				"BPOP_FM_SERVER",
+				"BBTA_OP_SERVER"
+			]
+		}
+	],
+	"SAFAgent": [
+		{
+			"nombre": "MiSAFAgent-BAVVFO",
+			"tipo": "Sending Only/Receiving Only/both",
+			"persistent_store": "FS_BAVV_FO",
+			"target": "BAVV_FO_SERVER"
+		},
+		{
+			"nombre": "MiSAFAgent-BPOPFO",
+			"tipo": "Sending Only",
+			"persistent_store": "FS_BPOP_FO",
+			"target": "BPOP_FO_SERVER"
+		}
+	],
+	"RemoteContext": [
+		{
+			"bancos": [
+				"BAVV"
+			],
+			"aplicacion": "FO",
+			"nombre": "MiRemoteContextOP",
+			"url": "t3://<IP-BAVV_OP>:<PORT-BAVV_OP>"
+		},
+		{
+			"bancos": [
+				"BPOP"
+			],
+			"aplicacion": "FM",
+			"nombre": "MiRemoteContextOP",
+			"url": "t3://<IP-BPOP_OP>:<PORT-BPOP_OP>"
+		}
+	],
+	"ErrorHandling": [
+		{
+			"bancos": [
+				"BAVV"
+			],
+			"aplicacion": "FO",
+			"nombre": "miErrorHandling01",
+			"policy": "Always-Forward/discard/log/redirect",
+			"error_destination": "MiErrorHAndlingQueue"
+		},
+		{
+			"bancos": [
+				"BPOP"
+			],
+			"aplicacion": "FM",
+			"nombre": "miErrorHandling01",
+			"policy": "Always-Forward",
+			"error_destination": "MiErrorHAndlingQueue"
+		}
+	],
+	"ImportedDestination": [
+		{
+			"bancos": [
+				"BAVV"
+			],
+			"aplicacion": "FO",
+			"nombre": "MiImportedDestination",
+			"remote_saf_context": "MiRemoteContextOP",
+			"error_handling": "miErrorHandling01",
+			"time_to_live": "3600000"
+		},
+		{
+			"bancos": [
+				"BPOP"
+			],
+			"aplicacion": "FM",
+			"nombre": "MiImportedDestination02",
+			"remote_saf_context": "MiRemoteContextOP02",
+			"error_handling": "miErrorHandling02",
+			"time_to_live": "3600000"
+		}
+	],
+	"SAFQueue": [
+		{
+			"bancos": [
+				"BAVV"
+			],
+			"aplicacion": "FO",
+			"imported_destination": "MiImportedDestination",
+			"nombre": "LoggerOffice",
+			"remote_jndi_name": "jms/LoggerOffice",
+			"persistent_qos": "At-Least-Once/At-Most-Once/Exactly-Once",
+			"non_persistent_qos": "At-Least-Once/At-Most-Once/Exactly-Once",
+			"time_to_live": "3600000"
+		},
+		{
+			"bancos": [
+				"BPOP"
+			],
+			"aplicacion": "FM",
+			"imported_destination": "MiImportedDestinationFM",
+			"nombre": "LoggerOfficeFM",
+			"remote_jndi_name": "jms/LoggerOfficeFM",
+			"persistent_qos": "At-Least-Once/At-Most-Once/Exactly-OnceFM",
+			"non_persistent_qos": "At-Least-Once/At-Most-Once/Exactly-OnceFM",
+			"time_to_live": "3600000"
+		}
+	],
+	"Others": [
+		{
+			"bancos": [
+				"BOCC"
+			],
+			"descripcion": [
+				"Se requiere incluir archivos en la ruta de publicidad de Navegadores (/CCE560), para OCC UX: icono1.png, icono2.png, icono3.png, icono4.png, icono5.png, browser_warning.html",
+				"LOS ARHIVOS SE ADJUNTAN A CONFLUENCE EN LA RUTA DE LA VERSION. ARCHIVO ZIP url::https://devops-confluence.ath.net/display/ICBS/R79::url"
+			]
+		},
+		{
+			"bancos": [
+				"BBOG",
+				"BAVV"
+			],
+			"descripcion": [
+				"BBOG",
+				"BAVV"
+			]
+		}
+	],
+	"OthersDb": [
+		{
+			"bancos": [
+				"BPOP"
+			],
+			"descripcion": [
+				"Verificar que el JOB XXXX se encuentre apagado"
+			]
+		},
+		{
+			"bancos": [
+				"othersDB-bank-BBOG",
+				"othersDB-bank-BAVV"
+			],
+			"descripcion": [
+				"descriptionDB-bank-BBOG",
+				"descriptionDB-bank-BAVV"
+			]
+		}
+	]
+}

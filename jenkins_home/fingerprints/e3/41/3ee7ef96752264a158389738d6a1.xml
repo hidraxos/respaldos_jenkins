@@ -5,8 +5,12 @@
   <fileName>Credential id=ugithub name=hidraxos/****** (credenciales github hidraxos)</fileName>
   <usages>
     <entry>
+      <string>01_docker/Create_image_slave</string>
+      <ranges>14-24</ranges>
+    </entry>
+    <entry>
       <string>Laboratorios_ATH/ICBS/propertiesJSON</string>
-      <ranges>2-30</ranges>
+      <ranges>2-33</ranges>
     </entry>
     <entry>
       <string>Laboratorios_ATH/ICBS/test</string>
@@ -15,6 +19,10 @@
     <entry>
       <string>Laboratorios_ATH/ICBS/properties</string>
       <ranges>1-27,29-31</ranges>
+    </entry>
+    <entry>
+      <string>Laboratorios_ATH/ICBS/ICBS_CD/propertiesYAML</string>
+      <ranges>1</ranges>
     </entry>
   </usages>
   <facets/>

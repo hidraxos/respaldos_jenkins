@@ -5,20 +5,36 @@
   <fileName>Credential id=hidraxos_credentials name=hidraxos/****** (Cresentials ubuntu server hidraxos)</fileName>
   <usages>
     <entry>
+      <string>01_docker/Create_image_slave</string>
+      <ranges>22-24</ranges>
+    </entry>
+    <entry>
       <string>Laboratorios_ATH/ICBS/propertiesJSON</string>
-      <ranges>21-25,27-30</ranges>
+      <ranges>21-25,27-30,33</ranges>
+    </entry>
+    <entry>
+      <string>00_ADMINISTRACION/push Private</string>
+      <ranges>3-8,11-12</ranges>
+    </entry>
+    <entry>
+      <string>Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON</string>
+      <ranges>8,10,12-25,27-33</ranges>
     </entry>
     <entry>
       <string>Todo_en_uno</string>
       <ranges>54</ranges>
     </entry>
     <entry>
-      <string>Laboratorios_ATH/ICBS/test</string>
-      <ranges>21-24,26-35</ranges>
+      <string>Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus</string>
+      <ranges>7-11,14-17</ranges>
     </entry>
     <entry>
       <string>Laboratorios_ATH/ICBS/properties</string>
       <ranges>2,4-11,13-14,16,18-20,24-27,29-31</ranges>
+    </entry>
+    <entry>
+      <string>Laboratorios_ATH/ICBS/test</string>
+      <ranges>21-24,26-35</ranges>
     </entry>
   </usages>
   <facets/>

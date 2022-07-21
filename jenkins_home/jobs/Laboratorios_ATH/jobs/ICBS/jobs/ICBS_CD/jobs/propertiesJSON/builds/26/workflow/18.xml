@@ -1,0 +1,35 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@820.vd1a_6cc65ef33">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2725.v7b_c717eb_12ce">
+    <parentIds>
+      <string>17</string>
+    </parentIds>
+    <id>18</id>
+    <startId>6</startId>
+  </node>
+  <actions>
+    <wf.a.BodyInvocationAction plugin="workflow-api@1164.v760c223ddb_32"/>
+    <wf.a.TimingAction plugin="workflow-api@1164.v760c223ddb_32">
+      <startTime>1658423756179</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@1164.v760c223ddb_32">
+      <error class="hudson.remoting.ProxyException">
+        <detailMessage>net.sf.json.JSONException: Invalid JSON String</detailMessage>
+        <stackTrace>
+          <trace>net.sf.json.JSONSerializer.toJSON(JSONSerializer.java:143)</trace>
+          <trace>net.sf.json.JSONSerializer.toJSON(JSONSerializer.java:103)</trace>
+          <trace>net.sf.json.JSONSerializer.toJSON(JSONSerializer.java:84)</trace>
+          <trace>org.jenkinsci.plugins.pipeline.utility.steps.json.ReadJSONStepExecution.doRun(ReadJSONStepExecution.java:78)</trace>
+          <trace>org.jenkinsci.plugins.pipeline.utility.steps.AbstractFileOrTextStepExecution.run(AbstractFileOrTextStepExecution.java:29)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:829)</trace>
+        </stackTrace>
+        <suppressedExceptions class="empty-list"/>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

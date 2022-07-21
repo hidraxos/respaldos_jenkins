@@ -1,9 +1,0 @@
-commit 51922621b75b795384c875b6b94506e73f153dd5
-tree 3a6a8c433dbbd07e7eaae52506209acd74d21ee1
-parent 297720646042559f8294221e55eafc8ac020681d
-author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:32:58 -0500
-committer GitHub <noreply@github.com> 2022-07-07 10:32:58 -0500
-
-    prueba commit 2
-
-:100644 100644 10b53a3a8a41ff3a33c1d425900f58f4a8198f33 6d510c7f201a25f2c0a3fc81202b98fc2effbb68 M	properties.yaml

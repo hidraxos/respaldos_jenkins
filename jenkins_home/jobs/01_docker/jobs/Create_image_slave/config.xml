@@ -1,8 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@1182.v60a_e6279b_579">
+<flow-definition plugin="workflow-job@1186.v8def1a_5f3944">
   <actions>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2086.v12b_420f036e5"/>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2086.v12b_420f036e5">
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2097.v33db_b_de764b_e"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2097.v33db_b_de764b_e">
       <jobProperties/>
       <triggers/>
       <parameters>
@@ -30,14 +30,14 @@
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2725.v7b_c717eb_12ce">
     <script>import groovy.transform.Field
 import java.io.*;
 
 @Field def urlGit = &apos;https://github.com/hidraxos/jenkins_check.git&apos;
 @Field def credentials = &apos;ugithub&apos;
-@Field def NexusCredentials = &apos;nexus_registry&apos;
-@Field def registry = &apos;172.25.0.3:5000&apos;
+@Field def NexusCredentials = &apos;nexus_credentials&apos;
+@Field def registry = &apos;172.25.0.3:8082&apos;
 
 
 pipeline {

@@ -1,9 +1,0 @@
-commit 176c9ccbf9d206ef58ded04f9162153f284ce297
-tree cfb66a25e80d513cc92255f27c930eefbc682fa1
-parent 38355640d8d5f8bd252deb5dec67a4186b588ce8
-author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:14:23 -0500
-committer GitHub <noreply@github.com> 2022-07-07 10:14:23 -0500
-
-    Update properties.yaml
-
-:100644 100644 f573e909668dcbe2a22064351cd92aeef76d63cc 30d02177aa012ef8bb9dcb621316e7352afbd0f5 M	properties.yaml

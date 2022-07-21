@@ -1,4 +1,4 @@
-Started at Thu Jul 14 23:00:03 UTC 2022
+Started at Thu Jul 21 13:43:49 UTC 2022
 Processing Refresh_Param
 Offering Refresh_Param to Project Build Discarder
 Processing Script_parameters
@@ -29,12 +29,12 @@ Processing Laboratorios_ATH/WebLogic
 Offering Laboratorios_ATH/WebLogic to Project Build Discarder
 Processing Laboratorios_ATH/oracle_DB
 Offering Laboratorios_ATH/oracle_DB to Project Build Discarder
-Processing Laboratorios_ATH/ICBS/propertiesJSON
-Offering Laboratorios_ATH/ICBS/propertiesJSON to Project Build Discarder
-Processing Laboratorios_ATH/ICBS/propertiesYAML
-Offering Laboratorios_ATH/ICBS/propertiesYAML to Project Build Discarder
-Processing Laboratorios_ATH/ICBS/test
-Offering Laboratorios_ATH/ICBS/test to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus
+Offering Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON
+Offering Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CD/propertiesYAML
+Offering Laboratorios_ATH/ICBS/ICBS_CD/propertiesYAML to Project Build Discarder
 Processing Laboratorios_ATH/DB_PRD_ORACLE/oracle_DB
 Offering Laboratorios_ATH/DB_PRD_ORACLE/oracle_DB to Project Build Discarder
 Processing jobs_vencidos/backup_jobs_vencidos
@@ -56,4 +56,187 @@ Processing 00_ADMINISTRACION/Respaldos
 Offering 00_ADMINISTRACION/Respaldos to Project Build Discarder
 Processing 00_ADMINISTRACION/nodo_AWS
 Offering 00_ADMINISTRACION/nodo_AWS to Project Build Discarder
-Finished at Thu Jul 14 23:00:03 UTC 2022. 31ms
+Finished at Thu Jul 21 13:43:49 UTC 2022. 58ms
+Started at Thu Jul 21 14:43:49 UTC 2022
+Processing Refresh_Param
+Offering Refresh_Param to Project Build Discarder
+Processing Script_parameters
+Offering Script_parameters to Project Build Discarder
+Processing Todo_en_uno
+Offering Todo_en_uno to Project Build Discarder
+Processing Platzi/groovy_declarative
+Offering Platzi/groovy_declarative to Project Build Discarder
+Processing Platzi/hello_platzi
+Offering Platzi/hello_platzi to Project Build Discarder
+Processing Platzi/parameterized
+Offering Platzi/parameterized to Project Build Discarder
+Processing Platzi/watchers
+Offering Platzi/watchers to Project Build Discarder
+Processing Laboratorios_ATH/Api_Sonar
+Offering Laboratorios_ATH/Api_Sonar to Project Build Discarder
+Processing Laboratorios_ATH/Git_push
+Offering Laboratorios_ATH/Git_push to Project Build Discarder
+Processing Laboratorios_ATH/Lab-Sap
+Offering Laboratorios_ATH/Lab-Sap to Project Build Discarder
+Processing Laboratorios_ATH/Lab-nodo-ubuntu
+Offering Laboratorios_ATH/Lab-nodo-ubuntu to Project Build Discarder
+Processing Laboratorios_ATH/ScriptVersionesSAP
+Offering Laboratorios_ATH/ScriptVersionesSAP to Project Build Discarder
+Processing Laboratorios_ATH/WLST
+Offering Laboratorios_ATH/WLST to Project Build Discarder
+Processing Laboratorios_ATH/WebLogic
+Offering Laboratorios_ATH/WebLogic to Project Build Discarder
+Processing Laboratorios_ATH/oracle_DB
+Offering Laboratorios_ATH/oracle_DB to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus
+Offering Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON
+Offering Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CD/propertiesYAML
+Offering Laboratorios_ATH/ICBS/ICBS_CD/propertiesYAML to Project Build Discarder
+Processing Laboratorios_ATH/DB_PRD_ORACLE/oracle_DB
+Offering Laboratorios_ATH/DB_PRD_ORACLE/oracle_DB to Project Build Discarder
+Processing jobs_vencidos/backup_jobs_vencidos
+Offering jobs_vencidos/backup_jobs_vencidos to Project Build Discarder
+Processing Cosas_varias/Colores_AnsiColor
+Offering Cosas_varias/Colores_AnsiColor to Project Build Discarder
+Processing Cosas_varias/Email_ext
+Offering Cosas_varias/Email_ext to Project Build Discarder
+Processing Cosas_varias/test_API
+Offering Cosas_varias/test_API to Project Build Discarder
+Processing CI_DB/SQL_TEXT
+Offering CI_DB/SQL_TEXT to Project Build Discarder
+CI_DB/SQL_TEXT accepted by Project Build Discarder
+Processing 01_docker/Create_image_slave
+Offering 01_docker/Create_image_slave to Project Build Discarder
+Processing 01_docker/docker_test
+Offering 01_docker/docker_test to Project Build Discarder
+Processing 00_ADMINISTRACION/Respaldos
+Offering 00_ADMINISTRACION/Respaldos to Project Build Discarder
+Processing 00_ADMINISTRACION/nodo_AWS
+Offering 00_ADMINISTRACION/nodo_AWS to Project Build Discarder
+Processing 00_ADMINISTRACION/push Private
+Offering 00_ADMINISTRACION/push Private to Project Build Discarder
+Finished at Thu Jul 21 14:43:49 UTC 2022. 11ms
+Started at Thu Jul 21 15:43:49 UTC 2022
+Processing Refresh_Param
+Offering Refresh_Param to Project Build Discarder
+Processing Script_parameters
+Offering Script_parameters to Project Build Discarder
+Processing Todo_en_uno
+Offering Todo_en_uno to Project Build Discarder
+Processing Platzi/groovy_declarative
+Offering Platzi/groovy_declarative to Project Build Discarder
+Processing Platzi/hello_platzi
+Offering Platzi/hello_platzi to Project Build Discarder
+Processing Platzi/parameterized
+Offering Platzi/parameterized to Project Build Discarder
+Processing Platzi/watchers
+Offering Platzi/watchers to Project Build Discarder
+Processing Laboratorios_ATH/Api_Sonar
+Offering Laboratorios_ATH/Api_Sonar to Project Build Discarder
+Processing Laboratorios_ATH/Git_push
+Offering Laboratorios_ATH/Git_push to Project Build Discarder
+Processing Laboratorios_ATH/Lab-Sap
+Offering Laboratorios_ATH/Lab-Sap to Project Build Discarder
+Processing Laboratorios_ATH/Lab-nodo-ubuntu
+Offering Laboratorios_ATH/Lab-nodo-ubuntu to Project Build Discarder
+Processing Laboratorios_ATH/ScriptVersionesSAP
+Offering Laboratorios_ATH/ScriptVersionesSAP to Project Build Discarder
+Processing Laboratorios_ATH/WLST
+Offering Laboratorios_ATH/WLST to Project Build Discarder
+Processing Laboratorios_ATH/WebLogic
+Offering Laboratorios_ATH/WebLogic to Project Build Discarder
+Processing Laboratorios_ATH/oracle_DB
+Offering Laboratorios_ATH/oracle_DB to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus
+Offering Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON
+Offering Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CD/propertiesYAML
+Offering Laboratorios_ATH/ICBS/ICBS_CD/propertiesYAML to Project Build Discarder
+Processing Laboratorios_ATH/DB_PRD_ORACLE/oracle_DB
+Offering Laboratorios_ATH/DB_PRD_ORACLE/oracle_DB to Project Build Discarder
+Processing jobs_vencidos/backup_jobs_vencidos
+Offering jobs_vencidos/backup_jobs_vencidos to Project Build Discarder
+Processing Cosas_varias/Colores_AnsiColor
+Offering Cosas_varias/Colores_AnsiColor to Project Build Discarder
+Processing Cosas_varias/Email_ext
+Offering Cosas_varias/Email_ext to Project Build Discarder
+Processing Cosas_varias/test_API
+Offering Cosas_varias/test_API to Project Build Discarder
+Processing CI_DB/SQL_TEXT
+Offering CI_DB/SQL_TEXT to Project Build Discarder
+CI_DB/SQL_TEXT accepted by Project Build Discarder
+Processing 01_docker/Create_image_slave
+Offering 01_docker/Create_image_slave to Project Build Discarder
+Processing 01_docker/docker_test
+Offering 01_docker/docker_test to Project Build Discarder
+Processing 00_ADMINISTRACION/Respaldos
+Offering 00_ADMINISTRACION/Respaldos to Project Build Discarder
+Processing 00_ADMINISTRACION/nodo_AWS
+Offering 00_ADMINISTRACION/nodo_AWS to Project Build Discarder
+Processing 00_ADMINISTRACION/push Private
+Offering 00_ADMINISTRACION/push Private to Project Build Discarder
+Finished at Thu Jul 21 15:43:49 UTC 2022. 9ms
+Started at Thu Jul 21 16:43:49 UTC 2022
+Processing Refresh_Param
+Offering Refresh_Param to Project Build Discarder
+Processing Script_parameters
+Offering Script_parameters to Project Build Discarder
+Processing Todo_en_uno
+Offering Todo_en_uno to Project Build Discarder
+Processing Platzi/groovy_declarative
+Offering Platzi/groovy_declarative to Project Build Discarder
+Processing Platzi/hello_platzi
+Offering Platzi/hello_platzi to Project Build Discarder
+Processing Platzi/parameterized
+Offering Platzi/parameterized to Project Build Discarder
+Processing Platzi/watchers
+Offering Platzi/watchers to Project Build Discarder
+Processing Laboratorios_ATH/Api_Sonar
+Offering Laboratorios_ATH/Api_Sonar to Project Build Discarder
+Processing Laboratorios_ATH/Git_push
+Offering Laboratorios_ATH/Git_push to Project Build Discarder
+Processing Laboratorios_ATH/Lab-Sap
+Offering Laboratorios_ATH/Lab-Sap to Project Build Discarder
+Processing Laboratorios_ATH/Lab-nodo-ubuntu
+Offering Laboratorios_ATH/Lab-nodo-ubuntu to Project Build Discarder
+Processing Laboratorios_ATH/ScriptVersionesSAP
+Offering Laboratorios_ATH/ScriptVersionesSAP to Project Build Discarder
+Processing Laboratorios_ATH/WLST
+Offering Laboratorios_ATH/WLST to Project Build Discarder
+Processing Laboratorios_ATH/WebLogic
+Offering Laboratorios_ATH/WebLogic to Project Build Discarder
+Processing Laboratorios_ATH/oracle_DB
+Offering Laboratorios_ATH/oracle_DB to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus
+Offering Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON
+Offering Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON to Project Build Discarder
+Processing Laboratorios_ATH/ICBS/ICBS_CD/propertiesYAML
+Offering Laboratorios_ATH/ICBS/ICBS_CD/propertiesYAML to Project Build Discarder
+Processing Laboratorios_ATH/DB_PRD_ORACLE/oracle_DB
+Offering Laboratorios_ATH/DB_PRD_ORACLE/oracle_DB to Project Build Discarder
+Processing jobs_vencidos/backup_jobs_vencidos
+Offering jobs_vencidos/backup_jobs_vencidos to Project Build Discarder
+Processing Cosas_varias/Colores_AnsiColor
+Offering Cosas_varias/Colores_AnsiColor to Project Build Discarder
+Processing Cosas_varias/Email_ext
+Offering Cosas_varias/Email_ext to Project Build Discarder
+Processing Cosas_varias/test_API
+Offering Cosas_varias/test_API to Project Build Discarder
+Processing CI_DB/SQL_TEXT
+Offering CI_DB/SQL_TEXT to Project Build Discarder
+CI_DB/SQL_TEXT accepted by Project Build Discarder
+Processing 01_docker/Create_image_slave
+Offering 01_docker/Create_image_slave to Project Build Discarder
+Processing 01_docker/docker_test
+Offering 01_docker/docker_test to Project Build Discarder
+Processing 00_ADMINISTRACION/Respaldos
+Offering 00_ADMINISTRACION/Respaldos to Project Build Discarder
+Processing 00_ADMINISTRACION/nodo_AWS
+Offering 00_ADMINISTRACION/nodo_AWS to Project Build Discarder
+Processing 00_ADMINISTRACION/push Private
+Offering 00_ADMINISTRACION/push Private to Project Build Discarder
+Finished at Thu Jul 21 16:43:49 UTC 2022. 1ms

@@ -1,0 +1,117 @@
+commit b9b9083639324d3f5aba626859d6904a81717dbb
+tree 08aa1bcbb028a0b71bb147f261bed10d1979da5e
+parent cfaa6280b43b2064a1fac2cf7434615e0bc7aebe
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-12 19:07:10 -0500
+committer GitHub <noreply@github.com> 2022-07-12 19:07:10 -0500
+
+    Create properties.json
+
+:000000 100644 0000000000000000000000000000000000000000 634574110803b4f1a8a2319c4f5916136bad870a A	properties.json
+commit cfaa6280b43b2064a1fac2cf7434615e0bc7aebe
+tree cfb66a25e80d513cc92255f27c930eefbc682fa1
+parent 97b2593f199eedc6e3884fa4cd5667b91a61b86c
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:43:21 -0500
+committer GitHub <noreply@github.com> 2022-07-07 10:43:21 -0500
+
+    Segunda prueba commit
+
+:100644 100644 d6fff83a93e19b69c908071db96238b208bddd36 30d02177aa012ef8bb9dcb621316e7352afbd0f5 M	properties.yaml
+commit 97b2593f199eedc6e3884fa4cd5667b91a61b86c
+tree 9fe64a165a6e4c95e626264cdc48cc50c2e7dc3d
+parent 51922621b75b795384c875b6b94506e73f153dd5
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:40:25 -0500
+committer GitHub <noreply@github.com> 2022-07-07 10:40:25 -0500
+
+    prueba commit
+
+:100644 100644 6d510c7f201a25f2c0a3fc81202b98fc2effbb68 d6fff83a93e19b69c908071db96238b208bddd36 M	properties.yaml
+commit 51922621b75b795384c875b6b94506e73f153dd5
+tree 3a6a8c433dbbd07e7eaae52506209acd74d21ee1
+parent 297720646042559f8294221e55eafc8ac020681d
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:32:58 -0500
+committer GitHub <noreply@github.com> 2022-07-07 10:32:58 -0500
+
+    prueba commit 2
+
+:100644 100644 10b53a3a8a41ff3a33c1d425900f58f4a8198f33 6d510c7f201a25f2c0a3fc81202b98fc2effbb68 M	properties.yaml
+commit 297720646042559f8294221e55eafc8ac020681d
+tree 4788d645a1fd2472c868319fa821cfcbbaf80768
+parent 176c9ccbf9d206ef58ded04f9162153f284ce297
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:30:05 -0500
+committer GitHub <noreply@github.com> 2022-07-07 10:30:05 -0500
+
+    prueba commit
+
+:100644 100644 30d02177aa012ef8bb9dcb621316e7352afbd0f5 10b53a3a8a41ff3a33c1d425900f58f4a8198f33 M	properties.yaml
+commit 176c9ccbf9d206ef58ded04f9162153f284ce297
+tree cfb66a25e80d513cc92255f27c930eefbc682fa1
+parent 38355640d8d5f8bd252deb5dec67a4186b588ce8
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:14:23 -0500
+committer GitHub <noreply@github.com> 2022-07-07 10:14:23 -0500
+
+    Update properties.yaml
+
+:100644 100644 f573e909668dcbe2a22064351cd92aeef76d63cc 30d02177aa012ef8bb9dcb621316e7352afbd0f5 M	properties.yaml
+commit 38355640d8d5f8bd252deb5dec67a4186b588ce8
+tree 2cbbe4425c0f9975d69feae99a782d18d48db1fa
+parent 44586599be83bd4211cdf90bbaa5a7a4da0e3039
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:11:57 -0500
+committer GitHub <noreply@github.com> 2022-07-07 10:11:57 -0500
+
+    Update properties.yaml
+
+:100644 100644 6aadae29c04e6885dd0934de803557ddf9a033a2 f573e909668dcbe2a22064351cd92aeef76d63cc M	properties.yaml
+commit 44586599be83bd4211cdf90bbaa5a7a4da0e3039
+tree fa64a88d37d10f88a4f84e380d1d2974f627817d
+parent 0a6f050ed1b99364582ee7c1952e54b6c487d595
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 10:04:19 -0500
+committer GitHub <noreply@github.com> 2022-07-07 10:04:19 -0500
+
+    Update properties.yaml
+
+:100644 100644 fc5f05831d50beb10d26e3f78c9a347fa9d77917 6aadae29c04e6885dd0934de803557ddf9a033a2 M	properties.yaml
+commit 0a6f050ed1b99364582ee7c1952e54b6c487d595
+tree 247120a858d0d37c8aee22a9d35ba66176b94e9d
+parent 11e3de1b4831db9269f6b2799cd1eee528b3a871
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 09:31:45 -0500
+committer GitHub <noreply@github.com> 2022-07-07 09:31:45 -0500
+
+    Update properties.yaml
+
+:100644 100644 cac56c708364d94427a4897ae7a8bd71b7973e64 fc5f05831d50beb10d26e3f78c9a347fa9d77917 M	properties.yaml
+commit 11e3de1b4831db9269f6b2799cd1eee528b3a871
+tree e5f6e880a6f3731011449428eea7aacdc1735a89
+parent 2d820423abe222b3113ff615839aa7e8d718476f
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 09:26:28 -0500
+committer GitHub <noreply@github.com> 2022-07-07 09:26:28 -0500
+
+    Update properties.yaml
+
+:100644 100644 32b543358fe23691b45fd726f00caa28d86f6df6 cac56c708364d94427a4897ae7a8bd71b7973e64 M	properties.yaml
+commit 2d820423abe222b3113ff615839aa7e8d718476f
+tree 2c93858264072b2be6fa6040a6965d54f5233098
+parent 583adede53380aa63039d69f03933456ac88af11
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 09:25:51 -0500
+committer GitHub <noreply@github.com> 2022-07-07 09:25:51 -0500
+
+    Update properties.yaml
+
+:100644 100644 6d743eac7459baff4bdbb9f46bf93974770e6825 32b543358fe23691b45fd726f00caa28d86f6df6 M	properties.yaml
+commit 583adede53380aa63039d69f03933456ac88af11
+tree 4d9b8e155da47c27c51f17b7dbf19b0958700244
+parent 040980f489f30c2aa48a0487966bde8aa9e37b20
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-07 09:18:10 -0500
+committer GitHub <noreply@github.com> 2022-07-07 09:18:10 -0500
+
+    Create properties.yaml
+
+:000000 100644 0000000000000000000000000000000000000000 6d743eac7459baff4bdbb9f46bf93974770e6825 A	properties.yaml
+commit 040980f489f30c2aa48a0487966bde8aa9e37b20
+tree c7d263bc39f1825c4b3a0aa1e921e73d3f4dbb99
+parent 55478e4f9de2b0fb7abd12379f0b7c0dd723b1c9
+author hidraxos <92879018+hidraxos@users.noreply.github.com> 2022-07-05 08:44:47 -0500
+committer GitHub <noreply@github.com> 2022-07-05 08:44:47 -0500
+
+    properties
+
+:000000 100644 0000000000000000000000000000000000000000 aa4ac53e899e1eb4b69fc875d567b0e4fa5e448a A	new_properties.properties

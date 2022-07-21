@@ -1,0 +1,545 @@
+Started by user [8mha:////4INn0zpnMKbs+gflDagKeUxw81959v13cgPdsCZxdz7YAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgY+/dLi1CL9jMyUosSK/GIAQOmS8sMAAAA=[0mHermann Galvis
+[8mha:////4FbC7Qjs7Of/IqepSisUCtDvBwgVJSZSUfR7/6QM3bp+AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4AY9TNeRD+b4nZR/Sk/AD+3lsE6GYle0X1+tOvTlV7GOAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4BlAJFv9cPlFdv+//ZuJDL0RKAllszVAqSE2Vjz+sn8XAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON
+[8mha:////4IdhfZFXnjIlSKfEgX2HzPjV7C++3BHuNlID5psiE4zlAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4JxZl0o3LiDOSXD/baaGCpqPmqmBOuUsPafbGhEtE1lIAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4KdVlevpfx82Uef8PbnGgUebxwYQr4fRpFszmrEQCKdcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Download json)
+[8mha:////4MpgvK9LkKjKM54hH7WKtS+LClGbgJ8ulyh4UQ84QME0AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] script
+[8mha:////4EExaN4gLdbM+L9Ki5CsN/gb0lHb5s2HEZq1c6adAeI5AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4BtA+AwXux0ccGKd2DVmU2yTmLPuvoY/yuRVAExFqr6UAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaoyVLaHxBMgiwpL/WWDdrTyRV/MOEjexcpJJ5k3zXm9Y5wQnSpZ7g73DrB2PYbR18YlSfws0cU9XrgkzBcOlmSR15rygpGJgCWtgJWBjUAfKDm2BrfDqodqg0LaXkup3FNC4boAnMFHNRaXyhTnB7j52mfDn+SuAORZg+9pD/AAeoCAqvAAAAA==[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[8mha:////4FeyLC/Wi2G5FwIkIUOy+Sjs93sqT3jS5yuRefAvMWpfAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDHRKiorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INcXYwW8EAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4J9W1zpUZYAhe0QV12NTPZhZOSfeNHcjBpzfvJAAalI7AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4HKonfnAQ6p4Rh89zNwxh1XsDaCQQGEcqXidF//4sKZpAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ curl -u admin:**** -X GET http://192.168.1.115:8081/repository/maven-icbs-releases/com/ath/icbs/icbs-release-json/R108/icbs-release-json-R108.json -O
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  7488  100  7488    0     0  1462k      0 --:--:-- --:--:-- --:--:-- 1462k
+[8mha:////4KZFDzSM5t3T+VK9blxcYIwjBjC86NNcgpy4rxBP7SfBAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o3geV5574AAAA=[0m[Pipeline] }
+[8mha:////4NUMxlcZLwEZaeKPsNEwFPa4b6BFZOEUhwFSmoAZz/HzAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bq/le42+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4FxYyQt7wYch5Ll1OIfVcv12TDUQY7aVwwP/b64RSt8xAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBRISoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHaCbC/It7vuA2TGium9AAAA[0m[Pipeline] readJSON
+[8mha:////4PA64swMXEQG1NbkwtnmaZX+TAYscbAoW+ml/WvozJ5UAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDUJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AA6Ss1S9AAAA[0m[Pipeline] }
+[8mha:////4KM1t0GVWcw+bg3CsN4gvYNig2+yrUIrUcPm5jWTUDO3AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiKMFYVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwAL6Zs+b0AAAA=[0m[Pipeline] // script
+[8mha:////4JsUuErQwNrfeIrTWB/5FjnahxzgBHsl4E30OvdwCc8qAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDUJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AGgBOwy9AAAA[0m[Pipeline] }
+[8mha:////4Mq8x4dNtO35KT5uUOCNmQ1zYnH9//2H0QC/PNQmBZE1AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBQVCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AGJ5Uqi9AAAA[0m[Pipeline] // stage
+[8mha:////4A+KRyKJ6epUNyWEX23DazcBMTj0Ta47zqvUMAqBMTzxAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYSDEB2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INK/7CYMEAAAA=[0m[Pipeline] stage
+[8mha:////4H6DTFIkzWC0VrAtAwayVgoA6nG4J1OAd7ZZgIpeGd7AAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] { (Mod Properties)
+[8mha:////4NSBrRECHpM1zCQAeeUMWp0GBl6V/9nfBr+eKLuLaSYyAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] script
+[8mha:////4Oh2aJqhj4kxDO7OjG0JNR8ECF1QVACopGD3arP6l7A0AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] {
+[8mha:////4JdoYM7KXf1LC+MM/S6m8YGe/UPTRoAIJvUs3nhdlsRYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBrANZ3i+AAAA[0m[Pipeline] echo
+["BAVV","BOCC"]
+[8mha:////4NzWxmKjIfojm0vhYlTeBHWbBk4T9L2mGpQ1aK64+lwWAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD3tNtZjCAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4HjXMftbsobm2YeAGuyg2pbAP82jwwxRNsLGYiyRuoVoAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] {
+[8mha:////4J1Jyl9Ei7UW78cPhO/pHpsKmgSEXWDFtKpYr8hHGTOIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUUCBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHUcXIBvgAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cp /home/hidraxos/Documents/properties/ws-timeout-settings.properties /home/hidraxos/Documents/properties/ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4LeXt2oI7QiDdXKbO9mwYwuG9Y7SgMpg7CI3HoMShiK9AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYkBIiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gPn8nxVwgAAAA==[0m[Pipeline] ansiColor
+[8mha:////4Af+l2ChwA+cvba+3co+Ac/6VuHdrUjLQLG0YHxwEW+SAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] {
+[8mha:////4Do9fVmAib7bmwkD3Wra2gTeqZYVc0W9qA1UOp5BJ385AAAAqh+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFRND41RTUwMzXTNTE1NdE0tTC90kA9NUIGGZam6cbGRukJoMAKZFs+CvAAAA[0m
+[8mha:////4NX/Ls8JpDJe38iYwcy9uGO/+pUP2GlbNacQqqyMxJNIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] echo
+[46m*************** Backup del archivo ws-timeout-settings.properties realizado ***************[0m
+[8mha:////4CD9Wgnaef9RXH++YJ7/kqYkH3ERsfDqxNysMcb0e7T7AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AFSjtgYvgAAAA==[0m[Pipeline] }
+[8mha:////4M4xJKAA5QRqxZvfI6HMbgshBmERoML/AyIQSg4z0EgkAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGldRU85Qk81QjXUsTEwtdkxQLc13LVJMUXWOTZGPDRItk01RLcwBaA6dKrwAAAA==[0m
+[8mha:////4FymaZ1zb3c94QqYV5Zx29x+Q1Dlzkt6xHtXLhMvsIPfAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9qzEvpvgAAAA==[0m[Pipeline] // ansiColor
+[8mha:////4JqxPrjMm0yLywUSKTgGfAYkjNDa0N9tRFA1B5TrlL/1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRiESDqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2Ccr9IVdd+w/n3txkvgAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 ls /home/hidraxos/Documents/properties
+borrar.properties
+timeout.properties
+ws-timeout-settings.properties
+ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4D4H5gm3+STfhVI6Qe9HuV9gqB4iwyynWXzNDeD0eNaZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAaJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw9wAqrYvgAAAA==[0m[Pipeline] }
+[8mha:////4BzJOf+41lnR+jcupjpsV5hKNNJ3+bnmTbNyA91jb/RFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigVIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QFvgP+KvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4BQyRoYdNaBnjcrJNU/i5mLJVLGy5zUQEXU2Wa5HZ1Y1AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUohILYuoaZeEEIQkhbfR/SVLaiRNxNe5AoBITHizbkvWeL6higCMFyzqDvcOoHBv8aHNiE4X+4mliHZ2ZIozkDRNmEqRNu1RBycCiooQVh7VB5Sk6tAk2vJN3WXuJtj6lkLcDh9LpGzyg4JmcZEjfMgfYXkcdCX+cvwCYhwTlrsnW7D/P6g1hNFa4wgAAAA==[0m[Pipeline] ansiColor
+[8mha:////4DuRKvXaXBqWfTVHXWWP5yrRx/lE2vRTWlAAaCqSpbUZAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] {
+[8mha:////4F5ef/ulwpvKqHG2YnNBGerd/1L4qJCOs7REucERWlQ3AAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFaPUpDSLNGMDXUuLZENdE6NEA12LRAtDXePEVGMLU0NjE0MjQwCfxaxHrwAAAA==[0m
+[8mha:////4M5S86hEhoAYYy9y4YAhDO+XyrVe3k8BH+n+UwoXRGk1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEGDPXtvgAAAA==[0m[Pipeline] echo
+[47m*************** Se anadira linea archivo ws-timeout-settings.properties ***************[0m
+[8mha:////4At5zkCHxV3ThpVBQBcSzmvVWV0tmuxIv+YCstm5cLDxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUCCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQF5ECgKvgAAAA==[0m[Pipeline] }
+[8mha:////4BKmXDr++GHwSN4CbIpLk2gRtVfK56vV3Qj3+ikqclTuAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFWPDNLM0C0sj3TRji2RdEzPjVF0LU5NE3ZTE1CTDFLOkxJQUYwD/TRWGrwAAAA==[0m
+[8mha:////4LZRxqeI3XJ5zRzd+DxCIwr4mT5ax+ag+tpl2tuR5LhgAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw+pT4efvgAAAA==[0m[Pipeline] // ansiColor
+[8mha:////4O/1PhIR6q8CBsa8VnenaGKpIuFXFa7cEi690MfAA0XvAAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU/GyoE2vUhROEJoSk0XslSUknTsTVuAOBSkx4sGxL1vd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3u2z7zedZvQFXOvRgwgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4DXa24AmKuY4MCypVPvvjhl8Xr3RXDhaE/mOex2gm0y0AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAdhUMVHCAAAA[0m[Pipeline] {
+[8mha:////4GaARTYipuXcigXSDSQvAG32J8lyFR8CaJlUe4BcBwLwAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBvbls1O+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 echo 'timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000' >> /home/hidraxos/Documents/properties/ws-timeout-settings.properties
+[8mha:////4Na1EEclOvIYM7Pp8tocBWpayhloeKMlF7JZdUrv+1+fAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUQt0QE2vUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hjIGOFEw3GnsLMbW8t6PZk48U+hunjJ3dOUtYSSveaNzQ0qf19pQ0rCqYLARsNXYeooWTYKdcPIhKy/RVJcU5u0ogFk1wBMKMZOTDOlbpgD7+6gi4Y/zFwBTn4DVh8Xq5Vl+AMTRih7CAAAA[0m[Pipeline] ansiColor
+[8mha:////4FbpHtkepcvQbPsA2yUftTLmUJhi3zLH/SQATuaiL9PTAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KRNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPIshjPcIAAAA=[0m[Pipeline] {
+[8mha:////4M3onkecwfnO0KppkLB+EeR23AoPOPpau1vTSKu/Rms1AAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFbNEgySjNGMT3VRzc3NdEwMjI90kyyQj3UQDM6NE8zSzpFRTIwAGfXLnrwAAAA==[0m
+[8mha:////4PfER9vOEX2aI8MIES+6BdgGaoLSLkcBboExhsrruDmdAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSAA2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBj0vY+u+AAAA[0m[Pipeline] echo
+[46m*************** Archivo ws-timeout-settings.properties modificado ***************[0m
+[8mha:////4F5WfrugvkP7OGpf3MsQ3fviLuuMazIqctGJfNAGeEGCAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgCgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N2y4ylS+AAAA[0m[Pipeline] }
+[8mha:////4Kmqq9diQXi0KLCl1NBAP38S/GqIVCszQ2emnezq+MJ9AAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlUQT88S0pGQLXWMTy1RdEzMjC11LwxQDXYvkRENj8+RkS9PUNACM52AQrwAAAA==[0m
+[8mha:////4AQ+y+TRmyA9dbmrTUvziS6JDYD4VTpX71/HWNkQgBIUAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaegjSpHDGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DS86m9K+AAAA[0m[Pipeline] // ansiColor
+[8mha:////4EMXzKXqnzIYy6l+mMOb90gqK5A1lkbJuhcRLQUWouCrAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIRqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK3/dQ+vAF8DVypvgAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cat /home/hidraxos/Documents/properties/ws-timeout-settings.properties
+linea.para.modificar=nuevoValor
+propiedad.para.borrar=82828
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+timeout.GA_PQRSCustomerAuthentication=50000
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+[8mha:////4GVKkDuzUqcSTvNtwaZ3hWT/Gk6wAbiayOoQjkPwml+JAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtd+9wHDFtxxvgAAAA==[0m[Pipeline] }
+[8mha:////4Fr35EFjwn0JY1jcaYQi1M//mJNXRtzQoxENS56PszfZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiSFAhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QHclIkjvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4HQad04DJSYnMUgZ4BdsjHLyzwRLK04rv5+owJu5INj1AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKmJCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsdtn2zedZvQFNQxdAwgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4MTQBMmmTWFPRJ7xX9DEyk7RUcMeVrntHfv+GaX4k82IAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD6emXT7CAAAA[0m[Pipeline] {
+[8mha:////4Ib5W/hDIii5zhUQ+h1bXGIeXtqNPmKXdMbhO188o0HEAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBiwS7Xe+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cp /home/hidraxos/Documents/properties/ws-timeout-settings.properties /home/hidraxos/Documents/properties/ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4DRK8hLlq2CCCMcVGo/3qSmfoNfRMHdi85WHHqQl9wc6AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0QJ0QE2vUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hjIGOFEw3GnsLMbW8t6PZk48U+hunjJ3dOUtYSSveaNzQ0qf19pQ0rCqYLARsNXYeooWTYKdcPIhKy/RVJcU5u0ogFk1wBMKMZOTDOlbpgD7+6gi4Y/zFwBTn4DVh8Xq5Vl+AHqaiinCAAAA[0m[Pipeline] ansiColor
+[8mha:////4NuGNa54fTOMCzV5NWtNiZWTuL1/gpvH7oQDp+UZJbegAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KgtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPlyKrR8IAAAA=[0m[Pipeline] {
+[8mha:////4Em56YVYF10dpqk7OFJ4z56W7+HaQWuY6meRcm0997E5AAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlTSTZEMLc3NjXcPEJANdE6MkM10LSzNjXYskc4OU5ERjI9MkQwDxT4PbrwAAAA==[0m
+[8mha:////4AvZKyMgeEENKFtexpvjEhgErTMiN/iE4Q3gTsWOGrN8AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBkhu+A6+AAAA[0m[Pipeline] echo
+[46m*************** Backup del archivo ws-timeout-settings.properties realizado ***************[0m
+[8mha:////4HwSTRxUHYFcssUahY4RWRHFYjnGBzm06sWlmMGQyMYoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgZAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N/Zh+YO+AAAA[0m[Pipeline] }
+[8mha:////4J8srKIg8GHo1B18GntjyA0jRjylp4EVaTKd1NB4iaAyAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFQMTC8uUlLREXUsLk1RdE4M0A92kxMRk3SQzY+PUNDNTkyRDIwCRohNsrwAAAA==[0m
+[8mha:////4OWHOvHOLHjNI5GUqJzH+vSdq0XFfrC52z59q53riaIHAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSpXAcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rf6eOs0b4AAAA=[0m[Pipeline] // ansiColor
+[8mha:////4EywOY0FmotwebJ2KSc9RDA5AnDO/f6JIzVjOOWArbfgAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKChKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrnf5Tpshw9xaccRvgAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 ls /home/hidraxos/Documents/properties
+borrar.properties
+timeout.properties
+ws-timeout-settings.properties
+ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4JgvJ0yrvBDjKb1kzNAmrCB6h97PvBb21fmKb2EjJlG/AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrn2uw8s3nTlvgAAAA==[0m[Pipeline] }
+[8mha:////4MJxlso84K6+hwoHLUxOO6EDeYQtCzLkkGF4XATl5ycMAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRYIGUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkF5qHPt6w8UnOcUvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4AaFAf2sInwtJBxizYWvn2G1L1fIvDn9K21dC4feWqiqAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUohILYuoaZeEEIQkhbfR/SVLaiRNxNe5AoBITHizbkvWeL6higCMFyzqDvcOoHBv8aHNiE4X+4mliHZ2ZIozkDRNmEqRNu1RBycCiooQVh7VB5Sk6tAk2vJN3WXuJtj6lkLcDh9LpGzyg4JmcZEjfMgfYXkcdCX+cvwCYhwTlrsm2bz7P6g11iqO6wgAAAA==[0m[Pipeline] ansiColor
+[8mha:////4Aw3UML1h8FMQoRKk6/4aA8A3Fy4S/6NKzdICv6HhB5dAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ALEgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD7KBoKTCAAAA[0m[Pipeline] {
+[8mha:////4GNwoqc7Nw7eF+WfpuNI3M79gcMO/A6c2KTU6IvvmDPyAAAAqh+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlUQT07TExCQjXUtDU3Ndk2QjIMvUJEk3LdXCPNnMOMXYODUNAGQLS12vAAAA[0m
+[8mha:////4MeMCl1GgQhLgwRijgYldjnlnefjM0/+Yc1/geAZGFkFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSAA2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBlmkmCe+AAAA[0m[Pipeline] echo
+[47m*************** Se eliminara una linea en ws-timeout-settings.properties ***************[0m
+[8mha:////4CKJKbua/GDDomIjzZgWYi5cU4QW47ZimQ9Zdv4+oHtWAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSoDSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BvQoOE2+AAAA[0m[Pipeline] }
+[8mha:////4AB1OaGTKb5lJznqLCh4NL/vYsZOXUKso6x6PRfyYutvAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFVOLlNQkM2NzXbNEUxNdE/NUE11LMxMz3VSD5ERTw0RjY0OzJADZ4qharwAAAA==[0m
+[8mha:////4EJ1ENAYiq2ivjbTAv7O7yEtmtlpkFqF4OhgnYaw2si4AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIEGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgHybgAYvgAAAA==[0m[Pipeline] // ansiColor
+[8mha:////4GkVmtz5eIpiSPvODsBjDtFOvGTh661CcrnlbksuSz/WAAAAqB+LCAAAAAAAAP9tjUEKwjAURH8rXbh16SFSUBBBunIbuvEEsYkxafi/JqnpyhN5Ne9gtODKWQwzA8N7vqAKHhrymlmFvcHQGTa4UefEEvn+4igxS2fWEQZyirUqtSTVca4tRQWzihIWHJYKO0fBoI6w4lbcRe0E6voUfd4OHEojb/CAgmdyFD5+y+RhfR1lIPxx/gJgGiKUm2223f7zrN62emTQwgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4FUsRqbDiAlk9PQosdQ7Gg2ywddkSVHbg5ZrZaJYw+ezAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QyDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASgVHzvCAAAA[0m[Pipeline] {
+[8mha:////4EgtNfCw7nVlV1a/CSlomQaaStTetEYB0YST8nfyWFqhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBUIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHrW/o6vgAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 sed -i -e '/propiedad.para.borrar=/d' /home/hidraxos/Documents/properties/ws-timeout-settings.properties
+[8mha:////4CiJ8xzjHUyPnks0g/q4VplZ7mUVSNovpTIfpuh5jyHVAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULCCEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0xQ7WwwgAAAA==[0m[Pipeline] ansiColor
+[8mha:////4JDcUCsSb6+ZrPvScPSRDLqDPR6cCdzNVa/ynbemQ8bkAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUsDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD7WcRxfCAAAA[0m[Pipeline] {
+[8mha:////4LFMj3E1ZdxD8JvhmP6MlIZ6B6Y80LaiUYxSFpEDoVCrAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFZPEREsD01QLXWMLM0NdE3PLZN0kM1MD3WQTY1PTNKOkVJPUNACYY6DqrwAAAA==[0m
+[8mha:////4Nm0i7nNKU7vr7iO8QYZXwGqIuiN3bRQoW2BH4XK+p1FAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQUGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAFMXHrfvgAAAA==[0m[Pipeline] echo
+[46m*************** Archivo ws-timeout-settings.properties modificado ***************[0m
+[8mha:////4HJbQhruvrruZNclnVRE1hwjNw1s0Sy7l+l6SgP1WsWvAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISQKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyv/vU9g0/Fv9WvgAAAA==[0m[Pipeline] }
+[8mha:////4AfptZnUw4wqRwZVgSVsz7pnc+iN3GL0XinfdxqmBYt5AAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlbQ008RUI4s0XeOU1BRdk5QkE93EFGMjXSMDQ4tUCwuz5BQjIwCUog/7rwAAAA==[0m
+[8mha:////4O/+p9o+v14XDI6NRpub40MFHfAoouJTnQZ8Ehr1p6+XAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgEglKoEvgAAAA==[0m[Pipeline] // ansiColor
+[8mha:////4Fl5IxqsByNeTxZ3C+b/LkQ+I2albq6yN4Z737p29NdOAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSBSFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP238oGy+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cat /home/hidraxos/Documents/properties/ws-timeout-settings.properties
+linea.para.modificar=nuevoValor
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+timeout.GA_PQRSCustomerAuthentication=50000
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+[8mha:////4LtA8ZUT+qbNB6nzoCUZnZb7U6W7SeUf/aBbQ5t1r64dAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMLpiBCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPliMol6+AAAA[0m[Pipeline] }
+[8mha:////4PX+TXCeiQyKqkwzY9TKT4R6nCC9gVqp0ImPWP8eXji3AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSQSREldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvPxsO89i+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4L55E232acHcpORR4Is8/jCiw/xO59jjkxk/M4uk96LeAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUggEh1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzTbbbv95Vm+nok+9wgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4MwSUAhSVJ3jsrT1I7Sak9upr0rAwSSWBe9jcG2FTnW+AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUDRDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrNxKsBBbCAAAA[0m[Pipeline] {
+[8mha:////4H6QSbNb0a6hvHeaKq+s1NXDkhbsengroWwSt/DVBN6uAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICHRKiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBnZ6r6i+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cp /home/hidraxos/Documents/properties/ws-timeout-settings.properties /home/hidraxos/Documents/properties/ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4M4f9itgarS6UTcWJjNNxrcpDKDCvbBEwUTneaj5HTqLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUMSEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD+2sFVLCAAAA[0m[Pipeline] ansiColor
+[8mha:////4BHox77e6Bt24nQdA7nQ9S5SF+G7+EnB921A1jsj3orCAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUggUJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfACJxiXBwgAAAA==[0m[Pipeline] {
+[8mha:////4D63QAPkBeNRtdIJkPgibEYKC/9OcE59rG/321ISJKXqAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlcREM4uUxJREXVPL5FRdE5NkS13L1CQjXeNUQxMTQwvzFLNEIwAU1vaVrwAAAA==[0m
+[8mha:////4M6AcHdDXAdV3oq36D37OU6oASWbh0NCs44qXU51JZzIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQIGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAGulDDkvgAAAA==[0m[Pipeline] echo
+[46m*************** Backup del archivo ws-timeout-settings.properties realizado ***************[0m
+[8mha:////4CJvE4qKEnc34DeVi+Qw9KOQBcyaBaBqu29UiQyrNo/oAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICQkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyv/vU9g0qmXSbvgAAAA==[0m[Pipeline] }
+[8mha:////4HDWL/n0f3FDfTqBYx8Jc+i/pZeMhuvL6tTCbzipyLZVAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFTPTxEQjS3MTXUNjM0Ndk6TkNN2kVAsj3STjRDND4+QUU1MTYwBmtKowrwAAAA==[0m
+[8mha:////4AlGT7LzSCa83EThFFncQqogjulaUkvwDrmeL0mj86i3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyv/vU9g0S2+dqvgAAAA==[0m[Pipeline] // ansiColor
+[8mha:////4Gv3O+lwh5ChS8rLbACSRWESRvt/5wKx50oX7CUvd0H0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBxKiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBvDd9f6+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 ls /home/hidraxos/Documents/properties
+borrar.properties
+timeout.properties
+ws-timeout-settings.properties
+ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4NDAA5y160F+dHMnwRs0GsIUc3mcJpabtIMJYzDd7jfaAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCGQlR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fTtvjvr4AAAA=[0m[Pipeline] }
+[8mha:////4OuJuYX58K3T8+ryrndYp7n6kMhCSB0w11lJEORrvYTWAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQoSo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMHufoDzUufb1B4Cs+4u+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4L1OHw76/UVQ3itWdSA18Xn+6LHosS2oczC8w92urdXCAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3u2z7zedZvQEyiH/KwgAAAA==[0m[Pipeline] ansiColor
+[8mha:////4AtTnKgKkAv8YVh/YFlh5x/6beYAV/LN5g4Y4xvEXBlBAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogURoSYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+mJlT6cIAAAA=[0m[Pipeline] {
+[8mha:////4IDNoSMWtLMq7EeQPGRxf7J1uXuq4fCvjaSSAWfSR6GOAAAAqh+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlcRES1Nzg+RUXYukJFNdE2NLI90koJiusZmFgamBgYVBkmUKAAYZte+vAAAA[0m
+[8mha:////4GyCa1vGhglzIfN4tRbB0Fr/ID6rwHHV3yelZmOt2oacAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi6BCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBqhInei+AAAA[0m[Pipeline] echo
+[47m*************** Se modificara una linea ws-timeout-settings.properties ***************[0m
+[8mha:////4LcRN/pA3TL1jbs9cPv8S6OIH4MGSsE9/dNpRyP+75VXAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRIUQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN+4hTxy+AAAA[0m[Pipeline] }
+[8mha:////4Do++H/GhqtN6xDAHWiMyPW8+AAdELTVXzTvRrWeZSShAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFZPkVHNL82QD3eREEyNdkyTTNN0k82QzXUOTZNM0A0OjtJTURACM++OvrwAAAA==[0m
+[8mha:////4EBgqIENWQaOqNnQQdli/lNJmCJWpbvHMw75sAIY1uPiAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCQYMQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN8AhTXa+AAAA[0m[Pipeline] // ansiColor
+[8mha:////4OLqf5guICGK0P6E4PlzeCflBHIidtxtdmWml6eELkOaAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjEg1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzTbbfvd5Vm+BGbKawgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4HAyfEx7ow6PIip79kE0hUl92UuV5Kjkvyv0tldL6/cDAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0Agkhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD2IFAYXCAAAA[0m[Pipeline] {
+[8mha:////4HnZTKCiVl+g4Z2AlIwMC5Bplwy+fXwwu2uhKE8/INz4AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgRCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBmOCTVC+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 sed -i -e 's/linea.para.modificar=[0-9a-zA-Z]*/linea.para.modificar=nuevoValor/' /home/hidraxos/Documents/properties/ws-timeout-settings.properties
+[8mha:////4BONVtVT7cEBNmvzfKeoGgQnB5Qb51EKoX2XTZDJyZ5sAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QyDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxARMC6SbCAAAA[0m[Pipeline] ansiColor
+[8mha:////4BgVJT0314Z5F63x7KRk2BtOqa5dhPn0/oD5YgjhTnFIAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0pUJMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBsPrDv8IAAAA=[0m[Pipeline] {
+[8mha:////4PjgJyJ7vxY4EfkkXEdWZeWMFXIuU7x7GqW0IDxbjjToAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFVMLU3PLFGNLXWOzJGNdEwsLA13LVBND3ZRUQ0sLM9PkRENDYwDte53rrwAAAA==[0m
+[8mha:////4FJYPyGj661r8y+CwKlKYurs1+JU2UOm1dMvwKiJuBhHAAAApB+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxGwZBwr2gyNJ4hJjIHMLiaLUHkir+YdZGTGyl/995r3esMmRThRdKKz2HtM2oshjG55YqLYXwNNoqOL0ISJghWtnVoytlmxJbawLsuhkLC1qAMlj45hJzv1UGVQ6Mozx8UdJeTe3OEJmVzKrCJ/YY6wv40mEf46fwMwDwx5XTMUh6oaPqKpLoK/AAAA[0m[Pipeline] echo
+[46m*************** Archivo ws-timeout-settings.properties modificado ***************[0m
+[8mha:////4MIrup006ljzLw3nGz7iDh/CcNgzyCeUmryndUtqVrgYAAAApB+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxGkZBwr2gyNJ4ghxkBmF5NFqDyRV/MOZmTGyl/995r3esMmBjhRsKI3ODiM2onRTzY9MVMYrp5m0dNFaMJI3ojWzC11plmxJTawLsuhkLA1qD1Fh5ZhJ3v1UKVXaMszh+SOEnLX3eEJmUxlVoG/sATY36YuEv46fwOwjCNDUR0qhryuP5Jn9ia/AAAA[0m[Pipeline] }
+[8mha:////4O0UcVSqXruKaGqYVNmYN9U7H8REhArTIYarPt6E6vLuAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFSOD1CTTtCRTXYM0o0RdE2MLM10LSxML3RRzU9MUg8Qk86QUEwBoFZvvrwAAAA==[0m
+[8mha:////4BS/t8IePa1wm3fCpKjo6j7ernfZ91pmMLi9GL9IciR7AAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxHUSoexss3QeIJIYgxkdjFZhMoTeTXvYEZmrPzVf695rzcsYoAjBStag53D2DjR+8GmJ0YK3dXTKFq6iIYwkjeiNmNN2pxmrIkNzMtyKCQsDTaeokPLsJKteqjSK7TlmUNylYTc6Ts8IZOpzCrwF6YA69ugI+Gv8zcAU98zFNvNjiE/7D+qJWXXvwAAAA==[0m[Pipeline] // ansiColor
+[8mha:////4ER79Jb0gu3jQUO+pok+6RJWW/DixGBWy47fP++y7k//AAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDQkJCERWtlYYXmNgYJ9ZdsC8kFS/ia/wBi0hUbLUzzbzesIgBjhSsaA12DmPjRO8Hm54YKXRXT6No6SIawkjeiNqMNWlzmrEmNjAvy6GQsDTYeIoOLcNKtuqhSq/QlmcOyVUScqfv8IRMpjKrwF+YAqxvg46Ev87fAEw9Q37YMxTbza7/AM3oI3C/AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cat /home/hidraxos/Documents/properties/ws-timeout-settings.properties
+linea.para.modificar=nuevoValor
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+timeout.GA_PQRSCustomerAuthentication=50000
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+[8mha:////4IRReq/Cav3lbgagRGGA5Usr9FYI2NZnUpazA+aDhjV5AAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDEkJCERWtlYYXmNgYJ9ZdsC8kFS/ia/wBi0hUbLUzzbzesIgBjhSsaA12DmPjRO8Hm54YKXRXT6No6SIawkjeiNqMNWlzmrEmNjAvy6GQsDTYeIoOLcNKtuqhSq/QlmcOyVUScqfv8IRMpjKrwF+YAqxvg46Ev87fAEx9z1BsNzuG/LD/ALDrhOa/AAAA[0m[Pipeline] }
+[8mha:////4AEkMmryvYrrXMsXD74PeuYcNEVn5Ux7ZeXRw4gZMzy9AAAAph+LCAAAAAAAAP9tjTESgjAQRZcwFraWHiJoQeE4VLYZGk8QQ4yBzC4mi1B5Iq/mHWRkxspf/fea93rDKkWoKDrZWuw8JuNlHwY3PzlS7K6BRtnSRRrCRMHK2o41Nfa0YE1sYVkmIFewtmgCJY+OYaNa/dBF0OiKM8fZHRUI39zhCZmay6wjf2GKsL0NTSL8df4GYOp7hny/KxnEofwAr2nRtL8AAAA=[0m[Pipeline] // withCredentials
+[8mha:////4Po9EboH6DBhw+WcTr0YDKXYHorGnUC0ud4mZ811E17MAAAAqR+LCAAAAAAAAP9tjTsOwjAQRDeJUtBScgiHj0QTUdFaaTiBSYxxYu0Ge4NTcSKuxh0IRKJiqnkjjd7zBXnwcCBvRKuxsxhqK3o3mKmJSL67OIqipbOoCQM5LSodK2r0ccaKWMOcJIVMwkJj7ShYNAxL2aq7KpxCU5zYT1spIbXNDR6QyMnMyvMXRg+r69AEwp/nrwDGniHd7hiyzXr/ueZv56/80MMAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4N+Ahvsa0yThdhbPXAQI6m6D7crVuT4CBRASNecuDT4WAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApLDCgTqxRF04QkhCSRv+XJKWdOBFX4w6UVmLCg2Vbst7rDWUMUFMwzGlsLUZpWed7MyU2UGivngbm6MIkYSSvWaOHhpQ+LbWhpGFRlkPBYaVReooWTYI1d+IhKi/QVOcUpu3IIbfqDk/I+EROIqS5jAE2t15Fwh/nLwDGLkGx2+5nP3y/5QfYKuSHxAAAAA==[0m[Pipeline] {
+[8mha:////4JM4Hmt1+sDlclz3vgFPjRGkWGB0ibWXZEoiO1Yyx2r4AAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDFUgoFa2VhhcY2xg71l2wHZyKF/E1/kCUSFRssdrZZt4fWMUADQXDnMbOYpSW9X4w02KZQnfzlJmjK5OEkbxmrc4tKX1esKWkYUlRQsVhrVF6ihZNgg134ilqL9DUlxSm78ShtOoBLyj4ZE4ipBnGANv7oCLhz/NXAGOfoNrvDnMf+y+lUfumwAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cp /home/hidraxos/Documents/properties/ws-timeout-settings.properties /home/hidraxos/Documents/properties/ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4CfE5N7aFN2avhgmEiAe39Fm3+Cx+HX5J92GmUy9+US7AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApTAihTqxRF04QkhCSRv+XJKWdOBFX4w6UVmLCg2Vbst7rDWUMUFMwzGlsLUZpWed7MyU2UGivngbm6MIkYSSvWaOHhpQ+LbWhpGFRlkPBYaVReooWTYI1d+IhKi/QVOcUpu3IIbfqDk/I+EROIqS5jAE2t15Fwh/nLwDGLkGx2+5nP3y/5QfHB0smxAAAAA==[0m[Pipeline] ansiColor
+[8mha:////4Gs5l7ixynY6upN5+8LHX6WS8lT1z72JB/bp+NsKJbqNAAAAqB+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkSB0Rgn14bFJ6htrYXm/7Etlskn8tV8B0ESJ2+43F1y+V5vKIOHI3nDOo29xSAtG9xo5sQS+f7qKLGOLkwSBnKatTq1pPRprS1FDauyHAoOG43SUbBoImx5Jx6icgJNdY5+3g4ccqvu8ISMz+QofPyWycPuNqpA+OP8BcA0RCiaer94Uy/f8gOljgJOxAAAAA==[0m[Pipeline] {
+[8mha:////4B1qnTwADCASAYlPJCvjbfgDP+/h84mYZgXxT+MZGuFzAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFXOLFAtjE2NjXUMTo0RdEwsjQ10Ly6RkXbPEJJPkNIOUZIM0UwDx36YnrwAAAA==[0m
+[8mha:////4KOlYgBbym5iGiHVjEbxNa5vVIzSknpkAeNxK5iUTih6AAAAox+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYRDakRFa6XhBcY+jBPrztgOScWL+Bp/IEokKrZY7Wwz7w9sUoQTRys6pN5R0k4EP9h5iZFjf/M8io6vQjMl9ihaHFs2eF6x5YywpiihkrBF0p6TI5thJzv1VLVXZOtLjvN3lFA684AXFHI2ZxXzAlOE/X0wienn+SuAKWSomuawdBO+gZ1Fa8AAAAA=[0m[Pipeline] echo
+[46m*************** Backup del archivo ws-timeout-settings.properties realizado ***************[0m
+[8mha:////4J+ETsB2EG6j9Ro2zURwcPvR0M0HkjURzOSnL6zXIkGjAAAApB+LCAAAAAAAAP9tjTESgjAQRRcYC1tLD7GIrWNFm0njCWKIMZDZxSQIlSfyat5BBmas/MWf/37z3h/YxABnDhZbQ52jqB32frDzwpFDd/M8YstX1EyRvUFpRsmNqVeUnAysyXIoBGwNac/RkU2wE616qtIrsuUlhfk7Cchd84AXZGI2JxXSAlOA/X1oItPP81cAU98nKKrquPThC/h9yGnAAAAA[0m[Pipeline] }
+[8mha:////4Cj5CkJBWmozddlVHVaS3uVdt3poXQfaWZvMgopj1i8ZAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFUsLMwMLA8NUXaO0lERdEwMLU91EI7NE3URzA0NzQwtD01SjJAAbeCTkrwAAAA==[0m
+[8mha:////4JUR8O4+npvvG084CczPQylJvbvf4IyH7LshtPLDybsdAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYRDRIUQFa2VhheYxBg71p2xLyQVL+Jr/IFAJCq2WO1sM88XLFKEA0UjnMbOYmqsCL430xIDxe7iaRCOzqIhTOS1qPVQU6uPM9bEGuZkORQSlhobT8miYVhJp+6q9ApNeeI4fXsJuW1v8IBMTmZWkb8wRlhf+zYR/jx/BTCGwFBU1fbTm90bqf94r8AAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4Ox2YDcsmKm9OD4CpGw0WpMUzuAOW5gAV+eatNI2mzF4AAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYRDJCQKREVrpeEFJjHGjnVn7AtJxYv4Gn8gEImKLVY728zzBYsU4UDRCKexs5gaK4LvzbTEQLG7eBqEo7NoCBN5LWo91NTq44w1sYY5WQ6FhKXGxlOyaBhW0qm7Kr1CU544Tt9eQm7bGzwgk5OZVeQvjBHW175NhD/PXwGMgaGoNrtPV9vwBp50jAvAAAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 ls /home/hidraxos/Documents/properties
+borrar.properties
+timeout.properties
+ws-timeout-settings.properties
+ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4AvIggBBfh67WzlCwkvrRo4Xs6svZHLn+4AoSuWg+TkYAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYRDCkSBqGitNLzAJMbYse6MfSGpeBFf4w8EIlGxxWpnm3m+YJEiHCga4TR2FlNjRfC9mZYYKHYXT4NwdBYNYSKvRa2Hmlp9nLEm1jAny6GQsNTYeEoWDcNKOnVXpVdoyhPH6dtLyG17gwdkcjKzivyFMcL62reJ8Of5K4AxBIaiqraf3uzelOcQK8AAAAA=[0m[Pipeline] }
+[8mha:////4MVAmvnMDNRMZBWfXe3l0k2+AH8spbDl36oXf7/omw4kAAAApR+LCAAAAAAAAP9tjTESwiAURH+SsbC19BDENGkcK1uGxhMgQSRh/kcgksoTeTXvYDQzVm6xs2+b93zBKgY4UDCs1zhYjMoy70YzL5YpDBdHmfV0ZoowktNM6Cyo08cFBSUNS4oSKg5rjcpRtGgSbHgv77J2Ek19SmH+9hxK293gAQWfzUmG9IUpwPY6dpHw5/krgMn7BFXTtJ/etW+fzf9twAAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4F/SDabRfS69gDrxBPSjZXZQE1WxtLRmB/HOKrcmqn+QAAAAqR+LCAAAAAAAAP9tjbEOgjAURR8QBldHP6IEHRwMk2vTxS+oUGuheQ/bhzD5Rf6a/yBK4uSd7rnJzXm+II8BKgpWtAY7h7F2oveDnZsYKXQXT6No6SxqwkjeCGVGRY05LqiIDSxJUsgkrAzWnqJDy7CWrb7rwmu0xYnDvB0kpK65wQMSOZtZB/7CFGBzHZpI+PP8FcDUM6TbHUNWlvvPNX8D9nfXvcMAAAA=[0m[Pipeline] ansiColor
+[8mha:////4H8SuKfHeDRMjPHHIid+2xVIik0/jSMMQZvfJXa8ekfwAAAAqB+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkQJkybGibVh8QlqqbXQ/D+2xTL5RL6a72CFxMkbLneXXL7XG0rv4EROs17hYNBLw0Y76ZRYJDdcLUXW04VJQk9WsVbFljrVrLWloGBVlkPBYaNQWvIGdYAt78VDVFagrs7Bpe3IITfdHZ6Q8UQOwoWlzA52t6nzhD/OXwDMY4CirveLH77f8gNTBvaWxAAAAA==[0m[Pipeline] {
+[8mha:////4ACl4BBofVQW1roQT4CSfTp1QYgMukeiR+NkbVMg+fHUAAAAqh+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGleRUE4tko+RU3WQTUwtdkxRjI12LRLMk3URLk0SLJCOgqIkhAD6skEyvAAAA[0m
+[8mha:////4LCWEfHloUngvFhUtfnuBBVoCtVrRFL5J746WnmUgyRaAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSjdCBEldZKwwtMbIwd687YDknFi/gaf8BKJCq2WO1sM+8PbGKAMwXNrMLBYOwN827UebGJwnBzNDFLV9YTRnKKdWrqSKp2xY6SgjVFCRWHrcLeUTSoE+y4FU9RO4G6vqSQvxOH0sgHvKDg2ZxESAvMAfb3UUbCn+evAGafoGqaw9JH/wU8DHlwwAAAAA==[0m[Pipeline] echo
+[47m*************** Se anadira linea archivo ws-timeout-settings.properties ***************[0m
+[8mha:////4BbRk2ZHBZw/P3xqAyrf/7GI7q8GL9gbrQWcscT0UX74AAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYRDqJAQFa2VhheYxBg71p2xLyQVL+Jr/IFAJCq2WO1sM88XLFKEA0UjnMbOYmqsCL430xIDxe7iaRCOzqIhTOS1qPVQU6uPM9bEGuZkORQSlhobT8miYVhJp+6q9ApNeeI4fXsJuW1v8IBMTmZWkb8wRlhf+zYR/jx/BTCGwFBU282nq90bAOMDfsAAAAA=[0m[Pipeline] }
+[8mha:////4B1u+BK0ZpFxpV5OEByfNAa+dFUap9NYsSUBZTXtHap5AAAAqh+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFXMj88SklFRzXQtzIGFiYJCmm5hsbqxrZm5gmmhsnJhikGwOAFCH+U6vAAAA[0m
+[8mha:////4C4ToQ/aJAT6Y49vhTvd7gy5qO/5i0qcUi5+lzElUGOqAAAAph+LCAAAAAAAAP9tjTESwiAURH+SsbC19BBksLFwrNIyaTwBAiKE+T8CMak8kVfzDkYzY+UWO/u2ec8XrFKEI0XLvMHOYVKO9WGw82Ijxe4SaGSezkwRJgqGtWZsSZtmwZaygSVFCZWAtUEVKDm0GTbCy7usg0Rbn3Kcv4OA0ukbPKAQsznLmL8wRdheB50If56/Apj6PkPFd/zTfP8GJfXLSMAAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4Heseki/guaEq6VwJPRsbxm2xQBDvdaIsSHuq/0Vjkw5AAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JUtBS8ghHhBJR0VppeIFxjHFi3QX7QlLxIr7GHzBEomKrnZVW83xBGQMcKFjRGewdRu3E4Eebmpgo9BdPk+joLDRhJG9EY6aGWnNcsCE2sCTLoZCwMqg9RYeWYS07dVeVV2irE4e07SXkrr3BAzKZzKwCf2EOsLmObST8ef4KYB4Y8nrHUGzr+nMt39j88tzDAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4HVxcSLqYDgN/juzz1uSlqaXHKMl8oYkx+6zC9GZ7qh+AAAApx+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkSJOBon1obFJ6il1kLz/9gWy+QT+Wq+gxUSJ2+43F1y+V5vKL2DEznNeoWDQS8NG+2kU2KR3HC1FFlPFyYJPVnFWhVb6lSz1paCglVZDgWHjUJpyRvUAba8Fw9RWYG6OgeXtiOH3HR3eELGEzkIF5YyO9jdps4T/jh/ATCPAYp9XS9++H7LD9P3sOjEAAAA[0m[Pipeline] {
+[8mha:////4HLCmqOZs5x+m/dCJt2OXC6Byc5wb+Yj3w0g7iuTGobIAAAApR+LCAAAAAAAAP9tjTsOwjAQRDeJKGgpOYQjPh1KRWul4QTGNsaOtRtsB6fiRFyNOxAlEhVTjOZN894fWMUADQXDnMbOYpSW9X4w02KZQnfzlJmjK5OEkbxmrc4tKX1esKWkYUlRQsVhrVF6ihZNgg134ilqL9DUlxSm78ShtOoBLyj4ZE4ipBnGANv7oCLhz/NXAGOfoNrtD3Mf+y+77HajwAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 echo 'timeout.GA_PQRSCustomerAuthentication=50000' >> /home/hidraxos/Documents/properties/ws-timeout-settings.properties
+[8mha:////4Gbbn11sEw5pNVBEMpMF+3R17VVinqCQ+TKUotbYrGirAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpADGhTqxRF04QkhCSRv+XJKWdOBFX4w6UVmLCg2Vbst7rDWUMUFMwzGlsLUZpWed7MyU2UGivngbm6MIkYSSvWaOHhpQ+LbWhpGFRlkPBYaVReooWTYI1d+IhKi/QVOcUpu3IIbfqDk/I+EROIqS5jAE2t15Fwh/nLwDGLkGx3e1nP3y/5QehWEylxAAAAA==[0m[Pipeline] ansiColor
+[8mha:////4I+AYfKhWbTb+DPi1D/wDa5yoWd2WC65WlOGc52o3ehoAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpQIIFdWKNunCCkISQNPq/JCntxIm4GnegtBITHizbkvVebyhjgJqCYU5jazFKyzrfmymxgUJ79TQwRxcmCSN5zRo9NKT0aakNJQ2LshwKDiuN0lO0aBKsuRMPUXmBpjqnMG1HDrlVd3hCxidyEiHNZQywufUqEv44fwEwdgmK7W4/++H7LT/vj+XMxAAAAA==[0m[Pipeline] {
+[8mha:////4NDpdjZDHg499QU4u5RX6btOIOPLpmvHEnPQ88RNm7/qAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFeOkZJNkS9NkXVMDA0Ndk1TTRF0LI2NDXVNDY3OLpESjxJQUcwDDVANRrwAAAA==[0m
+[8mha:////4PoLTuX1oYEA+hZw9JmguW8x7ttlTl28++1NB9jaWnsQAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjKKBAqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7BNVuf5j72H8BHLG7wMAAAAA=[0m[Pipeline] echo
+[46m*************** Archivo ws-timeout-settings.properties modificado ***************[0m
+[8mha:////4LVMP5o7grrdabG0Z4hHyJaTPeU3s2fFkCZni2DgjouFAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjKBASSkVrpeEFxjbGjnUXbAen4kV8jT8QJRIVW6x2tpn3B1YxQEPBMKexsxilZb0fzLRYptDdPGXm6MokYSSvWatzS0qfF2wpaVhSlFBxWGuUnqJFk2DDnXiK2gs09SWF6TtxKK16wAsKPpmTCGmGMcD2PqhI+PP8FcDY9wmq3f449+ELo9N5gcAAAAA=[0m[Pipeline] }
+[8mha:////4I73+OZWbtJ7Tln77iCkbbUQkxryDRLXMHx1A77yHhPmAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFUtL40TDZJNEXVMj8xRdE4Nkc91E80RTXVML01RzA4vEpJSkRAAbebQ8rwAAAA==[0m
+[8mha:////4Gb/V9DG85kHhRthyfqtZRUXKbf1+kcdyQGU70o8gtEuAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjkCgQSkVrpeEFxjbGjnUXbAen4kV8jT8QJRIVW6x2tpn3B1YxQEPBMKexsxilZb0fzLRYptDdPGXm6MokYSSvWatzS0qfF2wpaVhSlFBxWGuUnqJFk2DDnXiK2gs09SWF6TtxKK16wAsKPpmTCGmGMcD2PqhI+PP8FcDY9wmq3f449+ELrYkHvsAAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4K/EH58Q6VkaHXScCJH0gUH0AFT9xUm5QZO9/DVx9gcjAAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxFUSsfKNkPjCSLEmJDZjckiVJ7Iq3kHUWas/MWf/37zni9YpAgHikY4jZ3F1FgRfG+mJQaK3cXTIBydRUOYyGtR66GmVh9nrIk1zMlyKCQsNTaekkXDsJJO3VXpFZryxHH69hJy297gAZmczKwif2GMsL72bSL8ef4KYAwMxXZXfbrahDeIQ9jGwAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cat /home/hidraxos/Documents/properties/ws-timeout-settings.properties
+linea.para.modificar=nuevoValor
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+timeout.GA_PQRSCustomerAuthentication=50000
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+timeout.GA_PQRSCustomerAuthentication=50000
+[8mha:////4MphxHSsS2lf/5pwFI/VRq3/a36XF675qsnAe0AH6Ss5AAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxEGKR0r2wyNJ4gkxkBmF5NFqDyRV/MORpmx8hd//vvNe75gFQMcKFjRGewdxtaJwY82LTFR6C+eJtHRWbSEkbwRjZka0ua4YENsYEmWQyFhbbD1FB1aho3s1F2VXqEtTxzSt5eQO32DB2QymVkF/sIcYHsddST8ef4KYB4GhqKqq0/v6jdhYiGowAAAAA==[0m[Pipeline] }
+[8mha:////4EwP+MCLwQ+kiWMkFNyIjI8LLyMQC2nNRjZvPKwA42GbAAAApR+LCAAAAAAAAP9tjTESwiAURH+SsbC19BBkxNKxSsuk8QQIiCTM/xGISeWJvJp3EM2MlVvs7NvmPV+wigGOFCzrDPYOo3Js8KPNi00U+ouniXV0ZoowkjesNVNL2jQLtpQMLClKqASsDSpP0aFNsBGdvMvaS7T1KYX8HQSUTt/gAYXI5iRD+sIcYHsddST8ef4KYB6GBNVuzz/N+RtqSM7uwAAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4M1HEWNa72mdxddad/bMaYuiEjEgfb+Gt06hXCcm+V6FAAAApB+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjSImoaK00vMDExjix7ox9wal4EV/jD0REomKrnWnm9YZVinCkaEVvcHCYOieCH+38RKY4XD1l0dNFdISJvBGtyS1pc1qwJTawrCihkrA22HlKDi3DRvbqoWqv0NZnjrM7SCidvsMTCjmXWUX+whRhext1Ivx1/gZgCgzlvmGodk0TPi3G0Li/AAAA[0m[Pipeline] echo
+["BBTA","BPOP"]
+[8mha:////4MBmaS6l0yeNCi68n9k2nl/U0RD54jtoAGw+jM7pWC7YAAAApR+LCAAAAAAAAP9tjTESgjAQRZcwFraWHiKMYudQ2WZoPEEMMQYyu5gsQuWJvJp3kJEZK3/132ve6w2rFKGi6GRrsfOYjJd9GNz85EixuwYaZUsXaQgTBStrO9bU2NOCNbGFZZmAXMHaogmUPDqGjWr1QxdBoyvOHGd3VCB8c4cnZGous478hSnC9jY0ifDX+RuAqWcQ+5Ih35WH/gPqUJH3vwAAAA==[0m[Pipeline] echo
+["BAVV","BOCC","BBOG","BPOP"]
+[8mha:////4AsOHZFdbJ8zZdyWfB9YxEpdMI4yTJyxEoXdMhc2u5pYAAAAqB+LCAAAAAAAAP9tjbEOgjAURR8QBldHP6JEiZNhcm1Y/IJaai0072H7ECa/yF/zH0RJnLzTPTe5Oc8X5DFARcGK1mDnMGonej/YuYmRQnfxNIqWzkITRvJG1GasqTHHBWtiA0uSFDIJK4PaU3RoGdayVXdVeIW2OHGYt4OE1DU3eEAiZzOrwF+YAmyuQxMJf56/Aph6hnRXMmTbcv+55m/Ux4BnwwAAAA==[0m[Pipeline] ansiColor
+[8mha:////4Gaxx/f5Ur8jyWwMCbr9CbtTPJPOzLXoHmuLYU/MnXNDAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpEIIFdWKNunCCkISQNPq/JCntxIm4GnegtBITHizbkvVebyhjgJqCYU5jazFKyzrfmymxgUJ79TQwRxcmCSN5zRo9NKT0aakNJQ2LshwKDiuN0lO0aBKsuRMPUXmBpjqnMG1HDrlVd3hCxidyEiHNZQywufUqEv44fwEwdgmK7W4/++H7LT/eXQS3xAAAAA==[0m[Pipeline] {
+[8mha:////4GUE0RSiNh1TqmXuzRizWmR1NKe4MHJqGO0TpBOWzfj6AAAAqh+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFZNEU3MTQ1MTXaPUJAtdE9OUFN2kFLMU3WRjQ6CAoaFRqrkFAHGlcgGvAAAA[0m
+[8mha:////4H8DGqNxC6e6IOwMYF9kRkQrRPpHaWttL9WweWgPSjozAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjhAQFSkVrpeEFxjbGjnUXbAen4kV8jT8QJRIVW6x2tpn3B1YxQEPBMKexsxilZb0fzLRYptDdPGXm6MokYSSvWatzS0qfF2wpaVhSlFBxWGuUnqJFk2DDnXiK2gs09SWF6TtxKK16wAsKPpmTCGmGMcD2PqhI+PP8FcDYJ6h2+8Pcx/4LaM8C1sAAAAA=[0m[Pipeline] echo
+[47m*************** Se anadira el archivo ws-settings.properties ***************[0m
+[8mha:////4F1v6wwzgzyrHV7fE1RM/ckPRaVIzngL/Oa55AVjr1l4AAAAph+LCAAAAAAAAP9tjbEKwjAURV9bHFwd/YgUEUSQTq6hi18QkxiThvdqkppOfpG/5j9YWnDyDpd77nLeH1jFAA0Fw5zGzmKUlvV+MNNimUJ385SZoyuThJG8Zq3OLSl9XrClpGFJUULFYa1ReooWTYINd+Ipai/Q1JcUpu/EobTqAS8o+GROIqQZxgDb+6Ai4c/zVwBj3yeodvvj3IcvfOLIVMAAAAA=[0m[Pipeline] }
+[8mha:////4J9M2TQ7kEZ/nYQyK6owCr3giUR3ACoi8285KiIZEj3jAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlaSUZLMUE2MDXcNkM0NdE0MzY10Lc5NUXbPE1OQkYwNLQ0uzVAC+hUQ3rwAAAA==[0m
+[8mha:////4FnMosbCbFwM7tOJgZRltU8nROLWAWnGpNUblRylExvlAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjhCgQSkVrpeEFxjbGjnUXbAen4kV8jT8QJRIVW6x2tpn3B1YxQEPBMKexsxilZb0fzLRYptDdPGXm6MokYSSvWatzS0qfF2wpaVhSlFBxWGuUnqJFk2DDnXiK2gs09SWF6TtxKK16wAsKPpmTCGmGMcD2PqhI+PP8FcDY9wmq3f449+ELcri2a8AAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4DK4LmoDLX2QWNAiPKGjt+HFqxd9z5SFvu1ALecT2UzlAAAAqB+LCAAAAAAAAP9tjTsOwjAQRDeJUtBScgiHXxdR0VppOIFJjHFi7QZ7g1NxIq7GHQhEomKqeSON3vMFefBwIG9Eq7GzGGorejeYqYlIvrs4iqKls6gJAzktKh0ravRxxopYw5wkhUzCQmPtKFg0DEvZqrsqnEJTnNhPWykhtc0NHpDIyczK8xdGD6vr0ATCn+evAMaeId3uGLLNfv255m/paOrywwAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4JZYTDgXJaEItzzIwJTs8OJR3cq/HkBLZkgkrnRuPLviAAAAqB+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkSRxM04sTYsPkEttRaa/8e2WCafyFfzHayQOHnD5e6Sy/d6Q+kdnMhp1iscDHpp2GgnnRKL5Iarpch6ujBJ6Mkq1qrYUqeatbYUFKzKcig4bBRKS96gDrDlvXiIygrU1Tm4tB055Ka7wxMynshBuLCU2cHuNnWe8Mf5C4B5DFDUh/3i9fdbfgCgInaKxAAAAA==[0m[Pipeline] {
+[8mha:////4ISNZa59LYhxO4nDpz7UBmw8Z1w+qfzmz4mE+UjPlwwQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSjIDpEldZKwwtMbIwd687YDknFi/gaf8BKJCq2WO1sM+8PbGKAMwXNrMLBYOwN827UebGJwnBzNDFLV9YTRnKKdWrqSKp2xY6SgjVFCRWHrcLeUTSoE+y4FU9RO4G6vqSQvxOH0sgHvKDg2ZxESAvMAfb3UUbCn+evAGafoGqOzdIH/wV4SZ7AwAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ curl -u admin:**** -X GET http://192.168.1.115:8081/repository/maven-icbs-releases/com/ath/icbs/icbs-properties-devops/11.35.0/icbs-properties-devops-11.35.0.zip -O
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   487  100   487    0     0   118k      0 --:--:-- --:--:-- --:--:--  118k
+[8mha:////4KfOdySTVKC06Uhod6WWy8VlDUty3A+Y6jHEkv1Iz5dUAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSjCDpEldZKwwtMbIwd687YDknFi/gaf8BKJCq2WO1sM+8PbGKAMwXNrMLBYOwN827UebGJwnBzNDFLV9YTRnKKdWrqSKp2xY6SgjVFCRWHrcLeUTSoE+y4FU9RO4G6vqSQvxOH0sgHvKDg2ZxESAvMAfb3UUbCn+evAGbvE1TN8bB08wX7vC+NwAAAAA==[0m[Pipeline] }
+[8mha:////4DtjRZ0jQFOR9AooLVxXi0RmG1Dueaf8gZgPZJLQA3bwAAAApR+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP6JowmacWJsufkEttRaa9/C1CJNf5K/5DxJInLzDzT13Oe8PbCLDmdiJ1mLnMRov+jC4eYmRuLsFGkVLV2EIIwUrlB0VNbZeUVGysCbLoZCwtWgCRY8uwU62+qnLoNGVl8Tzd5KQ++YBL8jkbE6a0wITw/4+NJHw5/krgKnvExTHqlr68AXjso8/wAAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4HY4Fq8HGYj+xqtd6Rv1n82xlirTE+pLrDV3NS1tH+uVAAAAph+LCAAAAAAAAP9tjTsOwjAQBTeJKGgpOYQjflVERWul4QQmNsaJtRvsDUnFibgad8AiEhWvejPNvN6wiAGOFKxoDXYOY+NE7webnhgpdFdPo2jpIhrCSN6I2ow1aXOasSY2MC/LoZCwNNh4ig4tw0q26qFKr9CWZw7JVRJyp+/whEymMqvAX5gCrG+DjoS/zt8ATD1Dvt0xFJv9of8ALnfF678AAAA=[0m[Pipeline] sh
++ unzip icbs-properties-devops-11.35.0.zip
+Archive:  icbs-properties-devops-11.35.0.zip
+  inflating: ws-settings.properties  
+[8mha:////4FT4WNdRfnIqfKvHtGyeQ2ZmIDAVkvbliYqLAB9NbBfzAAAAqR+LCAAAAAAAAP9tjTsOwjAQRDeJUtBScghHfEQTUdFaaTiBSYxxYu0Ge4NTcSKuxh0IRKJiqnkjjd7zBXnwcCBvRKuxsxhqK3o3mKmJSL67OIqipbOoCQM5LSodK2r0ccaKWMOcJIVMwkJj7ShYNAxL2aq7KpxCU5zYT1spIbXNDR6QyMnMyvMXRg+r69AEwp/nrwDGniHdbBmy9W7/ueZv9IuzJMMAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4NxzQp5MjBd63K++BITh0W6vEwKcfNHwSFf9TT83G2xrAAAAqR+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpkBAMqBNr1IUThCSEpNH/JUlpJ07E1bgDpZWY8GDZlqz3ekMZA9QUDHMaW4tRWtb53kyJDRTaq6eBObowSRjJa9booSGlT0ttKGlYlOVQcFhplJ6iRZNgzZ14iMoLNNU5hWk7csitusMTMj6RkwhpLmOAza1XkfDH+QuAsUtQbHf72Q/fb/kBXWQSs8QAAAA=[0m[Pipeline] {
+[8mha:////4OXhpjmdVEib/Y6YjK3JYp0DwQ3yHCkCrLzJPZA8o0F1AAAAph+LCAAAAAAAAP9tjbEKwjAURV9bHFwd/YgUQVCQTq6hi18QkxiThvdqkppOfpG/5j9YWnDyDpd77nLeH1jFAA0Fw5zGzmKUlvV+MNNimUJ385SZoyuThJG8Zq3OLSl9XrClpGFJUULFYa1ReooWTYINd+Ipai/Q1JcUpu/EobTqAS8o+GROIqQZxgDb+6Ai4c/zVwBjn6Da7Q9zH/svdage/MAAAAA=[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** scp ws-settings.properties hidraxos@192.168.1.115:/home/hidraxos/Documents/properties
+[8mha:////4CACClORhd6EIJLrU/Uth8z4GBsjCpKYkDw29wiJ8jx4AAAAqR+LCAAAAAAAAP9tjUEKwjAURH9bunDr0kOkCIKIdOU2dOMJYhJj0vB/TVLblSfyat7B2oIrZzHMDAzv9YYyBqgpGOY0thajtKzzvZkSGyi0V08Dc3RhkjCS16zRQ0NKn5baUNKwKMuh4LDSKD1FiybBmjvxEJUXaKpzCtN25JBbdYcnZHwiJxHSXMYAm1uvIuGP8xcAY5eg2O72sx++3/IDQkm9EsQAAAA=[0m[Pipeline] ansiColor
+[8mha:////4C5upeLtfATGkqHpneVNnVV/hHzGdac00ibhT22WgJewAAAAqh+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApSDAgxMQaZeEEIQ0hbfR/SVLSiRNxNe5ASyUmPFi2Jeu93lAGD0fyhjUaW4tBWda53oyJJfLt1VFiDV2YIgzkNBM6Car1aa6CooZZWQ4Fh4VG5ShYNBGWvJEPWTmJpjpHP24HDrmt7/CEjI/kKH38lsHD6tbXgfDH+QuAoYtQbLb7yXfr6Vt+ACDA9HrEAAAA[0m[Pipeline] {
+[8mha:////4LnWJ24KOW2PNtJrBl+jOO5PyMF9ZD75jYNvERzRCDp2AAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFdM0S6NUgzQDXcM0CwtdE1OTRN0k89Rk3VTDtKQUi1QTI0vjFADviR1nrwAAAA==[0m
+[8mha:////4Apw6QrWEhWvzcOHA0BGvSOvmT5RtSsuquQCTKpRea+kAAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLD7FIYeVY0WbSeIIYYgxkdjEJQuWJvJp3kIEZK3/x57/fvPcHNjHAmYPF1lDnKGqHvR/svHDk0N08j9jyFTVTZG9QmlFyY+oVJScDa7IcCgFbQ9pzdGQT7ESrnqr0imx5SWH+TgJy1zzgBZmYzUmFtMAUYH8fmsj08/wVwNQnKKrjYemq/wJRZKAxwAAAAA==[0m[Pipeline] echo
+[46m*************** Archivo ws-settings.properties agregado ***************[0m
+[8mha:////4LKNhKNAXMzt841u3oQ4tvuoFQCQn57ndApl4623ShwOAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDSFQoFa2VhhcY2xg71l2wHZyKF/E1/kCUSFRssdrZZt4fWMUADQXDnMbOYpSW9X4w02KZQnfzlJmjK5OEkbxmrc4tKX1esKWkYUlRQsVhrVF6ihZNgg134ilqL9DUlxSm78ShtOoBLyj4ZE4ipBnGANv7oCLhz/NXAGPfJ6j2x8Pcuy8Gtu6JwAAAAA==[0m[Pipeline] }
+[8mha:////4BXzYhB/ACVzwmwIUTYT8T5tQNUPAG3GVgvylrNeAEOtAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFWML82RTg0RDXUuD1CRdk+QkM90k40QT3UQDSzODVBPz5GSLRAAR1xTQrwAAAA==[0m
+[8mha:////4NRerGuYnn417+dzo2hNobV27pXGERMBmzE10emjdTp4AAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjBBQIUdFabniBsY1xYt0F2yGpeBFf4w8YIlGxxWpnm3m+YBYDHChY1hhsHUblWOd7mxcbKLQXTwNr6MwUYSRvmDCDIG2OEwpKBqYUJVQc5gaVp+jQJljwRt5l7SXa+pRC/vYcSqdv8ICCZ3OSIX1hDLC89joS/jx/BTB2XYJqtV1/erN7A1c0Xk/AAAAA[0m[Pipeline] // ansiColor
+[8mha:////4PGhvMUaRYxCnwDG1FWqkl5AUHhP0nPfYm2FezUK1a1uAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjpCAKREVrpeEFJjHGjnVn7AtJxYv4Gn8gEImKLVY728zzBYsU4UDRCKexs5gaK4LvzbTEQLG7eBqEo7NoCBN5LWo91NTq44w1sYY5WQ6FhKXGxlOyaBhW0qm7Kr1CU544Tt9eQm7bGzwgk5OZVeQvjBHW175NhD/PXwGMgaHYVLtPb6vwBk6NaVHAAAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 ls /home/hidraxos/Documents/properties
+borrar.properties
+timeout.properties
+ws-settings.properties
+ws-timeout-settings.properties
+ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4GaFn1hnmUoRh049Y5HbbuOShLDbkNMRc4IPyGUrl6KHAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjJCIKREVrpeEFJjHGjnVn7AtJxYv4Gn8gEImKLVY728zzBYsU4UDRCKexs5gaK4LvzbTEQLG7eBqEo7NoCBN5LWo91NTq44w1sYY5WQ6FhKXGxlOyaBhW0qm7Kr1CU544Tt9eQm7bGzwgk5OZVeQvjBHW175NhD/PXwGMITAUm6r69Hb3BmosNsvAAAAA[0m[Pipeline] }
+[8mha:////4PcJkMoCGlcsfIV9jymRTv8u28QCGi5Gr7eF7qk34sgaAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjJEiDqGitNLzAJMbYse6MfSGpeBFf4w8EIlGxxWpnm3m+YJEiHCga4TR2FlNjRfC9mZYYKHYXT4NwdBYNYSKvRa2Hmlp9nLEm1jAny6GQsNTYeEoWDcNKOnVXpVdoyhPH6dtLyG17gwdkcjKzivyFMcL62reJ8Of5K4AxBIZis6s+va3eYQbZjcAAAAA=[0m[Pipeline] // withCredentials
+[8mha:////4JLfIXNyEZBiwG0E/BcDKVCAXcwwImUgXhbYUBwdSWKIAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjQIgioqK10vACExvjxLoL9oWk4kV8jT9gEYmKrXammdcbFjHAkYIVrcHOYWyc6P1g0xMjhe7qaRQtXURDGMkbUZuxJm1OM9bEBuZlORQSlgYbT9GhZVjJVj1U6RXa8swhuUpC7vQdnpDJVGYV+AtTgPVt0JHw1/kbgKlnyLc7hmKzP/Qfm38x2L8AAAA=[0m[Pipeline] echo
+["BAVV"]
+[8mha:////4FnnVbRx4AWh+IolboxlnUrfoiTsZiyzV4wZv48EVAJQAAAAqh+LCAAAAAAAAP9tjUEOgjAQRQcIC7cuPUSJGhMT4sptw8YTVKi10MxgO1hWnsireQdRElf+1X8/+XnPF+TBw4G8Ea3GzmKorejdYKYmIvnu4iiKls6iJgzktKh0rKjRxxkrYg1zkhQyCQuNtaNg0TAsZavuqnAKTXFiP22lhNQ2N3hAIiczK89fGD2srkMTCH+evwIYe4Z0s2XI1rv955q/ATDhzrjDAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4AinFRqieufaQpgi4+McmpFDK++1o0SpdtNF3Pyy3iZcAAAAqR+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpGJBAqBNr1IUThCSEpNH/JUlpJ07E1bgDpZWY8GDZlqz3ekMZA9QUDHMaW4tRWtb53kyJDRTaq6eBObowSRjJa9booSGlT0ttKGlYlOVQcFhplJ6iRZNgzZ14iMoLNNU5hWk7csitusMTMj6RkwhpLmOAza1XkfDH+QuAsUtQbHf72Q/fb/kBAgTIG8QAAAA=[0m[Pipeline] {
+[8mha:////4NBxsHQ3WId/8H92nwxSutWmUTT8UbhLYtNo8HY9/ZPsAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDBUgIUdFabniBsY1xYt0F2yGpeBFf4w8YIlGxxWpnm3m+YBYDHChY1hhsHUblWOd7mxcbKLQXTwNr6MwUYSRvmDCDIG2OEwpKBqYUJVQc5gaVp+jQJljwRt5l7SXa+pRC/vYcSqdv8ICCZ3OSIX1hDLC89joS/jx/BTB2Car1Zvfp7ap7A2LwsjXAAAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cp /home/hidraxos/Documents/properties/borrar.properties /home/hidraxos/Documents/properties/borrar.properties.bk_21-07-2022
+[8mha:////4Ib9iM8iGJq72MocbeEBTLXr16YRmqYP7KVNepFUgB/nAAAAqh+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpOoCEEBNr1IUThCaEtNH/JUlJJ07E1bgDKZWY8GDZlqz3ekPpHRzJadYp7A361rDBjjolFsn1V0uRdXRhLaEnq1ijYkNSnZbaUFCwKMuh4LBS2FryBnWANe/EQ1RWoK7OwaXtwCE38g5PyHgiB+HCt0wONrdResIf5y8ApiFAUW/3s+/q+Vt+AJ3Q1l3EAAAA[0m[Pipeline] ansiColor
+[8mha:////4AwYhtuNLN67nKQo3HXz7n8mTWRmn8GeXpJR+T/i7XJFAAAAqB+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkQJDi7GibVh8QlqqbXQ/D+2xTL5RL6a72CFxMkbLneXXL7XG0rv4EROs17hYNBLw0Y76ZRYJDdcLUXW04VJQk9WsVbFljrVrLWloGBVlkPBYaNQWvIGdYAt78VDVFagrs7Bpe3IITfdHZ6Q8UQOwoWlzA52t6nzhD/OXwDMY4CiPtSL77/f8gMDuIRgxAAAAA==[0m[Pipeline] {
+[8mha:////4FlmMlOBqFgPpT3wq/IQBeX4sbfTIjapwLCwQPSnTFruAAAAqh+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlZQUs8Q0o1QzXcvUVGNdk+TkNN1EyzRL3VRLoKiBgXlisqElAOmPxA6vAAAA[0m
+[8mha:////4CEduD2LTZw0mjU2YtTU1a6Gg7+6zg/z1Z42V1EFgR6EAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjQKJBqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7BNXuuJ/70H8BMoN4esAAAAA=[0m[Pipeline] echo
+[46m*************** Backup del archivo borrar.properties realizado ***************[0m
+[8mha:////4PCW1U3EUdpLJIQacpodNJK2IeSJ3A8NJfJSnmwt471aAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjEKJBqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7PkG1Ox7m3n8BMLaSocAAAAA=[0m[Pipeline] }
+[8mha:////4GlDIN9FQQb26vmoNC/rP+Cht7oUUc8FxGmrpTHDBcNwAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFQtDMyNzU0tDXUtzU2NdkxTzVF3LZEtL3RQL82QLS3MzyzQTMwDCbd+9rwAAAA==[0m
+[8mha:////4HQv3Njp4+f1KuUYp1egKPoVEgSjBs72goGgLhw4dd5yAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSjFNAgqrRWGl5gYmPsWHfGdkgqXsTX+ANWIlGxxWpnm3l/YBMDnCloZhUOBmNvmHejzotNFIabo4lZurKeMJJTrFNTR1K1K3aUFKwpSqg4bBX2jqJBnWDHrXiK2gnU9SWF/J04lEY+4AUFz+YkQlpgDrC/jzIS/jx/BTB7n6Bqjoelmy8+7OyewAAAAA==[0m[Pipeline] // ansiColor
+[8mha:////4N4p21e5Hj2YQm2jALWKxQvh+cPzyLwmsAJPAsW07QSWAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjCiIhREVrpeEFJjHGjnVn7AtJxYv4Gn8gEImKLVY728zzBYsU4UDRCKexs5gaK4LvzbTEQLG7eBqEo7NoCBN5LWo91NTq44w1sYY5WQ6FhKXGxlOyaBhW0qm7Kr1CU544Tt9eQm7bGzwgk5OZVeQvjBHW175NhD/PXwGMgaHYbHefrqrwBuRX6GPAAAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 ls /home/hidraxos/Documents/properties
+borrar.properties
+borrar.properties.bk_21-07-2022
+timeout.properties
+ws-settings.properties
+ws-timeout-settings.properties
+ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4Fpj/LF/nByn1Ol7QhEzCihzwc1U+/AFc8i7fu4AgpFlAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjCkAIUdFabniBsY1xYt0F2yGpeBFf4w8YIlGxxWpnm3m+YBYDHChY1hhsHUblWOd7mxcbKLQXTwNr6MwUYSRvmDCDIG2OEwpKBqYUJVQc5gaVp+jQJljwRt5l7SXa+pRC/vYcSqdv8ICCZ3OSIX1hDLC89joS/jx/BTB2XYJqtdl+er17A+YmhSzAAAAA[0m[Pipeline] }
+[8mha:////4CZtHSAeHwPJPONk1xPfIBMA9EgnyYjYjHMhfiZpLbezAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjClAkREVrpeEFJjHGjnVn7AtJxYv4Gn8gEImKLVY728zzBYsU4UDRCKexs5gaK4LvzbTEQLG7eBqEo7NoCBN5LWo91NTq44w1sYY5WQ6FhKXGxlOyaBhW0qm7Kr1CU544Tt9eQm7bGzwgk5OZVeQvjBHW175NhD/PXwGMITAUm1316W31Bplmyq3AAAAA[0m[Pipeline] // withCredentials
+[8mha:////4MEngr3tDJO2Bvt63MRAml/w0t2jlzx8lddlJaMXoUGZAAAAqh+LCAAAAAAAAP9tjUEOgjAQRQcIC7cuPUSJmpgY4sptw8YTVKi10MxgO1hWnsireQdRElf+1X8/+XnPF+TBw4G8Ea3GzmKorejdYKYmIvnu4iiKls6iJgzktKh0rKjRxxkrYg1zkhQyCQuNtaNg0TAsZavuqnAKTXFiP22lhNQ2N3hAIiczK89fGD2srkMTCH+evwIYe4Z0s2XI1rv955q/AQgoekLDAAAA[0m[Pipeline] ansiColor
+[8mha:////4L3VkTAzv7SmvCG7aOR2Cl1unTXFCwG+P5QQOpMaEmv7AAAAqR+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApLCCEmFijLJwgpCGkjf4vSUo6cSKuxh1oqcSEB8u2ZL3XG8rg4UjesEZjazEoyzrXmzGxRL69OkqsoQtThIGcZkInQbU+zVVQ1DAry6HgsNCoHAWLJsKSN/IhKyfRVOfox+3AIbf1HZ6Q8ZEcpY/fMnhY3fo6EP44fwEwdBGKzXY/+W49fcsPQmQ3jcQAAAA=[0m[Pipeline] {
+[8mha:////4PwFdfpj5oLm+hFNsV5/vTebgc0lGKmiLg4K5gocBRmUAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFXMDEwtTgyRTXQtLCzNdE5MkI13LlERLXYsUo9TEFBNjc2OLRAAkCd5krwAAAA==[0m
+[8mha:////4EyPDHwtsBEj89tyzsNyMcqs2uy46KItGNpFsfi5OegMAAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLD7FIZeFY0WbSeIIYYgxkdjEJQuWJvJp3kIEZK3/x57/fvPcHNjHAmYPF1lDnKGqHvR/svHDk0N08j9jyFTVTZG9QmlFyY+oVJScDa7IcCgFbQ9pzdGQT7ESrnqr0imx5SWH+TgJy1zzgBZmYzUmFtMAUYH8fmsj08/wVwNQnKKrjYemq/wK5mNIcwAAAAA==[0m[Pipeline] echo
+[47m*************** Se Eliminara el archivo borrar.properties ***************[0m
+[8mha:////4Afa/1esTFzNWL0HhtBO/KdfHeSMy9L6wHLbrZB0oYhNAAAApR+LCAAAAAAAAP9tjTESwiAURH+SsbC19BBEbSycVLZMGk+AgAhh/o9AJJUn8mrewUwyY+UWO/u2ee8PrGKAhoJhTmNnMUrLej+YabFMobt5yszRlUnCSF6zVueWlD4v2FLSsKQooeKw1ig9RYsmwYY78RS1F2jqSwrTd+JQWvWAFxR8MicR0gxjgO19UJHw5/krgLHvE1T742Hu3Rf50/35wAAAAA==[0m[Pipeline] }
+[8mha:////4Pe7/QnDqdNLkBQTIurL1P/B1zzgkNpG4TURGzLr4F1yAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFXNzi0RLSyNL3aQkS1Ndk8SkJF2LVBMTXUvzxOS0RDMzSzNTEwCA3fB0rwAAAA==[0m
+[8mha:////4F9reQPVsjxwJOp4+v55EP2Ix/6B0i7SnNKtQxToobFuAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjhARCiIrWcsMLjG2ME+su2A5JxYv4Gn/AEImKLVY728zzBbMY4EDBssZg6zAqxzrf27zYQKG9eBpYQ2emCCN5w4QZBGlznFBQMjClKKHiMDeoPEWHNsGCN/Iuay/R1qcU8rfnUDp9gwcUPJuTDOkLY4DltdeR8Of5K4Cx6xJUq+3605vdG6hRTT/AAAAA[0m[Pipeline] // ansiColor
+[8mha:////4NG+eSHeqd7OXfGPX++q5oa0YGzKU9A1zUHqlzCCVAFiAAAAqh+LCAAAAAAAAP9tjTsOwjAQRDeJUtBScghHfCSKiIrWSsMJTGKME2s32BucihNxNe5AIBIVU80bafSeL8iDhwN5I1qNncVQW9G7wUxNRPLdxVEULZ1FTRjIaVHpWFGjjzNWxBrmJClkEhYaa0fBomFYylbdVeEUmuLEftpKCaltbvCARE5mVp6/MHpYXYcmEP48fwUw9gzpZsuQrfe7zzV/A2Iwk1jDAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4EKt03MIvIMcLCsiSGIfimqe3BPlS5ONKZATO9Ks+/C5AAAAqR+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpkEAMqBNr1IUThCSEpNH/JUlpJ07E1bgDpZWY8GDZlqz3ekMZA9QUDHMaW4tRWtb53kyJDRTaq6eBObowSRjJa9booSGlT0ttKGlYlOVQcFhplJ6iRZNgzZ14iMoLNNU5hWk7csitusMTMj6RkwhpLmOAza1XkfDH+QuAsUtQbA+72fffb/kBmi3DnsQAAAA=[0m[Pipeline] {
+[8mha:////4JixL4xfQMk0PuA4DAQcTXKk7lDUeI7djNF2dM7h941lAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjCqBAqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7BNXuuJ/70H8BGgBzG8AAAAA=[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 rm -rf /home/hidraxos/Documents/properties/borrar.properties
+[8mha:////4BO2/kUNx8H2JGiMh5UemmyQtllMBdBXxbDCw8XHK273AAAAqB+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkSJg2EwTqwNi09QS62F5v+xLZbJJ/LVfAcrJE7ecLm75PK93lB6BydymvUKB4NeGjbaSafEIrnhaimyni5MEnqyirUqttSpZq0tBQWrshwKDhuF0pI3qANseS8eorICdXUOLm1HDrnp7vCEjCdyEC4sZXawu02dJ/xx/gJgHgMU+/qweP39lh/+wK5IxAAAAA==[0m[Pipeline] ansiColor
+[8mha:////4Jji4ZizeZ5QNxcGHs0h/w1xZWWkzYpX0cnAxn55iNq3AAAAqB+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkSJEybGibVh8QlqqbXQ/D+2xTL5RL6a72CFxMkbLneXXL7XG0rv4EROs17hYNBLw0Y76ZRYJDdcLUXW04VJQk9WsVbFljrVrLWloGBVlkPBYaNQWvIGdYAt78VDVFagrs7Bpe3IITfdHZ6Q8UQOwoWlzA52t6nzhD/OXwDMY4BiX9eLH77f8gO07MNVxAAAAA==[0m[Pipeline] {
+[8mha:////4NExTcF2HY0YnI89ANPKpYJF9ePKR+Yw5AunVPxlk+40AAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFbPElGRLQ/Mk3VRjixRdE4NUc91EgxQDXbOUZINUk2RDC/MkCwDnjOJ1rwAAAA==[0m
+[8mha:////4CQCl/8X8V6MwuiWBIvGIQ+VXCcL4WD7vq9JSgvR9xfvAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjKkAoFa2VhhcY2xg71l2wHZyKF/E1/kCUSFRssdrZZt4fWMUADQXDnMbOYpSW9X4w02KZQnfzlJmjK5OEkbxmrc4tKX1esKWkYUlRQsVhrVF6ihZNgg134ilqL9DUlxSm78ShtOoBLyj4ZE4ipBnGANv7oCLhz/NXAGOfoNrtD3Mf+y8ECe4HwAAAAA==[0m[Pipeline] echo
+[46m*************** Archivo borrar.properties agregado ***************[0m
+[8mha:////4Jr4CR0dfE+CGVvAM1+hvlre6rZxk4/38FWbC3wLIsqVAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDFZEQFa2VhheYxBg71p2xLyQVL+Jr/IFAJCq2WO1sM88XLFKEA0UjnMbOYmqsCL430xIDxe7iaRCOzqIhTOS1qPVQU6uPM9bEGuZkORQSlhobT8miYVhJp+6q9ApNeeI4fXsJuW1v8IBMTmZWkb8wRlhf+zYR/jx/BTCGwFBsq82nd9UbTliZucAAAAA=[0m[Pipeline] }
+[8mha:////4CuCFIQdoe0eksaXkOI//e6s5DnrmSL22y0IXovyZOv2AAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlTRD8xSjpBQLXYNEc1NdkySjNN1ES2NDXaM0E9PUJAvTZCOjJABXgqWNrwAAAA==[0m
+[8mha:////4Jjd0YGSa3dENTF7jWMjVl8rdmqUjY9YqXMN0spjeDEQAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSjVEFCVLRWGl5gYmOcWHfBvpBUvIiv8QcMkajYYrWzzTxfsIoBDhSs6Az2DmPrxOBHm5aYKPQXT5Po6CxawkjeiMZMDWlzXLAhNrAky6GQsDbYeooOLcNGduquSq/QlicO6dtLyJ2+wQMymcysAn9hDrC9jjoS/jx/BTAPA0NR7apP1/Uba05Rj8AAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4F16L4roUUM/gFZXvKyHUA0MLu5NpxFkepHTMGW8hDQnAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjkBBIiIrWcsMLjG2ME+su2A5JxYv4Gn/AEImKLVY728zzBbMY4EDBssZg6zAqxzrf27zYQKG9eBpYQ2emCCN5w4QZBGlznFBQMjClKKHiMDeoPEWHNsGCN/Iuay/R1qcU8rfnUDp9gwcUPJuTDOkLY4DltdeR8Of5K4CxS1CttptP79bdGyOCQ3TAAAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 ls /home/hidraxos/Documents/properties
+borrar.properties.bk_21-07-2022
+timeout.properties
+ws-settings.properties
+ws-timeout-settings.properties
+ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4AgLh7ijzYF1lZvHCVf1QRDK+VqDJBLbikbzaW9DU7zlAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjhBBIiIrWcsMLjG2ME+su2A5JxYv4Gn/AEImKLVY728zzBbMY4EDBssZg6zAqxzrf27zYQKG9eBpYQ2emCCN5w4QZBGlznFBQMjClKKHiMDeoPEWHNsGCN/Iuay/R1qcU8rfnUDp9gwcUPJuTDOkLY4DltdeR8Of5K4Cx6xJUq93609vNG24+wPbAAAAA[0m[Pipeline] }
+[8mha:////4HcbH28qN5K3eT96BgKVwqCF5QPQ5ieGYf9+P2U6x4zCAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjpEggISpaKw0vMIkxdqw7Y19IKl7E1/gDgUhUbLHa2WaeL1ikCAeKRjiNncXUWBF8b6YlBordxdMgHJ1FQ5jIa1HroaZWH2esiTXMyXIoJCw1Np6SRcOwkk7dVekVmvLEcfr2EnLb3uABmZzMrCJ/YYywvvZtIvx5/gpgDIGh2OyqT2+rN3YwYETAAAAA[0m[Pipeline] // withCredentials
+[8mha:////4B6sNRUSo+e3zoLqK7145OnmHkO6VhN5myjnU3N40/BEAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjQEhIERWtlYYXmNgYJ9ZdsC8kFS/ia/wBi0hUbLUzzbzesIgBjhSsaA12DmPjRO8Hm54YKXRXT6No6SIawkjeiNqMNWlzmrEmNjAvy6GQsDTYeIoOLcNKtuqhSq/QlmcOyVUScqfv8IRMpjKrwF+YAqxvg46Ev87fAEw9Q77dMRSbw77/AEqO3+K/AAAA[0m[Pipeline] echo
+["BAVV","BOCC","BBTA"]
+[8mha:////4ETTZg9FqCaFl4YdL8c+fQkxTLTIrM2JUTh8Bg65b4QYAAAAqh+LCAAAAAAAAP9tjUEOgjAQRQcIC7cuPUSJmhgT4sptw8YTVKi10MxgO1hWnsireQdRElf+1X8/+XnPF+TBw4G8Ea3GzmKorejdYKYmIvnu4iiKls6iJgzktKh0rKjRxxkrYg1zkhQyCQuNtaNg0TAsZavuqnAKTXFiP22lhNQ2N3hAIiczK89fGD2srkMTCH+evwIYe4Z0s2XI1vvd55q/AYDhE+PDAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4Dt7T0VjqwrRr++tpLin2GI/+MzcZd/4L3c4aapek8cTAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpWAAJdWKNunCCkISQNPq/JCntxIm4GnegtBITHizbkvVebyhjgJqCYU5jazFKyzrfmymxgUJ79TQwRxcmCSN5zRo9NKT0aakNJQ2LshwKDiuN0lO0aBKsuRMPUXmBpjqnMG1HDrlVd3hCxidyEiHNZQywufUqEv44fwEwdgmK7WE3+/77LT/StwjuxAAAAA==[0m[Pipeline] {
+[8mha:////4KQPaXflJhLJv/Mq5V+if6c7ZjhxZE6S/dD1QBn37JUkAAAApR+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP6LESRLjxNp08QtqqbXQvIevRZj8In/Nf5BA4uQdbu65y3l/YBMZzsROtBY7j9F40YfBzUuMxN0t0ChaugpDGClYoeyoqLH1ioqShTVZDoWErUUTKHp0CXay1U9dBo2uvCSev5OE3DcPeEEmZ3PSnBaYGPb3oYmEP89fAUx9guJQHZeu+i8FojATwAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cp /home/hidraxos/Documents/properties/timeout.properties /home/hidraxos/Documents/properties/timeout.properties.bk_21-07-2022
+[8mha:////4N0ME3GUAL8NrBvgwxGskzLT8lVhu95WsAl1QxnkL6AhAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpmAChTqxRF04QkhCSRv+XJKWdOBFX4w6UVmLCg2Vbst7rDWUMUFMwzGlsLUZpWed7MyU2UGivngbm6MIkYSSvWaOHhpQ+LbWhpGFRlkPBYaVReooWTYI1d+IhKi/QVOcUpu3IIbfqDk/I+EROIqS5jAE2t15Fwh/nLwDGLkGx3e9mP3y/5QfNmqdPxAAAAA==[0m[Pipeline] ansiColor
+[8mha:////4B60bn0lR4a+jJYTga3HZejdUaA52E+cRU/M9mHVb219AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApbFSIiTXqwglCE0LS6P+SpLQTJ+Jq3IGUSkx4sGxL1nu9oQwejuQ1swo7g6E1rHeDTomN5Luro5FZurCWMJBTrFFjQ1KdltpQVLAoy6HgsFLYOgoGdYQ1t+IhKidQV+fo03bgkBt5hydkPJGj8PFbJg+b2yAD4Y/zFwBTH6HY7evZ6+38LT+vE+4nxAAAAA==[0m[Pipeline] {
+[8mha:////4KBupBEt7yo11cMsZ0GBKERENYds/TzJbg1lipkOfjhhAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlWQDQ+NUC3NL3dQ0UwNdkzQTQ91EC1Nj3bQkc1NDE4NE0xQjcwDzidhdrwAAAA==[0m
+[8mha:////4AG2B05paflEd5GRGHAm030ik+Dx1mK91EdYsmfqqWGPAAAApB+LCAAAAAAAAP9tjTESgjAQRRcYC1tLD7FI6ThWtJk0niCGGAOZXUyCUHkir+YdZGDGyl/8+e837/2BTQxw5mCxNdQ5itph7wc7Lxw5dDfPI7Z8Rc0U2RuUZpTcmHpFycnAmiyHQsDWkPYcHdkEO9Gqpyq9IlteUpi/k4DcNQ94QSZmc1IhLTAF2N+HJjL9PH8FMPUJiup4WLrqvyFujt7AAAAA[0m[Pipeline] echo
+[46m*************** Backup del archivo timeout.properties realizado ***************[0m
+[8mha:////4MkBW9uriW6aEsyzft9I1lBa3kSjrxCiOq6TDRPuIbLZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDdAilorXS8AJjG2PHugu2g1PxIr7GH4gSiYotVjvbzPsDqxigoWCY09hZjNKy3g9mWixT6G6eMnN0ZZIwktes1bklpc8LtpQ0LClKqDisNUpP0aJJsOFOPEXtBZr6ksL0nTiUVj3gBQWfzEmENMMYYHsfVCT8ef4KYOz7BNX+eJh79wVF7PRywAAAAA==[0m[Pipeline] }
+[8mha:////4MXOpH1/8tO/LKlxT3YG2boiZr22ELTBIPPVu7CAYv9KAAAAqh+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFUtzg0SjpJREXWOLRCNdE4sUQ11LUyDXMtXYMNnU3DDRPDERAL7xOpOvAAAA[0m
+[8mha:////4FrFvJ23RsZAnuyY/Jum9E0AJhRX29zc3uiD+Abx+iYaAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjREOEqGitNLzAJMbYse6MfSGpeBFf4w8EIlGxxWpnm3m+YJEiHCga4TR2FlNjRfC9mZYYKHYXT4NwdBYNYSKvRa2Hmlp9nLEm1jAny6GQsNTYeEoWDcNKOnVXpVdoyhPH6dtLyG17gwdkcjKzivyFMcL62reJ8Of5K4AxBIZiU20/vaveFG5EtMAAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4GL5UI/YB1UGl0TTejcJnrjTvbxlJN/xSHvx6ATI7lWhAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjJCRAiIrWcsMLjG2ME+su2A5JxYv4Gn/AEImKLVY728zzBbMY4EDBssZg6zAqxzrf27zYQKG9eBpYQ2emCCN5w4QZBGlznFBQMjClKKHiMDeoPEWHNsGCN/Iuay/R1qcU8rfnUDp9gwcUPJuTDOkLY4DltdeR8Of5K4CxS1CttptP79bdGz6HR77AAAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 ls /home/hidraxos/Documents/properties
+borrar.properties.bk_21-07-2022
+timeout.properties
+timeout.properties.bk_21-07-2022
+ws-settings.properties
+ws-timeout-settings.properties
+ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4Ndvupsksa6UFclaRqgmE4tn40U4CpDi323OXCEv95eHAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjCgQIUdFabniBsY1xYt0F2yGpeBFf4w8YIlGxxWpnm3m+YBYDHChY1hhsHUblWOd7mxcbKLQXTwNr6MwUYSRvmDCDIG2OEwpKBqYUJVQc5gaVp+jQJljwRt5l7SXa+pRC/vYcSqdv8ICCZ3OSIX1hDLC89joS/jx/BTB2XYJqtVt/ert5Ayl2LDDAAAAA[0m[Pipeline] }
+[8mha:////4J/F9eDlEYJVvggnoiJBaUDvLOjtbQvNFBLGuHvMv9R0AAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjmgiEqGitNLzAJMbYse6MfSGpeBFf4w8EIlGxxWpnm3m+YJEiHCga4TR2FlNjRfC9mZYYKHYXT4NwdBYNYSKvRa2Hmlp9nLEm1jAny6GQsNTYeEoWDcNKOnVXpVdoyhPH6dtLyG17gwdkcjKzivyFMcL62reJ8Of5K4AxBIZis6s+va3eIlzDdsAAAAA=[0m[Pipeline] // withCredentials
+[8mha:////4AXMy+BWLXtsoLS6QkqA33FcJS3eZfKsFJqtOMKqXw78AAAAqR+LCAAAAAAAAP9tjbEOgjAURR8QBldHP6JEHYwhTq4Ni19QodZC8x62D8vkF/lr/oMoiZN3uucmN+f5gjx4OJA3otXYWQy1Fb0bzNREJN9dHEXR0lnUhIGcFpWOFTX6OGNFrGFOkkImYaGxdhQsGoalbNVdFU6hKU7sp62UkNrmBg9I5GRm5fkLo4fVdWgC4c/zVwBjz5ButgzZer/7XPM3kTk4jsMAAAA=[0m[Pipeline] ansiColor
+[8mha:////4DhNkjG8u4UyECJ2Rtp+2ubBJ+LaQuPoXmI3ZmI+h4nFAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpmAChTqxRF04QkhCSRv+XJKWdOBFX4w6UVmLCg2Vbst7rDWUMUFMwzGlsLUZpWed7MyU2UGivngbm6MIkYSSvWaOHhpQ+LbWhpGFRlkPBYaVReooWTYI1d+IhKi/QVOcUpu3IIbfqDk/I+EROIqS5jAE2t15Fwh/nLwDGLkGxPexm33+/5QdZmxr/xAAAAA==[0m[Pipeline] {
+[8mha:////4NusREo99cmTF3HcHga7n+EyMAa5zP5OyM3xG2J5ZGPWAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFTMTQ6NkIwtLXbMkUwtdE0sjC11L45RkXeMkU6Mks1RT00RzQwAnO7dBrwAAAA==[0m
+[8mha:////4OtuKz7it6ROzMacbPjy1X6Hbf5LhRw70UtzViu0ry6NAAAApR+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP6LETWKcWJsufkEttRaa9/C1CJNf5K/5DxJInLzDzT13Oe8PbCLDmdiJ1mLnMRov+jC4eYmRuLsFGkVLV2EIIwUrlB0VNbZeUVGysCbLoZCwtWgCRY8uwU62+qnLoNGVl8Tzd5KQ++YBL8jkbE6a0wITw/4+NJHw5/krgKlPUByq49JV/wWc/7LFwAAAAA==[0m[Pipeline] echo
+[47m*************** Se modificara una linea timeout.properties ***************[0m
+[8mha:////4JwlKJjqRvmwGMLoW+GKmCnKJSjs95mEp4B+OULryYPNAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQTqECIitZKwwuMY4wT687YDk7Fi/gaf8AiEhVbrHa2mdcbFsHDkbxmvcLBYJCGOTvqvFgiP1wtJdbThUnCQFaxVqWWOnWasaWoYE5RQsVhqVBaCgZ1hBXvxUPUVqCuz9Hn78ChNN0dnlDwbI7Cxy9MHta3sQuEP89fAUzORai2TZN7s999ALBScs3AAAAA[0m[Pipeline] }
+[8mha:////4C4qwzV+riL9AP4K5MBFZ/1RVC/AjAKjyL112E2wnQqlAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlTTTJBOLVDNj3bQkE1Ndk6S0ZF0Ly0RzXXPz1GQjy+Qkc4tkIwBTmuVSrwAAAA==[0m
+[8mha:////4NBb6mHhQWb0VI+yLF7XGogR47Ww/uVcSgcyWvWePcJ1AAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYRDaBBCVLRWGl5gHGOcWHfGdnAqXsTX+AMWkajYYrWzzbzesAgejuQ16xUOBoM0zNlR58US+eFqKbGeLkwSBrKKtSq11KnTjC1FBXOKEioOS4XSUjCoI6x4Lx6itgJ1fY4+fwcOpenu8ISCZ3MUPn5h8rC+jV0g/Hn+CmByLkK13TS5m/3uA5VEuvvAAAAA[0m[Pipeline] // ansiColor
+[8mha:////4NHXnWMlANMpzYLKcfu62zrqGpv0TFIN2Mh2CUrxC8htAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JUtBS8ggHhRJR0VppeIFxjHFi3QX7QlLxIr7GHzBEomKrnZVW83xBGQMcKFjRGewdRu3E4Eebmpgo9BdPk+joLDRhJG9EY6aGWnNcsCE2sCTLoZCwMqg9RYeWYS07dVeVV2irE4e07SXkrr3BAzKZzKwCf2EOsLmObST8ef4KYB4Y8nrHUNTb+nMt3xLq4sXDAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4MAj+2MGrDrWD/mUkKjMhJOl9iSpwir5OhqjdjQsDK0fAAAApx+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkQxOBon1obFJ6il1kLz/9gWy+QT+Wq+gxUSJ2+43F1y+V5vKL2DEznNeoWDQS8NG+2kU2KR3HC1FFlPFyYJPVnFWhVb6lSz1paCglVZDgWHjUJpyRvUAba8Fw9RWYG6OgeXtiOH3HR3eELGEzkIF5YyO9jdps4T/jh/ATCPAYp6Xy9++H7LD4lxne3EAAAA[0m[Pipeline] {
+[8mha:////4O8BvoSY5rVdVzwgLi55qGKoxbQ3MTXDnbhdpJkw9VHjAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSDgA6lorXS8AJjG2PHugu2g1PxIr7GH4gSiYotVjvbzPsDqxigoWCY09hZjNKy3g9mWixT6G6eMnN0ZZIwktes1bklpc8LtpQ0LClKqDisNUpP0aJJsOFOPEXtBZr6ksL0nTiUVj3gBQWfzEmENMMYYHsfVCT8ef4KYOwTVPvdYe5j/wW+BIZ3wAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 sed -i -e 's/timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=[0-9a-zA-Z]*/timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000/' /home/hidraxos/Documents/properties/timeout.properties
+[8mha:////4I+3RFkVrLiFlZeKkqj8OZqVQnlZkMljzX2GVny9ws0VAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApAjGhTqxRF04QkhCSRv+XJKWdOBFX4w6UVmLCg2Vbst7rDWUMUFMwzGlsLUZpWed7MyU2UGivngbm6MIkYSSvWaOHhpQ+LbWhpGFRlkPBYaVReooWTYI1d+IhKi/QVOcUpu3IIbfqDk/I+EROIqS5jAE2t15Fwh/nLwDGLkGx2+5nP3y/5Qf73mGgxAAAAA==[0m[Pipeline] ansiColor
+[8mha:////4PiX9foTPuAjIxK+b+HeVbLBeG6vc1rpjush/ckhcZNbAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApQoIFdWKNunCCkISQNPq/JCntxIm4GnegtBITHizbkvVebyhjgJqCYU5jazFKyzrfmymxgUJ79TQwRxcmCSN5zRo9NKT0aakNJQ2LshwKDiuN0lO0aBKsuRMPUXmBpjqnMG1HDrlVd3hCxidyEiHNZQywufUqEv44fwEwdgmK3XY/++H7LT+1CcjJxAAAAA==[0m[Pipeline] {
+[8mha:////4G/eQt+e2ukPYAZ5AE4NRwopHIJIln/4TeQ9kgFJyLLCAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFVNTk+SktORkXZPEJGNdk6SkZF0Ls8Qk3bTUtBSjlGRDC2PDFAA/ctkSrwAAAA==[0m
+[8mha:////4Iu2X1kx+IJ8iwrMe3GZ2GpKkk/2L7ax05azCQM3GermAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSDKKBAqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7BNV+d5j72H8BGVlLFMAAAAA=[0m[Pipeline] echo
+[46m*************** Archivo timeout.properties modificado ***************[0m
+[8mha:////4PHZTI94+9wOO4FHCThHjQIhDjqvtLbitIRv4v7xJksQAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSDKBASSkVrpeEFxjbGjnUXbAen4kV8jT8QJRIVW6x2tpn3B1YxQEPBMKexsxilZb0fzLRYptDdPGXm6MokYSSvWatzS0qfF2wpaVhSlFBxWGuUnqJFk2DDnXiK2gs09SWF6TtxKK16wAsKPpmTCGmGMcD2PqhI+PP8FcDY9wmq/e449+ELwDShysAAAAA=[0m[Pipeline] }
+[8mha:////4APLl30FfjzGnEjPAA9bb5mJxV044KZyGyXqZsZooQizAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlVRzyxTDtOQU3WQzIwtdE0tzM11Ls2QjXXNLIyPDpKSkNKNEMwADoCewrwAAAA==[0m
+[8mha:////4OKcO+zMtFgj8z+QC0j501Lzsi7CTr8ZAuTX5PT4KBYrAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSDkCgQSkVrpeEFxjbGjnUXbAen4kV8jT8QJRIVW6x2tpn3B1YxQEPBMKexsxilZb0fzLRYptDdPGXm6MokYSSvWatzS0qfF2wpaVhSlFBxWGuUnqJFk2DDnXiK2gs09SWF6TtxKK16wAsKPpmTCGmGMcD2PqhI+PP8FcDY9wmq/e449+ELzm7f9cAAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4BehEO9l53hMFZb5vN4Kobp0ct8ZipJ0PJSIt1cCyxRuAAAApR+LCAAAAAAAAP9tjTESwiAURH+SsbC19BAkaulY2TI0ngABkYT5PwKRVJ7Iq3kHo5mxcoudfdu85wsWMcCBgmWtwc5hVI71frDTYplCd/GUWUtnpggjecOEyYK0Oc4oKBmYU5RQcVgaVJ6iQ5tgxVt5l7WXaOtTCtO351A6fYMHFHwyJxnSF8YA6+ugI+HP81cAY5+g2ja7T2+a/g2NqygSwAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cat /home/hidraxos/Documents/properties/timeout.properties
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+timeout.GA_PQRSCustomerAuthentication=50000
+[8mha:////4H1WaWwwwlW7PHGJrhR+qEIQd+kmbM2T3ubjNmGoHHTbAAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxFES8fKNkPjCSLEmJDZjckiVJ7Iq3kHUWas/MWf/37zni9YpAgHikY4jZ3F1FgRfG+mJQaK3cXTIBydRUOYyGtR66GmVh9nrIk1zMlyKCQsNTaekkXDsJJO3VXpFZryxHH69hJy297gAZmczKwif2GMsL72bSL8ef4KYAyBodhW1ac3uzcChfnjwAAAAA==[0m[Pipeline] }
+[8mha:////4I8nQ2OV5MeNHz1mRGSvV083Q/kaTlnUmEld5flq6W6LAAAApR+LCAAAAAAAAP9tjTESwiAURH+SsbC19BBEaR2rtEwaT4CASML8H4GYVJ7Iq3kH0cxYucXOvm3e8wWrGOBIwbLOYO8wKscGP9q82EShv3iaWEdnpggjecNaM7WkTbNgS8nAkqKESsDaoPIUHdoEG9HJu6y9RFufUsjfQUDp9A0eUIhsTjKkL8wBttdRR8Kf568A5mFIUPE9//SOvwEJrxalwAAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4N5ab+QjHJeFfMZ1Q1SUXheom48aGuxQbBrTP1V//fSHAAAApx+LCAAAAAAAAP9tjbEOgjAURR8QBldHP6JEGI0Ta8PiF9RSa6F5D9uHMPlF/pr/IEri5J3uucnNeb4gjwGOFKzoDPYOo3Zi8KNdmpgo9BdPk+joLDRhJG9EY6aGWlOv2BAbWJOkkEnYGNSeokPLsJWduqvCK7TFicOyHSSkrr3BAxK5mFkF/sIcYHcd20j48/wVwDwwpGXFkJX76nPN3wMyyajDAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4LVc7qRAcumDpsgBHeH00oc0Tv9K3UFmIgXiIdU5hfpYAAAAqB+LCAAAAAAAAP9tjT0OwjAUg19bdWBl5BCp+NlQJ9aoCycISQhJo/dKktJOnIircQdKKzHhwbItWd/rDWUMUFMwzGlsLUZpWed7MyU2UGivngbm6MIkYSSvWaOHhpQ+LbWhpGFRlkPBYaVReooWTYI1d+IhKi/QVOcUpu3IIbfqDk/I+EROIqS5jAE2t15Fwh/nLwDGLkGx2+5nP3y/5Qdv39wQxAAAAA==[0m[Pipeline] {
+[8mha:////4PBOAaE6wPPf2G3f7bi21Gx3Ux0I9u5ngD/fGGhIzCgiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjEFQoFa2VhhcY2xg71l2wHZyKF/E1/kCUSFRssdrZZt4fWMUADQXDnMbOYpSW9X4w02KZQnfzlJmjK5OEkbxmrc4tKX1esKWkYUlRQsVhrVF6ihZNgg134ilqL9DUlxSm78ShtOoBLyj4ZE4ipBnGANv7oCLhz/NXAGOfoNrvDnMf+y+SQuFywAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cp /home/hidraxos/Documents/properties/timeout.properties /home/hidraxos/Documents/properties/timeout.properties.bk_21-07-2022
+[8mha:////4LDp2OtNq5e4lphW7CGKARVMinbQA4pkLe1LIwpRUQ68AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpQIgFdWKNunCCkISQNPq/JCntxIm4GnegtBITHizbkvVebyhjgJqCYU5jazFKyzrfmymxgUJ79TQwRxcmCSN5zRo9NKT0aakNJQ2LshwKDiuN0lO0aBKsuRMPUXmBpjqnMG1HDrlVd3hCxidyEiHNZQywufUqEv44fwEwdgmK3XY/++H7LT/rl4wpxAAAAA==[0m[Pipeline] ansiColor
+[8mha:////4IaMAvhPkoX8CX+SuoxUhzmn7IwX4Xqwb/w89E+BBVUQAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BCpYIABdWKNunCCkISQNPq/JCntxIm4GnegtBITHizbkvVebyhjgJqCYU5jazFKyzrfmymxgUJ79TQwRxcmCSN5zRo9NKT0aakNJQ2LshwKDiuN0lO0aBKsuRMPUXmBpjqnMG1HDrlVd3hCxidyEiHNZQywufUqEv44fwEwdgmK3XY/++H7LT/R2usOxAAAAA==[0m[Pipeline] {
+[8mha:////4PbyLV8TFtCGjH0WUTBHPK4TievIe4t+w+RZN0WGwIslAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlSSLNPNkY6NEXaMU00RdEwNLS10LizQD3RTTpNRkQ5MUgzTjRABL1DzfrwAAAA==[0m
+[8mha:////4C/7e4KqtZlsuxHcg7p9FHxO6JStf0FUQWk4Ky3R98AnAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjaEBCqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7BNV+d5j72H8BPDvAScAAAAA=[0m[Pipeline] echo
+[46m*************** Backup del archivo timeout.properties realizado ***************[0m
+[8mha:////4FcSjP4G7y8vdwUx+LP2EP6yfjt8t8uqmedM9mB5jleoAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjaBBCqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7PkG13x3nPnwBPT5gzsAAAAA=[0m[Pipeline] }
+[8mha:////4NbmCQdJMTGzcXzayWUz26hfk0/GIN+k2o3rmA8dPS1nAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFVNDI9PUtLRkXTMjI1NdExNzY11L85QU3SRzMyNDA0tTUwPTRACt2L3trwAAAA==[0m
+[8mha:////4L9HQ+qHHoxQs9/jA3OMqAfPIFtTj7dWDo8nOdVjlOghAAAAph+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxGUwsaxss3QeIIIMSZkdmOyCJUn8mreQZQZK3/x57/fvOcLFinCgaIRTmNnMTVWBN+baYmBYnfxNAhHZ9EQJvJa1HqoqdXHGWtiDXOyHAoJS42Np2TRMKykU3dVeoWmPHGcvr2E3LY3eEAmJzOryF8YI6yvfZsIf56/AhhDYCiqavPp7e4Nm0xwosAAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4DNM3Mg5bS4K7FvCZbAOZCO91k6THQEf7aBEO96KvHZBAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSjRHSIitZKwwtMbIwT6y7YF5KKF/E1/oAhEhVbrHa2mecLVjHAgYIVncHeYWydGPxo0xIThf7iaRIdnUVLGMkb0ZipIW2OCzbEBpZkORQS1gZbT9GhZdjITt1V6RXa8sQhfXsJudM3eEAmk5lV4C/MAbbXUUfCn+evAOaBoair3afrangDzznLFMAAAAA=[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 ls /home/hidraxos/Documents/properties
+borrar.properties.bk_21-07-2022
+timeout.properties
+timeout.properties.bk_21-07-2022
+ws-settings.properties
+ws-timeout-settings.properties
+ws-timeout-settings.properties.bk_21-07-2022
+[8mha:////4BfxVqwFyNO9oJn4dwoV+ef2WG/9iNgpt7u6WA+hS5sJAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjLDpEldZKwwuMbYwT6y7YDknFi/gaf8AQiYotVjvbzPMFqxjgSMGyzmDvMCrHBj/avNhEob94mlhHZ6YII3nDWjO1pE2zYEvJwJKihErA2qDyFB3aBBvRybusvURbn1LI30FA6fQNHlCIbE4ypC/MAbbXUUfCn+evAOZhSFBxzj+9278Bnjzh28AAAAA=[0m[Pipeline] }
+[8mha:////4LprQwLQdH9is8hBAqoElw+9XpvBVZdgtBdR99M6yIbNAAAApR+LCAAAAAAAAP9tjTESwiAURH+SsbC19BBkTErHypah8QRIEEmY/xGIpPJEXs07GM2MlVvs7NvmPV+wigEOFAzrNQ4Wo7LMu9HMi2UKw8VRZj2dmSKM5DQTOgvq9HFBQUnDkqKEisNao3IULZoEG97Lu6ydRFOfUpi/PYfSdjd4QMFnc5IhfWEKsL2OXST8ef4KYPI+QdU07ad37RuJovLjwAAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4KdB6tgjCVDv4lQW4gAUih5fBDvmokFVekOUDr49x7pDAAAAqB+LCAAAAAAAAP9tjTEOwjAQBC+JUtBS8ghHMnSIitZKwwuMY4wT6y7YF5KKF/E1/kAgEhVb7ay0mucLyhThQNGJ1mLnMRkv+jC4uYmRYncJNIqWzsIQJgpW1HasqbHHBWtiC0uyHAoFK4smUPLoGNaq1XddBY2uOnGct72C3Dc3eECmZjPryF+YImyuQ5MIf56/Aph6hlxuGQopd59r+QYmGCSEwwAAAA==[0m[Pipeline] ansiColor
+[8mha:////4C5epc++9CMKEJ4oSO0iRWjhln2trCQ+gF3aSQFOm+XtAAAAqB+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkRJiE7GibVh8QlqqbXQ/D+2xTL5RL6a72CFxMkbLneXXL7XG0rv4EROs17hYNBLw0Y76ZRYJDdcLUXW04VJQk9WsVbFljrVrLWloGBVlkPBYaNQWvIGdYAt78VDVFagrs7Bpe3IITfdHZ6Q8UQOwoWlzA52t6nzhD/OXwDMY4CirveLH77f8gMWkzojxAAAAA==[0m[Pipeline] {
+[8mha:////4EzSf7A6MYSO7PdbF2najtjG/4s0zz0nHqDls1TqOv4RAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFROjRHMDA1NTXQNjI2NdE+NUc93E5OQkXcO0VANjU0Njk5QUIwCef7L6rwAAAA==[0m
+[8mha:////4Gv+Sf8NrHwD+e0UvSYIe+JvNd3ul01cVlXORjnQVkPGAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjRYIGUaW10vACExtjx7oztkNS8SK+xh+wEomKLVY728z7A5sY4ExBM6twMBh7w7wbdV5sojDcHE3M0pX1hJGcYp2aOpKqXbGjpGBNUULFYauwdxQN6gQ7bsVT1E6gri8p5O/EoTTyAS8oeDYnEdICc4D9fZSR8Of5K4DZJ6ia5rD00X8BU5OtrsAAAAA=[0m[Pipeline] echo
+[47m*************** Se modificara una linea timeout.properties ***************[0m
+[8mha:////4CqGnVUTjNh4TxFxzvf181dCa21UYDiMmH0oFHG9y3LxAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjRUIUiCqtlYYXmNgYO9adsR2SihfxNf6AlUhUbLHa2WbeH9jEAGcKmlmFg8HYG+bdqPNiE4Xh5mhilq6sJ4zkFOvU1JFU7YodJQVrihIqDluFvaNoUCfYcSueonYCdX1JIX8nDqWRD3hBwbM5iZAWmAPs76OMhD/PXwHM3ieomua49OELbHDz1cAAAAA=[0m[Pipeline] }
+[8mha:////4Ay5aC1Ossv1mzZGkslgCFfDY+LygHoSzSHKaD9/10rjAAAAqh+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFXODlGRzM4M0XfPk5FRdE7OkVN0ki2Qz3USDNENDyzQgM80MAI7NF6yvAAAA[0m
+[8mha:////4IaUmndQdM6hs01mdJOO2U69EZIEHhErszPT3mioFedUAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjRRRIiCqtlYYXmNgYO9adsR2SihfxNf6AlUhUbLHa2WbeH9jEAGcKmlmFg8HYG+bdqPNiE4Xh5mhilq6sJ4zkFOvU1JFU7YodJQVrihIqDluFvaNoUCfYcSueonYCdX1JIX8nDqWRD3hBwbM5iZAWmAPs76OMhD/PXwHM3ieomua49OELEzC8VMAAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4ALlp2rW/OHEXuBYEbWPCTlMnGjTFswC6Hb3KkjfwPycAAAAqB+LCAAAAAAAAP9tjTEOwjAQBC+JUtBS8ghHMhVCVLRWGl5gHGOcWHfBvpBUvIiv8QcCkajYamel1TxfUKYIB4pOtBY7j8l40YfBzU2MFLtLoFG0dBaGMFGworZjTY09LlgTW1iS5VAoWFk0gZJHx7BWrb7rKmh01YnjvO0V5L65wQMyNZtZR/7CFGFzHZpE+PP8FcDUM+Ryy1BIuftcyzf4C7o4wwAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4AZjb/SXCFVYyZBWrLiaVgKOuLvPobdN4hcHDkr+Q1xiAAAAqR+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApKhNCTKxRF04Q2hCSRv+XJCWdOBFX4w6kVGLCg2Vbst7rDaV3cCSnmJHYa/StZoMdVUoskuuvliIzdGEtoScrWSNjQ508LbWhIGFRlkPBYSWxteQ1qgBrbsRDVFagqs7Bpe3AIdfdHZ6Q8UQOwoVvmRxsbmPnCX+cvwCYhgBFXe9n323nb/kB/wgvS8QAAAA=[0m[Pipeline] {
+[8mha:////4GKX3/EAiFWHUdOsrNj7Drf+rGMQUjqlL1iv0KJXpUEfAAAApR+LCAAAAAAAAP9tjTsOwjAQRDeJKGgpOYTDp0SpaK00nMDYxtixdoPt4FSciKtxB6JEomKK0bxp3vsDqxigoWCY09hZjNKy3g9mWixT6G6eMnN0ZZIwktes1bklpc8LtpQ0LClKqDisNUpP0aJJsOFOPEXtBZr6ksL0nTiUVj3gBQWfzEmENMMYYHsfVCT8ef4KYOwTVIfjbu59/wWEdbW/wAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 sed -i -e 's/timeout.GA_PQRSCustomerAuthentication=[0-9a-zA-Z]*/timeout.GA_PQRSCustomerAuthentication=50000/' /home/hidraxos/Documents/properties/timeout.properties
+[8mha:////4JcpUQjd+onn6yVm0sZg1PcSRykbUlJU9l58p05XdVchAAAApx+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkQxOBon1obFJ6il1kLz/9gWy+QT+Wq+gxUSJ2+43F1y+V5vKL2DEznNeoWDQS8NG+2kU2KR3HC1FFlPFyYJPVnFWhVb6lSz1paCglVZDgWHjUJpyRvUAba8Fw9RWYG6OgeXtiOH3HR3eELGEzkIF5YyO9jdps4T/jh/ATCPAYr6sF+8/n7LD+BK2EbEAAAA[0m[Pipeline] ansiColor
+[8mha:////4NOZT9TUEKFcIQjgvjtSYRN6zQdDd3QogF/KST6xpjS5AAAApx+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkRJYDROrk0Xn6DSWlua/4e2CJNP5Kv5DiIkTt5wubvk8r3eUMYAJwqGOY2dxdha1vvRLIlNFLqbp4k5urKWMJLXTOhJkNLnrQpKGjZlORQcdhpbT9GiSbDnTj5k5SWa6pLCsh055FYN8ISML+QkQ1rLHOBwH1Uk/HH+AmDuExR1U6/efL/lB9oHv2HEAAAA[0m[Pipeline] {
+[8mha:////4NHa05ulda0om7B1n9EiEn4adt7WeUtbKdPl8wxWygqgAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFdNEI4tkM+NkXRNDI2NdkzTjRN1E01QDXYNEy2QT8yRDc3MTcwDlkgw4rwAAAA==[0m
+[8mha:////4IbqOuMiaWJjGYtxQZuHh7IbIksnbL72S/sg4Qr93IWZAAAApR+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP+KRiJtxYm26+AW11Fpo3sO2CJNf5K/5DxJInLzDzT13Oe8PbGKAMweLraHOUdQOez/YeeHIobt5HrHlK2qmyN6gNKPkxtQrSk4G1mQ5FAK2hrTn6Mgm2IlWPVXpFdnyksL8nQTkrnnACzIxm5MKaYEpwP4+NJHp5/krgKlPUByqaulj/wUihk1MwAAAAA==[0m[Pipeline] echo
+[46m*************** Archivo timeout.properties modificado ***************[0m
+[8mha:////4MCFrNOh8PrpDJOgM1xm+OsO8rDnDWAjEeTBagRG/D9hAAAApR+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP+KRSJyME2vTxS+opdZC8x62RZj8In/Nf5BA4uQdbu65y3l/YBMDnDlYbA11jqJ22PvBzgtHDt3N84gtX1EzRfYGpRklN6ZeUXIysCbLoRCwNaQ9R0c2wU606qlKr8iWlxTm7yQgd80DXpCJ2ZxUSAtMAfb3oYlMP89fAUx9n6A4VMelqy+v9b5+wAAAAA==[0m[Pipeline] }
+[8mha:////4FeQ+Mq/8WBPJmWFpKZzQm7S21Qv/35dcmER10BMalALAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFZMUg6TUVJMUXVMLgxRdE8s0Q93EZGMDXYvkRAsLAzMLA3OjJAAinCfKrwAAAA==[0m
+[8mha:////4EkP+vXpXwPJDVyOAkbDGt1UWMZO/QnTna1mN7I5SmV8AAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjBYkGUaW10vACExtjx7oztkNS8SK+xh+wEomKLVY728z7A5sY4ExBM6twMBh7w7wbdV5sojDcHE3M0pX1hJGcYp2aOpKqXbGjpGBNUULFYauwdxQN6gQ7bsVT1E6gri8p5O/EoTTyAS8oeDYnEdICc4D9fZSR8Of5K4DZ+wRVczgu3XwBpN9ROMAAAAA=[0m[Pipeline] // ansiColor
+[8mha:////4LWrmNnebBlauUH7BqfGw/RAi5bnv0Tun6STGfwgln1JAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSDoKBAqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7BNX+sJv72H8BAtLv6cAAAAA=[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PASS]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ sshpass -p **** ssh hidraxos@192.168.1.115 cat /home/hidraxos/Documents/properties/timeout.properties
+timeout.GA_PQRSCustomerAuthentication.AuthInqRequest=50000
+timeout.GA_PQRSCustomerAuthentication=50000
+[8mha:////4IcKmyVP6dZ+sQkv8FB1PeRzkKqJJ4jNddrTnxCrJMFBAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSDoEFCqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7PkG1Pxzn3n0B1cVghsAAAAA=[0m[Pipeline] }
+[8mha:////4MemKaGEiCu6DylYV6IeJsNfKib737qIud56KplNaMcqAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjhSpCVLRWGl5gYmOcWHfBvpBUvIiv8QcMkajYYrWzzTxfsIoBDhSs6Az2DmPrxOBHm5aYKPQXT5Po6CxawkjeiMZMDWlzXLAhNrAky6GQsDbYeooOLcNGduquSq/QlicO6dtLyJ2+wQMymcysAn9hDrC9jjoS/jx/BTAPA0NR7epPV/UbhEfQQMAAAAA=[0m[Pipeline] // withCredentials
+[8mha:////4PqTnCd1aGYkbSyBFiEI33bv2TXwlHEEn8C0beIbQlW8AAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxEctHOobDM0niCSGAOZXUwWofJEXs07mJEZK3/132ve6w2rGKCmYEVnsHcYWycGP9r0xEShv3qaREcX0RJG8kY0ZmpIm9OCDbGBZVkOhYS1wdZTdGgZNrJTD1V6hbY8c0juKCF3+g5PyGQqswr8hTnA9jbqSPjr/A3APAwMRXXYMeTV/gMSp0uUvwAAAA==[0m[Pipeline] }
+[8mha:////4DkFBld6hWjnDMVlryXwZLVgqnu6HaOD0yH+9MJk9aD9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjIjpERWul4QUmNsaJdWfsC07Fi/gafyAiEhVb7UwzrzesUoQjRSt6g4PD1DkR/GjnJzLF4eopi54uoiNM5I1oTW5Jm9OCLbGBZUUJlYS1wc5TcmgZNrJXD1V7hbY+c5zdQULp9B2eUMi5zCryF6YI29uoE+Gv8zcAUwgMVbPfMZRN8wEhRBAovwAAAA==[0m[Pipeline] // script
+[8mha:////4IXejAYriCpi5Upijdgysp/fZAl6G2EYvaLGS/FQ1r8aAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQjIjpERWul4QUmNsaJdWfsC07Fi/gafyAiEhVb7UwzrzesUoQjRSt6g4PD1DkR/GjnJzLF4eopi54uoiNM5I1oTW5Jm9OCLbGBZUUJlYS1wc5TcmgZNrJXD1V7hbY+c5zdQULp9B2eUMi5zCryF6YI29uoE+Gv8zcAUwgMVbNvGMpm9wE1Z403vwAAAA==[0m[Pipeline] }
+[8mha:////4OcdMj0ft0XT4AKRNXdJRbtG54lQANxy/8eQGJ73UX0CAAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxEctHOobDM0niCSGAOZXUwWofJEXs07mJEZK3/132ve6w2rGKCmYEVnsHcYWycGP9r0xEShv3qaREcX0RJG8kY0ZmpIm9OCDbGBZVkOhYS1wdZTdGgZNrJTD1V6hbY8c0juKCF3+g5PyGQqswr8hTnA9jbqSPjr/A3APAwMRXXYM+TV7gMGhNaLvwAAAA==[0m[Pipeline] // stage
+[8mha:////4AjVFghOeZrhx1X1KjTAWjvPDO0uzggNxlETnmmrd0n/AAAApB+LCAAAAAAAAP9tjbEOgjAURS8SB1dHP6Ikhs04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IVco2NpTpw8uQEW92ahymCIVecJc7uoLHyzR1PZHoui4nyhSlidxuaxPTr/A1g6ntBvi9LQVZ+AKq2OBe+AAAA[0m[Pipeline] }
+[8mha:////4JQYX10GWXPjKxPNIyub+18p8VlpF3Pv1mYJ1cC6tTZ4AAAApR+LCAAAAAAAAP9tjTsOwjAQBdeJKGgpOYQj8akQFa2VhhMYxxgn1m6wNzgVJ+Jq3IGISFS86s0083rDIkU4UnSytdh5TMbLPgxuejJT7K6BsmzpIg1homBlbXNNjT3NWBNbmCcKKBUsLZpAyaNjWKlWP3QVNLrqzHFyBwWFb+7wBKGmMuvIXxgjrG9Dkwh/nb8BGPueodzs9gxi+wG5Cjy0vgAAAA==[0m[Pipeline] // node
+[8mha:////4NalYb8VF+JrkbZyGBgW6MMr9yA5ZghfrlfuUoemUbWhAAAApR+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYQjRYgGUdFaaXiBiY1xYt0F+4JT8SK+xh+IiETFVjvTzOsNqxThSNHJzmLvMbVeDmF085OZYn8NlGVHF9kSJgpWNjY3ZOxpwYbYwjJRQKlgbbENlDw6ho3q9ENXQaOrzhxnd1BQeHOHJwg1l1lH/sIUYXsbTSL8df4GYBoGhrLe7RlE/QH/QJuEvgAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

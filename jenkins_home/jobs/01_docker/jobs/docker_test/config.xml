@@ -1,13 +1,16 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@1182.v60a_e6279b_579">
+<flow-definition plugin="workflow-job@1186.v8def1a_5f3944">
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
-    <script>node(&apos;slave&apos;){
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2725.v7b_c717eb_12ce">
+    <script>node(&apos;slave_default&apos;){
     sh&quot;echo hello world&quot;
-    sleep 50
+    sh&quot;git --version&quot;
+    sh&quot;java -version&quot;
+    sh&quot;sshpass -p galvis0425 ssh -o StrictHostKeyChecking=no hidraxos@192.168.1.115 ls&quot;
+    sleep 20
 }</script>
     <sandbox>true</sandbox>
   </definition>

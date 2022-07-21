@@ -92,3 +92,10 @@ sshpass -p galvis0425 scp new_properties.properties hidraxos@192.168.1.115:/home
 exit
 cat /etc/oc-release
 exit
+exit
+cd /var/jenkins_home/workspace/Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON
+ls
+cd icbs-properties-devops-11.35.0
+ls
+cd ..
+exit

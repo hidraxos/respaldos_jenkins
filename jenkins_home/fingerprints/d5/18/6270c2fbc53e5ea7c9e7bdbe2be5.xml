@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-07-19 15:17:23.379 UTC</timestamp>
+  <md5sum>d5186270c2fbc53e5ea7c9e7bdbe2be5</md5sum>
+  <fileName>Credential id=nexus_credentials name=admin/****** (Credenciales de Nexus)</fileName>
+  <usages>
+    <entry>
+      <string>01_docker/Create_image_slave</string>
+      <ranges>19-21</ranges>
+    </entry>
+    <entry>
+      <string>Laboratorios_ATH/ICBS/propertiesJSON</string>
+      <ranges>32-33</ranges>
+    </entry>
+    <entry>
+      <string>Laboratorios_ATH/ICBS/ICBS_CD/propertiesJSON</string>
+      <ranges>3,5-10,12-33</ranges>
+    </entry>
+    <entry>
+      <string>Laboratorios_ATH/ICBS/ICBS_CI/uploadNexus</string>
+      <ranges>8,10-11,14-17</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
